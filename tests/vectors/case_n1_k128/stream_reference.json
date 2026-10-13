@@ -1,0 +1,42 @@
+[
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 0,
+    "group_first": true,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "1fced270b53d8cd894a086462be8851d",
+    "activation_data_hex": "517abde33eeabeda1df434261ffe5ad80d1b4101248f24de3ad9468eeb8851c0"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 1,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "ca1195cd6ad14a6b724009505cafa8db",
+    "activation_data_hex": "9fbfda572a64115154f8562a662bedf89ceb3a78e2f4d457b1e53dbe355b4411"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 2,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "ba96927a3a26ebbf535f7a4b84daba2c",
+    "activation_data_hex": "1915b874c697bb4991b73ddeec556af83caecc045442fc667a9792365a49dde5"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 3,
+    "group_first": false,
+    "group_last": true,
+    "valid_elements": 32,
+    "weight_data_hex": "e496e9f1ce0758869741f369e7331415",
+    "activation_data_hex": "f9bad7f6b6ac1d9788c080fd0e25b5ba97c7009713fd6a97f3d0d6b7b1807232"
+  }
+]

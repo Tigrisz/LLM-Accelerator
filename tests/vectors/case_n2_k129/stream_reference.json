@@ -1,0 +1,162 @@
+[
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 0,
+    "group_first": true,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "81154c5e744108bc6af6f388436eac84",
+    "activation_data_hex": "93c50098ea8ed32f921a15c11b420f81caaad0aa5cd8ca4a771c048000709ba6"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 1,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "c28b766374d6147da34b9b9071d403d9",
+    "activation_data_hex": "a0bf65eecd0e72b4de0903e8e872fbbd6db76b58b50ae21306104ed41a84a3c2"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 2,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "24611f5b76efbdf3616acdabced45eaa",
+    "activation_data_hex": "10cd451db907095815752a83637a5d4170de1c0147c448c6f01d31b058569e48"
+  },
+  {
+    "row_id": 0,
+    "group_id": 0,
+    "beat_id": 3,
+    "group_first": false,
+    "group_last": true,
+    "valid_elements": 32,
+    "weight_data_hex": "a9d9ff89a0781ff3ca38f0cf66ad771c",
+    "activation_data_hex": "949b8ef8121e8e4a9d647e31c299a8e172b8fb3587b8bc45c498c79a9b9e69e9"
+  },
+  {
+    "row_id": 0,
+    "group_id": 1,
+    "beat_id": 0,
+    "group_first": true,
+    "group_last": false,
+    "valid_elements": 1,
+    "weight_data_hex": "05000000000000000000000000000000",
+    "activation_data_hex": "1d00000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 0,
+    "group_id": 1,
+    "beat_id": 1,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 0,
+    "group_id": 1,
+    "beat_id": 2,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 0,
+    "group_id": 1,
+    "beat_id": 3,
+    "group_first": false,
+    "group_last": true,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 1,
+    "group_id": 0,
+    "beat_id": 0,
+    "group_first": true,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "6c7aa9fdf0c8fb44e35c9b198e6f2dc2",
+    "activation_data_hex": "93c50098ea8ed32f921a15c11b420f81caaad0aa5cd8ca4a771c048000709ba6"
+  },
+  {
+    "row_id": 1,
+    "group_id": 0,
+    "beat_id": 1,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "f8f3ad1005a2b073181ddc3af62e0a29",
+    "activation_data_hex": "a0bf65eecd0e72b4de0903e8e872fbbd6db76b58b50ae21306104ed41a84a3c2"
+  },
+  {
+    "row_id": 1,
+    "group_id": 0,
+    "beat_id": 2,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 32,
+    "weight_data_hex": "ab34fc6377c1be1fd67cb33b4f9d261e",
+    "activation_data_hex": "10cd451db907095815752a83637a5d4170de1c0147c448c6f01d31b058569e48"
+  },
+  {
+    "row_id": 1,
+    "group_id": 0,
+    "beat_id": 3,
+    "group_first": false,
+    "group_last": true,
+    "valid_elements": 32,
+    "weight_data_hex": "72444e217d3cc05b317861c202c7eb9d",
+    "activation_data_hex": "949b8ef8121e8e4a9d647e31c299a8e172b8fb3587b8bc45c498c79a9b9e69e9"
+  },
+  {
+    "row_id": 1,
+    "group_id": 1,
+    "beat_id": 0,
+    "group_first": true,
+    "group_last": false,
+    "valid_elements": 1,
+    "weight_data_hex": "0c000000000000000000000000000000",
+    "activation_data_hex": "1d00000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 1,
+    "group_id": 1,
+    "beat_id": 1,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 1,
+    "group_id": 1,
+    "beat_id": 2,
+    "group_first": false,
+    "group_last": false,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  {
+    "row_id": 1,
+    "group_id": 1,
+    "beat_id": 3,
+    "group_first": false,
+    "group_last": true,
+    "valid_elements": 0,
+    "weight_data_hex": "00000000000000000000000000000000",
+    "activation_data_hex": "0000000000000000000000000000000000000000000000000000000000000000"
+  }
+]

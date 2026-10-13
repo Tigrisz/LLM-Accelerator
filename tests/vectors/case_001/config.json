@@ -1,0 +1,11 @@
+{
+  "format_version": 1,
+  "N": 3,
+  "K": 256,
+  "padded_K": 256,
+  "lanes": 32,
+  "group_size": 128,
+  "seed": 1,
+  "weight_layout": "row-major, padded per row to group_size",
+  "activation_layout": "signed INT8, logical order, zero-padded to padded_K"
+}
