@@ -31,7 +31,8 @@ module activation_cache #(
     logic [31:0] read_beats;
     logic load_active;
     logic read_active;
-    integer i;
+    integer read_i;
+    integer load_i;
 
     // load_ptr counts beats, whereas MAX_K counts elements.
     assign load_ready = load_active && (load_ptr < MAX_BEATS);
@@ -40,9 +41,9 @@ module activation_cache #(
 
     always_comb begin
         read_data = '0;
-        for (i = 0; i < BYTE_COUNT; i = i + 1) begin
-            if ((read_ptr * BYTE_COUNT + i) < MAX_K) begin
-                read_data[i*8 +: 8] = storage[read_ptr * BYTE_COUNT + i];
+        for (read_i = 0; read_i < BYTE_COUNT; read_i = read_i + 1) begin
+            if ((read_ptr * BYTE_COUNT + read_i) < MAX_K) begin
+                read_data[read_i*8 +: 8] = storage[read_ptr * BYTE_COUNT + read_i];
             end
         end
     end
@@ -68,11 +69,11 @@ module activation_cache #(
             end
 
             if (load_valid && load_ready) begin
-                for (i = 0; i < BYTE_COUNT; i = i + 1) begin
-                    if ((i < load_valid_elems) && (load_ptr * BYTE_COUNT + i < MAX_K)) begin
-                        storage[load_ptr * BYTE_COUNT + i] <= load_data[i*8 +: 8];
-                    end else if ((load_ptr * BYTE_COUNT + i) < MAX_K) begin
-                        storage[load_ptr * BYTE_COUNT + i] <= 8'h00;
+                for (load_i = 0; load_i < BYTE_COUNT; load_i = load_i + 1) begin
+                    if ((load_i < load_valid_elems) && (load_ptr * BYTE_COUNT + load_i < MAX_K)) begin
+                        storage[load_ptr * BYTE_COUNT + load_i] <= load_data[load_i*8 +: 8];
+                    end else if ((load_ptr * BYTE_COUNT + load_i) < MAX_K) begin
+                        storage[load_ptr * BYTE_COUNT + load_i] <= 8'h00;
                     end
                 end
                 load_ptr <= load_ptr + 1;
