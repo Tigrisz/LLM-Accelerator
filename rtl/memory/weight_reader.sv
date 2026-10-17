@@ -42,7 +42,6 @@ module weight_reader #(
     logic [15:0] row_reg;
     logic [15:0] group_reg;
     logic [31:0] group_count;
-    logic [31:0] padded_k;
     logic [31:0] row_stride_bytes;
     logic [31:0] beat_index;
 
@@ -57,7 +56,8 @@ module weight_reader #(
     assign group_last = (beat_index == BEATS_PER_GROUP - 1);
     assign row_id = row_reg;
     assign group_id = group_reg;
-    assign rd_data_ready = (state == S_DATA) && weight_ready;
+    // Drain error beats even when no activation/core consumer is ready.
+    assign rd_data_ready = (state == S_DATA) && (rd_error || weight_ready);
 
     always_ff @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
@@ -67,7 +67,6 @@ module weight_reader #(
             row_reg <= '0;
             group_reg <= '0;
             group_count <= '0;
-            padded_k <= '0;
             row_stride_bytes <= '0;
             beat_index <= '0;
         end else begin
@@ -85,7 +84,6 @@ module weight_reader #(
                             group_reg <= 0;
                             beat_index <= 0;
                             group_count <= (k_elems + GROUP_SIZE - 1) / GROUP_SIZE;
-                            padded_k <= ((k_elems + GROUP_SIZE - 1) / GROUP_SIZE) * GROUP_SIZE;
                             row_stride_bytes <= (((k_elems + GROUP_SIZE - 1) / GROUP_SIZE) * GROUP_SIZE) / 2;
                             state <= S_REQ;
                         end
@@ -100,10 +98,10 @@ module weight_reader #(
                 end
 
                 S_DATA: begin
-                    if (rd_error) begin
+                    if (rd_data_valid && rd_data_ready && rd_error) begin
                         error <= 1'b1;
                         state <= S_ERROR;
-                    end else if (rd_data_valid && weight_ready) begin
+                    end else if (rd_data_valid && rd_data_ready) begin
                         if (rd_last != (beat_index == BEATS_PER_GROUP - 1)) begin
                             error <= 1'b1;
                             state <= S_ERROR;
@@ -116,7 +114,7 @@ module weight_reader #(
                 end
 
                 S_FINISH: begin
-                    if ((group_reg + 1) >= group_count) begin
+                    if (({16'b0, group_reg} + 1) >= group_count) begin
                         if ((row_reg + 1) >= n_rows) begin
                             done <= 1'b1;
                             state <= S_IDLE;

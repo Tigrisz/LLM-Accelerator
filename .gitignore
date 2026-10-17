@@ -1,22 +1,19 @@
-# Python caches and local test artifacts
+build/
+.venv*/
 __pycache__/
+*.vcd
+*.fst
+upstream-b/
+tmp/
+artifacts/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
-
-# HDL/build outputs
-build/
 out/
 obj_dir/
 work/
-*.vcd
 *.wlf
-
-# Workspace-only temporary files
-tmp/
 stdout.log*
-
-# Editor and OS metadata
 .vscode/
 .idea/
 *.swp

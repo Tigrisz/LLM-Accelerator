@@ -1,3 +1,5 @@
+> 2026-10-17: A/B RTL integration verified. See [A implementation summary](compute_interface_v1.md) and [integration handoff](b_handoff_2026-10-17.md). The original B V1 contract below is retained.
+
 # W4A8 GEMV accelerator interface v1
 
 This document freezes the Day 1 contract between task A (the compute core) and task B (model, memory, and control). The contract is intentionally independent of AXI, DDR PHY, and the eventual RISC-V bus.
