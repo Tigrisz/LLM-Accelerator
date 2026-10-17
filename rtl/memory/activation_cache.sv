@@ -22,7 +22,7 @@ module activation_cache #(
     output logic                    read_last
 );
     localparam integer BYTE_COUNT = LANES;
-    localparam integer MAX_BEATS = (MAX_K + LANES - 1) / LANES;
+    localparam integer MAX_BEATS = MAX_K / LANES;
 
     logic [7:0] storage [0:MAX_K-1];
     logic [31:0] load_ptr;
@@ -33,7 +33,8 @@ module activation_cache #(
     logic read_active;
     integer i;
 
-    assign load_ready = load_active && (load_ptr + BYTE_COUNT <= MAX_K);
+    // load_ptr counts beats, whereas MAX_K counts elements.
+    assign load_ready = load_active && (load_ptr < MAX_BEATS);
     assign read_valid = read_active && loaded;
     assign read_last = read_valid && (read_ptr + 1 >= read_beats);
 
@@ -76,7 +77,7 @@ module activation_cache #(
                 end
                 load_ptr <= load_ptr + 1;
                 load_beats <= load_beats + 1;
-                loaded_k <= loaded_k + load_valid_elems;
+                loaded_k <= loaded_k + {16'b0, load_valid_elems};
                 if (load_last) begin
                     load_active <= 1'b0;
                     loaded <= 1'b1;

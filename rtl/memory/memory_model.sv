@@ -51,12 +51,12 @@ module memory_model #(
     );
         logic [ADDR_WIDTH:0] end_address;
         begin
-            end_address = {1'b0, address} + byte_count;
-            request_in_range = (address < MEM_BYTES) &&
+            end_address = {1'b0, address} + (ADDR_WIDTH+1)'(byte_count);
+            request_in_range = (address < ADDR_WIDTH'(MEM_BYTES)) &&
                                (byte_count != 0) &&
-                               ((address % DATA_BYTES) == 0) &&
+                               ((address % ADDR_WIDTH'(DATA_BYTES)) == 0) &&
                                ((byte_count % DATA_BYTES) == 0) &&
-                               (end_address <= MEM_BYTES);
+                               (end_address <= (ADDR_WIDTH+1)'(MEM_BYTES));
         end
     endfunction
 
@@ -90,8 +90,9 @@ module memory_model #(
 
             if (wr_valid && wr_ready) begin
                 for (i = 0; i < DATA_BYTES; i = i + 1) begin
-                    if (wr_strb[i] && ((wr_addr + i) < MEM_BYTES)) begin
-                        mem[wr_addr + i] <= wr_data[i*8 +: 8];
+                    if (wr_strb[i] && (wr_addr < ADDR_WIDTH'(MEM_BYTES)) &&
+                        ((wr_addr + ADDR_WIDTH'(i)) < ADDR_WIDTH'(MEM_BYTES))) begin
+                        mem[MEM_ADDR_WIDTH'(wr_addr + ADDR_WIDTH'(i))] <= wr_data[i*8 +: 8];
                     end
                 end
             end
@@ -103,7 +104,7 @@ module memory_model #(
                     last_reg <= 1'b0;
                     if (rd_req_valid && rd_req_ready) begin
                         current_addr <= rd_addr;
-                        beats_left <= (rd_nbytes + DATA_BYTES - 1) / DATA_BYTES;
+                        beats_left <= rd_nbytes / DATA_BYTES;
                         wait_left <= LATENCY;
                         error_reg <= !request_in_range(rd_addr, rd_nbytes);
                         state <= S_WAIT;
@@ -119,8 +120,8 @@ module memory_model #(
                             last_reg <= 1'b1;
                         end else begin
                             for (i = 0; i < DATA_BYTES; i = i + 1) begin
-                                if ((current_addr + i) < MEM_BYTES) begin
-                                    data_reg[i*8 +: 8] <= mem[current_addr + i];
+                                if ((current_addr + ADDR_WIDTH'(i)) < ADDR_WIDTH'(MEM_BYTES)) begin
+                                    data_reg[i*8 +: 8] <= mem[MEM_ADDR_WIDTH'(current_addr + ADDR_WIDTH'(i))];
                                 end
                             end
                             last_reg <= (beats_left == 1);
@@ -137,7 +138,7 @@ module memory_model #(
                             state <= S_IDLE;
                             beats_left <= '0;
                         end else begin
-                            current_addr <= current_addr + DATA_BYTES;
+                            current_addr <= current_addr + ADDR_WIDTH'(DATA_BYTES);
                             beats_left <= beats_left - 1;
                             state <= S_WAIT;
                         end
