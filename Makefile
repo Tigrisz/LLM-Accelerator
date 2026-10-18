@@ -20,14 +20,16 @@ test-primitives:
 lint-primitives:
 	$(VERILATOR) --lint-only -Wall --top-module tb_compute_primitives $(PRIMITIVE_RTL)
 
-.PHONY: test-compute lint
-test-compute: test-primitives
+.PHONY: test-compute build-compute lint
+build-compute: test-primitives
 	@set -e; for lanes in 16 32; do \
 	  $(VERILATOR) --cc --exe --build --trace -Wall --top-module gemv_core \
 	    -GLANES=$$lanes -CFLAGS "-DTEST_LANES=$$lanes" \
 	    --Mdir build/core_$$lanes $(CORE_RTL) $(CURDIR)/tests/test_gemv_core.cpp; \
-	  ./build/core_$$lanes/Vgemv_core; \
 	done
+
+test-compute: build-compute
+	$(PYTHON) scripts/run_core_tests.py
 
 lint: lint-primitives
 	@set -e; for lanes in 16 32; do \
@@ -53,3 +55,12 @@ test-integration: test-model build-integration
 lint-integration:
 	$(VERILATOR) --lint-only -Wall --top-module tb_b_integration \
 	  $(CORE_RTL) $(B_RTL) tests/tb_b_integration.sv
+
+.PHONY: test-monitor regression
+test-monitor:
+	@mkdir -p build
+	$(CXX) -std=c++14 -Wall -Wextra -Werror tests/test_stream_monitor.cpp -o build/test_stream_monitor
+	./build/test_stream_monitor
+
+regression:
+	$(PYTHON) scripts/run_regression.py

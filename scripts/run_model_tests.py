@@ -15,7 +15,9 @@ sys.path.insert(0, str(ROOT))
 if __name__ == "__main__":
     os.chdir(ROOT)
     (ROOT / "tmp").mkdir(exist_ok=True)
-    suite = unittest.defaultTestLoader.discover(str(ROOT / "tests"), pattern="test_b_model.py")
+    suite = unittest.defaultTestLoader.discover(str(ROOT / "tests"), pattern="test_*.py")
+    if suite.countTestCases() == 0:
+        raise SystemExit("No Python tests discovered")
     result = unittest.TextTestRunner(verbosity=2).run(suite)
     raise SystemExit(0 if result.wasSuccessful() else 1)
 

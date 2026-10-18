@@ -2,7 +2,6 @@
 from __future__ import annotations
 import argparse
 import json
-import subprocess
 import sys
 from pathlib import Path
 import numpy as np
@@ -13,6 +12,7 @@ from model.golden_gemv import gemv_partial_sums
 from model.gen_vectors import generate_case
 from model.pack_weights import unpack_weight_matrix
 from model.stream_reference import iter_gemv_beats
+from sim_runner import run_simulation
 
 
 def export_case(folder: Path, dest: Path) -> Path:
@@ -48,7 +48,13 @@ def main():
     parser.add_argument("--integration", action="store_true")
     parser.add_argument("--random-cases", type=int, default=100)
     args = parser.parse_args()
+    if args.random_cases < 0:
+        parser.error("--random-cases must be non-negative")
     inputs = sorted((ROOT / "tests/vectors").glob("*/config.json"))
+    required = {"case_001", "case_n1_k128", "case_n3_k256", "case_n2_k129"}
+    missing = required - {p.parent.name for p in inputs}
+    if missing:
+        raise RuntimeError(f"Required B vectors missing: {sorted(missing)}")
     cases = [p.parent for p in inputs]
     generated = ROOT / "build/b_vectors"
     for seed in range(args.random_cases):
@@ -65,15 +71,12 @@ def main():
             ROOT / f"build/core_{lanes}/Vgemv_core" for lanes in (16,32)]
         for binary in binaries:
             command = [str(binary), str(fixture)] if args.integration else [str(binary), "--case", str(fixture)]
-            result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=60)
-            print(f"CASE {folder.name}\n{result.stdout}", end="")
-            if result.returncode:
-                print(result.stderr, file=sys.stderr)
-                raise SystemExit(result.returncode)
+            print(f"CASE {folder.name}", flush=True)
+            run_simulation(command, cwd=ROOT, label=f"{binary.parent.name}-{folder.name}")
     if args.integration:
         binary = str(ROOT / "build/integration/Vtb_b_integration")
         for extra in (["--capacity"], ["--errors"], [str(ROOT / "build/b_fixtures/case_n3_k256.txt"), "--reset"]):
-            subprocess.run([binary, *extra], cwd=ROOT, check=True, timeout=60)
+            run_simulation([binary, *extra], cwd=ROOT, label=f"integration-{extra[-1]}")
     print(f"PASS B_ARTIFACTS cases={len(cases)} mode={'integration' if args.integration else 'core16+32'}")
 
 

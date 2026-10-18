@@ -1,5 +1,9 @@
 # A：W4A8 GEMV 计算核心
 
+最新验证入口：`python scripts/run_regression.py`（Python 3.10+，依赖见 requirements-test.txt）。
+协议测试、失败波形及 CI 说明见 [2026-10-18 验证进度](docs/verification_progress_2026-10-18.md)。
+GitHub Actions 将对 PR 和主线执行真实 RTL 回归，报告保存在每次运行的 artifacts 中。
+
 本目录是 A 的计算模块及 A/B 联调工作目录。接口见 `docs/interface_v1.md`，已对齐 B 发布的 V1。
 默认 LANES=32，也测试 LANES=16；固定分组 128 元素，输出 signed INT32 部分和。
 

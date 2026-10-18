@@ -2,6 +2,7 @@
 #include "verilated.h"
 #include "verilated_vcd_c.h"
 #include "vector_case.h"
+#include "stream_monitor.h"
 #include <array>
 #include <iostream>
 #include <random>
@@ -16,6 +17,10 @@ public:
     const VectorCase* data=nullptr;
     uint64_t cycles=0, time=0, bytes=0, input_wait=0, output_wait=0;
     int beats=0, outputs=0, requests=0;
+    std::string scenario="initial";
+    StreamMonitor<std::array<uint32_t,16>> input_monitor{"paired input"};
+    StreamMonitor<std::array<uint32_t,3>> output_monitor{"integration output"};
+    GroupMonitor group_monitor{32};
     Integration() {
         if(const char* path=std::getenv("TRACE_FILE")) {
             Verilated::traceEverOn(true); dut.trace(&trace,99); trace.open(path); tracing=true;
@@ -29,13 +34,14 @@ public:
     ~Integration() { dut.final(); if(tracing) trace.close(); }
     void eval() { dut.eval(); if(tracing) trace.dump(time++); }
     void check(bool ok,const char* msg) {
-        if(!ok) throw std::runtime_error(std::string(msg)+" cycle="+std::to_string(cycles));
+        if(!ok) throw std::runtime_error(scenario+": "+msg+" cycle="+std::to_string(cycles));
     }
     void reset() {
         verify=false; dut.clk=0; dut.rst_n=0; dut.start=0; dut.wr_valid=0;
         dut.load_valid=0; dut.load_start=0; dut.out_ready=0; eval();
         check(!dut.out_valid && !dut.dbg_in_valid && !dut.dbg_mem_valid && !dut.done,"reset retained valid/done");
         dut.clk=1; eval(); dut.clk=0; eval(); dut.rst_n=1; eval();
+        input_monitor.reset(); output_monitor.reset(); group_monitor.reset();
     }
     void tick() {
         dut.clk=0; eval();
@@ -46,8 +52,18 @@ public:
         for(int i=0;i<4;i++) iw[i]=dut.dbg_weight[i];
         for(int i=0;i<8;i++) ix[i]=dut.dbg_activation[i];
         unsigned ir=dut.dbg_row, ig=dut.dbg_group, iff=dut.dbg_first, il=dut.dbg_last;
+        std::array<uint32_t,16> payload{};
+        for(int i=0;i<4;i++) payload[i]=iw[i];
+        for(int i=0;i<8;i++) payload[i+4]=ix[i];
+        payload[12]=ir; payload[13]=ig; payload[14]=iff; payload[15]=il;
+        try {
+            input_monitor.sample(dut.dbg_in_valid,dut.dbg_in_ready,payload);
+            output_monitor.sample(dut.out_valid,dut.out_ready,{{ps,row,group}});
+            group_monitor.sample(dut.dbg_in_valid && dut.dbg_in_ready,iff,il,ir,ig);
+        } catch(const std::exception& e) { check(false,e.what()); }
         if(verify) {
             check(!dut.error,"reader reported error");
+            check(!dut.out_valid || outputs < beats/4,"output valid before completed input group");
             if(dut.dbg_req_valid && dut.dbg_req_ready) {
                 check(dut.dbg_addr==dut.weight_base+uint64_t(requests)*64 && dut.dbg_nbytes==64,"request address/length");
                 ++requests;
@@ -112,6 +128,7 @@ public:
         dut.start=1; tick(); dut.start=0; verify=true;
     }
     void run(const VectorCase& c,int seed,bool stalls,bool final_hold) {
+        scenario="integration N="+std::to_string(c.n)+" K="+std::to_string(c.k)+" seed="+std::to_string(seed);
         prepare(c); uint64_t begin=cycles; std::mt19937 rng(seed); int held=0;
         while(!dut.done) {
             check(cycles-begin<200000,"integration timeout");
