@@ -46,6 +46,7 @@ def export_case(folder: Path, dest: Path) -> Path:
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--integration", action="store_true")
+    parser.add_argument("--integration-lanes", type=int, choices=(16,32), default=32)
     parser.add_argument("--random-cases", type=int, default=100)
     args = parser.parse_args()
     if args.random_cases < 0:
@@ -65,18 +66,20 @@ def main():
         folder = generated / f"long_k{k}"
         generate_case(folder, 2, k, seed=k)
         cases.append(folder)
+    integration_dir = "integration16" if args.integration_lanes == 16 else "integration"
+    integration_binary = ROOT / "build" / integration_dir / "Vtb_b_integration"
     for folder in cases:
         fixture = export_case(folder, ROOT / "build/b_fixtures" / (folder.name + ".txt"))
-        binaries = [ROOT / "build/integration/Vtb_b_integration"] if args.integration else [
+        binaries = [integration_binary] if args.integration else [
             ROOT / f"build/core_{lanes}/Vgemv_core" for lanes in (16,32)]
         for binary in binaries:
             command = [str(binary), str(fixture)] if args.integration else [str(binary), "--case", str(fixture)]
             print(f"CASE {folder.name}", flush=True)
             run_simulation(command, cwd=ROOT, label=f"{binary.parent.name}-{folder.name}")
     if args.integration:
-        binary = str(ROOT / "build/integration/Vtb_b_integration")
+        binary = str(integration_binary)
         for extra in (["--capacity"], ["--errors"], [str(ROOT / "build/b_fixtures/case_n3_k256.txt"), "--reset"]):
-            run_simulation([binary, *extra], cwd=ROOT, label=f"integration-{extra[-1]}")
+            run_simulation([binary, *extra], cwd=ROOT, label=f"{integration_dir}-{extra[-1]}")
     print(f"PASS B_ARTIFACTS cases={len(cases)} mode={'integration' if args.integration else 'core16+32'}")
 
 

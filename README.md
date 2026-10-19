@@ -102,3 +102,11 @@ gtkwave build/b_integration.vcd
 
 所有测试向量目前都是合成整数数据，长 K 用例也不是 Qwen 真实切片。
 输入等待统计包含缓存/存储/配对等待，不能直接叫作 DDR stall 或实测 GB/s。
+
+
+## 2026-10-19：16 路存储链路适配
+
+已增加配对数据流 32→16 路适配器，存储侧打包格式和 INT32 输出协议不变。
+`make test-integration16 PYTHON=python` 验证 16 路完整链路，
+`make test-adapter PYTHON=python` 验证拆拍协议；完整回归自动覆盖 16/32 路。
+接口约束、复现命令和 B 接入说明见 [16 路交接文档](docs/lane16_handoff_2026-10-19.md)。

@@ -1,6 +1,7 @@
 // Simulation integration fixture; host loads memory/cache directly.
 // This is not the later MMIO/CPU controller.
 module tb_b_integration #(
+    parameter integer LANES = 32,
     parameter integer MEMORY_LATENCY = 2,
     parameter integer MEMORY_RANDOM_STALL = 1,
     parameter integer CACHE_MAX_K = 8192
@@ -36,6 +37,14 @@ module tb_b_integration #(
     output wire [31:0] dbg_nbytes
 );
     wire [127:0] memory_data, weight_data;
+    wire pair_valid, pair_ready, pair_first, pair_last;
+    wire [127:0] pair_weight;
+    wire [255:0] pair_activation;
+    wire [15:0] pair_row, pair_group;
+    wire [LANES*4-1:0] narrow_weight;
+    wire [LANES*8-1:0] narrow_activation;
+    assign dbg_weight = {{(128-LANES*4){1'b0}}, narrow_weight};
+    assign dbg_activation = {{(256-LANES*8){1'b0}}, narrow_activation};
     wire memory_last, weight_valid, weight_ready, weight_first, weight_last;
     wire [15:0] weight_row, weight_group;
     wire activation_valid, activation_ready, activation_last;
@@ -74,13 +83,21 @@ module tb_b_integration #(
         .weight_group_first(weight_first), .weight_group_last(weight_last),
         .weight_row_id(weight_row), .weight_group_id(weight_group),
         .activation_valid(activation_valid), .activation_ready(activation_ready), .activation_data(activation_data),
-        .in_valid(dbg_in_valid), .in_ready(dbg_in_ready), .in_weight_data(dbg_weight),
-        .in_activation_data(dbg_activation), .in_group_first(dbg_first), .in_group_last(dbg_last),
-        .in_row_id(dbg_row), .in_group_id(dbg_group)
+        .in_valid(pair_valid), .in_ready(pair_ready), .in_weight_data(pair_weight),
+        .in_activation_data(pair_activation), .in_group_first(pair_first), .in_group_last(pair_last),
+        .in_row_id(pair_row), .in_group_id(pair_group)
     );
-    gemv_core core_inst (
+    paired_lane_adapter #(.LANES(LANES)) adapter_inst (
+        .clk(clk), .rst_n(rst_n), .s_valid(pair_valid), .s_ready(pair_ready),
+        .s_weight(pair_weight), .s_activation(pair_activation),
+        .s_first(pair_first), .s_last(pair_last), .s_row(pair_row), .s_group(pair_group),
+        .m_valid(dbg_in_valid), .m_ready(dbg_in_ready),
+        .m_weight(narrow_weight), .m_activation(narrow_activation),
+        .m_first(dbg_first), .m_last(dbg_last), .m_row(dbg_row), .m_group(dbg_group)
+    );
+    gemv_core #(.LANES(LANES)) core_inst (
         .clk(clk), .rst_n(rst_n), .in_valid(dbg_in_valid), .in_ready(dbg_in_ready),
-        .weight_data(dbg_weight), .activation_data(dbg_activation),
+        .weight_data(narrow_weight), .activation_data(narrow_activation),
         .group_first(dbg_first), .group_last(dbg_last), .row_id(dbg_row), .group_id(dbg_group),
         .out_valid(out_valid), .out_ready(out_ready), .partial_sum(partial_sum),
         .out_row_id(out_row_id), .out_group_id(out_group_id)

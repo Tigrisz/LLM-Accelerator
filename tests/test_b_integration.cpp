@@ -9,6 +9,11 @@
 #include <cstdlib>
 #include <stdexcept>
 
+#ifndef TEST_LANES
+#define TEST_LANES 32
+#endif
+constexpr int LANES=TEST_LANES;
+
 class Integration {
 public:
     Vtb_b_integration dut;
@@ -20,7 +25,7 @@ public:
     std::string scenario="initial";
     StreamMonitor<std::array<uint32_t,16>> input_monitor{"paired input"};
     StreamMonitor<std::array<uint32_t,3>> output_monitor{"integration output"};
-    GroupMonitor group_monitor{32};
+    GroupMonitor group_monitor{LANES};
     Integration() {
         if(const char* path=std::getenv("TRACE_FILE")) {
             Verilated::traceEverOn(true); dut.trace(&trace,99); trace.open(path); tracing=true;
@@ -63,18 +68,18 @@ public:
         } catch(const std::exception& e) { check(false,e.what()); }
         if(verify) {
             check(!dut.error,"reader reported error");
-            check(!dut.out_valid || outputs < beats/4,"output valid before completed input group");
+            check(!dut.out_valid || outputs < beats/(128/LANES),"output valid before completed input group");
             if(dut.dbg_req_valid && dut.dbg_req_ready) {
                 check(dut.dbg_addr==dut.weight_base+uint64_t(requests)*64 && dut.dbg_nbytes==64,"request address/length");
                 ++requests;
             }
             if(dut.dbg_mem_valid && dut.dbg_mem_ready) { check(!dut.dbg_mem_error,"memory error"); bytes+=16; }
             if(dut.dbg_in_valid && dut.dbg_in_ready) {
-                int per_row=data->padded/32, r=beats/per_row, col=(beats%per_row)*32;
+                int per_row=data->padded/LANES, r=beats/per_row, col=(beats%per_row)*LANES;
                 check(r<data->n,"extra input beat");
                 check(dut.dbg_row==r && dut.dbg_group==col/128 &&
-                      dut.dbg_first==(col%128==0) && dut.dbg_last==(col%128==96),"input metadata");
-                for(int i=0;i<32;i++) {
+                      dut.dbg_first==(col%128==0) && dut.dbg_last==(col%128==128-LANES),"input metadata");
+                for(int i=0;i<LANES;i++) {
                     int w=(dut.dbg_weight[i/8]>>(4*(i%8)))&15;
                     int x=(dut.dbg_activation[i/4]>>(8*(i%4)))&255;
                     check(w==(data->w(r,col+i)&15) && x==data->activations[col+i],"paired payload mismatch");
@@ -138,12 +143,12 @@ public:
             }
             tick();
         }
-        check(beats==c.n*c.padded/32 && requests==c.n*c.padded/128 && bytes==c.weights.size(),"transfer counts");
+        check(beats==c.n*c.padded/LANES && requests==c.n*c.padded/128 && bytes==c.weights.size(),"transfer counts");
         check(!final_hold || held==20,"final stall not exercised");
         auto measured_input_wait=input_wait, measured_output_wait=output_wait;
         for(int i=0;i<4;i++) tick();
         check(!dut.busy,"reader not idle after completion"); verify=false;
-        std::cout<<"PASS INTEGRATION N="<<c.n<<" K="<<c.k<<" seed="<<seed
+        std::cout<<"PASS INTEGRATION lanes="<<LANES<<" N="<<c.n<<" K="<<c.k<<" seed="<<seed
                  <<" random_output_stalls="<<stalls<<" final_hold="<<held<<" cycles="<<cycles-begin-4<<" weight_bytes="<<bytes
                  <<" groups="<<outputs<<" input_wait="<<measured_input_wait<<" output_wait="<<measured_output_wait<<'\n';
     }
@@ -164,9 +169,12 @@ public:
         std::cout<<"PASS ERROR base="<<base<<" N="<<n<<" K="<<k<<'\n';
     }
     void reset_cases(const VectorCase& c) {
-        prepare(c); dut.out_ready=1;
-        for(int i=0;beats<2 && i<1000;i++) tick();
-        check(beats==2,"partial reset setup"); reset(); run(c,77,true,true);
+        // Include reset after a low half, between halves, and at each group beat.
+        for(int target=1;target<=128/LANES;target++) {
+            prepare(c); dut.out_ready=1;
+            for(int i=0;beats<target && i<1000;i++) tick();
+            check(beats==target,"partial reset setup"); reset(); run(c,77+target,true,true);
+        }
         prepare(c); dut.out_ready=0;
         for(int i=0;!dut.out_valid && i<1000;i++) tick();
         check(dut.out_valid,"pending reset setup"); reset(); run(c,78,true,true);

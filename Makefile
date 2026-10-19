@@ -2,6 +2,8 @@ VERILATOR ?= verilator
 PRIMITIVE_RTL = rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv tests/tb_compute_primitives.sv
 CORE_RTL = rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv
 PYTHON ?= python3
+ADAPTER_RTL = rtl/compute/paired_lane_adapter.sv
+INTEGRATION_LANES ?= 32
 B_RTL_DIR ?= rtl/memory
 B_RTL = $(B_RTL_DIR)/memory_model.sv $(B_RTL_DIR)/weight_reader.sv $(B_RTL_DIR)/activation_cache.sv $(B_RTL_DIR)/paired_input_stream.sv
 INTEGRATION_DIR ?= build/integration
@@ -46,15 +48,18 @@ test-b-vectors: test-compute test-model
 build-integration:
 	@mkdir -p build
 	$(VERILATOR) --cc --exe --build --trace -Wall $(INTEGRATION_FLAGS) \
+	  -GLANES=$(INTEGRATION_LANES) -CFLAGS "-DTEST_LANES=$(INTEGRATION_LANES)" \
 	  --top-module tb_b_integration --Mdir $(INTEGRATION_DIR) \
-	  $(CORE_RTL) $(B_RTL) tests/tb_b_integration.sv $(CURDIR)/tests/test_b_integration.cpp
+	  $(CORE_RTL) $(ADAPTER_RTL) $(B_RTL) tests/tb_b_integration.sv $(CURDIR)/tests/test_b_integration.cpp
 
 test-integration: test-model build-integration
 	$(PYTHON) scripts/verify_b_vectors.py --integration
 
 lint-integration:
-	$(VERILATOR) --lint-only -Wall --top-module tb_b_integration \
-	  $(CORE_RTL) $(B_RTL) tests/tb_b_integration.sv
+	@set -e; for lanes in 16 32; do \
+	  $(VERILATOR) --lint-only -Wall --top-module tb_b_integration -GLANES=$$lanes \
+	    $(CORE_RTL) $(ADAPTER_RTL) $(B_RTL) tests/tb_b_integration.sv; \
+	done
 
 .PHONY: test-monitor regression
 test-monitor:
@@ -64,3 +69,19 @@ test-monitor:
 
 regression:
 	$(PYTHON) scripts/run_regression.py
+
+.PHONY: build-integration16
+build-integration16:
+	$(MAKE) build-integration INTEGRATION_LANES=16 INTEGRATION_DIR=build/integration16
+
+.PHONY: build-adapter
+build-adapter:
+	$(VERILATOR) --cc --exe --build --trace -Wall --top-module paired_lane_adapter \
+	  -GLANES=16 --Mdir build/adapter16 $(ADAPTER_RTL) $(CURDIR)/tests/test_lane_adapter.cpp
+
+.PHONY: test-integration16 test-adapter
+test-integration16: test-model build-integration16
+	$(PYTHON) scripts/verify_b_vectors.py --integration --integration-lanes 16
+
+test-adapter: build-adapter
+	$(PYTHON) scripts/run_adapter_tests.py

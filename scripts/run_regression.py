@@ -46,8 +46,11 @@ def main():
         ("core-directed", [sys.executable, "scripts/run_core_tests.py"]),
         ("core-golden", [sys.executable, "scripts/verify_b_vectors.py"]),
         ("failure-replay", [sys.executable, "scripts/check_failure_replay.py"]),
-        ("integration-build", ["make", "build-integration"]),
+        ("adapter-build", ["make", "build-adapter"]),
+        ("adapter", [sys.executable, "scripts/run_adapter_tests.py"]),
+        ("integration-build", ["make", "build-integration", "build-integration16"]),
         ("integration", [sys.executable, "scripts/verify_b_vectors.py", "--integration"]),
+        ("integration16", [sys.executable, "scripts/verify_b_vectors.py", "--integration", "--integration-lanes", "16"]),
     ]
     results = []
     for name, command in phases:
