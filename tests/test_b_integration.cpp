@@ -20,7 +20,7 @@ public:
     VerilatedVcdC trace;
     bool tracing=false, verify=false;
     const VectorCase* data=nullptr;
-    uint64_t cycles=0, time=0, bytes=0, input_wait=0, output_wait=0;
+    uint64_t cycles=0, time=0, bytes=0, input_wait=0, input_blocked=0, output_wait=0;
     int beats=0, outputs=0, requests=0;
     std::string scenario="initial";
     StreamMonitor<std::array<uint32_t,16>> input_monitor{"paired input"};
@@ -94,6 +94,7 @@ public:
                 ++outputs;
             }
             if(!dut.dbg_in_valid) ++input_wait;
+            else if(!dut.dbg_in_ready) ++input_blocked;
             if(hold) ++output_wait;
         }
         dut.clk=1; eval();
@@ -129,7 +130,7 @@ public:
         }
         dut.load_valid=0; dut.load_last=0;
         check(dut.loaded && dut.loaded_k==unsigned(c.k),"cache logical length");
-        beats=0; outputs=0; requests=0; bytes=0; input_wait=0; output_wait=0;
+        beats=0; outputs=0; requests=0; bytes=0; input_wait=0; input_blocked=0; output_wait=0;
         dut.start=1; tick(); dut.start=0; verify=true;
     }
     void run(const VectorCase& c,int seed,bool stalls,bool final_hold) {
@@ -146,11 +147,13 @@ public:
         check(beats==c.n*c.padded/LANES && requests==c.n*c.padded/128 && bytes==c.weights.size(),"transfer counts");
         check(!final_hold || held==20,"final stall not exercised");
         auto measured_input_wait=input_wait, measured_output_wait=output_wait;
+        auto measured_input_blocked=input_blocked;
+        check(uint64_t(beats)+input_wait+input_blocked==cycles-begin,"cycle accounting");
         for(int i=0;i<4;i++) tick();
         check(!dut.busy,"reader not idle after completion"); verify=false;
         std::cout<<"PASS INTEGRATION lanes="<<LANES<<" N="<<c.n<<" K="<<c.k<<" seed="<<seed
                  <<" random_output_stalls="<<stalls<<" final_hold="<<held<<" cycles="<<cycles-begin-4<<" weight_bytes="<<bytes
-                 <<" groups="<<outputs<<" input_wait="<<measured_input_wait<<" output_wait="<<measured_output_wait<<'\n';
+                 <<" input_beats="<<beats<<" input_blocked="<<measured_input_blocked<<" groups="<<outputs<<" input_wait="<<measured_input_wait<<" output_wait="<<measured_output_wait<<'\n';
     }
     void capacity() {
         reset(); dut.load_start=1; tick(); dut.load_start=0;
@@ -192,6 +195,7 @@ int main(int argc,char** argv) {
         } else if(argc>=2) {
             VectorCase c(argv[1]);
             if(argc==3 && std::string(argv[2])=="--reset") test.reset_cases(c);
+            else if(argc==3 && std::string(argv[2])=="--benchmark") test.run(c,42,false,false);
             else { test.run(c,42,false,true); test.run(c,43,true,true); }
         } else throw std::runtime_error("usage: integration case.txt [--reset] | --capacity | --errors");
     } catch(const std::exception& e) { std::cerr<<"FAIL "<<e.what()<<'\n'; return 1; }

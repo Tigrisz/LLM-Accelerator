@@ -85,3 +85,7 @@ test-integration16: test-model build-integration16
 
 test-adapter: build-adapter
 	$(PYTHON) scripts/run_adapter_tests.py
+
+.PHONY: benchmark-lanes
+benchmark-lanes:
+	$(PYTHON) scripts/benchmark_lanes.py

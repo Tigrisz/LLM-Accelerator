@@ -110,3 +110,10 @@ gtkwave build/b_integration.vcd
 `make test-integration16 PYTHON=python` 验证 16 路完整链路，
 `make test-adapter PYTHON=python` 验证拆拍协议；完整回归自动覆盖 16/32 路。
 接口约束、复现命令和 B 接入说明见 [16 路交接文档](docs/lane16_handoff_2026-10-19.md)。
+
+
+## 确定性性能比较
+
+`make benchmark-lanes PYTHON=python` 比较相同数据与存储延迟下的 16/32 路性能。
+完整回归也会执行该比较并保存日志、源码指纹与 JSON 指标。
+计时口径与本地结果见 [性能比较说明](docs/lane_benchmark_2026-10-19.md)。

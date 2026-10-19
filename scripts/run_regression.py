@@ -51,6 +51,7 @@ def main():
         ("integration-build", ["make", "build-integration", "build-integration16"]),
         ("integration", [sys.executable, "scripts/verify_b_vectors.py", "--integration"]),
         ("integration16", [sys.executable, "scripts/verify_b_vectors.py", "--integration", "--integration-lanes", "16"]),
+        ("lane-benchmark", [sys.executable, "scripts/benchmark_lanes.py"]),
     ]
     results = []
     for name, command in phases:
