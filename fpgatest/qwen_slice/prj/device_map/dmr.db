@@ -2965,7 +2965,7 @@
             <data>clk_ibuf</data>
             <data>clkbufg_0</data>
             <data>ntclkbufg_0</data>
-            <data>189</data>
+            <data>230</data>
         </row>
     </table>
     <table id="device_map_reset_signal" title="Reset Signal" column_number="3">
@@ -2975,9 +2975,9 @@
             <data>Fanout</data>
         </column_headers>
         <row>
-            <data>qwen_slice/runner/N39</data>
-            <data>qwen_slice/runner/N39</data>
-            <data>189</data>
+            <data>qwen_slice/runner/N48</data>
+            <data>qwen_slice/runner/N48</data>
+            <data>230</data>
         </row>
     </table>
     <table id="device_map_high_fanout_singnal" title="High Fanout Signal" column_number="3">
@@ -2989,17 +2989,22 @@
         <row>
             <data>ntclkbufg_0</data>
             <data>clkbufg_0</data>
-            <data>189</data>
+            <data>230</data>
         </row>
         <row>
-            <data>qwen_slice/runner/N39</data>
-            <data>qwen_slice/runner/N39</data>
-            <data>189</data>
+            <data>qwen_slice/runner/N48</data>
+            <data>qwen_slice/runner/N48</data>
+            <data>230</data>
         </row>
         <row>
             <data>qwen_slice/runner/adapter_inst/half_select</data>
             <data>qwen_slice/runner/adapter_inst/half_select</data>
-            <data>111</data>
+            <data>146</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/running</data>
+            <data>qwen_slice/runner/running</data>
+            <data>72</data>
         </row>
         <row>
             <data>qwen_slice/runner/core_in_valid</data>
@@ -3007,19 +3012,49 @@
             <data>68</data>
         </row>
         <row>
-            <data>qwen_slice/runner/N50</data>
-            <data>qwen_slice/runner/N50_5</data>
-            <data>56</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/running</data>
-            <data>qwen_slice/runner/running</data>
-            <data>54</data>
-        </row>
-        <row>
             <data>qwen_slice/runner/adapter_group_last</data>
             <data>qwen_slice/runner/adapter_inst/N8</data>
-            <data>49</data>
+            <data>65</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/N61</data>
+            <data>qwen_slice/runner/N61_5</data>
+            <data>64</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [2]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[2]</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [1]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[1]</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [3]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[3]</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [0]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[0]</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/expected_mem_index [4]</data>
+            <data>qwen_slice/runner/N16_1_sum0</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/expected_mem_index [5]</data>
+            <data>qwen_slice/runner/N16_1_sum0</data>
+            <data>48</data>
+        </row>
+        <row>
+            <data>nt_led_done</data>
+            <data>qwen_slice/runner/done</data>
+            <data>43</data>
         </row>
         <row>
             <data>qwen_slice/runner/core_inst/reduction[1].sum [15]</data>
@@ -3027,8 +3062,8 @@
             <data>34</data>
         </row>
         <row>
-            <data>qwen_slice/runner/N275</data>
-            <data>qwen_slice/runner/N275</data>
+            <data>qwen_slice/runner/N307</data>
+            <data>qwen_slice/runner/N307</data>
             <data>32</data>
         </row>
         <row>
@@ -3037,93 +3072,93 @@
             <data>32</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [4]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[4]</data>
-            <data>28</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [35]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[35]</data>
-            <data>28</data>
-        </row>
-        <row>
-            <data>nt_led_done</data>
-            <data>qwen_slice/runner/done</data>
+            <data>qwen_slice/runner/expected_mem_index [6]</data>
+            <data>qwen_slice/runner/N16_1_sum2_3</data>
             <data>24</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [2]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[0]</data>
-            <data>23</data>
+            <data>qwen_slice/runner/adapter_activation_data [71]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[70]</data>
+            <data>18</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [68]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[33]</data>
-            <data>22</data>
+            <data>qwen_slice/runner/adapter_activation_data [111]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[110]</data>
+            <data>18</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [99]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[46]</data>
-            <data>22</data>
+            <data>qwen_slice/runner/adapter_activation_data [119]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[118]</data>
+            <data>18</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [35]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[20]</data>
-            <data>22</data>
+            <data>qwen_slice/runner/adapter_activation_data [87]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[86]</data>
+            <data>18</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [60]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[27]</data>
-            <data>22</data>
+            <data>qwen_slice/runner/adapter_activation_data [63]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[62]</data>
+            <data>18</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_activation_data [43]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[22]</data>
-            <data>22</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [107]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[48]</data>
-            <data>22</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [116]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[52]</data>
-            <data>21</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [12]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[16]</data>
-            <data>21</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [4]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[3]</data>
-            <data>21</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [84]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[41]</data>
-            <data>21</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [124]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[57]</data>
-            <data>21</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [76]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[37]</data>
-            <data>19</data>
+            <data>qwen_slice/runner/adapter_activation_data [55]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[54]</data>
+            <data>18</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_group_last</data>
-            <data>qwen_slice/runner/N134</data>
+            <data>qwen_slice/runner/N164_3</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [95]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[94]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [47]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[46]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [127]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[126]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [39]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[38]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [31]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[30]</data>
             <data>18</data>
         </row>
         <row>
             <data>qwen_slice/runner/adapter_activation_data [23]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[13]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[22]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [15]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[14]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [7]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[6]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [79]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[78]</data>
+            <data>18</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_activation_data [103]</data>
+            <data>qwen_slice/runner/adapter_inst/N3[102]</data>
             <data>18</data>
         </row>
         <row>
@@ -3132,24 +3167,24 @@
             <data>17</data>
         </row>
         <row>
-            <data>qwen_slice/runner/N235</data>
-            <data>qwen_slice/runner/N235</data>
+            <data>qwen_slice/runner/N230</data>
+            <data>qwen_slice/runner/N211_18</data>
+            <data>17</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/N267</data>
+            <data>qwen_slice/runner/N267</data>
             <data>16</data>
         </row>
         <row>
-            <data>qwen_slice/runner/N225</data>
-            <data>qwen_slice/runner/N225</data>
+            <data>qwen_slice/runner/N239</data>
+            <data>qwen_slice/runner/N239</data>
             <data>16</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [51]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[50]</data>
-            <data>15</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_weight_data [47]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[46]</data>
-            <data>15</data>
+            <data>qwen_slice/runner/N253</data>
+            <data>qwen_slice/runner/N267</data>
+            <data>16</data>
         </row>
         <row>
             <data>qwen_slice/runner/adapter_weight_data [43]</data>
@@ -3157,8 +3192,13 @@
             <data>15</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [39]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[38]</data>
+            <data>qwen_slice/runner/adapter_weight_data [59]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[58]</data>
+            <data>15</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_weight_data [63]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[62]</data>
             <data>15</data>
         </row>
         <row>
@@ -3167,13 +3207,13 @@
             <data>15</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [55]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[54]</data>
+            <data>qwen_slice/runner/adapter_weight_data [31]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[30]</data>
             <data>15</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [27]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[26]</data>
+            <data>qwen_slice/runner/adapter_weight_data [47]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[46]</data>
             <data>15</data>
         </row>
         <row>
@@ -3192,18 +3232,8 @@
             <data>15</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [59]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[58]</data>
-            <data>15</data>
-        </row>
-        <row>
             <data>qwen_slice/runner/adapter_weight_data [11]</data>
             <data>qwen_slice/runner/adapter_inst/N2[10]</data>
-            <data>15</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_weight_data [3]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[2]</data>
             <data>15</data>
         </row>
         <row>
@@ -3212,133 +3242,133 @@
             <data>15</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_weight_data [63]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[62]</data>
-            <data>15</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_weight_data [31]</data>
-            <data>qwen_slice/runner/adapter_inst/N2[30]</data>
+            <data>qwen_slice/runner/adapter_weight_data [55]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[54]</data>
             <data>15</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_beat [0]</data>
             <data>qwen_slice/runner/input_beat[0]</data>
-            <data>14</data>
+            <data>15</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_weight_data [27]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[26]</data>
+            <data>15</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_weight_data [51]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[50]</data>
+            <data>15</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_weight_data [3]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[2]</data>
+            <data>15</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/adapter_weight_data [39]</data>
+            <data>qwen_slice/runner/adapter_inst/N2[38]</data>
+            <data>15</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_beat [1]</data>
             <data>qwen_slice/runner/input_beat[1]</data>
-            <data>13</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/N20 [9]</data>
-            <data>qwen_slice/runner/N20_16[5]</data>
-            <data>12</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [12]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[12]</data>
-            <data>10</data>
+            <data>14</data>
         </row>
         <row>
             <data>nt_rst_n</data>
             <data>rst_n_ibuf</data>
-            <data>10</data>
+            <data>12</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [8]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[8]</data>
-            <data>9</data>
+            <data>qwen_slice/runner/expected_mem_index [7]</data>
+            <data>qwen_slice/runner/N16_1_sum3_4</data>
+            <data>12</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [74]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[74]</data>
-            <data>8</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [2]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[2]</data>
-            <data>8</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [17]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[17]</data>
-            <data>8</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [23]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[23]</data>
-            <data>8</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [32]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[32]</data>
-            <data>8</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [9]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[9]</data>
-            <data>7</data>
+            <data>qwen_slice/runner/N30 [11]</data>
+            <data>qwen_slice/runner/expected_mem_11_mux8</data>
+            <data>11</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_row [0]</data>
             <data>qwen_slice/runner/input_row[0]</data>
-            <data>7</data>
+            <data>9</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [0]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[0]</data>
-            <data>7</data>
+            <data>qwen_slice/runner/activation_beat_index [3]</data>
+            <data>qwen_slice/runner/N12_1_maj1_3</data>
+            <data>8</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [43]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[43]</data>
-            <data>6</data>
+            <data>qwen_slice/runner/input_group [0]</data>
+            <data>qwen_slice/runner/input_group[0]</data>
+            <data>8</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/activation_beat_index [4]</data>
+            <data>qwen_slice/runner/N12_1_sum2_3</data>
+            <data>8</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/activation_beat_index [5]</data>
+            <data>qwen_slice/runner/N12_1_sum3_4</data>
+            <data>8</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/activation_beat_index [2]</data>
+            <data>qwen_slice/runner/N12_1_sum0</data>
+            <data>8</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_row [1]</data>
             <data>qwen_slice/runner/input_row[1]</data>
-            <data>6</data>
+            <data>7</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [90]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[90]</data>
-            <data>6</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_row_id [3]</data>
-            <data>qwen_slice/runner/core_inst/group_acc_inst/out_row_id[3]</data>
-            <data>6</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_row_id [2]</data>
-            <data>qwen_slice/runner/core_inst/group_acc_inst/out_row_id[2]</data>
-            <data>6</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_row_id [1]</data>
-            <data>qwen_slice/runner/core_inst/group_acc_inst/out_row_id[1]</data>
-            <data>6</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_row_id [0]</data>
-            <data>qwen_slice/runner/core_inst/group_acc_inst/out_row_id[0]</data>
-            <data>6</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [11]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[11]</data>
-            <data>5</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_out_valid</data>
-            <data>qwen_slice/runner/core_inst/group_acc_inst/out_valid</data>
-            <data>5</data>
+            <data>qwen_slice/runner/input_group [4]</data>
+            <data>qwen_slice/runner/input_group[4]</data>
+            <data>7</data>
         </row>
         <row>
             <data>qwen_slice/runner/input_beat [2]</data>
             <data>qwen_slice/runner/input_beat[2]</data>
+            <data>7</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [6]</data>
+            <data>qwen_slice/runner/input_group[6]</data>
+            <data>6</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [1]</data>
+            <data>qwen_slice/runner/input_group[1]</data>
+            <data>6</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_beat [4]</data>
+            <data>qwen_slice/runner/input_beat[4]</data>
+            <data>6</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [5]</data>
+            <data>qwen_slice/runner/input_group[5]</data>
+            <data>6</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [2]</data>
+            <data>qwen_slice/runner/input_group[2]</data>
+            <data>6</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_beat [5]</data>
+            <data>qwen_slice/runner/input_beat[5]</data>
+            <data>5</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [3]</data>
+            <data>qwen_slice/runner/input_group[3]</data>
             <data>5</data>
         </row>
         <row>
@@ -3347,23 +3377,43 @@
             <data>5</data>
         </row>
         <row>
-            <data>qwen_slice/runner/adapter_inst/activation_hold [10]</data>
-            <data>qwen_slice/runner/adapter_inst/activation_hold[10]</data>
+            <data>qwen_slice/runner/input_beat [3]</data>
+            <data>qwen_slice/runner/input_beat[3]</data>
+            <data>5</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_beat [8]</data>
+            <data>qwen_slice/runner/input_beat[8]</data>
             <data>4</data>
         </row>
         <row>
-            <data>qwen_slice/runner/weight_mem_index [5]</data>
-            <data>qwen_slice/runner/N4_1_sum3_4</data>
+            <data>qwen_slice/runner/input_beat [7]</data>
+            <data>qwen_slice/runner/input_beat[7]</data>
             <data>4</data>
         </row>
         <row>
-            <data>qwen_slice/runner/weight_mem_index [3]</data>
-            <data>qwen_slice/runner/N4_1_sum1_3</data>
+            <data>qwen_slice/runner/input_beat [6]</data>
+            <data>qwen_slice/runner/input_beat[6]</data>
             <data>4</data>
         </row>
         <row>
-            <data>qwen_slice/runner/weight_mem_index [2]</data>
-            <data>qwen_slice/runner/N4_1_sum0</data>
+            <data>qwen_slice/runner/core_out_valid</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_valid</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_group [7]</data>
+            <data>qwen_slice/runner/input_group[7]</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/input_beat [9]</data>
+            <data>qwen_slice/runner/input_beat[9]</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [4]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[4]</data>
             <data>4</data>
         </row>
         <row>
@@ -3372,23 +3422,58 @@
             <data>4</data>
         </row>
         <row>
-            <data>qwen_slice/runner/input_beat [4]</data>
-            <data>qwen_slice/runner/input_beat[4]</data>
+            <data>qwen_slice/runner/core_inst/nb12 [14]</data>
+            <data>qwen_slice/runner/core_inst/N32_12_15</data>
             <data>4</data>
         </row>
         <row>
-            <data>qwen_slice/runner/input_beat [3]</data>
-            <data>qwen_slice/runner/input_beat[3]</data>
+            <data>qwen_slice/runner/weight_mem_index [2]</data>
+            <data>qwen_slice/runner/N8_3_1</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [3]</data>
+            <data>qwen_slice/runner/N8_3_2</data>
             <data>4</data>
         </row>
         <row>
             <data>qwen_slice/runner/weight_mem_index [4]</data>
-            <data>qwen_slice/runner/N4_1_sum2_3</data>
+            <data>qwen_slice/runner/N8_3_3</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [5]</data>
+            <data>qwen_slice/runner/N8_3_4</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [6]</data>
+            <data>qwen_slice/runner/N8_3_5</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [7]</data>
+            <data>qwen_slice/runner/N8_3_6</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [8]</data>
+            <data>qwen_slice/runner/N8_3_7</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/weight_mem_index [9]</data>
+            <data>qwen_slice/runner/N8_3_8</data>
             <data>4</data>
         </row>
         <row>
             <data>qwen_slice/runner/core_inst/nb0 [12]</data>
             <data>qwen_slice/runner/core_inst/macs[14].mac/N4</data>
+            <data>4</data>
+        </row>
+        <row>
+            <data>qwen_slice/runner/core_group_id [5]</data>
+            <data>qwen_slice/runner/core_inst/group_acc_inst/out_group_id[5]</data>
             <data>4</data>
         </row>
         <row>
@@ -3400,91 +3485,6 @@
             <data>qwen_slice/runner/core_inst/nb4 [12]</data>
             <data>qwen_slice/runner/core_inst/macs[6].mac/N4</data>
             <data>4</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_inst/nb6 [12]</data>
-            <data>qwen_slice/runner/core_inst/macs[2].mac/N4</data>
-            <data>4</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_inst/nb8 [13]</data>
-            <data>qwen_slice/runner/core_inst/N32_8_14</data>
-            <data>4</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_inst/nb10 [13]</data>
-            <data>qwen_slice/runner/core_inst/N32_10_14</data>
-            <data>4</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/core_inst/nb12 [14]</data>
-            <data>qwen_slice/runner/core_inst/N32_12_15</data>
-            <data>4</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_active</data>
-            <data>qwen_slice/runner/input_active</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_beat [5]</data>
-            <data>qwen_slice/runner/input_beat[5]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [27]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[15]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/adapter_activation_data [20]</data>
-            <data>qwen_slice/runner/adapter_inst/N3[12]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [4]</data>
-            <data>qwen_slice/runner/input_row[4]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [5]</data>
-            <data>qwen_slice/runner/input_row[5]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [6]</data>
-            <data>qwen_slice/runner/input_row[6]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [7]</data>
-            <data>qwen_slice/runner/input_row[7]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [8]</data>
-            <data>qwen_slice/runner/input_row[8]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [9]</data>
-            <data>qwen_slice/runner/input_row[9]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [10]</data>
-            <data>qwen_slice/runner/input_row[10]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [11]</data>
-            <data>qwen_slice/runner/input_row[11]</data>
-            <data>3</data>
-        </row>
-        <row>
-            <data>qwen_slice/runner/input_row [12]</data>
-            <data>qwen_slice/runner/input_row[12]</data>
-            <data>3</data>
         </row>
     </table>
     <table id="device_map_resource_usage" title="Resource Usage Summary" column_number="4">
@@ -3502,13 +3502,13 @@
         </row>
         <row>
             <data>FF</data>
-            <data>185</data>
+            <data>218</data>
             <data>133200</data>
             <data>1</data>
         </row>
         <row>
             <data>LUT</data>
-            <data>354</data>
+            <data>458</data>
             <data>66600</data>
             <data>1</data>
         </row>
@@ -3520,9 +3520,9 @@
         </row>
         <row>
             <data>DRM</data>
-            <data>2</data>
+            <data>8</data>
             <data>155</data>
-            <data>2</data>
+            <data>6</data>
         </row>
         <row>
             <data>IO</data>
@@ -3652,8 +3652,8 @@
         <row>
             <data>0h:0m:6s</data>
             <data>0h:0m:6s</data>
-            <data>0h:0m:8s</data>
-            <data>357</data>
+            <data>0h:0m:12s</data>
+            <data>364</data>
             <data>WINDOWS 10 x86_64</data>
             <data>Unknown</data>
             <data>32</data>
@@ -3662,19 +3662,25 @@
     <table id="device_map_messages" title="Device Map Messages" column_number="1">
         <column_headers/>
         <row>
-            <data message="4">The instance clkbufg_0(GTP_CLKBUFG) has been inserted on the net nt_clk in design, driver pin O(instance clk_ibuf) -&gt; load pin CLK(instance qwen_slice/runner/adapter_inst/activation_hold[0]).</data>
+            <data message="4">The instance clkbufg_0(GTP_CLKBUFG) has been inserted on the net nt_clk in design, driver pin O(instance clk_ibuf) -&gt; load pin CLKA(instance qwen_slice/runner/activation_mem_0).</data>
         </row>
         <row>
-            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N21.eq_0/gateop, insts:16.</data>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N8_3_1/gateop, insts:8.</data>
         </row>
         <row>
-            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N57_1_1/gateop, insts:15.</data>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N31.eq_0/gateop, insts:16.</data>
         </row>
         <row>
-            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N61_1_0/gateop, insts:16.</data>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N71_1_1/gateop, insts:15.</data>
         </row>
         <row>
-            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N69_1_1/gateop, insts:31.</data>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N75_1_0/gateop, insts:16.</data>
+        </row>
+        <row>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N80_1_0/gateop, insts:16.</data>
+        </row>
+        <row>
+            <data message="4">Infer CARRY group, base inst: qwen_slice/runner/N90_1_1/gateop, insts:31.</data>
         </row>
         <row>
             <data message="4">Infer CARRY group, base inst: qwen_slice/runner/core_inst/N32_8_1/gateop, insts:14.</data>

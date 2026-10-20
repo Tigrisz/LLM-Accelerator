@@ -13,6 +13,9 @@ out/
 obj_dir/
 work/
 *.wlf
+*.pds.lock
+fpgatest/qwen_slice/prj/**/bak/
+fpgatest/qwen_slice/prj/**/logbackup/
 stdout.log*
 .vscode/
 .idea/

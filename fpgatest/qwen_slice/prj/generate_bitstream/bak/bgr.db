@@ -11,19 +11,13 @@
             <data>RAM(GB)</data>
         </column_headers>
         <row>
-            <data>0h:0m:11s</data>
-            <data>0h:0m:11s</data>
-            <data>0h:0m:14s</data>
+            <data>0h:0m:15s</data>
+            <data>0h:0m:15s</data>
+            <data>0h:0m:24s</data>
             <data>1,088</data>
             <data>WINDOWS 10 x86_64</data>
             <data>Unknown</data>
             <data>32</data>
-        </row>
-    </table>
-    <table id="generate_bit_stream_messages" title="Generate Bit Stream Messages" column_number="1">
-        <column_headers/>
-        <row>
-            <data message="6">Bitstream-2001: SCBV has not been set. Please set SCBV value based on PCB board, where is in configuration tab of bit stream options.</data>
         </row>
     </table>
     <general_container id="generate_bit_stream_settings">
@@ -110,7 +104,7 @@
                     </row>
                     <row>
                         <data>Set Configuration Bank Voltage(SCBV)</data>
-                        <data>None</data>
+                        <data>High Voltage</data>
                     </row>
                     <row>
                         <data>Master Configuration Clock Frequency</data>

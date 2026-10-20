@@ -2920,48 +2920,48 @@
         </row>
         <row>
             <data>Use of CLMA</data>
-            <data>65</data>
+            <data>87</data>
             <data>11675</data>
             <data>1</data>
             <row>
                 <data>  FF</data>
-                <data>98</data>
+                <data>106</data>
                 <data>93400</data>
                 <data>1</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>186</data>
+                <data>271</data>
                 <data>46700</data>
                 <data>1</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>58</data>
+                <data>39</data>
                 <data>46700</data>
                 <data>1</data>
             </row>
         </row>
         <row>
             <data>Use of CLMS</data>
-            <data>56</data>
+            <data>61</data>
             <data>4975</data>
             <data>2</data>
             <row>
                 <data>  FF</data>
-                <data>87</data>
+                <data>112</data>
                 <data>39800</data>
                 <data>1</data>
             </row>
             <row>
                 <data>  LUT</data>
-                <data>168</data>
+                <data>188</data>
                 <data>19900</data>
                 <data>1</data>
             </row>
             <row>
                 <data>  LUT-FF pairs</data>
-                <data>49</data>
+                <data>79</data>
                 <data>19900</data>
                 <data>1</data>
             </row>
@@ -2992,9 +2992,9 @@
         </row>
         <row>
             <data>Use of DRM</data>
-            <data>2</data>
+            <data>8</data>
             <data>155</data>
-            <data>2</data>
+            <data>6</data>
         </row>
         <row>
             <data>Use of GPLL</data>
@@ -3010,9 +3010,9 @@
         </row>
         <row>
             <data>Use of HARD0</data>
-            <data>103</data>
+            <data>138</data>
             <data>10550</data>
-            <data>1</data>
+            <data>2</data>
         </row>
         <row>
             <data>Use of HCKB</data>
@@ -3243,11 +3243,11 @@
         </column_headers>
         <row>
             <data>fixed_slice_qwen_demo_top</data>
-            <data>354</data>
-            <data>185</data>
+            <data>458</data>
+            <data>218</data>
             <data>0</data>
             <data>16</data>
-            <data>2</data>
+            <data>8</data>
             <data>0</data>
             <data>0</data>
             <data>1</data>
@@ -3269,11 +3269,11 @@
             <data>1</data>
             <row>
                 <data>qwen_slice</data>
-                <data>354</data>
-                <data>185</data>
+                <data>458</data>
+                <data>218</data>
                 <data>0</data>
                 <data>16</data>
-                <data>2</data>
+                <data>8</data>
                 <data>0</data>
                 <data>0</data>
                 <data>0</data>
@@ -3295,11 +3295,11 @@
                 <data>0</data>
                 <row>
                     <data>runner</data>
-                    <data>354</data>
-                    <data>185</data>
+                    <data>458</data>
+                    <data>218</data>
                     <data>0</data>
                     <data>16</data>
-                    <data>2</data>
+                    <data>8</data>
                     <data>0</data>
                     <data>0</data>
                     <data>0</data>
@@ -3321,8 +3321,8 @@
                     <data>0</data>
                     <row>
                         <data>adapter_inst</data>
-                        <data>70</data>
-                        <data>35</data>
+                        <data>99</data>
+                        <data>36</data>
                         <data>0</data>
                         <data>0</data>
                         <data>0</data>
@@ -3349,7 +3349,7 @@
                     <row>
                         <data>core_inst</data>
                         <data>152</data>
-                        <data>81</data>
+                        <data>97</data>
                         <data>0</data>
                         <data>16</data>
                         <data>0</data>
@@ -3375,7 +3375,7 @@
                         <row>
                             <data>group_acc_inst</data>
                             <data>50</data>
-                            <data>81</data>
+                            <data>97</data>
                             <data>0</data>
                             <data>0</data>
                             <data>0</data>
@@ -3847,10 +3847,10 @@
             <data>RAM(GB)</data>
         </column_headers>
         <row>
-            <data>0h:0m:17s</data>
             <data>0h:0m:19s</data>
-            <data>0h:0m:26s</data>
-            <data>1,175</data>
+            <data>0h:0m:20s</data>
+            <data>0h:0m:23s</data>
+            <data>1,188</data>
             <data>WINDOWS 10 x86_64</data>
             <data>Unknown</data>
             <data>32</data>
@@ -3862,13 +3862,13 @@
             <data message="4">Column Clock Check open.</data>
         </row>
         <row>
-            <data message="4">LUT6D pack result: There are 24 LUT6 in collection, pack success:0</data>
+            <data message="4">LUT6D pack result: There are 33 LUT6 in collection, pack success:0</data>
         </row>
         <row>
             <data message="4">Process macros using &quot;Greedy&quot;.</data>
         </row>
         <row>
-            <data message="4">LUT6D pack result: There are 24 LUT6 in collection, pack success:0</data>
+            <data message="4">LUT6D pack result: There are 33 LUT6 in collection, pack success:0</data>
         </row>
     </table>
     <general_container id="pnr_settings">
@@ -4166,7 +4166,7 @@
                     <data>clkbufg_0/gopclkbufg</data>
                     <data>USCM_215_624</data>
                     <data>ntclkbufg_0</data>
-                    <data>146</data>
+                    <data>192</data>
                     <data>0</data>
                     <data>clk_ibuf/opit_1</data>
                     <data>DI_TO_CLK</data>

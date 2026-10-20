@@ -79,3 +79,84 @@ Cable index 0:USB Cable II/fffffffffffffffe
 [Debug] [2026-10-20 01:17:01] End to send programming cmd.
 [Debug] [2026-10-20 01:17:01] Log::Print : The done bit is 1
 [Debug] [2026-10-20 01:17:01] Log::Print : COMMAND[Program] execute successfully, takes 3.8 secs.
+[Info] [2026-10-20 01:31:40] /***************************End Configration***************************/
+[Info] [2026-10-20 20:54:47] /***************************Start Configuration***************************/
+[Info] [2026-10-20 20:54:47] Path: D:/pango/PDS_2022.2-SP6.4/bin
+[Info] [2026-10-20 20:54:47] Version: 146967
+[Info] [2026-10-20 20:54:48] Current Path: D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj
+[Info] [2026-10-20 20:54:48] PDS Dir Path: D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj
+[Info] [2026-10-20 20:54:50] Configuration is not connect with server. connect first then scan chain.
+[Debug] [2026-10-20 20:54:51] Client Local host name:DESKTOP-08413GB
+[Debug] [2026-10-20 20:54:51] Client Local Address:172.19.0.1
+[Debug] [2026-10-20 20:54:51] Client Local Address:10.11.47.119
+[Debug] [2026-10-20 20:54:51] Server Address:127.0.0.1, Port:65420
+[Debug] [2026-10-20 20:54:51] Log::Print : Connecting to server[127.0.0.1 : 65420].
+[Info] [2026-10-20 20:54:51] Connect OK, Server: 127.0.0.1  Port: 65420
+[Debug] [2026-10-20 20:54:51] Finish.
+[Info] [2026-10-20 20:54:51] Connect server succeeded
+[Debug] [2026-10-20 20:54:51] Send RPC:1
+[Debug] [2026-10-20 20:54:51] Send cmd [check version information:40004] OK
+[Debug] [2026-10-20 20:54:51] Log::Print : Connect to server[127.0.0.1 : 65420] successfully.
+[Debug] [2026-10-20 20:54:53] Send RPC:2
+[Debug] [2026-10-20 20:54:53] Send cmd [get_cable_paras:40010] OK
+[Debug] [2026-10-20 20:54:53] Begin to send initialize chain cmd...
+[Debug] [2026-10-20 20:54:53] Send RPC:3
+[Debug] [2026-10-20 20:54:53] Send cmd [Open config cable:20001] OK
+[Debug] [2026-10-20 20:54:53] End to send initialize chain cmd.
+[Debug] [2026-10-20 20:54:53] COMMAND[check version information] execute successfully, takes 1.8 secs.
+[Debug] [2026-10-20 20:54:53] Log::Print : COMMAND[check version information] execute successfully, takes 1.8 secs.
+[Debug] [2026-10-20 20:54:55] COMMAND[get_cable_paras] execute successfully, takes 2.0 secs.
+[Debug] [2026-10-20 20:54:55] Log::Print : The cable List : 
+Cable index 0:USB Cable II/fffffffffffffffe 
+
+[Debug] [2026-10-20 20:54:55] Log::Print : COMMAND[get_cable_paras] execute successfully, takes 2.0 secs.
+[Debug] [2026-10-20 20:54:56] begin the exec of open cable cmd...
+[Debug] [2026-10-20 20:54:56] Begin to deal with chain from server...
+[Debug] [2026-10-20 20:54:56] Begin to set user chain...
+[Debug] [2026-10-20 20:54:56] End to set user chain.
+[Debug] [2026-10-20 20:54:56] Begin to update graphic item and tree item ...
+[Debug] [2026-10-20 20:54:56] End to update graphic item and tree item ...
+[Debug] [2026-10-20 20:54:56] Log::Print : PANGO USB CABLE II cable driver: D2XX DLL
+[Debug] [2026-10-20 20:54:56] Log::Print : PG2L100H
+[Debug] [2026-10-20 20:54:56] Log::Print : This device configure situation (done bit): 0
+[Info] [2026-10-20 20:55:05] set OpenLastPath: D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/generate_bitstream/fixed_slice_qwen_demo_top.sbit
+[Debug] [2026-10-20 20:55:05] begin to get device info from CFG file...
+[Debug] [2026-10-20 20:55:05] end to get device info from CFG file...
+[Debug] [2026-10-20 20:55:05] Begin to update graphic item and tree item ...
+[Debug] [2026-10-20 20:55:05] End to update graphic item and tree item ...
+[Debug] [2026-10-20 20:55:05] Begin to update graphic item and tree item ...
+[Debug] [2026-10-20 20:55:05] End to update graphic item and tree item ...
+[Debug] [2026-10-20 20:55:05] End to deal wiht chain from server.
+[Debug] [2026-10-20 20:55:05] end the exec of open cable cmd.
+[Debug] [2026-10-20 20:55:05] COMMAND[Open config cable] execute successfully, takes 12.1 secs.
+[Debug] [2026-10-20 20:55:05] Log::Print : COMMAND[Open config cable] execute successfully, takes 12.1 secs.
+[Debug] [2026-10-20 20:56:53] Begin to send programming cmd...
+[Debug] [2026-10-20 20:56:53] Send RPC:4
+[Debug] [2026-10-20 20:56:53] Begin to send program data.
+[Debug] [2026-10-20 20:56:53] End to send program data.
+[Debug] [2026-10-20 20:56:53] Send cmd [Program:20002] OK
+[Debug] [2026-10-20 20:56:53] The value of Progress is 6
+[Debug] [2026-10-20 20:56:54] The value of Progress is 10
+[Debug] [2026-10-20 20:56:54] The value of Progress is 15
+[Debug] [2026-10-20 20:56:54] The value of Progress is 20
+[Debug] [2026-10-20 20:56:54] The value of Progress is 25
+[Debug] [2026-10-20 20:56:54] The value of Progress is 30
+[Debug] [2026-10-20 20:56:54] The value of Progress is 35
+[Debug] [2026-10-20 20:56:54] The value of Progress is 40
+[Debug] [2026-10-20 20:56:55] The value of Progress is 45
+[Debug] [2026-10-20 20:56:55] The value of Progress is 50
+[Debug] [2026-10-20 20:56:55] The value of Progress is 55
+[Debug] [2026-10-20 20:56:55] The value of Progress is 60
+[Debug] [2026-10-20 20:56:55] The value of Progress is 65
+[Debug] [2026-10-20 20:56:55] The value of Progress is 70
+[Debug] [2026-10-20 20:56:56] The value of Progress is 75
+[Debug] [2026-10-20 20:56:56] The value of Progress is 80
+[Debug] [2026-10-20 20:56:56] The value of Progress is 85
+[Debug] [2026-10-20 20:56:56] The value of Progress is 90
+[Debug] [2026-10-20 20:56:56] The value of Progress is 95
+[Debug] [2026-10-20 20:56:56] The value of Progress is 100
+[Debug] [2026-10-20 20:56:57] COMMAND[Program] execute successfully, takes 3.8 secs.
+[Debug] [2026-10-20 20:56:57] End to send programming cmd.
+[Debug] [2026-10-20 20:56:57] Log::Print : The done bit is 1
+[Debug] [2026-10-20 20:56:57] Log::Print : COMMAND[Program] execute successfully, takes 3.8 secs.
+[Info] [2026-10-20 20:57:08] /***************************End Configration***************************/

@@ -767,7 +767,7 @@ UPD0_SHIFT;1
 UPD1_SHIFT;1
 
 Inst
-qwen_slice/runner/N4_1_sum2_3/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/N211_13/gateop_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -778,7 +778,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N4_1_sum3_4/gateop_perm;gopLUT6
+qwen_slice/runner/N163_23/gateop_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -789,7 +789,98 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N133_26/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/N8_3_2/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_3/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_4/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_5/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_6/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_7/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_8/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N163_27/LUT6_inst_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -800,7 +891,29 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N20_16[1]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N12_1_sum2_3/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N12_1_sum3_4/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_2_maj1_1/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -812,7 +925,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N20_16[3]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N16_1_sum0/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -824,14 +937,349 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/group_last_hold/opit_0_inv_L6QL5Q1_perm;gopLUT6QL5Q
+qwen_slice/runner/N16_1_sum2_3/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N16_1_sum3_4/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N32_24/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_1/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_2/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_3/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/N32_13_5/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_5/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_6/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_7/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/N32_13_9/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_9/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_10/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_11/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/N32_13_13/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_13/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_14/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N31.eq_15/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/expected_mem_6_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/N32_19/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N191_11/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N191_12/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N191_14/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N191_16/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N71_1_2/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/input_row[3]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
 CECO;2
-L5Q;2
-L6;2
-L6Q;2
+COUT;2
+Q;2
 RSCO;2
+Y;2
 CE;1
+CIN;1
 CLK;1
 I0;1
 I1;1
@@ -842,379 +1290,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[2]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/ND2[5]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_1/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_2/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_3/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N20_16[0]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_5/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_6/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_7/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_8/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_9/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_10/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_11/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N195/LUT6_inst_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_13/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_14/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N21.eq_15/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N165_16/LUT6_inst_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[36]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[39]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/N32_10_1/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/half_select/opit_0_inv_L5Q_perm;gopLUT6L5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/N57_1_2/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_3/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_4/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_5/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_6/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_7/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N57_1_8/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/input_row[9]/opit_0_inv_AQ_perm;gopAL6Q
+qwen_slice/runner/input_group[1]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
 CECO;2
 COUT;2
@@ -1252,7 +1328,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N69_1_2/gateop_perm;gopA
+qwen_slice/runner/N90_1_2/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1265,7 +1341,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_3/gateop_perm;gopA
+qwen_slice/runner/N90_1_3/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1278,7 +1354,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_4/gateop_perm;gopA
+qwen_slice/runner/N90_1_4/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1291,7 +1367,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_5/gateop_perm;gopA
+qwen_slice/runner/N90_1_5/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1304,7 +1380,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_6/gateop_perm;gopA
+qwen_slice/runner/N90_1_6/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1317,7 +1393,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_7/gateop_perm;gopA
+qwen_slice/runner/N90_1_7/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1330,7 +1406,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_8/gateop_perm;gopA
+qwen_slice/runner/N90_1_8/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1343,7 +1419,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_9/gateop_perm;gopA
+qwen_slice/runner/N90_1_9/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1356,7 +1432,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_10/gateop_perm;gopA
+qwen_slice/runner/N90_1_10/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1369,7 +1445,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_11/gateop_perm;gopA
+qwen_slice/runner/N90_1_11/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1382,7 +1458,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_12/gateop_perm;gopA
+qwen_slice/runner/N90_1_12/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1395,7 +1471,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_13/gateop_perm;gopA
+qwen_slice/runner/N90_1_13/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1408,7 +1484,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_14/gateop_perm;gopA
+qwen_slice/runner/N90_1_14/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1421,7 +1497,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_15/gateop_perm;gopA
+qwen_slice/runner/N90_1_15/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1434,7 +1510,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_16/gateop_perm;gopA
+qwen_slice/runner/N90_1_16/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1447,7 +1523,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_17/gateop_perm;gopA
+qwen_slice/runner/N90_1_18/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1460,7 +1536,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_18/gateop_perm;gopA
+qwen_slice/runner/N90_1_17/gateop;gopA
 Pin
 COUT;2
 Y;2
@@ -1473,7 +1549,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_19/gateop_perm;gopA
+qwen_slice/runner/N90_1_19/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1486,7 +1562,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_20/gateop_perm;gopA
+qwen_slice/runner/N90_1_20/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1499,7 +1575,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_21/gateop_perm;gopA
+qwen_slice/runner/N90_1_21/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1512,7 +1588,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_22/gateop_perm;gopA
+qwen_slice/runner/N90_1_22/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1525,7 +1601,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_23/gateop_perm;gopA
+qwen_slice/runner/N90_1_23/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1538,7 +1614,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_24/gateop_perm;gopA
+qwen_slice/runner/N90_1_24/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1551,7 +1627,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_25/gateop_perm;gopA
+qwen_slice/runner/N90_1_25/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1564,7 +1640,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_26/gateop_perm;gopA
+qwen_slice/runner/N90_1_26/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1577,7 +1653,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_27/gateop_perm;gopA
+qwen_slice/runner/N90_1_27/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1590,7 +1666,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_28/gateop_perm;gopA
+qwen_slice/runner/N90_1_28/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1603,7 +1679,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_29/gateop_perm;gopA
+qwen_slice/runner/N90_1_29/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1616,7 +1692,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_30/gateop_perm;gopA
+qwen_slice/runner/N90_1_30/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1629,7 +1705,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N69_1_31/gateop_perm;gopA
+qwen_slice/runner/N90_1_31/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -1642,7 +1718,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[20]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[31]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -1660,9 +1736,8 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[48]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N96_mux23_24/gateop_perm;gopLUT6
 Pin
-L5;2
 L6;2
 I0;1
 I1;1
@@ -1672,7 +1747,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[16]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[19]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -1690,7 +1765,25 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N75_mux27_23/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/result_count[29]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/N211_17/LUT6_inst_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -1701,7 +1794,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N165_14/gateop_perm;gopLUT6
+qwen_slice/runner/N211_15/gateop_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -1712,7 +1805,18 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[2]/opit_0_inv_L5Q_perm;gopLUT6L5Q
+qwen_slice/runner/N163_25/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/input_group[0]/opit_0_inv_L5Q_perm;gopLUT6L5Q
 Pin
 CECO;2
 L5Q;2
@@ -1729,13 +1833,27 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/input_row[0]/opit_0_inv_L5Q_perm;gopLUT6L5Q
+qwen_slice/runner/N267/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/input_row[13]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
 CECO;2
-L5Q;2
-L6;2
+COUT;2
+Q;2
 RSCO;2
+Y;2
 CE;1
+CIN;1
 CLK;1
 I0;1
 I1;1
@@ -1746,18 +1864,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N133_24/gateop_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[34]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N239/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -1769,37 +1876,15 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[28]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[24]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/input_beat[0]/opit_0_inv_L5Q_perm;gopLUT6L5Q
+qwen_slice/runner/core_inst/group_acc_inst/partial_sum[31]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
 CECO;2
-L5Q;2
-L6;2
+COUT;2
+Q;2
 RSCO;2
+Y;2
 CE;1
+CIN;1
 CLK;1
 I0;1
 I1;1
@@ -1827,11 +1912,10 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N21.eq_12/gateop_perm;gopA
+qwen_slice/runner/adapter_inst/N2[50]/LUT6D_inst_perm;gopLUT6L5
 Pin
-COUT;2
-Y;2
-CIN;1
+L5;2
+L6;2
 I0;1
 I1;1
 I2;1
@@ -1840,7 +1924,47 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/pass/opit_0_inv_L5Q_perm;gopLUT6L5Q
+qwen_slice/runner/N301/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N211_12/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/result_count[11]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/half_select/opit_0_inv_L5Q_perm;gopLUT6L5Q
 Pin
 CECO;2
 L5Q;2
@@ -1857,7 +1981,26 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N20_16[5]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/input_row[9]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[34]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -1869,7 +2012,1196 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[6]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/pass/opit_0_inv_L6Q_perm;gopLUT6Q
+Pin
+CECO;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/activation_mem_0/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/activation_mem_1/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/activation_mem_2/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/activation_mem_3/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[4]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -1893,7 +3225,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[56]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[6]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -1905,7 +3237,157 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[15]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[16]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[12]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/expected_mem_3_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[14]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/expected_mem_2_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/expected_mem_0_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[0]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -1929,35 +3411,48 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[58]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/expected_mem_7_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[18]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[14]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N69_1_1/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
 I0;1
 I1;1
 I2;1
@@ -1967,41 +3462,6 @@ I5;1
 
 Inst
 qwen_slice/runner/adapter_inst/N2[20]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/N22_10/gateop_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[26]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[0]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2025,7 +3485,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[40]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[22]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2037,96 +3497,21 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[30]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/adapter_inst/N2[36]/LUT6D_inst_perm;gopLUT6L5
 Pin
-CECO;2
-L5Q;2
+L5;2
 L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
-qwen_slice/runner/input_row[6]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/adapter_inst/N3[80]/LUT6D_inst_perm;gopLUT6L5
 Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/result_count[26]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/input_row[2]/opit_0_inv_L5Q_perm;gopLUT6L5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/pending/opit_0_inv_L6Q_perm;gopLUT6Q
-Pin
-CECO;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/N133_28/LUT6_inst_perm;gopLUT6
-Pin
+L5;2
 L6;2
 I0;1
 I1;1
@@ -2148,7 +3533,31 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[44]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[48]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[56]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[58]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2172,7 +3581,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N46_3/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[64]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2184,7 +3593,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[52]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[44]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2196,7 +3605,31 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[1]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/adapter_inst/N3[104]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[54]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/result_count[25]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -2214,19 +3647,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[54]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[42]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[62]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2250,7 +3671,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[62]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[102]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2262,18 +3683,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N75_mux27_8/LUT6_inst_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[50]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[96]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2285,25 +3695,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/activation_hold[32]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[16]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[4]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2315,7 +3707,55 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_11_1/gateop_perm;gopA
+qwen_slice/runner/adapter_inst/N3[14]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[8]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[12]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[10]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N8_3_1/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -2328,43 +3768,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[13]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[18]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[29]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[3]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[16]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2388,38 +3792,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_8_1/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[21]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[12]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[18]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2431,7 +3804,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[43]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[24]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2443,25 +3816,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/activation_hold[43]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[35]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[22]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2473,7 +3828,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[48]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[2]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2485,25 +3840,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[3]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[33]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[26]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2515,7 +3852,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[57]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[28]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2527,7 +3864,79 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[55]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[30]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[26]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[34]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[36]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[50]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[46]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[42]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2551,25 +3960,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[17]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[46]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[6]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2581,7 +3972,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[31]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[48]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2593,7 +3984,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[37]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[52]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2605,20 +3996,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_10_13/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[54]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[2]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2630,7 +4008,331 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[41]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[40]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[56]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[60]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[62]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[24]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N2[28]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[114]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[84]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[74]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[94]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[76]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[86]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[98]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[70]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[82]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[112]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[88]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[92]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[126]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[116]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[66]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[90]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[100]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[78]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[68]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[106]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[108]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[110]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2655,143 +4357,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[1]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/activation_hold[9]/opit_0_inv;gopQ
-Pin
-CECO;2
-Q;2
-RSCO;2
-CE;1
-CLK;1
-D;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/activation_hold[17]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/activation_hold[11]/opit_0_inv;gopQ
-Pin
-CECO;2
-Q;2
-RSCO;2
-CE;1
-CLK;1
-D;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/activation_hold[90]/opit_0_inv_L6QL5Q1_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[25]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/activation_hold[35]/opit_0_inv;gopQ
-Pin
-CECO;2
-Q;2
-RSCO;2
-CE;1
-CLK;1
-D;1
-RS;1
-
-Inst
-qwen_slice/runner/N21.eq_0/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/group_first_hold/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/N20_16[8]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[72]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -2803,7 +4369,31 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N21.eq_4/gateop_perm;gopA
+qwen_slice/runner/adapter_inst/N3[38]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[120]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/N32_8_1/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -2816,9 +4406,246 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/out_valid/opit_0_inv_L6Q_perm;gopLUT6Q
+qwen_slice/runner/adapter_inst/N3[54]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[122]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[124]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[118]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/N3[58]/LUT6D_inst_perm;gopLUT6L5
+Pin
+L5;2
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[0]/opit_0_inv;gopQ
 Pin
 CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[1]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[2]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[3]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[4]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[5]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[6]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[7]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[8]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[9]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[10]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[11]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[12]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[13]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[14]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_hold[15]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/result_count[2]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
 L6;2
 L6Q;2
 RSCO;2
@@ -2833,7 +4660,18 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/input_active/opit_0_inv_L6Q_perm;gopLUT6Q
+qwen_slice/runner/N8_2_ac2_1/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_valid/opit_0_inv_L6Q_perm;gopLUT6Q
 Pin
 CECO;2
 L6;2
@@ -3195,17 +5033,42 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_12_1/gateop_perm;gopA
+qwen_slice/runner/expected_mem_9_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
 Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
 
 Inst
 qwen_slice/runner/core_inst/N32_9_2/gateop_perm;gopA
@@ -3377,7 +5240,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[31]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[1]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -3538,10 +5401,11 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[50]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/core_inst/N32_10_13/gateop_perm;gopA
 Pin
-L5;2
-L6;2
+COUT;2
+Y;2
+CIN;1
 I0;1
 I1;1
 I2;1
@@ -3563,7 +5427,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[52]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N12_1_maj1_3/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -3744,23 +5608,16 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/partial_sum[0]/opit_0_inv_AQ_perm;gopAL6Q
+qwen_slice/runner/adapter_inst/N3[0]/LUT6D_inst_perm;gopLUT6L5
 Pin
-CECO;2
-COUT;2
-Q;2
-RSCO;2
-Y;2
-CE;1
-CIN;1
-CLK;1
+L5;2
+L6;2
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
 qwen_slice/runner/core_inst/N32_12_2/gateop_perm;gopA
@@ -3945,22 +5802,17 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[5]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/N32_9_1/gateop_perm;gopA
 Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
+COUT;2
+Y;2
+CIN;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
 qwen_slice/runner/core_inst/N32_13_2/gateop_perm;gopA
@@ -4002,7 +5854,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_13_5/gateop_perm;gopA
+qwen_slice/runner/N31.eq_0/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -4054,7 +5906,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_13_9/gateop_perm;gopA
+qwen_slice/runner/N31.eq_4/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -4106,7 +5958,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/N32_13_13/gateop_perm;gopA
+qwen_slice/runner/N31.eq_8/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -4145,7 +5997,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[11]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[7]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -4358,74 +6210,6 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[25]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/N1_3_0/gateop;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/N32_14_1/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[27]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[7]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
 qwen_slice/runner/core_inst/group_acc_inst/accumulator[9]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
@@ -4444,7 +6228,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/core_inst/N32_9_1/gateop_perm;gopA
+qwen_slice/runner/core_inst/group_acc_inst/N1_3_0/gateop;gopA
 Pin
 COUT;2
 Y;2
@@ -4457,7 +6241,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/activation_hold[10]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[3]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -4475,98 +6259,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[15]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/N61_1_0/gateop_perm;gopA
-Pin
-COUT;2
-Y;2
-CIN;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[19]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[22]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[23]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N3[0]/LUT6D_inst_perm;gopLUT6L5
-Pin
-L5;2
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[27]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[5]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -4602,10 +6295,11 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N3[23]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N31.eq_12/gateop_perm;gopA
 Pin
-L5;2
-L6;2
+COUT;2
+Y;2
+CIN;1
 I0;1
 I1;1
 I2;1
@@ -4614,16 +6308,386 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N4_1_sum1_3/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[11]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
-L5;2
+CECO;2
+L5Q;2
 L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[13]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[15]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[17]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[19]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[21]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[23]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[25]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[27]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/accumulator[31]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/N32_10_1/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/N32_12_1/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[0]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[1]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[2]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[3]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[4]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[5]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[6]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[7]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[8]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[9]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[10]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[11]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[12]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[13]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[14]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/out_group_id[15]/opit_0_inv;gopQ
+Pin
+CECO;2
+Q;2
+RSCO;2
+CE;1
+CLK;1
+D;1
+RS;1
 
 Inst
 qwen_slice/runner/core_inst/group_acc_inst/out_row_id[0]/opit_0_inv;gopQ
@@ -4802,7 +6866,7 @@ D;1
 RS;1
 
 Inst
-qwen_slice/runner/running/opit_0_inv_L6Q_perm;gopLUT6Q
+qwen_slice/runner/input_active/opit_0_inv_L6Q_perm;gopLUT6Q
 Pin
 CECO;2
 L6;2
@@ -5389,41 +7453,28 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/partial_sum[31]/opit_0_inv_AQ_perm;gopAL6Q
+qwen_slice/runner/N32_21/LUT6_inst_perm;gopLUT6
 Pin
-CECO;2
-COUT;2
-Q;2
-RSCO;2
-Y;2
-CE;1
-CIN;1
-CLK;1
+L6;2
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
-qwen_slice/runner/core_inst/group_acc_inst/accumulator[13]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/core_inst/N32_11_1/gateop_perm;gopA
 Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
+COUT;2
+Y;2
+CIN;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
 qwen_slice/runner/core_inst/macs[0].mac/N4/gopapm;gopAPM
@@ -12269,6 +14320,320 @@ D;1
 RS;1
 
 Inst
+qwen_slice/runner/expected_mem_1_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/N90_1_1/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/expected_mem_10_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/adapter_inst/group_last_hold/opit_0_inv_L6QL5Q1_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/expected_mem_8_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/N16_1_maj1_1/gateop_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/expected_mem_5_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/expected_mem_4_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/expected_mem_11_mux8_muxf8_perm;gopLUT8L7BDL6ABCD
+Pin
+L6A;2
+L6B;2
+L6C;2
+L6D;2
+L7B;2
+L7D;2
+L8;2
+A0;1
+A1;1
+A2;1
+A3;1
+A4;1
+A5;1
+B0;1
+B1;1
+B2;1
+B3;1
+B4;1
+B5;1
+C0;1
+C1;1
+C2;1
+C3;1
+C4;1
+C5;1
+D0;1
+D1;1
+D2;1
+D3;1
+D4;1
+D5;1
+M0;1
+M1;1
+M2;1
+
+Inst
+qwen_slice/runner/N75_1_0/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/N80_1_0/gateop_perm;gopA
+Pin
+COUT;2
+Y;2
+CIN;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/result_count[4]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
 qwen_slice/runner/fail/opit_0_inv;gopQ
 Pin
 CECO;2
@@ -12280,18 +14645,24 @@ D;1
 RS;1
 
 Inst
-qwen_slice/runner/N22_13/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/running/opit_0_inv_L5Q_perm;gopLUT6L5Q
 Pin
+CECO;2
+L5Q;2
 L6;2
+RSCO;2
+CE;1
+CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
+RS;1
 
 Inst
-qwen_slice/runner/N165_11/gateop_perm;gopLUT6
+qwen_slice/runner/N96_mux23_21/LUT6_inst_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -12568,7 +14939,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[2]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[32]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -12580,7 +14951,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[16]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N3[32]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -12592,18 +14963,292 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N225/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/input_group[2]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
-L6;2
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
+RS;1
 
 Inst
-qwen_slice/runner/input_row[4]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/input_group[3]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[4]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[5]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[6]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[7]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[8]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[9]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[10]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[11]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[12]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[13]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[14]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_group[15]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/core_inst/group_acc_inst/partial_sum[0]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_row[2]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12621,7 +15266,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N57_1_1/gateop_perm;gopA
+qwen_slice/runner/N71_1_1/gateop_perm;gopA
 Pin
 COUT;2
 Y;2
@@ -12634,19 +15279,100 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[4]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/input_row[4]/opit_0_inv_AQ_perm;gopAL6Q
 Pin
-L5;2
-L6;2
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
+RS;1
 
 Inst
-qwen_slice/runner/N165_12/gateop_perm;gopLUT6
+qwen_slice/runner/adapter_inst/pending/opit_0_inv_L6Q_perm;gopLUT6Q
+Pin
+CECO;2
+L6;2
+L6Q;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_row[6]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_row[7]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/input_row[8]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/N32_10/LUT6_inst_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -12714,23 +15440,15 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/input_row[13]/opit_0_inv_AQ_perm;gopAL6Q
+qwen_slice/runner/N32_15/LUT6_inst_perm;gopLUT6
 Pin
-CECO;2
-COUT;2
-Q;2
-RSCO;2
-Y;2
-CE;1
-CIN;1
-CLK;1
+L6;2
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
 qwen_slice/runner/input_row[14]/opit_0_inv_AQ_perm;gopAL6Q
@@ -12771,10 +15489,11 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[12]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/core_inst/N32_14_1/gateop_perm;gopA
 Pin
-L5;2
-L6;2
+COUT;2
+Y;2
+CIN;1
 I0;1
 I1;1
 I2;1
@@ -12783,9 +15502,8 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[18]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/N96_mux23_9/LUT6_inst_perm;gopLUT6
 Pin
-L5;2
 L6;2
 I0;1
 I1;1
@@ -12793,24 +15511,6 @@ I2;1
 I3;1
 I4;1
 I5;1
-
-Inst
-qwen_slice/runner/result_count[4]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
-Pin
-CECO;2
-L5Q;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
 
 Inst
 qwen_slice/runner/result_count[6]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
@@ -12831,7 +15531,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N75_mux27_27/LUT6_inst_perm;gopLUT6
+qwen_slice/runner/N211_18/gateop_perm;gopLUT6
 Pin
 L6;2
 I0;1
@@ -12860,7 +15560,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/result_count[10]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[9]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12878,7 +15578,24 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/result_count[12]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/input_beat[0]/opit_0_inv_L5Q_perm;gopLUT6L5Q
+Pin
+CECO;2
+L5Q;2
+L6;2
+RSCO;2
+CE;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
+
+Inst
+qwen_slice/runner/result_count[13]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12896,7 +15613,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/result_count[14]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[15]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12914,18 +15631,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N75_mux27_13/LUT6_inst_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/result_count[18]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[17]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12943,7 +15649,18 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/result_count[22]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/N96_mux23_14/LUT6_inst_perm;gopLUT6
+Pin
+L6;2
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+
+Inst
+qwen_slice/runner/result_count[21]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12961,18 +15678,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/N75_mux27_18/LUT6_inst_perm;gopLUT6
-Pin
-L6;2
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-
-Inst
-qwen_slice/runner/result_count[24]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[23]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -12990,7 +15696,7 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/adapter_inst/N2[32]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[52]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -13002,7 +15708,7 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/result_count[28]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/result_count[27]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
 Pin
 CECO;2
 L5Q;2
@@ -13020,42 +15726,18 @@ I5;1
 RS;1
 
 Inst
-qwen_slice/runner/input_row[8]/opit_0_inv_L6QL5Q_perm;gopLUT6QL5Q
+qwen_slice/runner/N96_mux23_19/LUT6_inst_perm;gopLUT6
 Pin
-CECO;2
-L5Q;2
 L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
 I0;1
 I1;1
 I2;1
 I3;1
 I4;1
 I5;1
-RS;1
 
 Inst
-qwen_slice/runner/result_count[31]/opit_0_inv_L6Q_perm;gopLUT6Q
-Pin
-CECO;2
-L6;2
-L6Q;2
-RSCO;2
-CE;1
-CLK;1
-I0;1
-I1;1
-I2;1
-I3;1
-I4;1
-I5;1
-RS;1
-
-Inst
-qwen_slice/runner/adapter_inst/N2[22]/LUT6D_inst_perm;gopLUT6L5
+qwen_slice/runner/adapter_inst/N2[42]/LUT6D_inst_perm;gopLUT6L5
 Pin
 L5;2
 L6;2
@@ -13067,8 +15749,9 @@ I4;1
 I5;1
 
 Inst
-qwen_slice/runner/N22_9/gateop_perm;gopLUT6
+qwen_slice/runner/adapter_inst/N2[40]/LUT6D_inst_perm;gopLUT6L5
 Pin
+L5;2
 L6;2
 I0;1
 I1;1
@@ -13076,6 +15759,25 @@ I2;1
 I3;1
 I4;1
 I5;1
+
+Inst
+qwen_slice/runner/input_row[5]/opit_0_inv_AQ_perm;gopAL6Q
+Pin
+CECO;2
+COUT;2
+Q;2
+RSCO;2
+Y;2
+CE;1
+CIN;1
+CLK;1
+I0;1
+I1;1
+I2;1
+I3;1
+I4;1
+I5;1
+RS;1
 
 Inst
 qwen_slice/runner/weight_mem_0/gopdrm_36k_inv;gopDRM
@@ -13372,6 +16074,592 @@ X1CASQI_B;1
 
 Inst
 qwen_slice/runner/weight_mem_1/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/weight_mem_2/gopdrm_36k_inv;gopDRM
+Pin
+ALMOST_EMPTY[0];2
+ALMOST_EMPTY[1];2
+ALMOST_FULL[0];2
+ALMOST_FULL[1];2
+ECC_DBITERR;2
+ECC_PARITY[0];2
+ECC_PARITY[1];2
+ECC_PARITY[2];2
+ECC_PARITY[3];2
+ECC_PARITY[4];2
+ECC_PARITY[5];2
+ECC_PARITY[6];2
+ECC_PARITY[7];2
+ECC_RDADDR[0];2
+ECC_RDADDR[1];2
+ECC_RDADDR[2];2
+ECC_RDADDR[3];2
+ECC_RDADDR[4];2
+ECC_RDADDR[5];2
+ECC_RDADDR[6];2
+ECC_RDADDR[7];2
+ECC_RDADDR[8];2
+ECC_SBITERR;2
+EMPTY[0];2
+EMPTY[1];2
+FULL[0];2
+FULL[1];2
+QA0[0];2
+QA0[1];2
+QA0[2];2
+QA0[3];2
+QA0[4];2
+QA0[5];2
+QA0[6];2
+QA0[7];2
+QA0[8];2
+QA0[9];2
+QA0[10];2
+QA0[11];2
+QA0[12];2
+QA0[13];2
+QA0[14];2
+QA0[15];2
+QA0[16];2
+QA0[17];2
+QA1[0];2
+QA1[1];2
+QA1[2];2
+QA1[3];2
+QA1[4];2
+QA1[5];2
+QA1[6];2
+QA1[7];2
+QA1[8];2
+QA1[9];2
+QA1[10];2
+QA1[11];2
+QA1[12];2
+QA1[13];2
+QA1[14];2
+QA1[15];2
+QA1[16];2
+QA1[17];2
+QB0[0];2
+QB0[1];2
+QB0[2];2
+QB0[3];2
+QB0[4];2
+QB0[5];2
+QB0[6];2
+QB0[7];2
+QB0[8];2
+QB0[9];2
+QB0[10];2
+QB0[11];2
+QB0[12];2
+QB0[13];2
+QB0[14];2
+QB0[15];2
+QB0[16];2
+QB0[17];2
+QB1[0];2
+QB1[1];2
+QB1[2];2
+QB1[3];2
+QB1[4];2
+QB1[5];2
+QB1[6];2
+QB1[7];2
+QB1[8];2
+QB1[9];2
+QB1[10];2
+QB1[11];2
+QB1[12];2
+QB1[13];2
+QB1[14];2
+QB1[15];2
+QB1[16];2
+QB1[17];2
+TEST_SO;2
+X1CASQO_A;2
+X1CASQO_B;2
+ADA0[0];1
+ADA0[1];1
+ADA0[2];1
+ADA0[3];1
+ADA0[4];1
+ADA0[5];1
+ADA0[6];1
+ADA0[7];1
+ADA0[8];1
+ADA0[9];1
+ADA0[10];1
+ADA0[11];1
+ADA0[12];1
+ADA0[13];1
+ADA0[14];1
+ADA1[0];1
+ADA1[1];1
+ADA1[2];1
+ADA1[3];1
+ADA1[4];1
+ADA1[5];1
+ADA1[6];1
+ADA1[7];1
+ADA1[8];1
+ADA1[9];1
+ADA1[10];1
+ADA1[11];1
+ADA1[12];1
+ADA1[13];1
+ADA1[14];1
+ADA_CAS;1
+ADB0[0];1
+ADB0[1];1
+ADB0[2];1
+ADB0[3];1
+ADB0[4];1
+ADB0[5];1
+ADB0[6];1
+ADB0[7];1
+ADB0[8];1
+ADB0[9];1
+ADB0[10];1
+ADB0[11];1
+ADB0[12];1
+ADB0[13];1
+ADB0[14];1
+ADB1[0];1
+ADB1[1];1
+ADB1[2];1
+ADB1[3];1
+ADB1[4];1
+ADB1[5];1
+ADB1[6];1
+ADB1[7];1
+ADB1[8];1
+ADB1[9];1
+ADB1[10];1
+ADB1[11];1
+ADB1[12];1
+ADB1[13];1
+ADB1[14];1
+ADB_CAS;1
+ADSA[0];1
+ADSA[1];1
+ADSB[0];1
+ADSB[1];1
+BEA0[0];1
+BEA0[1];1
+BEA1[0];1
+BEA1[1];1
+BEB0[0];1
+BEB0[1];1
+BEB1[0];1
+BEB1[1];1
+CEA[0];1
+CEA[1];1
+CEB[0];1
+CEB[1];1
+CLKA[0];1
+CLKA[1];1
+CLKB[0];1
+CLKB[1];1
+CSA[0];1
+CSA[1];1
+CSA[2];1
+CSB[0];1
+CSB[1];1
+CSB[2];1
+DA0[0];1
+DA0[1];1
+DA0[2];1
+DA0[3];1
+DA0[4];1
+DA0[5];1
+DA0[6];1
+DA0[7];1
+DA0[8];1
+DA0[9];1
+DA0[10];1
+DA0[11];1
+DA0[12];1
+DA0[13];1
+DA0[14];1
+DA0[15];1
+DA0[16];1
+DA0[17];1
+DA1[0];1
+DA1[1];1
+DA1[2];1
+DA1[3];1
+DA1[4];1
+DA1[5];1
+DA1[6];1
+DA1[7];1
+DA1[8];1
+DA1[9];1
+DA1[10];1
+DA1[11];1
+DA1[12];1
+DA1[13];1
+DA1[14];1
+DA1[15];1
+DA1[16];1
+DA1[17];1
+DB0[0];1
+DB0[1];1
+DB0[2];1
+DB0[3];1
+DB0[4];1
+DB0[5];1
+DB0[6];1
+DB0[7];1
+DB0[8];1
+DB0[9];1
+DB0[10];1
+DB0[11];1
+DB0[12];1
+DB0[13];1
+DB0[14];1
+DB0[15];1
+DB0[16];1
+DB0[17];1
+DB1[0];1
+DB1[1];1
+DB1[2];1
+DB1[3];1
+DB1[4];1
+DB1[5];1
+DB1[6];1
+DB1[7];1
+DB1[8];1
+DB1[9];1
+DB1[10];1
+DB1[11];1
+DB1[12];1
+DB1[13];1
+DB1[14];1
+DB1[15];1
+DB1[16];1
+DB1[17];1
+ECC_INJ_DBITERR;1
+ECC_INJ_SBITERR;1
+MADF[0];1
+MADF[1];1
+MADF[2];1
+MADF[3];1
+MADF[4];1
+MADF[5];1
+MADF[6];1
+OCEA[0];1
+OCEA[1];1
+OCEB[0];1
+OCEB[1];1
+RSTA[0];1
+RSTA[1];1
+RSTB[0];1
+RSTB[1];1
+TEST_MODE_N;1
+TEST_RST_N;1
+TEST_SE_N;1
+TEST_SI;1
+WEA[0];1
+WEA[1];1
+WEB[0];1
+WEB[1];1
+X1CASQI_A;1
+X1CASQI_B;1
+
+Inst
+qwen_slice/runner/weight_mem_3/gopdrm_36k_inv;gopDRM
 Pin
 ALMOST_EMPTY[0];2
 ALMOST_EMPTY[1];2
@@ -14219,6 +17507,141 @@ Pin
 Z;2
 
 Inst
+VCC_88;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_89;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_90;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_91;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_92;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_93;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_94;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_95;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_96;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_97;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_98;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_99;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_100;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_101;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_102;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_103;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_104;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_105;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_106;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_107;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_108;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_109;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_110;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_111;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_112;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_113;gopVCC
+Pin
+Z;2
+
+Inst
+VCC_114;gopVCC
+Pin
+Z;2
+
+Inst
 GND_0;gopGND
 Pin
 Z;2
@@ -14524,6 +17947,136 @@ Pin
 Z;2
 
 Inst
+GND_61;gopGND
+Pin
+Z;2
+
+Inst
+GND_62;gopGND
+Pin
+Z;2
+
+Inst
+GND_63;gopGND
+Pin
+Z;2
+
+Inst
+GND_64;gopGND
+Pin
+Z;2
+
+Inst
+GND_65;gopGND
+Pin
+Z;2
+
+Inst
+GND_66;gopGND
+Pin
+Z;2
+
+Inst
+GND_67;gopGND
+Pin
+Z;2
+
+Inst
+GND_68;gopGND
+Pin
+Z;2
+
+Inst
+GND_69;gopGND
+Pin
+Z;2
+
+Inst
+GND_70;gopGND
+Pin
+Z;2
+
+Inst
+GND_71;gopGND
+Pin
+Z;2
+
+Inst
+GND_72;gopGND
+Pin
+Z;2
+
+Inst
+GND_73;gopGND
+Pin
+Z;2
+
+Inst
+GND_74;gopGND
+Pin
+Z;2
+
+Inst
+GND_75;gopGND
+Pin
+Z;2
+
+Inst
+GND_76;gopGND
+Pin
+Z;2
+
+Inst
+GND_77;gopGND
+Pin
+Z;2
+
+Inst
+GND_78;gopGND
+Pin
+Z;2
+
+Inst
+GND_79;gopGND
+Pin
+Z;2
+
+Inst
+GND_80;gopGND
+Pin
+Z;2
+
+Inst
+GND_81;gopGND
+Pin
+Z;2
+
+Inst
+GND_82;gopGND
+Pin
+Z;2
+
+Inst
+GND_83;gopGND
+Pin
+Z;2
+
+Inst
+GND_84;gopGND
+Pin
+Z;2
+
+Inst
+GND_85;gopGND
+Pin
+Z;2
+
+Inst
+GND_86;gopGND
+Pin
+Z;2
+
+Inst
 CLKROUTE_0;gopCLKROUTE
 Pin
 CR;2
@@ -14549,6 +18102,12 @@ M;1
 
 Inst
 CLKROUTE_4;gopCLKROUTE
+Pin
+CR;2
+M;1
+
+Inst
+CLKROUTE_5;gopCLKROUTE
 Pin
 CR;2
 M;1
@@ -14589,24 +18148,25 @@ nt_led_fail;
 nt_led_pass;
 nt_rst_n;
 ntclkbufg_0;
-qwen_slice/runner/N46;
-qwen_slice/runner/N50;
-qwen_slice/runner/N165;
-qwen_slice/runner/N175;
-qwen_slice/runner/N179;
-qwen_slice/runner/N195;
-qwen_slice/runner/N225;
-qwen_slice/runner/N235;
-qwen_slice/runner/N269;
-qwen_slice/runner/N275;
-qwen_slice/runner/_N793;
-qwen_slice/runner/_N794;
-qwen_slice/runner/_N795;
+qwen_slice/runner/N61;
+qwen_slice/runner/N96_inv;
+qwen_slice/runner/N191;
+qwen_slice/runner/N201;
+qwen_slice/runner/N230;
+qwen_slice/runner/N239;
+qwen_slice/runner/N253;
+qwen_slice/runner/N267;
+qwen_slice/runner/N301;
+qwen_slice/runner/N307;
+qwen_slice/runner/_N769;
+qwen_slice/runner/_N770;
+qwen_slice/runner/_N771;
+qwen_slice/runner/_N772;
+qwen_slice/runner/_N773;
+qwen_slice/runner/_N774;
+qwen_slice/runner/_N775;
+qwen_slice/runner/_N784;
 qwen_slice/runner/_N796;
-qwen_slice/runner/_N797;
-qwen_slice/runner/_N798;
-qwen_slice/runner/_N799;
-qwen_slice/runner/_N800;
 qwen_slice/runner/_N801;
 qwen_slice/runner/_N802;
 qwen_slice/runner/_N803;
@@ -14614,14 +18174,14 @@ qwen_slice/runner/_N804;
 qwen_slice/runner/_N805;
 qwen_slice/runner/_N806;
 qwen_slice/runner/_N807;
+qwen_slice/runner/_N808;
+qwen_slice/runner/_N809;
 qwen_slice/runner/_N810;
 qwen_slice/runner/_N811;
 qwen_slice/runner/_N812;
 qwen_slice/runner/_N813;
 qwen_slice/runner/_N814;
 qwen_slice/runner/_N815;
-qwen_slice/runner/_N816;
-qwen_slice/runner/_N817;
 qwen_slice/runner/_N818;
 qwen_slice/runner/_N819;
 qwen_slice/runner/_N820;
@@ -14644,42 +18204,71 @@ qwen_slice/runner/_N836;
 qwen_slice/runner/_N837;
 qwen_slice/runner/_N838;
 qwen_slice/runner/_N839;
-qwen_slice/runner/_N990;
-qwen_slice/runner/_N996;
-qwen_slice/runner/_N997;
+qwen_slice/runner/_N840;
+qwen_slice/runner/_N841;
+qwen_slice/runner/_N842;
+qwen_slice/runner/_N843;
+qwen_slice/runner/_N844;
+qwen_slice/runner/_N845;
+qwen_slice/runner/_N846;
+qwen_slice/runner/_N847;
 qwen_slice/runner/_N998;
-qwen_slice/runner/_N999;
-qwen_slice/runner/_N1000;
-qwen_slice/runner/_N1001;
-qwen_slice/runner/_N1002;
-qwen_slice/runner/_N1003;
 qwen_slice/runner/_N1004;
 qwen_slice/runner/_N1005;
 qwen_slice/runner/_N1006;
 qwen_slice/runner/_N1007;
 qwen_slice/runner/_N1008;
 qwen_slice/runner/_N1009;
-qwen_slice/runner/_N2433;
-qwen_slice/runner/_N4057;
-qwen_slice/runner/_N4074;
-qwen_slice/runner/_N4179;
-qwen_slice/runner/_N4184;
-qwen_slice/runner/_N4189;
-qwen_slice/runner/_N4194;
-qwen_slice/runner/_N4198;
-qwen_slice/runner/_N4208;
-qwen_slice/runner/_N4210;
-qwen_slice/runner/_N4222;
-qwen_slice/runner/_N4223;
-qwen_slice/runner/_N4225;
-qwen_slice/runner/_N4243;
-qwen_slice/runner/_N4244;
-qwen_slice/runner/_N4247;
+qwen_slice/runner/_N1010;
+qwen_slice/runner/_N1011;
+qwen_slice/runner/_N1012;
+qwen_slice/runner/_N1013;
+qwen_slice/runner/_N1014;
+qwen_slice/runner/_N1015;
+qwen_slice/runner/_N1016;
+qwen_slice/runner/_N1017;
+qwen_slice/runner/_N1019;
+qwen_slice/runner/_N1020;
+qwen_slice/runner/_N1021;
+qwen_slice/runner/_N1022;
+qwen_slice/runner/_N1023;
+qwen_slice/runner/_N1024;
+qwen_slice/runner/_N1025;
+qwen_slice/runner/_N1026;
+qwen_slice/runner/_N1027;
+qwen_slice/runner/_N1028;
+qwen_slice/runner/_N1029;
+qwen_slice/runner/_N1030;
+qwen_slice/runner/_N1031;
+qwen_slice/runner/_N1032;
+qwen_slice/runner/_N1033;
+qwen_slice/runner/_N4645;
+qwen_slice/runner/_N4760_2;
+qwen_slice/runner/_N4774;
+qwen_slice/runner/_N4779;
+qwen_slice/runner/_N4784;
+qwen_slice/runner/_N4786;
+qwen_slice/runner/_N4798;
+qwen_slice/runner/_N4800;
+qwen_slice/runner/_N4814;
+qwen_slice/runner/_N4815;
+qwen_slice/runner/_N4817;
+qwen_slice/runner/_N4819;
+qwen_slice/runner/_N4830;
+qwen_slice/runner/_N4831;
+qwen_slice/runner/_N4833;
+qwen_slice/runner/_N4871;
+qwen_slice/runner/_N4876;
+qwen_slice/runner/_N4880;
+qwen_slice/runner/_N4882;
+qwen_slice/runner/_N4885;
+qwen_slice/runner/_N4889;
 qwen_slice/runner/adapter_group_last;
 qwen_slice/runner/adapter_inst/group_first_hold;
 qwen_slice/runner/adapter_inst/group_last_hold;
 qwen_slice/runner/adapter_inst/half_select;
 qwen_slice/runner/core_in_valid;
+qwen_slice/runner/core_inst/_N480;
 qwen_slice/runner/core_inst/_N481;
 qwen_slice/runner/core_inst/_N482;
 qwen_slice/runner/core_inst/_N483;
@@ -14967,36 +18556,32 @@ qwen_slice/runner/core_inst/_N764;
 qwen_slice/runner/core_inst/_N765;
 qwen_slice/runner/core_inst/_N766;
 qwen_slice/runner/core_inst/_N767;
-qwen_slice/runner/core_inst/_N768;
-qwen_slice/runner/core_inst/_N769;
-qwen_slice/runner/core_inst/_N770;
-qwen_slice/runner/core_inst/_N771;
-qwen_slice/runner/core_inst/_N772;
-qwen_slice/runner/core_inst/_N773;
-qwen_slice/runner/core_inst/_N774;
-qwen_slice/runner/core_inst/_N775;
-qwen_slice/runner/core_inst/_N776;
-qwen_slice/runner/core_inst/_N777;
-qwen_slice/runner/core_inst/_N778;
-qwen_slice/runner/core_inst/_N779;
-qwen_slice/runner/core_inst/_N780;
-qwen_slice/runner/core_inst/_N781;
-qwen_slice/runner/core_inst/_N782;
-qwen_slice/runner/core_inst/_N783;
-qwen_slice/runner/core_inst/_N784;
-qwen_slice/runner/core_inst/_N785;
-qwen_slice/runner/core_inst/_N786;
-qwen_slice/runner/core_inst/_N787;
-qwen_slice/runner/core_inst/_N788;
-qwen_slice/runner/core_inst/_N789;
-qwen_slice/runner/core_inst/_N790;
-qwen_slice/runner/core_inst/_N791;
-qwen_slice/runner/core_inst/_N792;
+qwen_slice/runner/core_inst/_N850;
+qwen_slice/runner/core_inst/_N851;
+qwen_slice/runner/core_inst/_N852;
+qwen_slice/runner/core_inst/_N853;
+qwen_slice/runner/core_inst/_N854;
+qwen_slice/runner/core_inst/_N855;
+qwen_slice/runner/core_inst/_N856;
+qwen_slice/runner/core_inst/_N857;
+qwen_slice/runner/core_inst/_N858;
+qwen_slice/runner/core_inst/_N859;
+qwen_slice/runner/core_inst/_N860;
+qwen_slice/runner/core_inst/_N861;
+qwen_slice/runner/core_inst/_N862;
+qwen_slice/runner/core_inst/_N865;
+qwen_slice/runner/core_inst/_N866;
+qwen_slice/runner/core_inst/_N867;
+qwen_slice/runner/core_inst/_N868;
+qwen_slice/runner/core_inst/_N869;
+qwen_slice/runner/core_inst/_N870;
+qwen_slice/runner/core_inst/_N871;
+qwen_slice/runner/core_inst/_N872;
+qwen_slice/runner/core_inst/_N873;
+qwen_slice/runner/core_inst/_N874;
 qwen_slice/runner/core_inst/_N875;
 qwen_slice/runner/core_inst/_N876;
 qwen_slice/runner/core_inst/_N877;
-qwen_slice/runner/core_inst/_N878;
-qwen_slice/runner/core_inst/_N879;
 qwen_slice/runner/core_inst/_N880;
 qwen_slice/runner/core_inst/_N881;
 qwen_slice/runner/core_inst/_N882;
@@ -15005,11 +18590,11 @@ qwen_slice/runner/core_inst/_N884;
 qwen_slice/runner/core_inst/_N885;
 qwen_slice/runner/core_inst/_N886;
 qwen_slice/runner/core_inst/_N887;
+qwen_slice/runner/core_inst/_N888;
+qwen_slice/runner/core_inst/_N889;
 qwen_slice/runner/core_inst/_N890;
 qwen_slice/runner/core_inst/_N891;
 qwen_slice/runner/core_inst/_N892;
-qwen_slice/runner/core_inst/_N893;
-qwen_slice/runner/core_inst/_N894;
 qwen_slice/runner/core_inst/_N895;
 qwen_slice/runner/core_inst/_N896;
 qwen_slice/runner/core_inst/_N897;
@@ -15018,11 +18603,11 @@ qwen_slice/runner/core_inst/_N899;
 qwen_slice/runner/core_inst/_N900;
 qwen_slice/runner/core_inst/_N901;
 qwen_slice/runner/core_inst/_N902;
+qwen_slice/runner/core_inst/_N903;
+qwen_slice/runner/core_inst/_N904;
 qwen_slice/runner/core_inst/_N905;
 qwen_slice/runner/core_inst/_N906;
 qwen_slice/runner/core_inst/_N907;
-qwen_slice/runner/core_inst/_N908;
-qwen_slice/runner/core_inst/_N909;
 qwen_slice/runner/core_inst/_N910;
 qwen_slice/runner/core_inst/_N911;
 qwen_slice/runner/core_inst/_N912;
@@ -15031,12 +18616,12 @@ qwen_slice/runner/core_inst/_N914;
 qwen_slice/runner/core_inst/_N915;
 qwen_slice/runner/core_inst/_N916;
 qwen_slice/runner/core_inst/_N917;
+qwen_slice/runner/core_inst/_N918;
+qwen_slice/runner/core_inst/_N919;
 qwen_slice/runner/core_inst/_N920;
 qwen_slice/runner/core_inst/_N921;
 qwen_slice/runner/core_inst/_N922;
 qwen_slice/runner/core_inst/_N923;
-qwen_slice/runner/core_inst/_N924;
-qwen_slice/runner/core_inst/_N925;
 qwen_slice/runner/core_inst/_N926;
 qwen_slice/runner/core_inst/_N927;
 qwen_slice/runner/core_inst/_N928;
@@ -15044,13 +18629,13 @@ qwen_slice/runner/core_inst/_N929;
 qwen_slice/runner/core_inst/_N930;
 qwen_slice/runner/core_inst/_N931;
 qwen_slice/runner/core_inst/_N932;
+qwen_slice/runner/core_inst/_N933;
+qwen_slice/runner/core_inst/_N934;
 qwen_slice/runner/core_inst/_N935;
 qwen_slice/runner/core_inst/_N936;
 qwen_slice/runner/core_inst/_N937;
 qwen_slice/runner/core_inst/_N938;
 qwen_slice/runner/core_inst/_N939;
-qwen_slice/runner/core_inst/_N940;
-qwen_slice/runner/core_inst/_N941;
 qwen_slice/runner/core_inst/_N942;
 qwen_slice/runner/core_inst/_N943;
 qwen_slice/runner/core_inst/_N944;
@@ -15058,67 +18643,46 @@ qwen_slice/runner/core_inst/_N945;
 qwen_slice/runner/core_inst/_N946;
 qwen_slice/runner/core_inst/_N947;
 qwen_slice/runner/core_inst/_N948;
+qwen_slice/runner/core_inst/_N949;
+qwen_slice/runner/core_inst/_N950;
 qwen_slice/runner/core_inst/_N951;
 qwen_slice/runner/core_inst/_N952;
 qwen_slice/runner/core_inst/_N953;
 qwen_slice/runner/core_inst/_N954;
 qwen_slice/runner/core_inst/_N955;
 qwen_slice/runner/core_inst/_N956;
-qwen_slice/runner/core_inst/_N957;
-qwen_slice/runner/core_inst/_N958;
-qwen_slice/runner/core_inst/_N959;
-qwen_slice/runner/core_inst/_N960;
-qwen_slice/runner/core_inst/_N961;
-qwen_slice/runner/core_inst/_N962;
-qwen_slice/runner/core_inst/_N963;
-qwen_slice/runner/core_inst/_N964;
-qwen_slice/runner/core_inst/_N967;
-qwen_slice/runner/core_inst/_N968;
-qwen_slice/runner/core_inst/_N969;
-qwen_slice/runner/core_inst/_N970;
-qwen_slice/runner/core_inst/_N971;
-qwen_slice/runner/core_inst/_N972;
-qwen_slice/runner/core_inst/_N973;
-qwen_slice/runner/core_inst/_N974;
-qwen_slice/runner/core_inst/_N975;
-qwen_slice/runner/core_inst/_N976;
-qwen_slice/runner/core_inst/_N977;
-qwen_slice/runner/core_inst/_N978;
-qwen_slice/runner/core_inst/_N979;
-qwen_slice/runner/core_inst/_N980;
-qwen_slice/runner/core_inst/_N981;
-qwen_slice/runner/core_inst/group_acc_inst/_N841;
-qwen_slice/runner/core_inst/group_acc_inst/_N842;
-qwen_slice/runner/core_inst/group_acc_inst/_N843;
-qwen_slice/runner/core_inst/group_acc_inst/_N844;
-qwen_slice/runner/core_inst/group_acc_inst/_N845;
-qwen_slice/runner/core_inst/group_acc_inst/_N846;
-qwen_slice/runner/core_inst/group_acc_inst/_N847;
-qwen_slice/runner/core_inst/group_acc_inst/_N848;
-qwen_slice/runner/core_inst/group_acc_inst/_N849;
-qwen_slice/runner/core_inst/group_acc_inst/_N850;
-qwen_slice/runner/core_inst/group_acc_inst/_N851;
-qwen_slice/runner/core_inst/group_acc_inst/_N852;
-qwen_slice/runner/core_inst/group_acc_inst/_N853;
-qwen_slice/runner/core_inst/group_acc_inst/_N854;
-qwen_slice/runner/core_inst/group_acc_inst/_N855;
-qwen_slice/runner/core_inst/group_acc_inst/_N856;
-qwen_slice/runner/core_inst/group_acc_inst/_N857;
-qwen_slice/runner/core_inst/group_acc_inst/_N858;
-qwen_slice/runner/core_inst/group_acc_inst/_N859;
-qwen_slice/runner/core_inst/group_acc_inst/_N860;
-qwen_slice/runner/core_inst/group_acc_inst/_N861;
-qwen_slice/runner/core_inst/group_acc_inst/_N862;
-qwen_slice/runner/core_inst/group_acc_inst/_N863;
-qwen_slice/runner/core_inst/group_acc_inst/_N864;
-qwen_slice/runner/core_inst/group_acc_inst/_N865;
-qwen_slice/runner/core_inst/group_acc_inst/_N866;
-qwen_slice/runner/core_inst/group_acc_inst/_N867;
-qwen_slice/runner/core_inst/group_acc_inst/_N868;
-qwen_slice/runner/core_inst/group_acc_inst/_N869;
-qwen_slice/runner/core_inst/group_acc_inst/_N870;
-qwen_slice/runner/core_inst/group_acc_inst/_N871;
-qwen_slice/runner/core_inst/group_acc_inst/_N872;
+qwen_slice/runner/core_inst/group_acc_inst/_N958;
+qwen_slice/runner/core_inst/group_acc_inst/_N959;
+qwen_slice/runner/core_inst/group_acc_inst/_N960;
+qwen_slice/runner/core_inst/group_acc_inst/_N961;
+qwen_slice/runner/core_inst/group_acc_inst/_N962;
+qwen_slice/runner/core_inst/group_acc_inst/_N963;
+qwen_slice/runner/core_inst/group_acc_inst/_N964;
+qwen_slice/runner/core_inst/group_acc_inst/_N965;
+qwen_slice/runner/core_inst/group_acc_inst/_N966;
+qwen_slice/runner/core_inst/group_acc_inst/_N967;
+qwen_slice/runner/core_inst/group_acc_inst/_N968;
+qwen_slice/runner/core_inst/group_acc_inst/_N969;
+qwen_slice/runner/core_inst/group_acc_inst/_N970;
+qwen_slice/runner/core_inst/group_acc_inst/_N971;
+qwen_slice/runner/core_inst/group_acc_inst/_N972;
+qwen_slice/runner/core_inst/group_acc_inst/_N973;
+qwen_slice/runner/core_inst/group_acc_inst/_N974;
+qwen_slice/runner/core_inst/group_acc_inst/_N975;
+qwen_slice/runner/core_inst/group_acc_inst/_N976;
+qwen_slice/runner/core_inst/group_acc_inst/_N977;
+qwen_slice/runner/core_inst/group_acc_inst/_N978;
+qwen_slice/runner/core_inst/group_acc_inst/_N979;
+qwen_slice/runner/core_inst/group_acc_inst/_N980;
+qwen_slice/runner/core_inst/group_acc_inst/_N981;
+qwen_slice/runner/core_inst/group_acc_inst/_N982;
+qwen_slice/runner/core_inst/group_acc_inst/_N983;
+qwen_slice/runner/core_inst/group_acc_inst/_N984;
+qwen_slice/runner/core_inst/group_acc_inst/_N985;
+qwen_slice/runner/core_inst/group_acc_inst/_N986;
+qwen_slice/runner/core_inst/group_acc_inst/_N987;
+qwen_slice/runner/core_inst/group_acc_inst/_N988;
+qwen_slice/runner/core_inst/group_acc_inst/_N989;
 qwen_slice/runner/core_out_valid;
 qwen_slice/runner/input_active;
 qwen_slice/runner/input_group_last;
@@ -15128,142 +18692,470 @@ rst_n;
 rst_n_ibuf/ntD;
 rst_n_ibuf/ntDO;
 rst_n_ibuf/ntDO_N;
-qwen_slice/runner/N20 [1];
-qwen_slice/runner/N20 [2];
-qwen_slice/runner/N20 [3];
-qwen_slice/runner/N20 [4];
-qwen_slice/runner/N20 [5];
-qwen_slice/runner/N20 [6];
-qwen_slice/runner/N20 [7];
-qwen_slice/runner/N20 [9];
-qwen_slice/runner/N20 [10];
-qwen_slice/runner/N21.co [0];
-qwen_slice/runner/N21.co [2];
-qwen_slice/runner/N21.co [4];
-qwen_slice/runner/N21.co [6];
-qwen_slice/runner/N21.co [8];
-qwen_slice/runner/N21.co [10];
-qwen_slice/runner/N21.co [12];
-qwen_slice/runner/N21.co [14];
-qwen_slice/runner/N21.co [16];
-qwen_slice/runner/N21.co [18];
-qwen_slice/runner/N21.co [20];
-qwen_slice/runner/N21.co [22];
-qwen_slice/runner/N21.co [24];
-qwen_slice/runner/N21.co [26];
-qwen_slice/runner/N21.co [28];
-qwen_slice/runner/N57 [1];
-qwen_slice/runner/N57 [2];
-qwen_slice/runner/N57 [3];
-qwen_slice/runner/N57 [4];
-qwen_slice/runner/N57 [5];
-qwen_slice/runner/N57 [6];
-qwen_slice/runner/N57 [7];
-qwen_slice/runner/N57 [8];
-qwen_slice/runner/N69 [1];
-qwen_slice/runner/N69 [2];
-qwen_slice/runner/N69 [3];
-qwen_slice/runner/N69 [4];
-qwen_slice/runner/N69 [5];
-qwen_slice/runner/N69 [6];
-qwen_slice/runner/N69 [7];
-qwen_slice/runner/N69 [8];
-qwen_slice/runner/N69 [9];
-qwen_slice/runner/N69 [10];
-qwen_slice/runner/N69 [11];
-qwen_slice/runner/N69 [12];
-qwen_slice/runner/N69 [13];
-qwen_slice/runner/N69 [14];
-qwen_slice/runner/N69 [15];
-qwen_slice/runner/N69 [16];
-qwen_slice/runner/N69 [17];
-qwen_slice/runner/N69 [18];
-qwen_slice/runner/N69 [19];
-qwen_slice/runner/N69 [20];
-qwen_slice/runner/N69 [21];
-qwen_slice/runner/N69 [22];
-qwen_slice/runner/N69 [23];
-qwen_slice/runner/N69 [24];
-qwen_slice/runner/N69 [25];
-qwen_slice/runner/N69 [26];
-qwen_slice/runner/N69 [27];
-qwen_slice/runner/N69 [28];
-qwen_slice/runner/N69 [29];
-qwen_slice/runner/N69 [30];
-qwen_slice/runner/N69 [31];
+qwen_slice/runner/N30 [0];
+qwen_slice/runner/N30 [1];
+qwen_slice/runner/N30 [2];
+qwen_slice/runner/N30 [3];
+qwen_slice/runner/N30 [4];
+qwen_slice/runner/N30 [5];
+qwen_slice/runner/N30 [6];
+qwen_slice/runner/N30 [7];
+qwen_slice/runner/N30 [8];
+qwen_slice/runner/N30 [9];
+qwen_slice/runner/N30 [10];
+qwen_slice/runner/N30 [11];
+qwen_slice/runner/N31.co [0];
+qwen_slice/runner/N31.co [2];
+qwen_slice/runner/N31.co [4];
+qwen_slice/runner/N31.co [6];
+qwen_slice/runner/N31.co [8];
+qwen_slice/runner/N31.co [10];
+qwen_slice/runner/N31.co [12];
+qwen_slice/runner/N31.co [14];
+qwen_slice/runner/N31.co [16];
+qwen_slice/runner/N31.co [18];
+qwen_slice/runner/N31.co [20];
+qwen_slice/runner/N31.co [22];
+qwen_slice/runner/N31.co [24];
+qwen_slice/runner/N31.co [26];
+qwen_slice/runner/N31.co [28];
+qwen_slice/runner/N71 [1];
+qwen_slice/runner/N71 [2];
+qwen_slice/runner/N90 [1];
+qwen_slice/runner/N90 [2];
+qwen_slice/runner/N90 [3];
+qwen_slice/runner/N90 [4];
+qwen_slice/runner/N90 [5];
+qwen_slice/runner/N90 [6];
+qwen_slice/runner/N90 [7];
+qwen_slice/runner/N90 [8];
+qwen_slice/runner/N90 [9];
+qwen_slice/runner/N90 [10];
+qwen_slice/runner/N90 [11];
+qwen_slice/runner/N90 [12];
+qwen_slice/runner/N90 [13];
+qwen_slice/runner/N90 [14];
+qwen_slice/runner/N90 [15];
+qwen_slice/runner/N90 [16];
+qwen_slice/runner/N90 [17];
+qwen_slice/runner/N90 [18];
+qwen_slice/runner/N90 [19];
+qwen_slice/runner/N90 [20];
+qwen_slice/runner/N90 [21];
+qwen_slice/runner/N90 [22];
+qwen_slice/runner/N90 [23];
+qwen_slice/runner/N90 [24];
+qwen_slice/runner/N90 [25];
+qwen_slice/runner/N90 [26];
+qwen_slice/runner/N90 [27];
+qwen_slice/runner/N90 [28];
+qwen_slice/runner/N90 [29];
+qwen_slice/runner/N90 [30];
+qwen_slice/runner/N90 [31];
+qwen_slice/runner/activation_beat_index [2];
+qwen_slice/runner/activation_beat_index [3];
+qwen_slice/runner/activation_beat_index [4];
+qwen_slice/runner/activation_beat_index [5];
+qwen_slice/runner/adapter_activation_data [0];
 qwen_slice/runner/adapter_activation_data [1];
 qwen_slice/runner/adapter_activation_data [2];
 qwen_slice/runner/adapter_activation_data [3];
 qwen_slice/runner/adapter_activation_data [4];
+qwen_slice/runner/adapter_activation_data [5];
+qwen_slice/runner/adapter_activation_data [6];
+qwen_slice/runner/adapter_activation_data [7];
 qwen_slice/runner/adapter_activation_data [8];
 qwen_slice/runner/adapter_activation_data [9];
 qwen_slice/runner/adapter_activation_data [10];
 qwen_slice/runner/adapter_activation_data [11];
 qwen_slice/runner/adapter_activation_data [12];
+qwen_slice/runner/adapter_activation_data [13];
+qwen_slice/runner/adapter_activation_data [14];
+qwen_slice/runner/adapter_activation_data [15];
+qwen_slice/runner/adapter_activation_data [16];
 qwen_slice/runner/adapter_activation_data [17];
 qwen_slice/runner/adapter_activation_data [18];
 qwen_slice/runner/adapter_activation_data [19];
 qwen_slice/runner/adapter_activation_data [20];
+qwen_slice/runner/adapter_activation_data [21];
+qwen_slice/runner/adapter_activation_data [22];
 qwen_slice/runner/adapter_activation_data [23];
 qwen_slice/runner/adapter_activation_data [24];
 qwen_slice/runner/adapter_activation_data [25];
 qwen_slice/runner/adapter_activation_data [26];
 qwen_slice/runner/adapter_activation_data [27];
+qwen_slice/runner/adapter_activation_data [28];
+qwen_slice/runner/adapter_activation_data [29];
+qwen_slice/runner/adapter_activation_data [30];
+qwen_slice/runner/adapter_activation_data [31];
+qwen_slice/runner/adapter_activation_data [32];
 qwen_slice/runner/adapter_activation_data [33];
 qwen_slice/runner/adapter_activation_data [34];
 qwen_slice/runner/adapter_activation_data [35];
+qwen_slice/runner/adapter_activation_data [36];
+qwen_slice/runner/adapter_activation_data [37];
+qwen_slice/runner/adapter_activation_data [38];
+qwen_slice/runner/adapter_activation_data [39];
 qwen_slice/runner/adapter_activation_data [40];
+qwen_slice/runner/adapter_activation_data [41];
+qwen_slice/runner/adapter_activation_data [42];
 qwen_slice/runner/adapter_activation_data [43];
+qwen_slice/runner/adapter_activation_data [44];
+qwen_slice/runner/adapter_activation_data [45];
+qwen_slice/runner/adapter_activation_data [46];
+qwen_slice/runner/adapter_activation_data [47];
 qwen_slice/runner/adapter_activation_data [48];
+qwen_slice/runner/adapter_activation_data [49];
 qwen_slice/runner/adapter_activation_data [50];
+qwen_slice/runner/adapter_activation_data [51];
+qwen_slice/runner/adapter_activation_data [52];
+qwen_slice/runner/adapter_activation_data [53];
+qwen_slice/runner/adapter_activation_data [54];
+qwen_slice/runner/adapter_activation_data [55];
 qwen_slice/runner/adapter_activation_data [56];
+qwen_slice/runner/adapter_activation_data [57];
 qwen_slice/runner/adapter_activation_data [58];
 qwen_slice/runner/adapter_activation_data [59];
 qwen_slice/runner/adapter_activation_data [60];
+qwen_slice/runner/adapter_activation_data [61];
+qwen_slice/runner/adapter_activation_data [62];
+qwen_slice/runner/adapter_activation_data [63];
 qwen_slice/runner/adapter_activation_data [64];
 qwen_slice/runner/adapter_activation_data [65];
 qwen_slice/runner/adapter_activation_data [66];
 qwen_slice/runner/adapter_activation_data [67];
 qwen_slice/runner/adapter_activation_data [68];
+qwen_slice/runner/adapter_activation_data [69];
+qwen_slice/runner/adapter_activation_data [70];
+qwen_slice/runner/adapter_activation_data [71];
 qwen_slice/runner/adapter_activation_data [72];
 qwen_slice/runner/adapter_activation_data [73];
 qwen_slice/runner/adapter_activation_data [74];
 qwen_slice/runner/adapter_activation_data [75];
 qwen_slice/runner/adapter_activation_data [76];
+qwen_slice/runner/adapter_activation_data [77];
+qwen_slice/runner/adapter_activation_data [78];
+qwen_slice/runner/adapter_activation_data [79];
 qwen_slice/runner/adapter_activation_data [80];
+qwen_slice/runner/adapter_activation_data [81];
+qwen_slice/runner/adapter_activation_data [82];
 qwen_slice/runner/adapter_activation_data [83];
 qwen_slice/runner/adapter_activation_data [84];
+qwen_slice/runner/adapter_activation_data [85];
+qwen_slice/runner/adapter_activation_data [86];
+qwen_slice/runner/adapter_activation_data [87];
 qwen_slice/runner/adapter_activation_data [88];
+qwen_slice/runner/adapter_activation_data [89];
 qwen_slice/runner/adapter_activation_data [90];
+qwen_slice/runner/adapter_activation_data [91];
+qwen_slice/runner/adapter_activation_data [92];
+qwen_slice/runner/adapter_activation_data [93];
+qwen_slice/runner/adapter_activation_data [94];
+qwen_slice/runner/adapter_activation_data [95];
 qwen_slice/runner/adapter_activation_data [96];
 qwen_slice/runner/adapter_activation_data [97];
+qwen_slice/runner/adapter_activation_data [98];
 qwen_slice/runner/adapter_activation_data [99];
+qwen_slice/runner/adapter_activation_data [100];
+qwen_slice/runner/adapter_activation_data [101];
+qwen_slice/runner/adapter_activation_data [102];
+qwen_slice/runner/adapter_activation_data [103];
+qwen_slice/runner/adapter_activation_data [104];
 qwen_slice/runner/adapter_activation_data [105];
 qwen_slice/runner/adapter_activation_data [106];
 qwen_slice/runner/adapter_activation_data [107];
+qwen_slice/runner/adapter_activation_data [108];
+qwen_slice/runner/adapter_activation_data [109];
+qwen_slice/runner/adapter_activation_data [110];
+qwen_slice/runner/adapter_activation_data [111];
 qwen_slice/runner/adapter_activation_data [112];
 qwen_slice/runner/adapter_activation_data [113];
+qwen_slice/runner/adapter_activation_data [114];
+qwen_slice/runner/adapter_activation_data [115];
 qwen_slice/runner/adapter_activation_data [116];
+qwen_slice/runner/adapter_activation_data [117];
+qwen_slice/runner/adapter_activation_data [118];
+qwen_slice/runner/adapter_activation_data [119];
 qwen_slice/runner/adapter_activation_data [120];
 qwen_slice/runner/adapter_activation_data [121];
 qwen_slice/runner/adapter_activation_data [122];
 qwen_slice/runner/adapter_activation_data [123];
 qwen_slice/runner/adapter_activation_data [124];
+qwen_slice/runner/adapter_activation_data [125];
+qwen_slice/runner/adapter_activation_data [126];
+qwen_slice/runner/adapter_activation_data [127];
+qwen_slice/runner/adapter_group_id [0];
+qwen_slice/runner/adapter_group_id [1];
+qwen_slice/runner/adapter_group_id [2];
+qwen_slice/runner/adapter_group_id [3];
+qwen_slice/runner/adapter_group_id [4];
+qwen_slice/runner/adapter_group_id [5];
+qwen_slice/runner/adapter_group_id [6];
+qwen_slice/runner/adapter_group_id [7];
+qwen_slice/runner/adapter_group_id [8];
+qwen_slice/runner/adapter_group_id [9];
+qwen_slice/runner/adapter_group_id [10];
+qwen_slice/runner/adapter_group_id [11];
+qwen_slice/runner/adapter_group_id [12];
+qwen_slice/runner/adapter_group_id [13];
+qwen_slice/runner/adapter_group_id [14];
+qwen_slice/runner/adapter_group_id [15];
 qwen_slice/runner/adapter_inst/activation_hold [0];
+qwen_slice/runner/adapter_inst/activation_hold [1];
 qwen_slice/runner/adapter_inst/activation_hold [2];
+qwen_slice/runner/adapter_inst/activation_hold [3];
 qwen_slice/runner/adapter_inst/activation_hold [4];
+qwen_slice/runner/adapter_inst/activation_hold [5];
+qwen_slice/runner/adapter_inst/activation_hold [6];
+qwen_slice/runner/adapter_inst/activation_hold [7];
 qwen_slice/runner/adapter_inst/activation_hold [8];
 qwen_slice/runner/adapter_inst/activation_hold [9];
 qwen_slice/runner/adapter_inst/activation_hold [10];
 qwen_slice/runner/adapter_inst/activation_hold [11];
 qwen_slice/runner/adapter_inst/activation_hold [12];
+qwen_slice/runner/adapter_inst/activation_hold [13];
+qwen_slice/runner/adapter_inst/activation_hold [14];
+qwen_slice/runner/adapter_inst/activation_hold [15];
+qwen_slice/runner/adapter_inst/activation_hold [16];
 qwen_slice/runner/adapter_inst/activation_hold [17];
+qwen_slice/runner/adapter_inst/activation_hold [18];
+qwen_slice/runner/adapter_inst/activation_hold [19];
+qwen_slice/runner/adapter_inst/activation_hold [20];
+qwen_slice/runner/adapter_inst/activation_hold [21];
+qwen_slice/runner/adapter_inst/activation_hold [22];
 qwen_slice/runner/adapter_inst/activation_hold [23];
+qwen_slice/runner/adapter_inst/activation_hold [24];
+qwen_slice/runner/adapter_inst/activation_hold [25];
+qwen_slice/runner/adapter_inst/activation_hold [26];
+qwen_slice/runner/adapter_inst/activation_hold [27];
+qwen_slice/runner/adapter_inst/activation_hold [28];
+qwen_slice/runner/adapter_inst/activation_hold [29];
+qwen_slice/runner/adapter_inst/activation_hold [30];
+qwen_slice/runner/adapter_inst/activation_hold [31];
 qwen_slice/runner/adapter_inst/activation_hold [32];
+qwen_slice/runner/adapter_inst/activation_hold [33];
+qwen_slice/runner/adapter_inst/activation_hold [34];
 qwen_slice/runner/adapter_inst/activation_hold [35];
+qwen_slice/runner/adapter_inst/activation_hold [36];
+qwen_slice/runner/adapter_inst/activation_hold [37];
+qwen_slice/runner/adapter_inst/activation_hold [38];
+qwen_slice/runner/adapter_inst/activation_hold [39];
+qwen_slice/runner/adapter_inst/activation_hold [40];
+qwen_slice/runner/adapter_inst/activation_hold [41];
+qwen_slice/runner/adapter_inst/activation_hold [42];
 qwen_slice/runner/adapter_inst/activation_hold [43];
+qwen_slice/runner/adapter_inst/activation_hold [44];
+qwen_slice/runner/adapter_inst/activation_hold [45];
+qwen_slice/runner/adapter_inst/activation_hold [46];
+qwen_slice/runner/adapter_inst/activation_hold [47];
+qwen_slice/runner/adapter_inst/activation_hold [48];
+qwen_slice/runner/adapter_inst/activation_hold [49];
+qwen_slice/runner/adapter_inst/activation_hold [50];
+qwen_slice/runner/adapter_inst/activation_hold [51];
+qwen_slice/runner/adapter_inst/activation_hold [52];
+qwen_slice/runner/adapter_inst/activation_hold [53];
+qwen_slice/runner/adapter_inst/activation_hold [54];
+qwen_slice/runner/adapter_inst/activation_hold [55];
+qwen_slice/runner/adapter_inst/activation_hold [56];
+qwen_slice/runner/adapter_inst/activation_hold [57];
+qwen_slice/runner/adapter_inst/activation_hold [58];
+qwen_slice/runner/adapter_inst/activation_hold [59];
+qwen_slice/runner/adapter_inst/activation_hold [60];
+qwen_slice/runner/adapter_inst/activation_hold [61];
+qwen_slice/runner/adapter_inst/activation_hold [62];
+qwen_slice/runner/adapter_inst/activation_hold [63];
+qwen_slice/runner/adapter_inst/activation_hold [64];
+qwen_slice/runner/adapter_inst/activation_hold [65];
+qwen_slice/runner/adapter_inst/activation_hold [66];
+qwen_slice/runner/adapter_inst/activation_hold [67];
+qwen_slice/runner/adapter_inst/activation_hold [68];
+qwen_slice/runner/adapter_inst/activation_hold [69];
+qwen_slice/runner/adapter_inst/activation_hold [70];
+qwen_slice/runner/adapter_inst/activation_hold [71];
+qwen_slice/runner/adapter_inst/activation_hold [72];
+qwen_slice/runner/adapter_inst/activation_hold [73];
 qwen_slice/runner/adapter_inst/activation_hold [74];
+qwen_slice/runner/adapter_inst/activation_hold [75];
+qwen_slice/runner/adapter_inst/activation_hold [76];
+qwen_slice/runner/adapter_inst/activation_hold [77];
+qwen_slice/runner/adapter_inst/activation_hold [78];
+qwen_slice/runner/adapter_inst/activation_hold [79];
+qwen_slice/runner/adapter_inst/activation_hold [80];
+qwen_slice/runner/adapter_inst/activation_hold [81];
+qwen_slice/runner/adapter_inst/activation_hold [82];
+qwen_slice/runner/adapter_inst/activation_hold [83];
+qwen_slice/runner/adapter_inst/activation_hold [84];
+qwen_slice/runner/adapter_inst/activation_hold [85];
+qwen_slice/runner/adapter_inst/activation_hold [86];
+qwen_slice/runner/adapter_inst/activation_hold [87];
+qwen_slice/runner/adapter_inst/activation_hold [88];
+qwen_slice/runner/adapter_inst/activation_hold [89];
 qwen_slice/runner/adapter_inst/activation_hold [90];
+qwen_slice/runner/adapter_inst/activation_hold [91];
+qwen_slice/runner/adapter_inst/activation_hold [92];
+qwen_slice/runner/adapter_inst/activation_hold [93];
+qwen_slice/runner/adapter_inst/activation_hold [94];
+qwen_slice/runner/adapter_inst/activation_hold [95];
+qwen_slice/runner/adapter_inst/activation_hold [96];
+qwen_slice/runner/adapter_inst/activation_hold [97];
+qwen_slice/runner/adapter_inst/activation_hold [98];
+qwen_slice/runner/adapter_inst/activation_hold [99];
+qwen_slice/runner/adapter_inst/activation_hold [100];
+qwen_slice/runner/adapter_inst/activation_hold [101];
+qwen_slice/runner/adapter_inst/activation_hold [102];
+qwen_slice/runner/adapter_inst/activation_hold [103];
+qwen_slice/runner/adapter_inst/activation_hold [104];
+qwen_slice/runner/adapter_inst/activation_hold [105];
+qwen_slice/runner/adapter_inst/activation_hold [106];
+qwen_slice/runner/adapter_inst/activation_hold [107];
+qwen_slice/runner/adapter_inst/activation_hold [108];
+qwen_slice/runner/adapter_inst/activation_hold [109];
+qwen_slice/runner/adapter_inst/activation_hold [110];
+qwen_slice/runner/adapter_inst/activation_hold [111];
+qwen_slice/runner/adapter_inst/activation_hold [112];
+qwen_slice/runner/adapter_inst/activation_hold [113];
+qwen_slice/runner/adapter_inst/activation_hold [114];
+qwen_slice/runner/adapter_inst/activation_hold [115];
+qwen_slice/runner/adapter_inst/activation_hold [116];
+qwen_slice/runner/adapter_inst/activation_hold [117];
+qwen_slice/runner/adapter_inst/activation_hold [118];
+qwen_slice/runner/adapter_inst/activation_hold [119];
+qwen_slice/runner/adapter_inst/activation_hold [120];
+qwen_slice/runner/adapter_inst/activation_hold [121];
+qwen_slice/runner/adapter_inst/activation_hold [122];
+qwen_slice/runner/adapter_inst/activation_hold [123];
+qwen_slice/runner/adapter_inst/activation_hold [124];
+qwen_slice/runner/adapter_inst/activation_hold [125];
+qwen_slice/runner/adapter_inst/activation_hold [126];
+qwen_slice/runner/adapter_inst/activation_hold [127];
+qwen_slice/runner/adapter_inst/activation_hold [128];
+qwen_slice/runner/adapter_inst/activation_hold [129];
+qwen_slice/runner/adapter_inst/activation_hold [130];
+qwen_slice/runner/adapter_inst/activation_hold [131];
+qwen_slice/runner/adapter_inst/activation_hold [132];
+qwen_slice/runner/adapter_inst/activation_hold [133];
+qwen_slice/runner/adapter_inst/activation_hold [134];
+qwen_slice/runner/adapter_inst/activation_hold [135];
+qwen_slice/runner/adapter_inst/activation_hold [136];
+qwen_slice/runner/adapter_inst/activation_hold [137];
+qwen_slice/runner/adapter_inst/activation_hold [138];
+qwen_slice/runner/adapter_inst/activation_hold [139];
+qwen_slice/runner/adapter_inst/activation_hold [140];
+qwen_slice/runner/adapter_inst/activation_hold [141];
+qwen_slice/runner/adapter_inst/activation_hold [142];
+qwen_slice/runner/adapter_inst/activation_hold [143];
+qwen_slice/runner/adapter_inst/activation_hold [144];
+qwen_slice/runner/adapter_inst/activation_hold [145];
+qwen_slice/runner/adapter_inst/activation_hold [146];
+qwen_slice/runner/adapter_inst/activation_hold [147];
+qwen_slice/runner/adapter_inst/activation_hold [148];
+qwen_slice/runner/adapter_inst/activation_hold [149];
+qwen_slice/runner/adapter_inst/activation_hold [150];
+qwen_slice/runner/adapter_inst/activation_hold [151];
+qwen_slice/runner/adapter_inst/activation_hold [152];
+qwen_slice/runner/adapter_inst/activation_hold [153];
+qwen_slice/runner/adapter_inst/activation_hold [154];
+qwen_slice/runner/adapter_inst/activation_hold [155];
+qwen_slice/runner/adapter_inst/activation_hold [156];
+qwen_slice/runner/adapter_inst/activation_hold [157];
+qwen_slice/runner/adapter_inst/activation_hold [158];
+qwen_slice/runner/adapter_inst/activation_hold [159];
+qwen_slice/runner/adapter_inst/activation_hold [160];
+qwen_slice/runner/adapter_inst/activation_hold [161];
+qwen_slice/runner/adapter_inst/activation_hold [162];
+qwen_slice/runner/adapter_inst/activation_hold [163];
+qwen_slice/runner/adapter_inst/activation_hold [164];
+qwen_slice/runner/adapter_inst/activation_hold [165];
+qwen_slice/runner/adapter_inst/activation_hold [166];
+qwen_slice/runner/adapter_inst/activation_hold [167];
+qwen_slice/runner/adapter_inst/activation_hold [168];
+qwen_slice/runner/adapter_inst/activation_hold [169];
+qwen_slice/runner/adapter_inst/activation_hold [170];
+qwen_slice/runner/adapter_inst/activation_hold [171];
+qwen_slice/runner/adapter_inst/activation_hold [172];
+qwen_slice/runner/adapter_inst/activation_hold [173];
+qwen_slice/runner/adapter_inst/activation_hold [174];
+qwen_slice/runner/adapter_inst/activation_hold [175];
+qwen_slice/runner/adapter_inst/activation_hold [176];
+qwen_slice/runner/adapter_inst/activation_hold [177];
+qwen_slice/runner/adapter_inst/activation_hold [178];
+qwen_slice/runner/adapter_inst/activation_hold [179];
+qwen_slice/runner/adapter_inst/activation_hold [180];
+qwen_slice/runner/adapter_inst/activation_hold [181];
+qwen_slice/runner/adapter_inst/activation_hold [182];
+qwen_slice/runner/adapter_inst/activation_hold [183];
+qwen_slice/runner/adapter_inst/activation_hold [184];
+qwen_slice/runner/adapter_inst/activation_hold [185];
+qwen_slice/runner/adapter_inst/activation_hold [186];
+qwen_slice/runner/adapter_inst/activation_hold [187];
+qwen_slice/runner/adapter_inst/activation_hold [188];
+qwen_slice/runner/adapter_inst/activation_hold [189];
+qwen_slice/runner/adapter_inst/activation_hold [190];
+qwen_slice/runner/adapter_inst/activation_hold [191];
+qwen_slice/runner/adapter_inst/activation_hold [192];
+qwen_slice/runner/adapter_inst/activation_hold [193];
+qwen_slice/runner/adapter_inst/activation_hold [194];
+qwen_slice/runner/adapter_inst/activation_hold [195];
+qwen_slice/runner/adapter_inst/activation_hold [196];
+qwen_slice/runner/adapter_inst/activation_hold [197];
+qwen_slice/runner/adapter_inst/activation_hold [198];
+qwen_slice/runner/adapter_inst/activation_hold [199];
+qwen_slice/runner/adapter_inst/activation_hold [200];
+qwen_slice/runner/adapter_inst/activation_hold [201];
+qwen_slice/runner/adapter_inst/activation_hold [202];
+qwen_slice/runner/adapter_inst/activation_hold [203];
+qwen_slice/runner/adapter_inst/activation_hold [204];
+qwen_slice/runner/adapter_inst/activation_hold [205];
+qwen_slice/runner/adapter_inst/activation_hold [206];
+qwen_slice/runner/adapter_inst/activation_hold [207];
+qwen_slice/runner/adapter_inst/activation_hold [208];
+qwen_slice/runner/adapter_inst/activation_hold [209];
+qwen_slice/runner/adapter_inst/activation_hold [210];
+qwen_slice/runner/adapter_inst/activation_hold [211];
+qwen_slice/runner/adapter_inst/activation_hold [212];
+qwen_slice/runner/adapter_inst/activation_hold [213];
+qwen_slice/runner/adapter_inst/activation_hold [214];
+qwen_slice/runner/adapter_inst/activation_hold [215];
+qwen_slice/runner/adapter_inst/activation_hold [216];
+qwen_slice/runner/adapter_inst/activation_hold [217];
+qwen_slice/runner/adapter_inst/activation_hold [218];
+qwen_slice/runner/adapter_inst/activation_hold [219];
+qwen_slice/runner/adapter_inst/activation_hold [220];
+qwen_slice/runner/adapter_inst/activation_hold [221];
+qwen_slice/runner/adapter_inst/activation_hold [222];
+qwen_slice/runner/adapter_inst/activation_hold [223];
+qwen_slice/runner/adapter_inst/activation_hold [224];
+qwen_slice/runner/adapter_inst/activation_hold [225];
+qwen_slice/runner/adapter_inst/activation_hold [226];
+qwen_slice/runner/adapter_inst/activation_hold [227];
+qwen_slice/runner/adapter_inst/activation_hold [228];
+qwen_slice/runner/adapter_inst/activation_hold [229];
+qwen_slice/runner/adapter_inst/activation_hold [230];
+qwen_slice/runner/adapter_inst/activation_hold [231];
+qwen_slice/runner/adapter_inst/activation_hold [232];
+qwen_slice/runner/adapter_inst/activation_hold [233];
+qwen_slice/runner/adapter_inst/activation_hold [234];
+qwen_slice/runner/adapter_inst/activation_hold [235];
+qwen_slice/runner/adapter_inst/activation_hold [236];
+qwen_slice/runner/adapter_inst/activation_hold [237];
+qwen_slice/runner/adapter_inst/activation_hold [238];
+qwen_slice/runner/adapter_inst/activation_hold [239];
+qwen_slice/runner/adapter_inst/activation_hold [240];
+qwen_slice/runner/adapter_inst/activation_hold [241];
+qwen_slice/runner/adapter_inst/activation_hold [242];
+qwen_slice/runner/adapter_inst/activation_hold [243];
+qwen_slice/runner/adapter_inst/activation_hold [244];
+qwen_slice/runner/adapter_inst/activation_hold [245];
+qwen_slice/runner/adapter_inst/activation_hold [246];
+qwen_slice/runner/adapter_inst/activation_hold [247];
+qwen_slice/runner/adapter_inst/activation_hold [248];
+qwen_slice/runner/adapter_inst/activation_hold [249];
+qwen_slice/runner/adapter_inst/activation_hold [250];
+qwen_slice/runner/adapter_inst/activation_hold [251];
+qwen_slice/runner/adapter_inst/activation_hold [252];
+qwen_slice/runner/adapter_inst/activation_hold [253];
+qwen_slice/runner/adapter_inst/activation_hold [254];
+qwen_slice/runner/adapter_inst/activation_hold [255];
 qwen_slice/runner/adapter_inst/weight_hold [0];
 qwen_slice/runner/adapter_inst/weight_hold [1];
 qwen_slice/runner/adapter_inst/weight_hold [2];
@@ -15472,6 +19364,22 @@ qwen_slice/runner/adapter_weight_data [60];
 qwen_slice/runner/adapter_weight_data [61];
 qwen_slice/runner/adapter_weight_data [62];
 qwen_slice/runner/adapter_weight_data [63];
+qwen_slice/runner/core_group_id [0];
+qwen_slice/runner/core_group_id [1];
+qwen_slice/runner/core_group_id [2];
+qwen_slice/runner/core_group_id [3];
+qwen_slice/runner/core_group_id [4];
+qwen_slice/runner/core_group_id [5];
+qwen_slice/runner/core_group_id [6];
+qwen_slice/runner/core_group_id [7];
+qwen_slice/runner/core_group_id [8];
+qwen_slice/runner/core_group_id [9];
+qwen_slice/runner/core_group_id [10];
+qwen_slice/runner/core_group_id [11];
+qwen_slice/runner/core_group_id [12];
+qwen_slice/runner/core_group_id [13];
+qwen_slice/runner/core_group_id [14];
+qwen_slice/runner/core_group_id [15];
 qwen_slice/runner/core_inst/group_acc_inst/accumulator [0];
 qwen_slice/runner/core_inst/group_acc_inst/accumulator [1];
 qwen_slice/runner/core_inst/group_acc_inst/accumulator [2];
@@ -15735,6 +19643,9 @@ qwen_slice/runner/core_inst/products[1] [5];
 qwen_slice/runner/core_inst/products[1] [6];
 qwen_slice/runner/core_inst/products[1] [7];
 qwen_slice/runner/core_inst/products[1] [8];
+qwen_slice/runner/core_inst/products[1] [9];
+qwen_slice/runner/core_inst/products[1] [10];
+qwen_slice/runner/core_inst/products[1] [11];
 qwen_slice/runner/core_inst/products[3] [0];
 qwen_slice/runner/core_inst/products[3] [1];
 qwen_slice/runner/core_inst/products[3] [2];
@@ -15744,6 +19655,9 @@ qwen_slice/runner/core_inst/products[3] [5];
 qwen_slice/runner/core_inst/products[3] [6];
 qwen_slice/runner/core_inst/products[3] [7];
 qwen_slice/runner/core_inst/products[3] [8];
+qwen_slice/runner/core_inst/products[3] [9];
+qwen_slice/runner/core_inst/products[3] [10];
+qwen_slice/runner/core_inst/products[3] [11];
 qwen_slice/runner/core_inst/products[5] [0];
 qwen_slice/runner/core_inst/products[5] [1];
 qwen_slice/runner/core_inst/products[5] [2];
@@ -15752,6 +19666,10 @@ qwen_slice/runner/core_inst/products[5] [4];
 qwen_slice/runner/core_inst/products[5] [5];
 qwen_slice/runner/core_inst/products[5] [6];
 qwen_slice/runner/core_inst/products[5] [7];
+qwen_slice/runner/core_inst/products[5] [8];
+qwen_slice/runner/core_inst/products[5] [9];
+qwen_slice/runner/core_inst/products[5] [10];
+qwen_slice/runner/core_inst/products[5] [11];
 qwen_slice/runner/core_inst/products[7] [0];
 qwen_slice/runner/core_inst/products[7] [1];
 qwen_slice/runner/core_inst/products[7] [2];
@@ -15761,6 +19679,9 @@ qwen_slice/runner/core_inst/products[7] [5];
 qwen_slice/runner/core_inst/products[7] [6];
 qwen_slice/runner/core_inst/products[7] [7];
 qwen_slice/runner/core_inst/products[7] [8];
+qwen_slice/runner/core_inst/products[7] [9];
+qwen_slice/runner/core_inst/products[7] [10];
+qwen_slice/runner/core_inst/products[7] [11];
 qwen_slice/runner/core_inst/products[9] [0];
 qwen_slice/runner/core_inst/products[9] [1];
 qwen_slice/runner/core_inst/products[9] [2];
@@ -15781,6 +19702,10 @@ qwen_slice/runner/core_inst/products[11] [4];
 qwen_slice/runner/core_inst/products[11] [5];
 qwen_slice/runner/core_inst/products[11] [6];
 qwen_slice/runner/core_inst/products[11] [7];
+qwen_slice/runner/core_inst/products[11] [8];
+qwen_slice/runner/core_inst/products[11] [9];
+qwen_slice/runner/core_inst/products[11] [10];
+qwen_slice/runner/core_inst/products[11] [11];
 qwen_slice/runner/core_inst/products[13] [0];
 qwen_slice/runner/core_inst/products[13] [1];
 qwen_slice/runner/core_inst/products[13] [2];
@@ -15789,6 +19714,10 @@ qwen_slice/runner/core_inst/products[13] [4];
 qwen_slice/runner/core_inst/products[13] [5];
 qwen_slice/runner/core_inst/products[13] [6];
 qwen_slice/runner/core_inst/products[13] [7];
+qwen_slice/runner/core_inst/products[13] [8];
+qwen_slice/runner/core_inst/products[13] [9];
+qwen_slice/runner/core_inst/products[13] [10];
+qwen_slice/runner/core_inst/products[13] [11];
 qwen_slice/runner/core_inst/products[15] [0];
 qwen_slice/runner/core_inst/products[15] [1];
 qwen_slice/runner/core_inst/products[15] [2];
@@ -15798,6 +19727,9 @@ qwen_slice/runner/core_inst/products[15] [5];
 qwen_slice/runner/core_inst/products[15] [6];
 qwen_slice/runner/core_inst/products[15] [7];
 qwen_slice/runner/core_inst/products[15] [8];
+qwen_slice/runner/core_inst/products[15] [9];
+qwen_slice/runner/core_inst/products[15] [10];
+qwen_slice/runner/core_inst/products[15] [11];
 qwen_slice/runner/core_inst/reduction[1].sum [0];
 qwen_slice/runner/core_inst/reduction[1].sum [1];
 qwen_slice/runner/core_inst/reduction[1].sum [2];
@@ -15862,6 +19794,10 @@ qwen_slice/runner/core_row_id [12];
 qwen_slice/runner/core_row_id [13];
 qwen_slice/runner/core_row_id [14];
 qwen_slice/runner/core_row_id [15];
+qwen_slice/runner/expected_mem_index [4];
+qwen_slice/runner/expected_mem_index [5];
+qwen_slice/runner/expected_mem_index [6];
+qwen_slice/runner/expected_mem_index [7];
 qwen_slice/runner/input_beat [0];
 qwen_slice/runner/input_beat [1];
 qwen_slice/runner/input_beat [2];
@@ -15878,6 +19814,22 @@ qwen_slice/runner/input_beat [12];
 qwen_slice/runner/input_beat [13];
 qwen_slice/runner/input_beat [14];
 qwen_slice/runner/input_beat [15];
+qwen_slice/runner/input_group [0];
+qwen_slice/runner/input_group [1];
+qwen_slice/runner/input_group [2];
+qwen_slice/runner/input_group [3];
+qwen_slice/runner/input_group [4];
+qwen_slice/runner/input_group [5];
+qwen_slice/runner/input_group [6];
+qwen_slice/runner/input_group [7];
+qwen_slice/runner/input_group [8];
+qwen_slice/runner/input_group [9];
+qwen_slice/runner/input_group [10];
+qwen_slice/runner/input_group [11];
+qwen_slice/runner/input_group [12];
+qwen_slice/runner/input_group [13];
+qwen_slice/runner/input_group [14];
+qwen_slice/runner/input_group [15];
 qwen_slice/runner/input_row [0];
 qwen_slice/runner/input_row [1];
 qwen_slice/runner/input_row [2];
@@ -15930,6 +19882,10 @@ qwen_slice/runner/weight_mem_index [2];
 qwen_slice/runner/weight_mem_index [3];
 qwen_slice/runner/weight_mem_index [4];
 qwen_slice/runner/weight_mem_index [5];
+qwen_slice/runner/weight_mem_index [6];
+qwen_slice/runner/weight_mem_index [7];
+qwen_slice/runner/weight_mem_index [8];
+qwen_slice/runner/weight_mem_index [9];
 ntR0;
 ntR1;
 ntR2;
@@ -16142,6 +20098,75 @@ ntR208;
 ntR209;
 ntR210;
 ntR211;
+ntR212;
+ntR213;
+ntR214;
+ntR215;
+ntR216;
+ntR217;
+ntR218;
+ntR219;
+ntR220;
+ntR221;
+ntR222;
+ntR223;
+ntR224;
+ntR225;
+ntR226;
+ntR227;
+ntR228;
+ntR229;
+ntR230;
+ntR231;
+ntR232;
+ntR233;
+ntR234;
+ntR235;
+ntR236;
+ntR237;
+ntR238;
+ntR239;
+ntR240;
+ntR241;
+ntR242;
+ntR243;
+ntR244;
+ntR245;
+ntR246;
+ntR247;
+ntR248;
+ntR249;
+ntR250;
+ntR251;
+ntR252;
+ntR253;
+ntR254;
+ntR255;
+ntR256;
+ntR257;
+ntR258;
+ntR259;
+ntR260;
+ntR261;
+ntR262;
+ntR263;
+ntR264;
+ntR265;
+ntR266;
+ntR267;
+ntR268;
+ntR269;
+ntR270;
+ntR271;
+ntR272;
+ntR273;
+ntR274;
+ntR275;
+ntR276;
+ntR277;
+ntR278;
+ntR279;
+ntR280;
 
 Clock
 clk;1000

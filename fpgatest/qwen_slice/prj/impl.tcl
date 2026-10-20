@@ -22,3 +22,12 @@ pnr
 report_timing 
 gen_bit_stream 
 gen_bit_stream -scbv {High Voltage} 
+set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676
+compile -top_module fixed_slice_qwen_demo_top
+set_arch -family Logos2 -device PG2L100H -speedgrade -6 -package FBG676
+compile -top_module fixed_slice_qwen_demo_top
+synthesize -ads -selected_syn_tool_opt 2 
+dev_map 
+pnr 
+report_timing 
+gen_bit_stream -scbv {High Voltage} 

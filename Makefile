@@ -151,6 +151,8 @@ FIXED_SLICE_DIR ?= build/fixed_slice
 FIXED_SLICE_TEST_DIR ?= build/fixed_slice_sim
 FIXED_SLICE_QWEN_DIR ?= build/fixed_slice_qwen
 FIXED_SLICE_QWEN_TEST_DIR ?= build/fixed_slice_qwen_sim
+FIXED_SLICE_QWEN_MULTIGROUP_DIR ?= build/fixed_slice_qwen_multigroup
+FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR ?= build/fixed_slice_qwen_multigroup_sim
 
 fixed-slice-fixture:
 	$(PYTHON) scripts/prepare_fixed_slice_mem.py tests/vectors/case_n1_k128 $(FIXED_SLICE_DIR)
@@ -185,3 +187,22 @@ build-fixed-slice-qwen: fixed-slice-qwen-inputs
 
 test-fixed-slice-qwen: build-fixed-slice-qwen
 	./$(FIXED_SLICE_QWEN_TEST_DIR)/Vtb_fixed_slice_qwen
+
+fixed-slice-qwen-multigroup-inputs:
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/weights.mem
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/activation.mem
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/expected.mem
+
+lint-fixed-slice-qwen-multigroup: fixed-slice-qwen-multigroup-inputs
+	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_qwen_multigroup \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen_multigroup.sv
+
+build-fixed-slice-qwen-multigroup: fixed-slice-qwen-multigroup-inputs
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_fixed_slice_qwen_multigroup --Mdir $(FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR) \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen_multigroup.sv \
+	  $(CURDIR)/tests/test_fixed_slice_qwen_multigroup.cpp
+
+test-fixed-slice-qwen-multigroup: build-fixed-slice-qwen-multigroup
+	./$(FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR)/Vtb_fixed_slice_qwen_multigroup

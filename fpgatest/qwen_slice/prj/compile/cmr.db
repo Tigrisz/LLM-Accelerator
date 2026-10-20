@@ -49,10 +49,10 @@
             <data>RAM(GB)</data>
         </column_headers>
         <row>
-            <data>0h:0m:0s</data>
-            <data>0h:0m:0s</data>
-            <data>0h:0m:4s</data>
-            <data>139</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:1s</data>
+            <data>0h:0m:3s</data>
+            <data>143</data>
             <data>WINDOWS 10 x86_64</data>
             <data>Unknown</data>
             <data>32</data>
@@ -109,7 +109,7 @@
             <data message="4">Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv</data>
         </row>
         <row>
-            <data message="4">Verilog-0002: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 7)] Analyzing module fixed_slice_runner (library work)</data>
+            <data message="4">Verilog-0002: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 8)] Analyzing module fixed_slice_runner (library work)</data>
         </row>
         <row>
             <data message="4">Module &quot;fixed_slice_qwen_demo_top&quot; is set as top module.</data>
@@ -132,7 +132,7 @@
         <row>
             <data message="4">Module instance {fixed_slice_qwen_demo_top/qwen_slice} parameter value:
     N = 32'b00000000000000000000000000010000
-    K = 32'b00000000000000000000000010000000
+    K = 32'b00000000000000000000100000000000
     WEIGHT_MEM_FILE = mem/weights.mem
     ACTIVATION_MEM_FILE = mem/activation.mem
     EXPECTED_MEM_FILE = mem/expected.mem</data>
@@ -141,12 +141,12 @@
             <data message="4">Verilog-0004: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_demo_top.sv(line number: 25)] Elaborating instance runner</data>
         </row>
         <row>
-            <data message="4">Verilog-0003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 7)] Elaborating module fixed_slice_runner</data>
+            <data message="4">Verilog-0003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 8)] Elaborating module fixed_slice_runner</data>
         </row>
         <row>
             <data message="4">Module instance {fixed_slice_qwen_demo_top/qwen_slice/runner} parameter value:
     N = 32'b00000000000000000000000000010000
-    K = 32'b00000000000000000000000010000000
+    K = 32'b00000000000000000000100000000000
     WEIGHT_MEM_FILE = mem/weights.mem
     ACTIVATION_MEM_FILE = mem/activation.mem
     EXPECTED_MEM_FILE = mem/expected.mem</data>
@@ -155,28 +155,28 @@
             <data message="4">Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/weights.mem</data>
         </row>
         <row>
-            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 43)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/weights.mem</data>
+            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 52)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/weights.mem</data>
         </row>
         <row>
             <data message="4">Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/activation.mem</data>
         </row>
         <row>
-            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 44)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/activation.mem</data>
+            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 53)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/activation.mem</data>
         </row>
         <row>
             <data message="4">Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/expected.mem</data>
         </row>
         <row>
-            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 45)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/expected.mem</data>
+            <data message="4">[D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 54)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/mem/expected.mem</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 89)] Elaborating instance adapter_inst</data>
+            <data message="4">Verilog-0004: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 113)] Elaborating instance adapter_inst</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/compute/lane_adapter_32_to_16.sv(line number: 7)] Elaborating module lane_adapter_32_to_16</data>
         </row>
         <row>
-            <data message="4">Verilog-0004: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 104)] Elaborating instance core_inst</data>
+            <data message="4">Verilog-0004: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 128)] Elaborating instance core_inst</data>
         </row>
         <row>
             <data message="4">Verilog-0003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/compute/gemv_core.sv(line number: 3)] Elaborating module gemv_core</data>
@@ -288,64 +288,25 @@
             <data message="4">Verilog-0003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/compute/group_acc.sv(line number: 2)] Elaborating module group_acc</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 40)] The net 'activation_mem[3]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 40)] The net 'activation_mem[2]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 40)] The net 'activation_mem[1]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 40)] The net 'activation_mem[0]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[15]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[14]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[13]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[12]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[11]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[10]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[9]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[8]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[7]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[6]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[5]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[4]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[3]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[2]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[1]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
-        </row>
-        <row>
-            <data message="5">Sdm-2003: [D:/GPT/qiansai_FPGA/fpgatest/qwen_slice/prj/source/rtl/fixed_slice_runner.sv(line number: 41)] The net 'expected_mem[0]' in fixed_slice_qwen_demo_top.qwen_slice.runner is un-driven.</data>
+            <data message="5">Loop was found during constant probe.</data>
         </row>
         <row>
             <data message="5">Loop was found during constant probe.</data>
@@ -369,10 +330,13 @@
             <data message="4">Constant propagation done on N62 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N236 (bmsPMUX).</data>
+            <data message="4">Constant propagation done on N268 (bmsPMUX).</data>
         </row>
         <row>
-            <data message="4">Constant propagation done on N260_1 (bmsWIDEMUX).</data>
+            <data message="4">Constant propagation done on N254 (bmsPMUX).</data>
+        </row>
+        <row>
+            <data message="4">Constant propagation done on N292_1 (bmsWIDEMUX).</data>
         </row>
     </table>
     <general_container id="compile_settings">
