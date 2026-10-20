@@ -1,3 +1,5 @@
+> 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
+
 # A：W4A8 GEMV 计算核心
 
 最新验证入口：`python scripts/run_regression.py`（Python 3.10+，依赖见 requirements-test.txt）。

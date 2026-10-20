@@ -77,7 +77,7 @@ build-integration16:
 .PHONY: build-adapter
 build-adapter:
 	$(VERILATOR) --cc --exe --build --trace -Wall --top-module paired_lane_adapter \
-	  -GLANES=16 --Mdir build/adapter16 $(ADAPTER_RTL) $(CURDIR)/tests/test_lane_adapter.cpp
+	  -GLANES=16 --Mdir build/adapter16 $(ADAPTER_RTL) $(CURDIR)/tests/test_paired_lane_adapter.cpp
 
 .PHONY: test-integration16 test-adapter
 test-integration16: test-model build-integration16
@@ -89,3 +89,99 @@ test-adapter: build-adapter
 .PHONY: benchmark-lanes
 benchmark-lanes:
 	$(PYTHON) scripts/benchmark_lanes.py
+
+LANE_ADAPTER_RTL = rtl/compute/lane_adapter_32_to_16.sv tests/tb_lane_adapter.sv
+LANE_ADAPTER_DIR ?= build/lane_adapter
+
+lint-lane-adapter:
+	$(VERILATOR) --lint-only -Wall --top-module tb_lane_adapter $(LANE_ADAPTER_RTL)
+
+build-lane-adapter:
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_lane_adapter --Mdir $(LANE_ADAPTER_DIR) \
+	  $(LANE_ADAPTER_RTL) $(CURDIR)/tests/test_lane_adapter.cpp
+
+test-lane-adapter: build-lane-adapter
+	./$(LANE_ADAPTER_DIR)/Vtb_lane_adapter
+
+
+CONTROL_RTL = $(B_RTL) rtl/compute/lane_adapter_32_to_16.sv rtl/control/control_regs.sv rtl/control/task_controller.sv rtl/control/accelerator_control_top.sv
+CONTROL_DIR ?= build/control
+CONTROL16_DIR ?= build/control16
+CONTROL_FIXTURE ?= build/b_fixtures/case_n3_k256.txt
+
+control-fixture:
+	$(PYTHON) scripts/prepare_control_fixture.py
+
+build-control:
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_control --Mdir $(CONTROL_DIR) \
+	  $(CORE_RTL) $(CONTROL_RTL) tests/tb_control.sv $(CURDIR)/tests/test_control.cpp
+
+test-control: control-fixture build-control
+	@set -e; \
+	./$(CONTROL_DIR)/Vtb_control $(CONTROL_FIXTURE); \
+	./$(CONTROL_DIR)/Vtb_control --errors
+
+lint-control:
+	$(VERILATOR) --lint-only -Wall --top-module tb_control \
+	  $(CORE_RTL) $(CONTROL_RTL) tests/tb_control.sv
+
+build-control-16:
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall -GLANES=16 \
+	  --top-module tb_control --Mdir $(CONTROL16_DIR) \
+	  $(CORE_RTL) $(CONTROL_RTL) tests/tb_control.sv $(CURDIR)/tests/test_control.cpp
+
+lint-control-16:
+	$(VERILATOR) --lint-only -Wall -GLANES=16 --top-module tb_control \
+	  $(CORE_RTL) $(CONTROL_RTL) tests/tb_control.sv
+
+test-control-16: control-fixture build-control-16
+	@set -e; \
+	./$(CONTROL16_DIR)/Vtb_control $(CONTROL_FIXTURE); \
+	./$(CONTROL16_DIR)/Vtb_control --errors
+
+test-system-control: test-model test-control test-control-16
+
+FIXED_SLICE_RTL = $(CORE_RTL) rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv
+FIXED_SLICE_DIR ?= build/fixed_slice
+FIXED_SLICE_TEST_DIR ?= build/fixed_slice_sim
+FIXED_SLICE_QWEN_DIR ?= build/fixed_slice_qwen
+FIXED_SLICE_QWEN_TEST_DIR ?= build/fixed_slice_qwen_sim
+
+fixed-slice-fixture:
+	$(PYTHON) scripts/prepare_fixed_slice_mem.py tests/vectors/case_n1_k128 $(FIXED_SLICE_DIR)
+
+lint-fixed-slice: fixed-slice-fixture
+	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice.sv
+
+build-fixed-slice: fixed-slice-fixture
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_fixed_slice --Mdir $(FIXED_SLICE_TEST_DIR) \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice.sv $(CURDIR)/tests/test_fixed_slice.cpp
+
+test-fixed-slice: build-fixed-slice
+	./$(FIXED_SLICE_TEST_DIR)/Vtb_fixed_slice
+
+fixed-slice-qwen-inputs:
+	@test -f $(FIXED_SLICE_QWEN_DIR)/weights.mem
+	@test -f $(FIXED_SLICE_QWEN_DIR)/activation.mem
+	@test -f $(FIXED_SLICE_QWEN_DIR)/expected.mem
+
+lint-fixed-slice-qwen: fixed-slice-qwen-inputs
+	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_qwen \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen.sv
+
+build-fixed-slice-qwen: fixed-slice-qwen-inputs
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_fixed_slice_qwen --Mdir $(FIXED_SLICE_QWEN_TEST_DIR) \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen.sv $(CURDIR)/tests/test_fixed_slice_qwen.cpp
+
+test-fixed-slice-qwen: build-fixed-slice-qwen
+	./$(FIXED_SLICE_QWEN_TEST_DIR)/Vtb_fixed_slice_qwen
