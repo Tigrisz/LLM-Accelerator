@@ -1,4 +1,10 @@
+> 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
+
 # A：W4A8 GEMV 计算核心
+
+最新验证入口：`python scripts/run_regression.py`（Python 3.10+，依赖见 requirements-test.txt）。
+协议测试、失败波形及 CI 说明见 [2026-10-18 验证进度](docs/verification_progress_2026-10-18.md)。
+GitHub Actions 将对 PR 和主线执行真实 RTL 回归，报告保存在每次运行的 artifacts 中。
 
 本目录是 A 的计算模块及 A/B 联调工作目录。接口见 `docs/interface_v1.md`，已对齐 B 发布的 V1。
 默认 LANES=32，也测试 LANES=16；固定分组 128 元素，输出 signed INT32 部分和。
@@ -98,3 +104,18 @@ gtkwave build/b_integration.vcd
 
 所有测试向量目前都是合成整数数据，长 K 用例也不是 Qwen 真实切片。
 输入等待统计包含缓存/存储/配对等待，不能直接叫作 DDR stall 或实测 GB/s。
+
+
+## 2026-10-19：16 路存储链路适配
+
+已增加配对数据流 32→16 路适配器，存储侧打包格式和 INT32 输出协议不变。
+`make test-integration16 PYTHON=python` 验证 16 路完整链路，
+`make test-adapter PYTHON=python` 验证拆拍协议；完整回归自动覆盖 16/32 路。
+接口约束、复现命令和 B 接入说明见 [16 路交接文档](docs/lane16_handoff_2026-10-19.md)。
+
+
+## 确定性性能比较
+
+`make benchmark-lanes PYTHON=python` 比较相同数据与存储延迟下的 16/32 路性能。
+完整回归也会执行该比较并保存日志、源码指纹与 JSON 指标。
+计时口径与本地结果见 [性能比较说明](docs/lane_benchmark_2026-10-19.md)。

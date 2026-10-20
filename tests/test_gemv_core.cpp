@@ -11,6 +11,7 @@
 #include <string>
 #include <vector>
 #include "vector_case.h"
+#include "stream_monitor.h"
 #ifndef TEST_LANES
 #define TEST_LANES 32
 #endif
@@ -35,6 +36,10 @@ public:
     uint32_t current_seed=0;
     std::deque<int32_t> external_golden;
     bool use_external=false;
+    std::string scenario="initial";
+    StreamMonitor<std::array<uint32_t,TEST_LANES*2+4>> input_monitor{"core input"};
+    StreamMonitor<std::array<uint32_t,3>> output_monitor{"core output"};
+    GroupMonitor group_monitor{TEST_LANES};
     Test() {
         if (const char* path = std::getenv("TRACE_FILE")) {
             Verilated::traceEverOn(true);
@@ -48,7 +53,7 @@ public:
     ~Test() { dut.final(); if (tracing) trace.close(); }
     void eval() { dut.eval(); if (tracing) trace.dump(sim_time++); }
     [[noreturn]] void fail(const std::string& message) {
-        throw std::runtime_error(message + " seed=" + std::to_string(current_seed)
+        throw std::runtime_error(scenario + ": " + message + " seed=" + std::to_string(current_seed)
                                  + " cycle=" + std::to_string(cycles));
     }
     void drive(const Beat& b) {
@@ -77,15 +82,33 @@ public:
         dut.clk=1; eval(); dut.clk=0; eval();
         dut.rst_n=1; eval();
         expected.clear(); ref_sum=0; active=false; beat_count=0;
+        input_monitor.reset(); output_monitor.reset(); group_monitor.reset();
     }
     bool step(const Beat* b, bool valid, bool ready) {
         dut.clk=0; dut.in_valid=valid; dut.out_ready=ready;
         if(b) drive(*b);
         eval();
         bool input_fire=dut.in_valid && dut.in_ready;
+        std::array<uint32_t,TEST_LANES*2+4> payload{};
+        for(int lane=0;lane<TEST_LANES;lane++) {
+#if TEST_LANES == 16
+            payload[lane]=(dut.weight_data>>(4*lane))&15;
+#else
+            payload[lane]=(dut.weight_data[lane/8]>>(4*(lane%8)))&15;
+#endif
+            payload[TEST_LANES+lane]=(dut.activation_data[lane/4]>>(8*(lane%4)))&255;
+        }
+        payload[2*TEST_LANES]=dut.row_id; payload[2*TEST_LANES+1]=dut.group_id;
+        payload[2*TEST_LANES+2]=dut.group_first; payload[2*TEST_LANES+3]=dut.group_last;
+        try {
+            input_monitor.sample(dut.in_valid,dut.in_ready,payload);
+            output_monitor.sample(dut.out_valid,dut.out_ready,{{dut.partial_sum,dut.out_row_id,dut.out_group_id}});
+            group_monitor.sample(input_fire,dut.group_first,dut.group_last,dut.row_id,dut.group_id);
+        } catch(const std::exception& e) { fail(e.what()); }
         bool held=dut.out_valid && !dut.out_ready;
         uint32_t held_sum=dut.partial_sum;
         unsigned held_row=dut.out_row_id, held_group=dut.out_group_id;
+        if(dut.out_valid && expected.empty()) fail("output valid before a completed input group");
         if(dut.out_valid && dut.out_ready) {
             if(expected.empty()) fail("unexpected/duplicate output");
             auto e=expected.front(); expected.pop_front();
@@ -161,11 +184,57 @@ static std::vector<Beat> make_case(int n,int k,uint32_t seed,int mode) {
         }
     return beats;
 }
+
+static int directed_protocol_tests(Test& test) {
+    int checks=0;
+    const int group_beats=128/TEST_LANES;
+    // Reset before/after every accepted beat, including a blocked final result.
+    for(int prefix=0;prefix<=group_beats;prefix++) {
+        test.reset(); test.scenario="reset_prefix_"+std::to_string(prefix);
+        auto abandoned=make_case(1,128,500+prefix,1);
+        for(int i=0;i<prefix;i++) test.step(&abandoned[i],true,false);
+        test.reset();
+        for(int i=0;i<8;i++) test.step(nullptr,false,true);
+        auto recovery=make_case(1,129,600+prefix,0);
+        for(auto& b:recovery) { b.row+=17; b.group+=23; }
+        test.run(recovery,600+prefix,true); ++checks;
+    }
+    // Invalid data/markers may toggle while valid=0, at every group position.
+    for(int gap=0;gap<group_beats;gap++) {
+        test.reset(); test.scenario="input_gap_"+std::to_string(gap);
+        auto beats=make_case(1,128,700+gap,0);
+        for(int i=0;i<group_beats;i++) {
+            if(i==gap) for(int delay=0;delay<257;delay++) {
+                Beat noise; noise.first=true; noise.last=true;
+                noise.row=65535; noise.group=65535;
+                noise.w.fill(delay%16-8); noise.x.fill(delay%256-128);
+                test.step(&noise,false,true);
+            }
+            if(!test.step(&beats[i],true,true)) test.fail("unexpected input stall");
+        }
+        test.run({},700+gap,false); ++checks;
+    }
+    // Keep the next producer beat asserted for a long output stall, then release.
+    test.reset(); test.scenario="long_output_stall";
+    auto beats=make_case(2,128,800,0);
+    for(int i=0;i<group_beats;i++) test.step(&beats[i],true,true);
+    for(int i=0;i<513;i++) {
+        if(test.step(&beats[group_beats],true,false)) test.fail("unexpected baseline buffering");
+    }
+    test.run(std::vector<Beat>(beats.begin()+group_beats,beats.end()),800,false); ++checks;
+    // Repeated idle reset and restart with a full legal group.
+    test.reset(); test.reset(); test.run(make_case(1,128,801,2),801,false); ++checks;
+    std::cout<<"PASS PROTOCOL LANES="<<TEST_LANES<<" directed_cases="<<checks
+             <<" input_gap_cycles=257 output_stall_cycles=513 reset_every_group_position=PASS\n";
+    test.scenario="legacy_regression";
+    return checks;
+}
 int main(int argc,char** argv) {
     Verilated::commandArgs(argc,argv);
     try {
         Test test; test.reset(); int cases=0;
         if(argc==3 && std::string(argv[1])=="--case") {
+            test.scenario=std::string("B_fixture:")+argv[2];
             VectorCase data(argv[2]); std::vector<Beat> beats;
             for(int row=0;row<data.n;row++) for(int col=0;col<data.padded;col+=TEST_LANES) {
                 Beat b; b.row=row; b.group=col/128; b.first=col%128==0;
@@ -207,6 +276,7 @@ int main(int argc,char** argv) {
         if(!test.dut.out_valid) test.fail("missing pre-reset pending output");
         test.reset(); test.run(make_case(1,129,99,0),99,true); ++cases;
         test.reset(); test.step(nullptr,false,true);
+        directed_protocol_tests(test);
         auto bench_start=test.cycles;
         test.run(make_case(8,2048,20261011,0),20261011,false);
         std::cout << "BENCH LANES=" << TEST_LANES << " N=8 K=2048 seed=20261011"
