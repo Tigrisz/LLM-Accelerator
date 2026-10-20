@@ -65,3 +65,6 @@ python scripts/compare_results.py \
 它不提供真实 UART/JTAG 链路验证，不能替代板端输出采集。
 
 本工具检查量化整数部分和，不检查反量化精度、模型质量或完整推理。
+
+多组集成链路的实际握手导出、边界用例及交接文件见
+[多组 RTL 结果导出](multigroup_capture.md)。

@@ -58,6 +58,7 @@ def main():
                              "lint-fixed-slice", "test-fixed-slice",
                              "lint-fixed-slice-qwen", "test-fixed-slice-qwen", f"PYTHON={sys.executable}"]),
         ("result-capture", [sys.executable, "scripts/check_result_capture.py"]),
+        ("multigroup-capture", [sys.executable, "scripts/check_multigroup_capture.py"]),
     ]
     results = []
     for name, command in phases:

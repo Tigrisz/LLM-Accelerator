@@ -8,6 +8,7 @@
 #include <random>
 #include <cstdlib>
 #include <stdexcept>
+#include <fstream>
 
 #ifndef TEST_LANES
 #define TEST_LANES 32
@@ -23,6 +24,7 @@ public:
     uint64_t cycles=0, time=0, bytes=0, input_wait=0, input_blocked=0, output_wait=0;
     int beats=0, outputs=0, requests=0;
     std::string scenario="initial";
+    std::ofstream capture;
     StreamMonitor<std::array<uint32_t,16>> input_monitor{"paired input"};
     StreamMonitor<std::array<uint32_t,3>> output_monitor{"integration output"};
     GroupMonitor group_monitor{LANES};
@@ -87,6 +89,12 @@ public:
                 ++beats;
             }
             if(dut.out_valid && dut.out_ready) {
+                if(capture.is_open()) {
+                    if(outputs) capture << ',';
+                    capture << "{\"row_id\":" << dut.out_row_id
+                            << ",\"group_id\":" << dut.out_group_id
+                            << ",\"partial_sum\":" << int32_t(dut.partial_sum) << '}';
+                }
                 check(outputs<int(data->expected.size()),"duplicate output");
                 check(dut.out_row_id==outputs/(data->padded/128) &&
                       dut.out_group_id==outputs%(data->padded/128) &&
@@ -151,6 +159,12 @@ public:
         check(uint64_t(beats)+input_wait+input_blocked==cycles-begin,"cycle accounting");
         for(int i=0;i<4;i++) tick();
         check(!dut.busy,"reader not idle after completion"); verify=false;
+        if(capture.is_open()) {
+            capture << "],\"completed\":true}\n";
+            capture.flush();
+            check(capture.good(),"capture write failed");
+            capture.close();
+        }
         std::cout<<"PASS INTEGRATION lanes="<<LANES<<" N="<<c.n<<" K="<<c.k<<" seed="<<seed
                  <<" random_output_stalls="<<stalls<<" final_hold="<<held<<" cycles="<<cycles-begin-4<<" weight_bytes="<<bytes
                  <<" input_beats="<<beats<<" input_blocked="<<measured_input_blocked<<" groups="<<outputs<<" input_wait="<<measured_input_wait<<" output_wait="<<measured_output_wait<<'\n';
@@ -194,9 +208,17 @@ int main(int argc,char** argv) {
             test.invalid_request(256,0,128); test.invalid_request(256,1,0);
         } else if(argc>=2) {
             VectorCase c(argv[1]);
-            if(argc==3 && std::string(argv[2])=="--reset") test.reset_cases(c);
+            if(argc==4 && std::string(argv[2])=="--capture") {
+                test.capture.open(argv[3],std::ios::trunc);
+                test.check(test.capture.is_open(),"cannot open capture");
+                test.capture << "{\"format_version\":1,\"source\":\"simulation\","
+                             "\"run_id\":\"integration-lanes" << LANES << "-n" << c.n
+                             << "-k" << c.k << "-seed43\",\"results\":[";
+                test.run(c,43,true,true);
+            }
+            else if(argc==3 && std::string(argv[2])=="--reset") test.reset_cases(c);
             else if(argc==3 && std::string(argv[2])=="--benchmark") test.run(c,42,false,false);
             else { test.run(c,42,false,true); test.run(c,43,true,true); }
-        } else throw std::runtime_error("usage: integration case.txt [--reset] | --capacity | --errors");
+        } else throw std::runtime_error("usage: integration case.txt [--reset | --benchmark | --capture output.json] | --capacity | --errors");
     } catch(const std::exception& e) { std::cerr<<"FAIL "<<e.what()<<'\n'; return 1; }
 }
