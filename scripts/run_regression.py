@@ -57,6 +57,7 @@ def main():
                              "lint-control", "lint-control-16", "test-system-control",
                              "lint-fixed-slice", "test-fixed-slice",
                              "lint-fixed-slice-qwen", "test-fixed-slice-qwen", f"PYTHON={sys.executable}"]),
+        ("result-capture", [sys.executable, "scripts/check_result_capture.py"]),
     ]
     results = []
     for name, command in phases:

@@ -1,3 +1,5 @@
+> 后续：[B 板端自检反馈](docs/board_feedback_2026-10-20.md)；[结果导出格式与比对工具](docs/result_capture_v1.md)。
+
 > 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
 
 # A：W4A8 GEMV 计算核心
