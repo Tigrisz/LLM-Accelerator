@@ -1,0 +1,4 @@
+# Immutable validation evidence and delivery files must retain exact bytes.
+/evidence/** -text
+/deliveries/** -text
+*.sbit -text

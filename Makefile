@@ -151,6 +151,8 @@ FIXED_SLICE_DIR ?= build/fixed_slice
 FIXED_SLICE_TEST_DIR ?= build/fixed_slice_sim
 FIXED_SLICE_QWEN_DIR ?= build/fixed_slice_qwen
 FIXED_SLICE_QWEN_TEST_DIR ?= build/fixed_slice_qwen_sim
+FIXED_SLICE_QWEN_MULTIGROUP_DIR ?= build/fixed_slice_qwen_multigroup
+FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR ?= build/fixed_slice_qwen_multigroup_sim
 
 fixed-slice-fixture:
 	$(PYTHON) scripts/prepare_fixed_slice_mem.py tests/vectors/case_n1_k128 $(FIXED_SLICE_DIR)
@@ -185,3 +187,68 @@ build-fixed-slice-qwen: fixed-slice-qwen-inputs
 
 test-fixed-slice-qwen: build-fixed-slice-qwen
 	./$(FIXED_SLICE_QWEN_TEST_DIR)/Vtb_fixed_slice_qwen
+
+fixed-slice-qwen-multigroup-inputs:
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/weights.mem
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/activation.mem
+	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/expected.mem
+
+lint-fixed-slice-qwen-multigroup: fixed-slice-qwen-multigroup-inputs
+	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_qwen_multigroup \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen_multigroup.sv
+
+build-fixed-slice-qwen-multigroup: fixed-slice-qwen-multigroup-inputs
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build --trace -Wall \
+	  --top-module tb_fixed_slice_qwen_multigroup --Mdir $(FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR) \
+	  $(FIXED_SLICE_RTL) tests/tb_fixed_slice_qwen_multigroup.sv \
+	  $(CURDIR)/tests/test_fixed_slice_qwen_multigroup.cpp
+
+test-fixed-slice-qwen-multigroup: build-fixed-slice-qwen-multigroup
+	./$(FIXED_SLICE_QWEN_MULTIGROUP_TEST_DIR)/Vtb_fixed_slice_qwen_multigroup
+
+RESULT_CAPTURE_RTL = rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv
+RESULT_CAPTURE_DIR ?= build/result_capture_sim
+FIXED_SLICE_QWEN_UART_RTL = $(CORE_RTL) rtl/compute/lane_adapter_32_to_16.sv \
+	rtl/model/fixed_slice_runner.sv $(RESULT_CAPTURE_RTL) rtl/model/fixed_slice_qwen_uart_top.sv
+
+.PHONY: lint-result-capture build-result-capture test-result-capture lint-fixed-slice-qwen-uart
+lint-result-capture:
+	$(VERILATOR) --lint-only -Wall --top-module tb_result_capture_uart \
+	  -GDEPTH=6 -GCLKS_PER_BIT=1 $(RESULT_CAPTURE_RTL) tests/tb_result_capture_uart.sv
+
+build-result-capture:
+	@mkdir -p build
+	$(VERILATOR) --cc --exe --build -Wall --top-module tb_result_capture_uart \
+	  -GDEPTH=6 -GCLKS_PER_BIT=1 --Mdir $(RESULT_CAPTURE_DIR) \
+	  $(RESULT_CAPTURE_RTL) tests/tb_result_capture_uart.sv \
+	  $(CURDIR)/tests/test_result_capture_uart.cpp
+
+test-result-capture: build-result-capture
+	./$(RESULT_CAPTURE_DIR)/Vtb_result_capture_uart
+
+lint-fixed-slice-qwen-uart: fixed-slice-qwen-multigroup-inputs
+	$(VERILATOR) --lint-only -Wall --top-module fixed_slice_qwen_uart_top \
+	  $(FIXED_SLICE_QWEN_UART_RTL)
+
+UART_BOARD_RTL = $(FIXED_SLICE_QWEN_UART_RTL) rtl/model/fixed_slice_qwen_uart_board_top.sv
+UART_BOARD_DIR ?= build/qwen_uart_board_sim
+UART_BOARD_DEPTH ?= 256
+.PHONY: lint-uart-board build-uart-board test-uart-board test-uart-board-overflow
+lint-uart-board:
+	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_uart_board \
+	  $(UART_BOARD_RTL) tests/tb_fixed_slice_uart_board.sv
+
+build-uart-board:
+	@mkdir -p build/reports
+	$(VERILATOR) --cc --exe --build -Wall --top-module tb_fixed_slice_uart_board \
+	  -GCAPTURE_DEPTH=$(UART_BOARD_DEPTH) --Mdir $(UART_BOARD_DIR) \
+	  -CFLAGS "-DTEST_CAPTURE_DEPTH=$(UART_BOARD_DEPTH)" \
+	  $(UART_BOARD_RTL) tests/tb_fixed_slice_uart_board.sv \
+	  $(CURDIR)/tests/test_fixed_slice_uart_board.cpp
+
+test-uart-board: build-uart-board
+	./$(UART_BOARD_DIR)/Vtb_fixed_slice_uart_board
+
+test-uart-board-overflow:
+	$(MAKE) test-uart-board UART_BOARD_DEPTH=255 UART_BOARD_DIR=build/qwen_uart_board_overflow_sim

@@ -39,6 +39,7 @@ def main():
                        source_sha256=hashes)
     (reports / "environment.json").write_text(json.dumps(environment, indent=2), encoding="utf-8")
     phases = [
+        ("prepare-roms", [sys.executable, "scripts/prepare_regression_roms.py"]),
         ("lint", ["make", "lint", "lint-integration"]),
         ("python", ["make", "test-model", f"PYTHON={sys.executable}"]),
         ("monitor", ["make", "test-monitor"]),
@@ -59,6 +60,11 @@ def main():
                              "lint-fixed-slice-qwen", "test-fixed-slice-qwen", f"PYTHON={sys.executable}"]),
         ("result-capture", [sys.executable, "scripts/check_result_capture.py"]),
         ("multigroup-capture", [sys.executable, "scripts/check_multigroup_capture.py"]),
+        ("uart-readback", ["make", "lint-result-capture", "test-result-capture",
+                           "lint-fixed-slice-qwen-uart", "lint-uart-board",
+                           "test-uart-board", "test-uart-board-overflow",
+                           "lint-fixed-slice-qwen-multigroup", "test-fixed-slice-qwen-multigroup"]),
+        ("uart-parser", [sys.executable, "-m", "unittest", "tests.test_uart_readback"]),
     ]
     results = []
     for name, command in phases:

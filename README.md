@@ -1,6 +1,21 @@
 > 后续：[B 板端自检反馈](docs/board_feedback_2026-10-20.md)；[结果导出格式与比对工具](docs/result_capture_v1.md)。
 
 > 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
+> 最新：Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
+
+## 当前板端工程与归档
+
+- PDS工程：`fpgatest/qwen_slice/prj/prj.pds`；当前顶层`fixed_slice_qwen_uart_board_top`。
+- 工程源码/约束/初始化：`rtl/`、`constraints/`及`prj/source/`、`prj/mem/`。
+- 最终UART位流及LED-only回退位流：`fpgatest/qwen_slice/prj/generate_bitstream/*.sbit`。
+- 实板三次采集和模型配置/量化尺度：`evidence/uart_board/2026-10-21/`。
+- PDS和RTL验证报告快照：`evidence/pds/2026-10-21/`、`evidence/rtl/2026-10-21/`。
+- 可直接发给任务A的ZIP：`deliveries/qwen_uart_board_handoff_2026-10-21.zip`。
+
+当前为Qwen2.5-1.5B-Instruct layer0 o_proj的N16切片，物理K2048包含有效1536列及512列补零，
+不代表完整模型推理。PDS缓存、虚拟环境和临时输出保留本地但不再纳入Git。
+以下历史独立核心/联调记录中的“未综合”“合成数据”等描述仅适用于当时对应测试，
+不代表上述固定模型切片的最新实板状态。
 
 # A：W4A8 GEMV 计算核心
 
