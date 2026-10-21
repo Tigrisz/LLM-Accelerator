@@ -2,3 +2,4 @@
 /evidence/** -text
 /deliveries/** -text
 *.sbit -text
+/fpgatest/qwen_slice/prj/mem/*.mem text eol=lf

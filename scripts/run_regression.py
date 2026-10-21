@@ -65,6 +65,8 @@ def main():
                            "test-uart-board", "test-uart-board-overflow",
                            "lint-fixed-slice-qwen-multigroup", "test-fixed-slice-qwen-multigroup"]),
         ("uart-parser", [sys.executable, "-m", "unittest", "tests.test_uart_readback"]),
+        ("uart-acceptance", [sys.executable, "scripts/audit_uart_delivery.py",
+                             "--simulation", "build/reports/qwen_uart_sim.bin"]),
     ]
     results = []
     for name, command in phases:
