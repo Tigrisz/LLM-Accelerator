@@ -39,7 +39,8 @@ def main():
                        source_sha256=hashes)
     (reports / "environment.json").write_text(json.dumps(environment, indent=2), encoding="utf-8")
     phases = [
-        ("prepare-roms", [sys.executable, "scripts/prepare_regression_roms.py"]),
+        ("prepare-roms", ["make", "fixed-slice-qwen-inputs", "fixed-slice-qwen-multigroup-inputs",
+                          f"PYTHON={sys.executable}"]),
         ("lint", ["make", "lint", "lint-integration"]),
         ("python", ["make", "test-model", f"PYTHON={sys.executable}"]),
         ("monitor", ["make", "test-monitor"]),

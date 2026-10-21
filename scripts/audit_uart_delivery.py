@@ -72,6 +72,13 @@ def audit(output, simulation=None):
         check(sha256(evidence / name) == digest, f'evidence hash mismatch: {name}')
         hashes[name] = digest
     manifest = json.loads((evidence / 'verification_manifest.json').read_text())
+    provenance_dir = ROOT / 'evidence/model_provenance/2026-10-21'
+    for line in (provenance_dir / 'SHA256SUMS.txt').read_text().splitlines():
+        digest, name = line.split('  ', 1)
+        check(sha256(provenance_dir / name) == digest, f'provenance hash mismatch: {name}')
+    provenance = json.loads((provenance_dir / 'provenance.json').read_text())
+    for item in provenance['payload_comparison']:
+        check(sha256(ROOT / item['file']) == item['sha256'], f'provenance payload mismatch: {item["file"]}')
     for entry in [manifest['bitstream'], *manifest['initialization_files']]:
         check(sha256(ROOT / entry['file']) == entry['sha256'], f'manifest mismatch: {entry["file"]}')
     cfg = json.loads((model / 'config.json').read_text())
@@ -133,7 +140,9 @@ def audit(output, simulation=None):
                    integer_reference='256 partial sums independently recomputed',
                    dequantization='float64 group scaling versus reconstructed quantized dot product; rtol=atol=1e-12',
                    original_float_accuracy='not evaluated: original floating weights/activation/reference absent',
-                   checkpoint_revision=cfg.get('checkpoint_revision', 'not supplied'),
+                   checkpoint_revision=provenance['checkpoint_revision'],
+                   checkpoint_evidence='B fixed-snapshot replay report; payload hashes checked by A, model replay not rerun by A',
+                   provenance_sha256=sha256(provenance_dir / 'provenance.json'),
                    board_provenance='B capture records; A independently rechecked files without hardware')
     write(output / 'summary.json', summary)
     return summary

@@ -104,9 +104,10 @@ def main() -> None:
     source = args.source if args.source.is_absolute() else ROOT / args.source
     target = args.target if args.target.is_absolute() else ROOT / args.target
     report = verify_slice(source, target)
-    report_path = ROOT / "build/reports/board_mem.json"
-    report_path.parent.mkdir(parents=True, exist_ok=True)
-    report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
+    if source.resolve() == DEFAULT_SOURCE.resolve() and target.resolve() == DEFAULT_TARGET.resolve():
+        report_path = ROOT / "build/reports/board_mem.json"
+        report_path.parent.mkdir(parents=True, exist_ok=True)
+        report_path.write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8")
     config = report["config"]
     print(
         f"PASS BOARD_MEM rows={config['N']} K={config['K']} "

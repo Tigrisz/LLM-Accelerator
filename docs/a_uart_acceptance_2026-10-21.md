@@ -42,21 +42,25 @@ completed仅表示完整帧已解析，不是UART携带的硬件done状态。
 合成非均匀尺度用例额外防止“先累加所有整数组和，再乘一个尺度”的错误。
 
 这只验证反量化使用和结果一致性，未评估相对原始模型浮点输出的量化误差。
-包内缺少原始浮点权重/激活/输出和checkpoint revision，不能据此声明模型精度。
+包内缺少原始浮点权重/激活/输出，不能据此声明模型精度。
+补充分支 `6c880d9` 已提供 checkpoint `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`、
+提取命令及依赖版本。B报告固定snapshot重放与交付数据逐字节匹配；A核对归档和载荷哈希，
+未在A环境重新加载模型。详见 [B复现说明](qwen_checkpoint_reproduction_2026-10-21.md)。
 UART v1也不携带CRC、位流ID或LED状态，硬件来源、复位和LED依据B的采集记录。
 
 ## 复现修复
 
-回归开始从已提交模型切片准备独立K2048 UART ROM，并取首组准备K128 smoke ROM；
-不依赖旧build缓存，不改PDS板端ROM。K128 smoke不再声称是历史位流对应数据。
+回归复用B的Make目标，从已提交PDS ROM准备K2048 UART输入，
+从 `tests/fixtures/qwen_n16_k128` 准备历史K128 smoke输入；
+不依赖旧build缓存，不改PDS板端ROM，也不保留重复的首组裁切准备逻辑。
 MEM文本固定LF，避免Windows自动CRLF转换导致字节哈希不一致。
-`verify_slice`将临时用例报告写入其target，只有CLI写正式`build/reports/board_mem.json`，
+`verify_slice`将临时用例报告写入其target，只有默认板端输入/目标的CLI调用写正式`build/reports/board_mem.json`，
 避免后续Python测试覆盖N16/K2048报告。
 
 ## 交给 B 的下一步
 
 1. 本基线整数和UART交付已通过A离线验收；无须重发当前三份采集。
-2. 补充此次实际checkpoint revision、提取命令和依赖版本，不能以当前最新版代替历史版本。
+2. checkpoint revision、提取命令和依赖版本已收到；保留固定snapshot复现流程。
 3. 提供同一切片、同一token的原始浮点权重和激活（或可信浮点参考输出），供量化误差评估。
 4. 下一轮N3/K256、N3/K384使用PR6各自golden与输入，分别应有6/9条记录。
    冻结输入哈希后，B另行构建和上板采集；当前N16/K2048结果不能替代它们。
