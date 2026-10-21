@@ -1,0 +1,60 @@
+RUN lint: make lint lint-integration
+PASS lint
+RUN python: make test-model PYTHON=/usr/bin/python3
+PASS python
+RUN monitor: make test-monitor
+PASS monitor
+RUN compute: make build-compute
+PASS compute
+RUN core-directed: /usr/bin/python3 scripts/run_core_tests.py
+PASS core-directed
+RUN core-golden: /usr/bin/python3 scripts/verify_b_vectors.py
+PASS core-golden
+RUN failure-replay: /usr/bin/python3 scripts/check_failure_replay.py
+PASS failure-replay
+RUN adapter-build: make build-adapter
+PASS adapter-build
+RUN adapter: /usr/bin/python3 scripts/run_adapter_tests.py
+PASS adapter
+RUN integration-build: make build-integration build-integration16
+PASS integration-build
+RUN integration: /usr/bin/python3 scripts/verify_b_vectors.py --integration
+PASS integration
+RUN integration16: /usr/bin/python3 scripts/verify_b_vectors.py --integration --integration-lanes 16
+PASS integration16
+RUN lane-benchmark: /usr/bin/python3 scripts/benchmark_lanes.py
+PASS lane-benchmark
+RUN board-mem: /usr/bin/python3 scripts/verify_board_mem.py
+PASS board-mem
+RUN b-board-control: make lint-lane-adapter test-lane-adapter lint-control lint-control-16 test-system-control lint-fixed-slice test-fixed-slice lint-fixed-slice-qwen test-fixed-slice-qwen PYTHON=/usr/bin/python3
+FAIL b-board-control
+- Verilator: Walltime 5.936 s (elab=0.003, cvt=0.031, bld=5.807); cpu 0.041 s on 1 threads; alloced 12.879 MB
+PASS CONTROL N=3 K=256 outputs=6 cycles=152
+PASS CONTROL_ERRORS
+/usr/bin/python3 scripts/prepare_fixed_slice_mem.py tests/vectors/case_n1_k128 build/fixed_slice
+{"K": 128, "N": 1, "activation_layout": "signed INT8, logical order, zero-padded to padded_K", "format_version": 1, "group_size": 128, "lanes": 32, "padded_K": 128, "seed": 101, "weight_layout": "row-major, padded per row to group_size"}
+verilator --lint-only -Wall --top-module tb_fixed_slice \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.170 MB sources in 10 modules, into 0.111 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.029 s (elab=0.002, cvt=0.004, bld=0.000); cpu 0.012 s on 1 threads; alloced 9.000 MB
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_fixed_slice --Mdir build/fixed_slice_sim \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice.sv /mnt/d/GPT/qiansai_FPGA/tmp/uart_clean_c548e80_cb9a5000acd2433992a49c9764d83a33/tests/test_fixed_slice.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/tmp/uart_clean_c548e80_cb9a5000acd2433992a49c9764d83a33/build/fixed_slice_sim'
+g++  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -Os  -c -o test_fixed_slice.o /mnt/d/GPT/qiansai_FPGA/tmp/uart_clean_c548e80_cb9a5000acd2433992a49c9764d83a33/tests/test_fixed_slice.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated.o /usr/share/verilator/include/verilated.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o verilated_threads.o /usr/share/verilator/include/verilated_threads.cpp
+python3 /usr/share/verilator/bin/verilator_includer -DVL_INCLUDE_OPT=include Vtb_fixed_slice.cpp Vtb_fixed_slice___024root__DepSet_hf44d3de3__0.cpp Vtb_fixed_slice___024root__DepSet_he1c3c702__0.cpp Vtb_fixed_slice__Trace__0.cpp Vtb_fixed_slice__ConstPool_0.cpp Vtb_fixed_slice___024root__Slow.cpp Vtb_fixed_slice___024root__DepSet_hf44d3de3__0__Slow.cpp Vtb_fixed_slice___024root__DepSet_he1c3c702__0__Slow.cpp Vtb_fixed_slice__Syms.cpp Vtb_fixed_slice__Trace__0__Slow.cpp Vtb_fixed_slice__TraceDecls__0__Slow.cpp > Vtb_fixed_slice__ALL.cpp
+g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=0 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable      -c -o Vtb_fixed_slice__ALL.o Vtb_fixed_slice__ALL.cpp
+echo "" > Vtb_fixed_slice__ALL.verilator_deplist.tmp
+g++    test_fixed_slice.o verilated.o verilated_vcd_c.o verilated_threads.o Vtb_fixed_slice__ALL.a    -pthread -lpthread -latomic   -o Vtb_fixed_slice
+rm Vtb_fixed_slice__ALL.verilator_deplist.tmp
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/tmp/uart_clean_c548e80_cb9a5000acd2433992a49c9764d83a33/build/fixed_slice_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.170 MB sources in 10 modules, into 0.326 MB in 11 C++ files needing 0.000 MB
+- Verilator: Walltime 5.380 s (elab=0.002, cvt=0.036, bld=5.259); cpu 0.022 s on 1 threads; alloced 10.445 MB
+./build/fixed_slice_sim/Vtb_fixed_slice
+PASS FIXED_SLICE_BOARD_RUN result_count=1 cycles=17 partial_sum=-255
+make: *** [Makefile:174: fixed-slice-qwen-inputs] Error 1

@@ -171,9 +171,7 @@ test-fixed-slice: build-fixed-slice
 	./$(FIXED_SLICE_TEST_DIR)/Vtb_fixed_slice
 
 fixed-slice-qwen-inputs:
-	@test -f $(FIXED_SLICE_QWEN_DIR)/weights.mem
-	@test -f $(FIXED_SLICE_QWEN_DIR)/activation.mem
-	@test -f $(FIXED_SLICE_QWEN_DIR)/expected.mem
+	$(PYTHON) scripts/verify_board_mem.py --source tests/fixtures/qwen_n16_k128 --target $(FIXED_SLICE_QWEN_DIR)
 
 lint-fixed-slice-qwen: fixed-slice-qwen-inputs
 	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_qwen \
@@ -189,9 +187,7 @@ test-fixed-slice-qwen: build-fixed-slice-qwen
 	./$(FIXED_SLICE_QWEN_TEST_DIR)/Vtb_fixed_slice_qwen
 
 fixed-slice-qwen-multigroup-inputs:
-	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/weights.mem
-	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/activation.mem
-	@test -f $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)/expected.mem
+	$(PYTHON) scripts/verify_board_mem.py --source fpgatest/qwen_slice/prj/mem --target $(FIXED_SLICE_QWEN_MULTIGROUP_DIR)
 
 lint-fixed-slice-qwen-multigroup: fixed-slice-qwen-multigroup-inputs
 	$(VERILATOR) --lint-only -Wall --top-module tb_fixed_slice_qwen_multigroup \

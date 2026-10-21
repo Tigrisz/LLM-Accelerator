@@ -2,3 +2,4 @@
 /evidence/** -text
 /deliveries/** -text
 *.sbit -text
+*.mem text eol=lf

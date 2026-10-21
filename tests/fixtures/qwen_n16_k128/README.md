@@ -1,0 +1,15 @@
+# 历史Qwen N16/K128回归输入
+
+从本机原有build/fixed_slice_qwen逐字节归档，保留旧test-fixed-slice-qwen的实际输入，
+不拿K2048用例的第一组或合成随机数据替换旧fixture。
+该用例仅用于保留旧K128回归；本次新补充revision的逐字节重放证据针对N16/K2048。
+不声称本README单独补证了旧K128切片的原始checkpoint版本。
+
+Makefile会先独立重算本目录INT4×INT8黄金值，再将三个.mem准备到被忽略的build目录，
+因此全新检出不需要预先提取整个模型。64个权重字、4个激活字、16个期望部分和。
+
+原始文件SHA256：
+
+- weights.mem：1395f6c21d5cbd5f976efb027f65f682ea8c14b47789e7ef0ad9080031447350
+- activation.mem：862515ef5a84b8de9ccea9fee52196a118fe592676f0aa8f6ffbe250e7325c68
+- expected.mem：7a7e92c11920ad7eba86f4e4f1c440e100d2e82e1ad7749687856c5391e16d65
