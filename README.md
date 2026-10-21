@@ -1,3 +1,6 @@
+> 后续：[B 板端自检反馈](docs/board_feedback_2026-10-20.md)；[结果导出格式与比对工具](docs/result_capture_v1.md)。
+
+> 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
 > 最新：Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
 
 ## 当前板端工程与归档
