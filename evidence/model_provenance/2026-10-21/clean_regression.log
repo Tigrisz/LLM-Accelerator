@@ -1,0 +1,35 @@
+RUN lint: make lint lint-integration
+PASS lint
+RUN python: make test-model PYTHON=/usr/bin/python3
+PASS python
+RUN monitor: make test-monitor
+PASS monitor
+RUN compute: make build-compute
+PASS compute
+RUN core-directed: /usr/bin/python3 scripts/run_core_tests.py
+PASS core-directed
+RUN core-golden: /usr/bin/python3 scripts/verify_b_vectors.py
+PASS core-golden
+RUN failure-replay: /usr/bin/python3 scripts/check_failure_replay.py
+PASS failure-replay
+RUN adapter-build: make build-adapter
+PASS adapter-build
+RUN adapter: /usr/bin/python3 scripts/run_adapter_tests.py
+PASS adapter
+RUN integration-build: make build-integration build-integration16
+PASS integration-build
+RUN integration: /usr/bin/python3 scripts/verify_b_vectors.py --integration
+PASS integration
+RUN integration16: /usr/bin/python3 scripts/verify_b_vectors.py --integration --integration-lanes 16
+PASS integration16
+RUN lane-benchmark: /usr/bin/python3 scripts/benchmark_lanes.py
+PASS lane-benchmark
+RUN board-mem: /usr/bin/python3 scripts/verify_board_mem.py
+PASS board-mem
+RUN b-board-control: make lint-lane-adapter test-lane-adapter lint-control lint-control-16 test-system-control lint-fixed-slice test-fixed-slice lint-fixed-slice-qwen test-fixed-slice-qwen PYTHON=/usr/bin/python3
+PASS b-board-control
+RUN uart-readback: make lint-result-capture test-result-capture lint-fixed-slice-qwen-uart lint-uart-board test-uart-board test-uart-board-overflow lint-fixed-slice-qwen-multigroup test-fixed-slice-qwen-multigroup
+PASS uart-readback
+RUN uart-parser: /usr/bin/python3 -m unittest tests.test_uart_readback
+PASS uart-parser
+PASS REGRESSION phases=17 reports=/mnt/d/GPT/qiansai_FPGA/tmp/uart_clean_fixed_7acb149cceac4fe6a4670ed1fec543f1/build/reports

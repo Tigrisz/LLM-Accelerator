@@ -1,0 +1,182 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "branch": "codex/qwen-uart-board-handoff",
+  "uart_source_commit": "c548e80063daf21783405adf0df3d1f56a3c63ef",
+  "build_reproducibility_commit": "906e8120616aedc1b2166725980faa26d9979758",
+  "clean_checkout_regression": {
+    "source_commit": "906e8120616aedc1b2166725980faa26d9979758",
+    "initial_base_checkout_failed_missing_ignored_roms": true,
+    "bootstrap_tests_observed_red_then_green": true,
+    "complete_phases": 17,
+    "all_passed": true,
+    "archive_text_eol_note": "Windows git archive used CRLF for some text files; environment fingerprints are actual exported bytes. Committed source content verified after CRLF-to-LF normalization; mem fixed LF and binary artifacts unchanged.",
+    "summary": "clean_regression_summary.json",
+    "environment": "clean_regression_environment.json",
+    "console_log": "clean_regression.log",
+    "initial_failure_log": "initial_clean_failure.log"
+  },
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "checkpoint_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "historical_extraction_recorded_revision": false,
+  "evidence_basis": "Local HF refs/main and unique snapshot; fixed-snapshot offline replay matches delivered quantized payloads and WSL-generated PDS mem byte-for-byte. Historical K2048 terminal command was not retained; revision was recovered and replay-verified, not retrospectively asserted as an original pinned argument.",
+  "checkpoint_file_sha256": {
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "torch_distribution": "2.14.1",
+    "torch_runtime": "2.14.1+cu130",
+    "cuda_build": "13.0",
+    "model_execution_device": "cpu",
+    "transformers": "5.20.1",
+    "numpy": "2.5.4",
+    "huggingface_hub": "2.2.0",
+    "tokenizers": "0.23.3",
+    "safetensors": "0.8.0",
+    "sentencepiece": "0.2.2",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43"
+  },
+  "replay": {
+    "environment_variables": {
+      "HF_HUB_OFFLINE": "1",
+      "TRANSFORMERS_OFFLINE": "1"
+    },
+    "command": [
+      ".venv-qwen/bin/python",
+      "scripts/extract_qwen_slice.py",
+      "--model",
+      "/home/jack/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+      "--output",
+      "build/reproduction/qwen_uart_989aa798",
+      "--layer",
+      "0",
+      "--rows-start",
+      "0",
+      "--rows",
+      "16",
+      "--cols-start",
+      "0",
+      "--cols",
+      "2048",
+      "--allow-zero-pad-cols",
+      "--prompt",
+      "FPGA W4A8 slice validation.",
+      "--token-index",
+      "-1"
+    ],
+    "rom_command": [
+      ".venv-qwen/bin/python",
+      "scripts/prepare_fixed_slice_mem.py",
+      "build/reproduction/qwen_uart_989aa798",
+      "build/reproduction/qwen_uart_989aa798_mem_wsl"
+    ],
+    "result": "passed",
+    "rom_platform_note": "Byte-identical ROM images generated in WSL/Linux with LF. Native Windows text generation produced equivalent values with CRLF and was not used as byte-identical evidence."
+  },
+  "payload_comparison": [
+    {
+      "file": "evidence/uart_board/2026-10-21/model_slice/weight_packed.bin",
+      "replay_file": "build/reproduction/qwen_uart_989aa798/weight_packed.bin",
+      "bytes": 16384,
+      "sha256": "162e973fa046f235aaa2c9a6397c5d806301d19d6935132e0d859e1a681bdf18",
+      "byte_identical": true
+    },
+    {
+      "file": "evidence/uart_board/2026-10-21/model_slice/activation_int8.bin",
+      "replay_file": "build/reproduction/qwen_uart_989aa798/activation_int8.bin",
+      "bytes": 2048,
+      "sha256": "3b4fb1ebc20b4c159993b2dc1a090451214329dcbc9832de44c702b0f523b18a",
+      "byte_identical": true
+    },
+    {
+      "file": "evidence/uart_board/2026-10-21/model_slice/scales.npy",
+      "replay_file": "build/reproduction/qwen_uart_989aa798/scales.npy",
+      "bytes": 1152,
+      "sha256": "34a76bf2777021edf5629704a1897e82d779ab85cb6cf7045501962146dab3da",
+      "byte_identical": true
+    },
+    {
+      "file": "evidence/uart_board/2026-10-21/model_slice/activation_scale.npy",
+      "replay_file": "build/reproduction/qwen_uart_989aa798/activation_scale.npy",
+      "bytes": 132,
+      "sha256": "be6fffc1bc102e56bd3cf6e1e6ff95cf3bdcd4557c30e5731c197c3dda5cb5d2",
+      "byte_identical": true
+    },
+    {
+      "file": "evidence/uart_board/2026-10-21/model_slice/expected_partial.npy",
+      "replay_file": "build/reproduction/qwen_uart_989aa798/expected_partial.npy",
+      "bytes": 1152,
+      "sha256": "c42b711b8d81469e46b0bad2b3d641584a176e0a213ee70ee385ecd10ce987a5",
+      "byte_identical": true
+    },
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/weights.mem",
+      "replay_file": "build/reproduction/qwen_uart_989aa798_mem_wsl/weights.mem",
+      "bytes": 33792,
+      "sha256": "0ae6ca9f8c40c7dc7ad7049ab6feb9bc3b87a79d02ea7a97950fd8e18bd4dd3f",
+      "byte_identical": true
+    },
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/activation.mem",
+      "replay_file": "build/reproduction/qwen_uart_989aa798_mem_wsl/activation.mem",
+      "bytes": 4160,
+      "sha256": "f4d385ca3fb6105d722f376e320689128fd49d505e3240a1058a043f5e16a4a1",
+      "byte_identical": true
+    },
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/expected.mem",
+      "replay_file": "build/reproduction/qwen_uart_989aa798_mem_wsl/expected.mem",
+      "bytes": 2304,
+      "sha256": "3bc409d58f57f55443b0f27d0f49ca64606ef72d9f0c7b109d155aa2c20b610b",
+      "byte_identical": true
+    }
+  ],
+  "source_sha256": {
+    "scripts/extract_qwen_slice.py": "422125265336c11595123c05abf1e95902c2b6e74d4984212174e93684fac57c",
+    "scripts/prepare_fixed_slice_mem.py": "121efd6511a404c5d29a8f752237bc7552debace4a48f3e32078cbe1e36e7e9d",
+    "model/model_slice.py": "7e8b149b2506736bd862f240df40400a1cb41627ca23986703c2ad82e19110f2",
+    "model/golden_gemv.py": "6cce2e426c3b5aa786812f468153c0b4ecf94eedbcb6956dddb2365f76b3887c",
+    "model/pack_weights.py": "a466419ff4b77979f75137e725bb2c45ff17f34f3f498a16d73f5cc01fdf557d",
+    "model/stream_reference.py": "d4554a4e41cda9a63cb9e144cb11357e03d21721785589a7b53b4103a8d57e0e"
+  },
+  "config_comparison": {
+    "equal_except_model_field": true,
+    "original_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "replay_model": "/home/jack/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+  },
+  "slice_parameters": {
+    "format_version": 1,
+    "source": "real_model_slice",
+    "N": 16,
+    "K": 2048,
+    "padded_K": 2048,
+    "lanes": 32,
+    "group_size": 128,
+    "quantization": "symmetric_w4a8",
+    "weight_scale_layout": "[N,ceil(K/group_size)]",
+    "activation_scale_layout": "one scalar",
+    "layer": 0,
+    "module": "model.layers[].self_attn.o_proj",
+    "rows_start": 0,
+    "cols_start": 0,
+    "prompt": "FPGA W4A8 slice validation.",
+    "token_index": -1,
+    "source_weight_shape": [
+      1536,
+      1536
+    ],
+    "source_activation_width": 1536,
+    "source_cols": 1536,
+    "zero_padded_cols": 512
+  },
+  "board_bitstream_sha256": "718330d02168d8a9af8ed09f5d24bc70e69eaad67431faef7639c3c7382eef16",
+  "board_capture_sha256": "410f0086fa79888f974e245f9ac878eaad452fdd9ee3adc5eb3f62f484077cf0",
+  "original_board_data_and_delivery_zip_modified": false
+}

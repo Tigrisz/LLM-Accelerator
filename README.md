@@ -5,6 +5,9 @@
 
 ## 当前板端工程与归档
 
+独立UART交付分支及固定checkpoint复现见
+[模型revision与提取命令](docs/qwen_checkpoint_reproduction_2026-10-21.md)。
+
 - PDS工程：`fpgatest/qwen_slice/prj/prj.pds`；当前顶层`fixed_slice_qwen_uart_board_top`。
 - 工程源码/约束/初始化：`rtl/`、`constraints/`及`prj/source/`、`prj/mem/`。
 - 最终UART位流及LED-only回退位流：`fpgatest/qwen_slice/prj/generate_bitstream/*.sbit`。
