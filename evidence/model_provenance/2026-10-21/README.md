@@ -1,0 +1,24 @@
+# 固定checkpoint复现与干净目录回归证据
+
+provenance.json记录本机HF缓存发现的revision、七个checkpoint/tokenizer输入文件
+SHA256、本次实际执行的离线提取命令、依赖环境，以及八个数据文件逐字节比较结果。
+
+原命令未记录revision，本次没有改写历史config或旧交付ZIP。固定snapshot重放得到
+与原始实板输入相同的量化权重、激活、scale、期望部分和及三个PDS.mem。
+更多参数、命令、行尾格式及来源边界见
+`docs/qwen_checkpoint_reproduction_2026-10-21.md`。
+
+clean_regression_summary.json、clean_regression_environment.json、
+clean_regression.log和clean_board_mem.json来自UART主体后增加输入准备修复的提交
+导出到空目录后重新执行的17阶段完整回归。精确源码提交号在environment和provenance中。
+导出不包含原build缓存、虚拟环境和PDS中间数据库，验证交付源码不依赖这些本地残留。
+environment中的tested_revision为修复后的源码提交，不冒充随后新增文档的最终补充提交。
+Windows Git archive按当前autocrlf设置导出部分文本为CRLF；environment的source_sha256
+对应实际运行的导出文件字节。核对Git blob时，需将双方文本CRLF规范为LF后比较；
+本次已确认没有其他内容差异。.mem已单独固定LF，原始数据/位流不参与文本转换。
+
+本次补充来源/复现文档，并修复Makefile对未跟踪build输入的依赖、归档旧K128测试输入、
+增加两项空目录输入准备测试，固定Git.mem行尾；没有修改UART/计算RTL、约束或位流，
+也没有重新运行PDS或重新进行板端采集。PDS和实板证据继续引用已验收的2026-10-21归档。
+SHA256SUMS.txt覆盖本目录除清单自身之外的全部文件。
+initial_clean_failure.log保留修复前干净目录缺少build ROM输入时的实际失败日志。
