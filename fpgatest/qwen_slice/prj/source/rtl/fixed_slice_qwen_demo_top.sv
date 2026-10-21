@@ -1,4 +1,4 @@
-// Board-facing wrapper for the real Qwen N=16, K=128 fixed slice.
+// Board-facing wrapper for the real Qwen N=16, K=2048 multi-group slice.
 //
 // The generic fixed_slice_demo_top remains reusable for other fixtures.  This
 // wrapper supplies the board acceptance configuration and can be selected as
@@ -19,7 +19,7 @@ module fixed_slice_qwen_demo_top #(
 );
     fixed_slice_demo_top #(
         .N(16),
-        .K(128),
+        .K(2048),
         .WEIGHT_MEM_FILE(WEIGHT_MEM_FILE),
         .ACTIVATION_MEM_FILE(ACTIVATION_MEM_FILE),
         .EXPECTED_MEM_FILE(EXPECTED_MEM_FILE)

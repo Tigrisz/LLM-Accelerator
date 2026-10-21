@@ -1,0 +1,26 @@
+{
+  "format_version": 1,
+  "source": "real_model_slice",
+  "N": 16,
+  "K": 2048,
+  "padded_K": 2048,
+  "lanes": 32,
+  "group_size": 128,
+  "quantization": "symmetric_w4a8",
+  "weight_scale_layout": "[N,ceil(K/group_size)]",
+  "activation_scale_layout": "one scalar",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "layer": 0,
+  "module": "model.layers[].self_attn.o_proj",
+  "rows_start": 0,
+  "cols_start": 0,
+  "prompt": "FPGA W4A8 slice validation.",
+  "token_index": -1,
+  "source_weight_shape": [
+    1536,
+    1536
+  ],
+  "source_activation_width": 1536,
+  "source_cols": 1536,
+  "zero_padded_cols": 512
+}

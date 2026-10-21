@@ -14,7 +14,7 @@ def main():
     subprocess.run([str(ROOT / "build/fixed_slice_qwen_sim/Vtb_fixed_slice_qwen")],
                    cwd=ROOT, env=env, check=True, timeout=60)
     subprocess.run([sys.executable, str(ROOT/"scripts/compare_results.py"),
-                    "--golden", str(ROOT/"fpgatest/qwen_slice/prj/mem/expected.mem"),
+                    "--golden", str(ROOT/"build/fixed_slice_qwen/expected.mem"),
                     "--rows", "16", "--groups", "1", "--capture", str(capture),
                     "--report", str(ROOT/"build/reports/qwen_simulation_comparison.json")],
                    cwd=ROOT, check=True, timeout=60)
