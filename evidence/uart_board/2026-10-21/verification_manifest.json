@@ -1,0 +1,106 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "source": "board",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "scope": "Fixed W4A8 slice only, not full-model inference",
+  "rows": 16,
+  "physical_K": 2048,
+  "group_size": 128,
+  "groups": 16,
+  "uart": {
+    "port": "COM10",
+    "description": "Silicon Labs CP210x USB to UART Bridge",
+    "vid_pid": "10C4:EA60",
+    "serial_number": "0001",
+    "pnp_status": "OK",
+    "baudrate": 115200,
+    "format": "8N1",
+    "flow_control": "none",
+    "host_transmitted_data": false
+  },
+  "bitstream": {
+    "file": "fpgatest/qwen_slice/prj/generate_bitstream/fixed_slice_qwen_uart_board_top.sbit",
+    "sha256": "718330d02168d8a9af8ed09f5d24bc70e69eaad67431faef7639c3c7382eef16",
+    "bytes": 3791112,
+    "program_log": "artifacts/uart_board/2026-10-21/program.log",
+    "association_basis": "Prior successful official JTAG programming log and current local bitstream hash; UART v1 has no bitstream ID field",
+    "reprogrammed_during_this_capture_session": false
+  },
+  "initialization_files": [
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/weights.mem",
+      "sha256": "0ae6ca9f8c40c7dc7ad7049ab6feb9bc3b87a79d02ea7a97950fd8e18bd4dd3f"
+    },
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/activation.mem",
+      "sha256": "f4d385ca3fb6105d722f376e320689128fd49d505e3240a1058a043f5e16a4a1"
+    },
+    {
+      "file": "fpgatest/qwen_slice/prj/mem/expected.mem",
+      "sha256": "3bc409d58f57f55443b0f27d0f49ca64606ef72d9f0c7b109d155aa2c20b610b"
+    }
+  ],
+  "runs": [
+    {
+      "run": 1,
+      "raw_file": "run1.bin",
+      "decoded_file": "run1.json",
+      "received_at": "2026-10-21T18:45:09.742995+08:00",
+      "bytes": 2057,
+      "records": 256,
+      "sha256": "410f0086fa79888f974e245f9ac878eaad452fdd9ee3adc5eb3f62f484077cf0",
+      "physical_key0_reset_confirmed_by_user": true,
+      "led_observation_source": "user confirmation, not UART fields",
+      "led_done": true,
+      "led_pass": true,
+      "led_fail": false,
+      "tuple_comparison_passed": true
+    },
+    {
+      "run": 2,
+      "raw_file": "run2.bin",
+      "decoded_file": "run2.json",
+      "received_at": "2026-10-21T18:45:46.370400+08:00",
+      "bytes": 2057,
+      "records": 256,
+      "sha256": "410f0086fa79888f974e245f9ac878eaad452fdd9ee3adc5eb3f62f484077cf0",
+      "physical_key0_reset_confirmed_by_user": true,
+      "led_observation_source": "user confirmation, not UART fields",
+      "led_done": true,
+      "led_pass": true,
+      "led_fail": false,
+      "tuple_comparison_passed": true
+    },
+    {
+      "run": 3,
+      "raw_file": "run3.bin",
+      "decoded_file": "run3.json",
+      "received_at": "2026-10-21T18:46:51.612279+08:00",
+      "bytes": 2057,
+      "records": 256,
+      "sha256": "410f0086fa79888f974e245f9ac878eaad452fdd9ee3adc5eb3f62f484077cf0",
+      "physical_key0_reset_confirmed_by_user": true,
+      "led_observation_source": "user confirmation, not UART fields",
+      "led_done": true,
+      "led_pass": true,
+      "led_fail": false,
+      "tuple_comparison_passed": true
+    }
+  ],
+  "verification": {
+    "all_runs_passed": true,
+    "row_range": [0, 15],
+    "group_range": [0, 15],
+    "unique_tags_per_run": 256,
+    "duplicate_tags": 0,
+    "missing_tags": 0,
+    "out_of_range_tags": 0,
+    "partial_sum_mismatches": 0,
+    "order": "row-major, group-major",
+    "all_raw_frames_identical": true,
+    "first_record": {"row_id": 0, "group_id": 0, "partial_sum": 145},
+    "last_record": {"row_id": 15, "group_id": 15, "partial_sum": 0}
+  },
+  "git_note": "artifacts/ is ignored; provide raw files separately for handoff; no commit or push performed"
+}

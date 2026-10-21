@@ -14,6 +14,21 @@ from scripts.verify_board_mem import verify_slice
 
 
 class FixedSliceMultiGroupTests(unittest.TestCase):
+    def test_verify_infers_rows_from_group_count_without_config(self) -> None:
+        with tempfile.TemporaryDirectory(dir=Path("tmp")) as tmp:
+            root = Path(tmp)
+            output = root / "mem"
+            output.mkdir()
+            # N=3, physical K=256: 24 weight words, 8 activation words,
+            # 6 row/group partial sums. PDS need not contain config.json.
+            (output / "weights.mem").write_text(("0" * 32 + "\n") * 24)
+            (output / "activation.mem").write_text(("0" * 64 + "\n") * 8)
+            (output / "expected.mem").write_text("00000000\n" * 6)
+            report = verify_slice(output, root / "checked")
+            self.assertEqual(report["config"]["N"], 3)
+            self.assertEqual(report["config"]["padded_K"], 256)
+            self.assertEqual(len(report["calculated"]), 6)
+
     def test_extract_can_explicitly_zero_pad_short_model_width(self) -> None:
         weights = np.arange(2 * 3, dtype=np.float32).reshape(2, 3)
         activation = np.asarray([1.0, 2.0, 3.0], dtype=np.float32)

@@ -57,6 +57,11 @@ def main():
                              "lint-control", "lint-control-16", "test-system-control",
                              "lint-fixed-slice", "test-fixed-slice",
                              "lint-fixed-slice-qwen", "test-fixed-slice-qwen", f"PYTHON={sys.executable}"]),
+        ("uart-readback", ["make", "lint-result-capture", "test-result-capture",
+                           "lint-fixed-slice-qwen-uart", "lint-uart-board",
+                           "test-uart-board", "test-uart-board-overflow",
+                           "lint-fixed-slice-qwen-multigroup", "test-fixed-slice-qwen-multigroup"]),
+        ("uart-parser", [sys.executable, "-m", "unittest", "tests.test_uart_readback"]),
     ]
     results = []
     for name, command in phases:

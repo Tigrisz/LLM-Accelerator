@@ -10,7 +10,8 @@ import shutil
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_SOURCE = ROOT / "fpgatest/qwen_slice/prj/mem"
-DEFAULT_TARGET = ROOT / "build/fixed_slice_qwen"
+# Verification must not overwrite the separate N=16,K=128 smoke fixture.
+DEFAULT_TARGET = ROOT / "build/fixed_slice_board_verified"
 
 
 def read_words(source: Path, name: str, width: int, count: int) -> list[int]:
@@ -29,16 +30,24 @@ def verify_slice(source: Path, target: Path) -> dict:
     if config_path.exists():
         config = json.loads(config_path.read_text(encoding="utf-8"))
     else:
-        # The PDS project stores only the three ROM images.  Infer the v1
-        # smoke dimensions so the original regression remains self-contained.
+        # A PDS image has one expected value per row AND per physical group.
+        # Logical unpadded K cannot be recovered without metadata, so use the
+        # physical K here and record that it was inferred.
         activation_line_count = len((source / "activation.mem").read_text(encoding="ascii").splitlines())
         expected_line_count = len((source / "expected.mem").read_text(encoding="ascii").splitlines())
+        padded_k_inferred = activation_line_count * 32
+        if padded_k_inferred == 0 or padded_k_inferred % 128:
+            raise ValueError("activation image does not contain complete 128-element groups")
+        inferred_groups = padded_k_inferred // 128
+        if expected_line_count == 0 or expected_line_count % inferred_groups:
+            raise ValueError("expected image does not contain complete rows of group results")
         config = {
             "format_version": 1,
             "source": "pds_mem_without_config",
-            "N": expected_line_count,
-            "K": activation_line_count * 32,
-            "padded_K": activation_line_count * 32,
+            "N": expected_line_count // inferred_groups,
+            "K": padded_k_inferred,
+            "padded_K": padded_k_inferred,
+            "logical_K_inferred_from_padding": True,
             "lanes": 32,
             "group_size": 128,
         }

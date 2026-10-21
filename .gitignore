@@ -22,3 +22,22 @@ stdout.log*
 *.swp
 Thumbs.db
 .DS_Store
+
+# PDS reproducible build/cache outputs stay local. Final bitstreams are kept.
+/fpgatest/qwen_slice/prj/compile/
+/fpgatest/qwen_slice/prj/constraint_check/
+/fpgatest/qwen_slice/prj/device_map/
+/fpgatest/qwen_slice/prj/synthesize/
+/fpgatest/qwen_slice/prj/place_route/
+/fpgatest/qwen_slice/prj/report_timing/
+/fpgatest/qwen_slice/prj/log/
+/fpgatest/qwen_slice/prj/logbackup/
+/fpgatest/qwen_slice/prj/impl.tcl
+/fpgatest/qwen_slice/prj/multiseed_summary.csv
+/fpgatest/qwen_slice/prj/pds.log
+/fpgatest/qwen_slice/prj/run.log
+/fpgatest/qwen_slice/prj/generate_bitstream/*
+!/fpgatest/qwen_slice/prj/generate_bitstream/fixed_slice_qwen_demo_top.sbit
+!/fpgatest/qwen_slice/prj/generate_bitstream/fixed_slice_qwen_uart_board_top.sbit
+/log/
+/scripts/configuration_tcl.log

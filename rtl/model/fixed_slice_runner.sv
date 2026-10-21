@@ -20,7 +20,11 @@ module fixed_slice_runner #(
     output reg         pass,
     output reg         fail,
     output reg [31:0]  result_count,
-    output reg signed [31:0] last_partial_sum
+    output reg signed [31:0] last_partial_sum,
+    output wire        result_valid,
+    output wire [15:0] result_row_id,
+    output wire [15:0] result_group_id,
+    output wire signed [31:0] result_partial_sum
 );
     localparam integer LANES = 32;
     localparam integer GROUP_SIZE = 128;
@@ -107,6 +111,15 @@ module fixed_slice_runner #(
                               (core_group_id < GROUPS_U16);
     wire result_ok = result_index_valid &&
                      (core_partial_sum == $signed(expected_mem[expected_mem_index]));
+
+    // One-cycle event stream used by the optional board-side result capture.
+    // The event is the same core output that drives result_count and the
+    // golden comparison, so tags and partial sums cannot be reconstructed
+    // from an assumed output order.
+    assign result_valid = core_out_valid;
+    assign result_row_id = core_row_id;
+    assign result_group_id = core_group_id;
+    assign result_partial_sum = core_partial_sum;
 
     assign busy = running && !done;
 
