@@ -3,3 +3,4 @@
 /deliveries/** -text
 *.sbit -text
 *.mem text eol=lf
+/tests/fixtures/a_multigroup/** -text

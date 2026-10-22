@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "source": "board",
+  "run_id": "b-a-k384-board-2026-10-21-reset3",
+  "results": [
+    {
+      "row_id": 0,
+      "group_id": 0,
+      "partial_sum": -6908
+    },
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "partial_sum": 1686
+    },
+    {
+      "row_id": 0,
+      "group_id": 2,
+      "partial_sum": -1175
+    },
+    {
+      "row_id": 1,
+      "group_id": 0,
+      "partial_sum": -1560
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "partial_sum": -1043
+    },
+    {
+      "row_id": 1,
+      "group_id": 2,
+      "partial_sum": -3218
+    },
+    {
+      "row_id": 2,
+      "group_id": 0,
+      "partial_sum": -4489
+    },
+    {
+      "row_id": 2,
+      "group_id": 1,
+      "partial_sum": 215
+    },
+    {
+      "row_id": 2,
+      "group_id": 2,
+      "partial_sum": 1156
+    }
+  ],
+  "completed": true
+}

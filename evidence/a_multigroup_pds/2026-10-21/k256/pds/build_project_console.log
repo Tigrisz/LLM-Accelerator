@@ -1,0 +1,1374 @@
+License checkout: fabric_shell from D:\pango\license\new_pds_00e04cf107df.lic
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+
+
+Process "Compile" started.
+Current time: Wed Oct 21 21:51:38 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+License checkout: fabric_ads from D:\pango\license\new_pds_00e04cf107df.lic
+Compiling verification operator library.
+Loading technology operator library.
+Compiling technology operator library.
+Compiling technology operator (valence) library.
+I: Enable SystemVerilog features and keywords
+Start rtl-analyze.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/int4_unpack.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/compute/int4_unpack.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/compute/int4_unpack.sv(line number: 1)] Analyzing module int4_unpack (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/int4_unpack.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Analyzing module mac_lane (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/group_acc.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/compute/group_acc.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/compute/group_acc.sv(line number: 2)] Analyzing module group_acc (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/group_acc.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 3)] Analyzing module gemv_core (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/lane_adapter_32_to_16.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/compute/lane_adapter_32_to_16.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/compute/lane_adapter_32_to_16.sv(line number: 7)] Analyzing module lane_adapter_32_to_16 (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/compute/lane_adapter_32_to_16.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 8)] Analyzing module fixed_slice_runner (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv(line number: 4)] Analyzing module result_capture_buffer (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv(line number: 5)] Analyzing module result_uart_tx (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv(line number: 2)] Analyzing module result_capture_uart (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv(line number: 5)] Analyzing module fixed_slice_qwen_uart_top (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv(line number: 3)] Analyzing module fixed_slice_qwen_uart_board_top (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv successfully.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv
+I: Verilog-0001: Analyzing file D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv
+I: Verilog-0002: [D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv(line number: 3)] Analyzing module a_multigroup_k256_uart_board_top (library work)
+Parsing done.
+Executing : .rtl_analyze -work work -include_path {D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj} D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv successfully.
+I: Module "a_multigroup_k256_uart_board_top" is set as top module.
+Executing : rtl-analyze successfully. Time elapsed: 1.039s wall, 0.000s user + 0.000s system = 0.000s CPU (n/a%)
+
+Start rtl-elaborate.
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv(line number: 3)] Elaborating module a_multigroup_k256_uart_board_top
+I: Module instance {a_multigroup_k256_uart_board_top} parameter value:
+    CAPTURE_DEPTH = 32'b00000000000000000000000000000110
+    CLKS_PER_BIT = 32'b00000000000000000000000011101010
+    WEIGHT_MEM_FILE = mem/weights.mem
+    ACTIVATION_MEM_FILE = mem/activation.mem
+    EXPECTED_MEM_FILE = mem/expected.mem
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/a_multigroup_k256_uart_board_top.sv(line number: 24)] Elaborating instance board
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv(line number: 3)] Elaborating module fixed_slice_qwen_uart_board_top
+I: Module instance {a_multigroup_k256_uart_board_top/board} parameter value:
+    N = 32'b00000000000000000000000000000011
+    K = 32'b00000000000000000000000100000000
+    CAPTURE_DEPTH = 32'b00000000000000000000000000000110
+    CLKS_PER_BIT = 32'b00000000000000000000000011101010
+    WEIGHT_MEM_FILE = mem/weights.mem
+    ACTIVATION_MEM_FILE = mem/activation.mem
+    EXPECTED_MEM_FILE = mem/expected.mem
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_board_top.sv(line number: 44)] Elaborating instance qwen_uart
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv(line number: 5)] Elaborating module fixed_slice_qwen_uart_top
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart} parameter value:
+    N = 32'b00000000000000000000000000000011
+    K = 32'b00000000000000000000000100000000
+    CAPTURE_DEPTH = 32'b00000000000000000000000000000110
+    CLKS_PER_BIT = 32'b00000000000000000000000011101010
+    WEIGHT_MEM_FILE = mem/weights.mem
+    ACTIVATION_MEM_FILE = mem/activation.mem
+    EXPECTED_MEM_FILE = mem/expected.mem
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv(line number: 47)] Elaborating instance runner
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 8)] Elaborating module fixed_slice_runner
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart/runner} parameter value:
+    N = 32'b00000000000000000000000000000011
+    K = 32'b00000000000000000000000100000000
+    WEIGHT_MEM_FILE = mem/weights.mem
+    ACTIVATION_MEM_FILE = mem/activation.mem
+    EXPECTED_MEM_FILE = mem/expected.mem
+I: Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/weights.mem
+I: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 56)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/weights.mem
+I: Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/activation.mem
+I: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 57)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/activation.mem
+I: Found Verilog include file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/expected.mem
+I: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 58)] Loading memory data from file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/mem/expected.mem
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 126)] Elaborating instance adapter_inst
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/lane_adapter_32_to_16.sv(line number: 7)] Elaborating module lane_adapter_32_to_16
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 141)] Elaborating instance core_inst
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 3)] Elaborating module gemv_core
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart/runner/core_inst} parameter value:
+    LANES = 32'b00000000000000000000000000010000
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 27)] Elaborating instance mac
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/mac_lane.sv(line number: 2)] Elaborating module mac_lane
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/compute/gemv_core.sv(line number: 43)] Elaborating instance group_acc_inst
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/compute/group_acc.sv(line number: 2)] Elaborating module group_acc
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_qwen_uart_top.sv(line number: 67)] Elaborating instance result_readback
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv(line number: 2)] Elaborating module result_capture_uart
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart/result_readback} parameter value:
+    DEPTH = 32'b00000000000000000000000000000110
+    CLKS_PER_BIT = 32'b00000000000000000000000011101010
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv(line number: 28)] Elaborating instance capture_mem
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv(line number: 4)] Elaborating module result_capture_buffer
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart/result_readback/capture_mem} parameter value:
+    DEPTH = 32'b00000000000000000000000000000110
+I: Verilog-0004: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_uart.sv(line number: 44)] Elaborating instance uart_tx_inst
+I: Verilog-0003: [D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv(line number: 5)] Elaborating module result_uart_tx
+I: Module instance {a_multigroup_k256_uart_board_top/board/qwen_uart/result_readback/uart_tx_inst} parameter value:
+    CLKS_PER_BIT = 32'b00000000000000000000000011101010
+    INDEX_WIDTH = 32'b00000000000000000000000000000011
+Executing : rtl-elaborate successfully. Time elapsed: 0.008s wall, 0.016s user + 0.000s system = 0.016s CPU (187.2%)
+
+Start rtl-prep.
+Executing : rtl-prep successfully. Time elapsed: 0.012s wall, 0.016s user + 0.000s system = 0.016s CPU (132.7%)
+
+Start rtl-infer.
+Start DFF-inference.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[7]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[6]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[5]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[4]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[3]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[2]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[1]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 53)] The net 'activation_mem[0]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[5]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[4]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[3]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[2]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[1]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2003: [D:/GPT/qiansai_FPGA/rtl/model/fixed_slice_runner.sv(line number: 54)] The net 'expected_mem[0]' in a_multigroup_k256_uart_board_top.board.qwen_uart.runner is un-driven.
+W: Sdm-2000: [D:/GPT/qiansai_FPGA/rtl/debug/result_uart_tx.sv(line number: 67)] Removed register node board/qwen_uart/result_readback/uart_tx_inst/bit_pos[4] that is stuck at constant 0.
+Executing : DFF-inference successfully.
+I: Sdm-0001: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv(line number: 38)] Found Ram result_mem, depth=8, width=64.
+I: Sdm-0001: [D:/GPT/qiansai_FPGA/rtl/debug/result_capture_buffer.sv(line number: 38)] Found Ram result_mem, depth=8, width=64.
+Executing : rtl-infer successfully. Time elapsed: 0.174s wall, 0.141s user + 0.031s system = 0.172s CPU (98.7%)
+
+Start rtl-control-opt.
+Executing : rtl-control-opt successfully. Time elapsed: 0.002s wall, 0.000s user + 0.000s system = 0.000s CPU (n/a%)
+
+Start rtl-data-opt.
+Executing : rtl-data-opt successfully. Time elapsed: 0.017s wall, 0.000s user + 0.016s system = 0.016s CPU (90.6%)
+
+Start FSM inference.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+Executing : FSM inference successfully. Time elapsed: 0.002s wall, 0.000s user + 0.000s system = 0.000s CPU (n/a%)
+
+Start sdm2adm.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+I: Constant propagation done on N64_1 (bmsWIDEMUX).
+I: Constant propagation done on N62 (bmsPMUX).
+I: Constant propagation done on N289 (bmsPMUX).
+I: Constant propagation done on N275 (bmsPMUX).
+I: Constant propagation done on N313_1 (bmsWIDEMUX).
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+W: Loop was found during constant probe.
+I: Constant propagation done on N335 (bmsWIDEINV).
+I: Constant propagation done on N554_1 (bmsPMUX).
+I: Constant propagation done on N600 (bmsPMUX).
+I: Constant propagation done on N573 (bmsPMUX).
+I: Constant propagation done on N501 (bmsWIDEMUX).
+W: Loop was found during constant probe.
+Executing : sdm2adm successfully. Time elapsed: 0.060s wall, 0.062s user + 0.000s system = 0.062s CPU (103.7%)
+
+Saving design to DB.
+Action compile: Real time elapsed is 0h:0m:3s
+Action compile: CPU time elapsed is 0h:0m:1s
+Action compile: Process CPU time elapsed is 0h:0m:1s
+Current time: Wed Oct 21 21:51:40 2026
+Action compile: Peak memory pool usage is 141 MB
+Action from compile to compile: Total Real Time elapsed is 0h:0m:3s
+Action from compile to compile: Total CPU time elapsed is 0h:0m:1s
+Action from compile to compile: Total Process CPU Time elapsed is 0h:0m:1s
+Process "Compile" done.
+
+
+Process "Synthesize" started.
+Current time: Wed Oct 21 21:51:41 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+License checkout: fabric_ads from D:\pango\license\new_pds_00e04cf107df.lic
+Compiling verification operator library.
+Compiling common defs.
+Loading technology operator library.
+Compiling technology operator library.
+Compiling technology operator (valence) library.
+Reading design from compile DB
+Reading design from compile DB successfully.
+NOTE: The technology fpga was specified.
+NOTE: delay_model specified was generic_cmos.
+NOTE: Using the fpga syntax tables...
+Totals:
+ Calls to malloc = 0
+ Calls to calloc = 148538
+
+Constraint check start.
+Compiling prim grid devices.
+Building architecture model.
+Loading device packaging model.
+Building architecture floorplan logic view.
+Executing : get_ports clk
+Executing : get_ports clk successfully.
+Executing : create_clock -name clk [get_ports clk] -period 37.037037 -waveform {0 18.518519}
+Executing : create_clock -name clk [get_ports clk] -period 37.037037 -waveform {0 18.518519} successfully.
+Executing : get_ports rst_n
+Executing : get_ports rst_n successfully.
+Executing : set_false_path -from [get_ports rst_n]
+Executing : set_false_path -from [get_ports rst_n] successfully.
+Executing : get_ports {led_busy led_done led_pass led_fail}
+Executing : get_ports {led_busy led_done led_pass led_fail} successfully.
+Executing : set_false_path -to [get_ports {led_busy led_done led_pass led_fail}]
+Executing : set_false_path -to [get_ports {led_busy led_done led_pass led_fail}] successfully.
+Executing : get_ports uart_tx
+Executing : get_ports uart_tx successfully.
+Executing : set_max_delay 37.037037 -to [get_ports uart_tx]
+Executing : set_max_delay 37.037037 -to [get_ports uart_tx] successfully.
+Constraint check end.
+
+Start pre-mapping.
+Executing : pre-mapping successfully. Time elapsed: 0.129s wall, 0.094s user + 0.094s system = 0.188s CPU (145.1%)
+
+Start mod-gen.
+W: Public-4008: Instance 'qwen_uart/result_readback/uart_tx_inst/done' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'qwen_uart/runner/last_partial_sum[31:0]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+I: Constant propagation done on board/qwen_uart/runner/core_inst/group_acc_inst/N3 (bmsREDOR).
+I: Constant propagation done on board/qwen_uart/runner/core_inst/group_acc_inst/N10 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/runner/core_inst/group_acc_inst/N4 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N451 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N644 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N645 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N646 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N647 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N648 (bmsREDAND).
+I: Constant propagation done on board/qwen_uart/result_readback/uart_tx_inst/N649 (bmsREDAND).
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N647 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N261
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N645 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N259
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N646 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N260
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N649 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N263
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N644 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N258
+I: Removed bmsREDAND inst board/qwen_uart/result_readback/uart_tx_inst/N648 that is redundant to board/qwen_uart/result_readback/uart_tx_inst/N262
+Executing : mod-gen successfully. Time elapsed: 0.325s wall, 0.328s user + 0.062s system = 0.391s CPU (120.2%)
+
+Start logic-optimization.
+Executing : logic-optimization successfully. Time elapsed: 0.395s wall, 0.375s user + 0.031s system = 0.406s CPU (102.9%)
+
+Start tech-mapping phase 1.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[11]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[33]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[35]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[47]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[52]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[66]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[77]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[80]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[87]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[90]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[99]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[101]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[103]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[106]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[107]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[109]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[110]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[114]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[118]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[120]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[124]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[125]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[128]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[129]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[133]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[134]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[136]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[137]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[144]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[146]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[149]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[153]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[154]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[155]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[156]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[158]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[161]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[162]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[163]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[164]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[165]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[168]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[173]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[174]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[177]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[179]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[180]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[185]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[186]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[187]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[188]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[189]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[192]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[193]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[194]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[195]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[197]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[198]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[201]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[202]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[205]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[206]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[207]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[208]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[212]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[213]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[216]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[219]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[220]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[221]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[222]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[224]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[225]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[226]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[227]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[229]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[230]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[231]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[234]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[237]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[238]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[239]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[240]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[241]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[242]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[243]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[244]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[245]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[246]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[247]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[248]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[250]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[252]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[253]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[254]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+W: Public-4008: Instance 'board/qwen_uart/runner/adapter_inst/activation_hold[255]' of 'bmsWIDEDFFCPE' unit is dangling and will be cleaned.
+Executing : tech-mapping phase 1 successfully. Time elapsed: 0.041s wall, 0.016s user + 0.016s system = 0.031s CPU (75.4%)
+
+Start tech-mapping phase 2.
+Executing : tech-mapping phase 2 successfully. Time elapsed: 0.539s wall, 0.516s user + 0.078s system = 0.594s CPU (110.2%)
+
+Start tech-optimization.
+Executing : tech-optimization successfully. Time elapsed: 0.353s wall, 0.406s user + 0.188s system = 0.594s CPU (168.2%)
+
+Start phys-optimization.
+Executing : phys-optimization successfully. Time elapsed: 0.000s wall, 0.000s user + 0.000s system = 0.000s CPU (n/a%)
+
+Start restore-hierarchy.
+Executing : restore-hierarchy successfully. Time elapsed: 0.119s wall, 0.125s user + 0.000s system = 0.125s CPU (105.4%)
+
+W: Unable to honor max fanout constraint for gtp_inv driven net capture_clear
+W: Unable to honor max fanout constraint for gtp_inv driven net capture_clear
+W: syn_maxfan of lutcarry N32_14_16 is more than 10000 on net reduction[1].sum [15], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_15 is more than 10000 on net reduction[1].sum [14], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_14 is more than 10000 on net reduction[1].sum [13], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_13 is more than 10000 on net reduction[1].sum [12], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_12 is more than 10000 on net reduction[1].sum [11], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_11 is more than 10000 on net reduction[1].sum [10], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_10 is more than 10000 on net reduction[1].sum [9], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_9 is more than 10000 on net reduction[1].sum [8], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_8 is more than 10000 on net reduction[1].sum [7], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_7 is more than 10000 on net reduction[1].sum [6], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_6 is more than 10000 on net reduction[1].sum [5], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_5 is more than 10000 on net reduction[1].sum [4], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_4 is more than 10000 on net reduction[1].sum [3], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_3 is more than 10000 on net reduction[1].sum [2], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_2 is more than 10000 on net reduction[1].sum [1], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_1 is more than 10000 on net reduction[1].sum [0], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_16 is more than 10000 on net reduction[1].sum [15], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_15 is more than 10000 on net reduction[1].sum [14], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_14 is more than 10000 on net reduction[1].sum [13], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_13 is more than 10000 on net reduction[1].sum [12], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_12 is more than 10000 on net reduction[1].sum [11], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_11 is more than 10000 on net reduction[1].sum [10], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_10 is more than 10000 on net reduction[1].sum [9], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_9 is more than 10000 on net reduction[1].sum [8], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_8 is more than 10000 on net reduction[1].sum [7], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_7 is more than 10000 on net reduction[1].sum [6], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_6 is more than 10000 on net reduction[1].sum [5], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_5 is more than 10000 on net reduction[1].sum [4], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_4 is more than 10000 on net reduction[1].sum [3], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_3 is more than 10000 on net reduction[1].sum [2], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_2 is more than 10000 on net reduction[1].sum [1], but wasn't replicated.
+W: syn_maxfan of lutcarry N32_14_1 is more than 10000 on net reduction[1].sum [0], but wasn't replicated.
+
+Cell Usage:
+GTP_APM_E2                   16 uses
+GTP_DFF_C                    11 uses
+GTP_DFF_CE                  516 uses
+GTP_DFF_PE                    1 use
+GTP_DRM36K_E1                 2 uses
+GTP_GRS                       1 use
+GTP_INV                       2 uses
+GTP_LUT2                      4 uses
+GTP_LUT3                      4 uses
+GTP_LUT4                     10 uses
+GTP_LUT5                     45 uses
+GTP_LUT6                     91 uses
+GTP_LUT6CARRY               419 uses
+GTP_LUT6D                   253 uses
+GTP_MUX2LUT7                  8 uses
+GTP_RAM32X2DP                32 uses
+
+I/O ports: 7
+GTP_INBUF                   2 uses
+GTP_OUTBUF                  5 uses
+
+Mapping Summary:
+Total LUTs: 858 of 66600 (1.29%)
+	LUTs as dram: 32 of 19900 (0.16%)
+	LUTs as logic: 826
+Total Registers: 528 of 133200 (0.40%)
+Total Latches: 0
+
+DRM36K/FIFO:
+Total DRM = 2.0 of 155 (1.29%)
+
+APMs:
+Total APMs = 16.00 of 240 (6.67%)
+
+Total I/O ports = 7 of 300 (2.33%)
+
+
+Overview of Control Sets:
+
+Number of unique control sets : 18
+
+Histogram:
+**************************************************************
+  Fanout      | Count    | Sync Set/Reset    Async Set/Reset
+--------------------------------------------------------------
+  [0, 2)      | 1        | 0                 1
+  [2, 4)      | 3        | 0                 3
+  [4, 6)      | 1        | 0                 1
+  [6, 8)      | 0        | 0                 0
+  [8, 10)     | 2        | 0                 2
+  [10, 12)    | 0        | 0                 0
+  [12, 14)    | 0        | 0                 0
+  [14, 16)    | 0        | 0                 0
+  [16, Inf)   | 11       | 0                 11
+--------------------------------------------------------------
+  The maximum fanout: 194
+==============================================================
+
+Flip-Flop Distribution:
+************************************************************************
+  Clock Enable    Sync Set/Reset    Async Set/Reset    Total Registers
+------------------------------------------------------------------------
+  NO              NO                NO                 0
+  NO              NO                YES                11
+  NO              YES               NO                 0
+  YES             NO                NO                 0
+  YES             NO                YES                517
+  YES             YES               NO                 0
+========================================================================
+
+Latch Distribution:
+************************************************
+  Gate Enable    Preset/Clear    Total Latches
+************************************************
+  NO             NO              0
+  NO             YES             0
+  YES            NO              0
+  YES            YES             0
+************************************************
+
+Design 'a_multigroup_k256_uart_board_top' has been successfully synthesized to architecture-specific objects.
+Saving design to DB.
+Saving design to a_multigroup_k256_uart_board_top_syn.vm
+Constructing timing graph ...
+Timing graph has been constructed successfully
+W: Timing-4087: Port 'led_busy' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_done' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_fail' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_pass' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'uart_tx' is not constrained, it is treated as combinational output.
+W: Timing-4086: Port 'rst_n' is not constrained, it is treated as combinational input.
+Action synthesize: Real time elapsed is 0h:0m:9s
+Action synthesize: CPU time elapsed is 0h:0m:7s
+Action synthesize: Process CPU time elapsed is 0h:0m:7s
+Current time: Wed Oct 21 21:51:49 2026
+Action synthesize: Peak memory pool usage is 382 MB
+Action from compile to synthesize: Total Real Time elapsed is 0h:0m:12s
+Action from compile to synthesize: Total CPU time elapsed is 0h:0m:8s
+Action from compile to synthesize: Total Process CPU Time elapsed is 0h:0m:8s
+Process "Synthesize" done.
+
+
+Process "Device Map" started.
+Current time: Wed Oct 21 21:51:49 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Compiling verification operator library.
+Compiling common defs.
+Loading technology operator library.
+Compiling technology operator library.
+Compiling technology operator (valence) library.
+Compiling operator packing rules.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Compiling tech operator impls.
+Building architecture model.
+Loading device packaging model.
+NOTE: The technology fpga was specified.
+NOTE: delay_model specified was generic_cmos.
+NOTE: Using the fpga syntax tables...
+Totals:
+ Calls to malloc = 0
+ Calls to calloc = 148538
+
+Flattening design 'a_multigroup_k256_uart_board_top'
+Device mapping started.
+Optimizing circuit logic.
+Checking design netlist.
+Processing tech operator.
+I: The instance clkbufg_0(GTP_CLKBUFG) has been inserted on the net nt_clk in design, driver pin O(instance clk_ibuf) -> load pin CLK(instance board/qwen_uart/result_readback/capture_mem/capture_count[0]).
+Converting tech operator to gate operator.
+Processing gate operator.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/N31.eq_0/gateop, insts:16.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/N71_1_1/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/N75_1_0/gateop, insts:16.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/N80_1_0/gateop, insts:16.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/N90_1_1/gateop, insts:31.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/capture_mem/N16.lt_0/gateop, insts:9.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/capture_mem/N24_1_1/gateop, insts:31.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N23.lt_0/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N63.eq_0/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N109_1_1/gateop, insts:28.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N110.eq_0/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N116_1_1/gateop, insts:31.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N130.lt_0/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/result_readback/uart_tx_inst/N185_1_1/gateop, insts:31.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_8_1/gateop, insts:14.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_9_1/gateop, insts:14.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_10_1/gateop, insts:14.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_11_1/gateop, insts:14.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_12_1/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_13_1/gateop, insts:15.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/N32_14_1/gateop, insts:16.
+I: Infer CARRY group, base inst: board/qwen_uart/runner/core_inst/group_acc_inst/N1_3_0/gateop, insts:33.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[1].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[3].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[5].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[7].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[9].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[11].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[13].mac/N4/gopapm, insts:2.
+I: Infer APM group, base inst: board/qwen_uart/runner/core_inst/macs[15].mac/N4/gopapm, insts:2.
+Device Utilization Summary:
++------------------------------------------------------------------------+
+| Logic Utilization     | Used     | Available     | Utilization(%)     
++------------------------------------------------------------------------+
+| APM                   | 16       | 240           | 7                  
+| FF                    | 528      | 133200        | 1                  
+| LUT                   | 858      | 66600         | 2                  
+| Distributed RAM       | 32       | 19900         | 1                  
+| DRM                   | 2        | 155           | 2                  
+| IO                    | 7        | 300           | 3                  
+| RCKB                  | 0        | 24            | 0                  
+| SCANCHAIN             | 0        | 1             | 0                  
+| USCM                  | 1        | 32            | 4                  
+| CCS                   | 1        | 1             | 100                
+| ADC                   | 0        | 1             | 0                  
+| DDR_PHY               | 0        | 24            | 0                  
+| HSSTLP                | 0        | 2             | 0                  
+| GPLL                  | 0        | 6             | 0                  
+| PPLL                  | 0        | 6             | 0                  
+| DDRPHY_CPD            | 0        | 12            | 0                  
+| HCKB                  | 0        | 96            | 0                  
+| IOCKB                 | 0        | 24            | 0                  
+| MRCKB                 | 0        | 12            | 0                  
+| PCIE                  | 0        | 1             | 0                  
+| DDRPHY_IOCLK_DIV      | 0        | 6             | 0                  
+| ANALOG                | 0        | 1             | 0                  
+| TSERDES               | 0        | 48            | 0                  
+| KEYRAM                | 0        | 1             | 0                  
++------------------------------------------------------------------------+
+
+Device mapping done.
+Total device mapping takes 0.12 sec.
+
+Design 'a_multigroup_k256_uart_board_top' has been successfully mapped to architecture-specific objects.
+Saving design to DB.
+W: Public-4010: Pcf file D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/device_map/a_multigroup_k256_uart_board_top.pcf has been covered.
+Action dev_map: Real time elapsed is 0h:0m:8s
+Action dev_map: CPU time elapsed is 0h:0m:6s
+Action dev_map: Process CPU time elapsed is 0h:0m:6s
+Current time: Wed Oct 21 21:51:56 2026
+Action dev_map: Peak memory pool usage is 367 MB
+Action from compile to dev_map: Total Real Time elapsed is 0h:0m:20s
+Action from compile to dev_map: Total CPU time elapsed is 0h:0m:14s
+Action from compile to dev_map: Total Process CPU Time elapsed is 0h:0m:14s
+Process "Device Map" done.
+
+
+Process "Place & Route" started.
+Current time: Wed Oct 21 21:51:56 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Compiling verification operator library.
+Compiling common defs.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Building architecture model.
+Loading device packaging model.
+pnr strategy configuration : 
+strategy name : 0
+Building architecture floorplan logic view.
+Constraint check start.
+Executing : def_port {led_busy} LOC=A20 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE
+Executing : def_port {led_busy} LOC=A20 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE successfully
+Executing : def_port {led_done} LOC=C18 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE
+Executing : def_port {led_done} LOC=C18 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE successfully
+Executing : def_port {led_fail} LOC=E18 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE
+Executing : def_port {led_fail} LOC=E18 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE successfully
+Executing : def_port {led_pass} LOC=C19 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE
+Executing : def_port {led_pass} LOC=C19 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE successfully
+Executing : def_port {uart_tx} LOC=C24 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE
+Executing : def_port {uart_tx} LOC=C24 VCCIO=3.3 IOSTANDARD=LVCMOS33 DRIVE=8 SLEW=SLOW NONE=TRUE successfully
+Executing : def_port {clk} LOC=D18 VCCIO=3.3 IOSTANDARD=LVCMOS33 NONE=TRUE
+Executing : def_port {clk} LOC=D18 VCCIO=3.3 IOSTANDARD=LVCMOS33 NONE=TRUE successfully
+Executing : def_port {rst_n} LOC=C22 VCCIO=3.3 IOSTANDARD=LVCMOS33 NONE=TRUE
+Executing : def_port {rst_n} LOC=C22 VCCIO=3.3 IOSTANDARD=LVCMOS33 NONE=TRUE successfully
+Constraint check end.
+NOTE: The technology fpga was specified.
+NOTE: delay_model specified was generic_cmos.
+NOTE: Using the fpga syntax tables...
+Totals:
+ Calls to malloc = 0
+ Calls to calloc = 5993935
+
+I: Column Clock Check open.
+Read Column Clock Map.
+
+Placement started.
+Phase 1 Pre global placement started.
+Mapping instance GRS_INST/grs_ccs to CCS_87_316.
+Phase 1.1 1st GP placement started.
+Design Utilization : 2%.
+First map gop timing takes 0.61 sec
+Worst slack after clock region global placement is 23774
+Wirelength after clock region global placement is 9125 and checksum is DD67932D82DDC600.
+1st GP placement takes 2.25 sec.
+
+Phase 1.2 Clock placement started.
+Mapping instance clkbufg_0/gopclkbufg to USCM_215_624.
+Clock placement takes 0.08 sec.
+
+Wirelength after Pre Global Placement is 9125 and checksum is DD67932D82DDC600.
+Pre global placement takes 2.61 sec.
+
+Phase 2 Global placement started.
+Phase 2.1 Fixed placement started.
+Placed fixed group with base inst clk_ibuf/opit_1 on IOLHR_16_1080.
+Placed fixed group with base inst led_busy_obuf/opit_1 on IOLHR_16_1032.
+Placed fixed group with base inst led_done_obuf/opit_1 on IOLHR_16_1074.
+Placed fixed group with base inst led_fail_obuf/opit_1 on IOLHR_16_1086.
+Placed fixed group with base inst led_pass_obuf/opit_1 on IOLHR_16_1056.
+Placed fixed group with base inst rst_n_ibuf/opit_1 on IOLHR_16_990.
+Placed fixed group with base inst uart_tx_obuf/opit_1 on IOLHR_16_942.
+Placed fixed instance GRS_INST/grs_ccs on CCS_87_316.
+Placed fixed instance clkbufg_0/gopclkbufg on USCM_215_624.
+Placed fixed instance BKCL_auto_0 on BKCL_1_952.
+Fixed placement takes 0.02 sec.
+
+Phase 2.2 Process placement started.
+Process placement takes 0.00 sec.
+
+Phase 2.3 IO placement started.
+IO placement takes 0.02 sec.
+
+Phase 2.4 2nd GP placement started.
+Run super clustering :
+	Initial slack 21101.
+	1 iterations finished.
+	Final slack 21101.
+Super clustering done.
+Design Utilization : 2%.
+Worst slack after global placement is 26243
+2nd GP placement takes 0.36 sec.
+
+Wirelength after global placement is 8147 and checksum is F9F88D67063D6788.
+Global placement takes 0.39 sec.
+
+Phase 3 Post global placement started.
+Packing LUT6D started.
+I: LUT6D pack result: There are 138 LUT6 in collection, pack success:3
+Packing LUT6D takes 0.05 sec.
+Phase 3.1 Macro cell placement started.
+I: Process macros using "Greedy".
+Wirelength after macro cell placement is 16327 and checksum is D2F3343B36221BEA.
+Macro cell placement takes 0.00 sec.
+
+Phase 3.2 3rd GP placement started.
+Run super clustering :
+	Initial slack 21101.
+	1 iterations finished.
+	Final slack 21101.
+Super clustering done.
+Design Utilization : 2%.
+Worst slack after post global placement is 26091
+3rd GP placement takes 0.36 sec.
+
+Wirelength after post global placement is 7882 and checksum is 2CD065FB08F9B3.
+Packing LUT6D started.
+I: LUT6D pack result: There are 132 LUT6 in collection, pack success:0
+Packing LUT6D takes 0.06 sec.
+Post global placement takes 0.48 sec.
+
+Phase 4 Legalization started.
+The average distance in LP is 0.310628.
+Wirelength after legalization is 9247 and checksum is 8594FFC8D98B70D.
+Legalization takes 0.03 sec.
+
+Phase 5 Timing-driven detailed placement started.
+Phase 5.1 Replication placement started.
+Worst slack before Replication Place is 26110.
+Replication placement takes 0.05 sec.
+
+Wirelength after replication placement is 9247 and checksum is 8594FFC8D98B70D.
+Phase 5.2 Swapping placement started.
+Worst slack before detailed placement is 26110, TNS before detailed placement is 0. 
+Worst slack after detailed placement is 26110, TNS after detailed placement is 0. 
+Swapping placement takes 0.05 sec.
+
+Wirelength after detailed placement is 9247 and checksum is 8594FFC8D98B70D.
+Timing-driven detailed placement takes 0.09 sec.
+
+Worst slack is 26110, TNS after placement is 0.
+Placement done.
+Total placement takes 3.94 sec.
+Finished placement.
+
+Routing started.
+Building routing graph takes 2.52 sec.
+Worst slack is 26110, TNS before global route is 0.
+Processing design graph takes 0.48 sec.
+Total memory for routing:
+	217.034446 M.
+Total nets for routing : 1904.
+Global Routing step 1 processed 0 nets, it takes 0.02 sec.
+Rcf routing step 1 processed 0 nets, it takes 0.00 sec.
+Rcf routing step 2 processed 0 nets, it takes 0.00 sec.
+Rcf routing step 3 processed 0 nets, it takes 0.00 sec.
+Unrouted nets 0 at the end of iteration 0.
+Global Routing step 1 processed 42 nets, it takes 0.00 sec.
+Unrouted nets 245 at the end of iteration 0.
+Unrouted nets 124 at the end of iteration 1.
+Unrouted nets 52 at the end of iteration 2.
+Unrouted nets 37 at the end of iteration 3.
+Unrouted nets 5 at the end of iteration 4.
+Unrouted nets 4 at the end of iteration 5.
+Unrouted nets 2 at the end of iteration 6.
+Unrouted nets 2 at the end of iteration 7.
+Unrouted nets 3 at the end of iteration 8.
+Unrouted nets 0 at the end of iteration 9.
+Global Routing step 2 processed 365 nets, it takes 0.39 sec.
+Global Routing step 3 processed 0 nets, it takes 0.00 sec.
+Unrouted nets 0 at the end of iteration 0.
+Global Routing step 4 processed 6 nets, it takes 0.02 sec.
+Global routing takes 0.45 sec.
+Total 1921 subnets.
+    forward max bucket size 132 , backward 58.
+        Unrouted nets 940 at the end of iteration 0.
+    route iteration 0, CPU time elapsed 0.156250 sec.
+    forward max bucket size 68 , backward 33.
+        Unrouted nets 714 at the end of iteration 1.
+    route iteration 1, CPU time elapsed 0.109375 sec.
+    forward max bucket size 63 , backward 32.
+        Unrouted nets 684 at the end of iteration 2.
+    route iteration 2, CPU time elapsed 0.078125 sec.
+    forward max bucket size 56 , backward 34.
+        Unrouted nets 518 at the end of iteration 3.
+    route iteration 3, CPU time elapsed 0.062500 sec.
+    forward max bucket size 59 , backward 35.
+        Unrouted nets 380 at the end of iteration 4.
+    route iteration 4, CPU time elapsed 0.046875 sec.
+    forward max bucket size 42 , backward 32.
+        Unrouted nets 293 at the end of iteration 5.
+    route iteration 5, CPU time elapsed 0.031250 sec.
+    forward max bucket size 49 , backward 38.
+        Unrouted nets 220 at the end of iteration 6.
+    route iteration 6, CPU time elapsed 0.015625 sec.
+    forward max bucket size 50 , backward 32.
+        Unrouted nets 167 at the end of iteration 7.
+    route iteration 7, CPU time elapsed 0.031250 sec.
+    forward max bucket size 46 , backward 32.
+        Unrouted nets 125 at the end of iteration 8.
+    route iteration 8, CPU time elapsed 0.015625 sec.
+    forward max bucket size 46 , backward 32.
+        Unrouted nets 103 at the end of iteration 9.
+    route iteration 9, CPU time elapsed 0.015625 sec.
+    forward max bucket size 46 , backward 32.
+        Unrouted nets 70 at the end of iteration 10.
+    route iteration 10, CPU time elapsed 0.000000 sec.
+    forward max bucket size 41 , backward 32.
+        Unrouted nets 63 at the end of iteration 11.
+    route iteration 11, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 55 at the end of iteration 12.
+    route iteration 12, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 54 at the end of iteration 13.
+    route iteration 13, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 24 at the end of iteration 14.
+    route iteration 14, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 16 at the end of iteration 15.
+    route iteration 15, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 16 at the end of iteration 16.
+    route iteration 16, CPU time elapsed 0.015625 sec.
+    forward max bucket size 48 , backward 32.
+        Unrouted nets 17 at the end of iteration 17.
+    route iteration 17, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 13 at the end of iteration 18.
+    route iteration 18, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 10 at the end of iteration 19.
+    route iteration 19, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 8 at the end of iteration 20.
+    route iteration 20, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 6 at the end of iteration 21.
+    route iteration 21, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 22.
+    route iteration 22, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 23.
+    route iteration 23, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 24.
+    route iteration 24, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 25.
+    route iteration 25, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 26.
+    route iteration 26, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 27.
+    route iteration 27, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 28.
+    route iteration 28, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 29.
+    route iteration 29, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 30.
+    route iteration 30, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 31.
+    route iteration 31, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 32.
+    route iteration 32, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 33.
+    route iteration 33, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 34.
+    route iteration 34, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 35.
+    route iteration 35, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 36.
+    route iteration 36, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 37.
+    route iteration 37, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 38.
+    route iteration 38, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 39.
+    route iteration 39, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 40.
+    route iteration 40, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 41.
+    route iteration 41, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 42.
+    route iteration 42, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 43.
+    route iteration 43, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 44.
+    route iteration 44, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 45.
+    route iteration 45, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 46.
+    route iteration 46, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 47.
+    route iteration 47, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 48.
+    route iteration 48, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 49.
+    route iteration 49, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 50.
+    route iteration 50, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 51.
+    route iteration 51, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 52.
+    route iteration 52, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 53.
+    route iteration 53, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 54.
+    route iteration 54, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 55.
+    route iteration 55, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 56.
+    route iteration 56, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 57.
+    route iteration 57, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 58.
+    route iteration 58, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 59.
+    route iteration 59, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 60.
+    route iteration 60, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 61.
+    route iteration 61, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 62.
+    route iteration 62, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 63.
+    route iteration 63, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 64.
+    route iteration 64, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 65.
+    route iteration 65, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 66.
+    route iteration 66, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 67.
+    route iteration 67, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 68.
+    route iteration 68, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 69.
+    route iteration 69, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 70.
+    route iteration 70, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 71.
+    route iteration 71, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 72.
+    route iteration 72, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 73.
+    route iteration 73, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 74.
+    route iteration 74, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 75.
+    route iteration 75, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 76.
+    route iteration 76, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 77.
+    route iteration 77, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 78.
+    route iteration 78, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 79.
+    route iteration 79, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 80.
+    route iteration 80, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 81.
+    route iteration 81, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 82.
+    route iteration 82, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 83.
+    route iteration 83, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 84.
+    route iteration 84, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 85.
+    route iteration 85, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 86.
+    route iteration 86, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 87.
+    route iteration 87, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 88.
+    route iteration 88, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 89.
+    route iteration 89, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 90.
+    route iteration 90, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 91.
+    route iteration 91, CPU time elapsed 0.015625 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 92.
+    route iteration 92, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 93.
+    route iteration 93, CPU time elapsed 0.000000 sec.
+    forward max bucket size 39 , backward 32.
+        Unrouted nets 4 at the end of iteration 94.
+    route iteration 94, CPU time elapsed 0.000000 sec.
+    forward max bucket size 28 , backward 16.
+        Unrouted nets 3 at the end of iteration 95.
+    route iteration 95, CPU time elapsed 0.000000 sec.
+    forward max bucket size 19 , backward 17.
+        Unrouted nets 0 at the end of iteration 96.
+    route iteration 96, CPU time elapsed 0.000000 sec.
+Detailed routing takes 96 iterations
+Detailed routing takes 0.83 sec.
+Start fix hold violation.
+Build tmp routing results takes 0.02 sec.
+Timing analysis takes 0.03 sec.
+Hold violation fix iter 0 takes 0.03 sec, total_step_forward 1456.
+Incremental timing analysis takes 0.03 sec.
+Hold violation fix iter 1 takes 0.00 sec, total_step_forward 65.
+Incremental timing analysis takes 0.02 sec.
+Hold violation fix iter 2 takes 0.00 sec, total_step_forward 22.
+Incremental timing analysis takes 0.02 sec.
+Hold violation fix iter 3 takes 0.00 sec, total_step_forward 0.
+Hold Violation Fix in router takes 4 iterations.
+Fix hold violation Finished.
+Hold Violation Fix in router takes 0.38 sec.
+
+Dispose routing result:
+    Collect routing result.
+    Delete unused device instances.
+    Annotate routing result.
+    Change LUT configuration.
+    Dispose misc instances.
+    Annotate routing result again.
+Finish routing takes 0.06 sec.
+Used SRB routing arc is 13092.
+Cleanup routing takes 0.03 sec.
+Routing done.
+Total routing takes 5.33 sec.
+
+
+Device Utilization Summary :
++------------------------------------------------------------------------------+
+| Logic Utilization           | Used     | Available     | Utilization(%)     
++------------------------------------------------------------------------------+
+| Use of ADC                  | 0        | 1             | 0                  
+| Use of ANALOG               | 0        | 1             | 0                  
+| Use of APM                  | 16       | 240           | 7                  
+| Use of BKCL                 | 1        | 6             | 17                 
+| Use of CCS                  | 1        | 1             | 100                
+| Use of CLMA                 | 208      | 11675         | 2                  
+|   FF                        | 426      | 93400         | 1                  
+|   LUT                       | 677      | 46700         | 2                  
+|   LUT-FF pairs              | 242      | 46700         | 1                  
+| Use of CLMS                 | 68       | 4975          | 2                  
+|   FF                        | 102      | 39800         | 1                  
+|   LUT                       | 181      | 19900         | 1                  
+|   LUT-FF pairs              | 51       | 19900         | 1                  
+|   Distributed RAM           | 32       | 19900         | 1                  
+| Use of DDRPHY_CPD           | 0        | 12            | 0                  
+| Use of DDRPHY_IOCLK_DIV     | 0        | 6             | 0                  
+| Use of DDR_PHY              | 0        | 24            | 0                  
+| Use of DRM                  | 2        | 155           | 2                  
+| Use of GPLL                 | 0        | 6             | 0                  
+| Use of GSEB                 | 0        | 218           | 0                  
+| Use of HARD0                | 158      | 10550         | 2                  
+| Use of HCKB                 | 4        | 96            | 5                  
+|  HCKB dataused              | 0        | 96            | 0                  
+| Use of HCKMUX_TEST          | 0        | 8             | 0                  
+| Use of HSSTLP               | 0        | 2             | 0                  
+| Use of IO                   | 7        | 300           | 3                  
+|   IOBD                      | 3        | 144           | 3                  
+|   IOBS                      | 4        | 156           | 3                  
+| Use of IOCKB                | 0        | 24            | 0                  
+| Use of IOCKMUX_TEST         | 0        | 6             | 0                  
+| Use of IOLHR                | 7        | 300           | 3                  
+| Use of KEYRAM               | 0        | 1             | 0                  
+| Use of MFG_TEST             | 0        | 1             | 0                  
+| Use of MRCKB                | 0        | 12            | 0                  
+| Use of MRCKMUX_TEST         | 0        | 6             | 0                  
+| Use of MRPOSTMUX_TEST       | 0        | 6             | 0                  
+| Use of PCIE                 | 0        | 1             | 0                  
+| Use of PCKMUX_TEST          | 0        | 12            | 0                  
+| Use of PLLMRMUX_TEST        | 0        | 6             | 0                  
+| Use of PLLREFMUX_TEST       | 0        | 6             | 0                  
+| Use of PPLL                 | 0        | 6             | 0                  
+| Use of PREGMUXC_TEST        | 0        | 4             | 0                  
+| Use of PREGMUXLR_TEST       | 0        | 6             | 0                  
+| Use of RCKB                 | 0        | 24            | 0                  
+|  RCKB dataused              | 0        | 24            | 0                  
+| Use of RCKMUX_TEST          | 0        | 6             | 0                  
+| Use of SCANCHAIN            | 0        | 1             | 0                  
+| Use of SCKMUX_TEST          | 0        | 12            | 0                  
+| Use of SFB                  | 0        | 2225          | 0                  
+| Use of SPAD                 | 0        | 8             | 0                  
+| Use of TSERDES              | 0        | 48            | 0                  
+| Use of USCM                 | 1        | 32            | 4                  
+|  USCM dataused              | 0        | 32            | 0                  
+| Use of USCMMUX_TEST         | 0        | 32            | 0                  
++------------------------------------------------------------------------------+
+
+Finished routing.
+Design 'a_multigroup_k256_uart_board_top' has been placed and routed successfully.
+Saving design to DB.
+Finished placement and routing.
+Action pnr: Real time elapsed is 0h:0m:24s
+Action pnr: CPU time elapsed is 0h:0m:20s
+Action pnr: Process CPU time elapsed is 0h:0m:21s
+Current time: Wed Oct 21 21:52:19 2026
+Action pnr: Peak memory pool usage is 1,212 MB
+Action from compile to pnr: Total Real Time elapsed is 0h:0m:44s
+Action from compile to pnr: Total CPU time elapsed is 0h:0m:34s
+Action from compile to pnr: Total Process CPU Time elapsed is 0h:0m:35s
+Process "Place & Route" done.
+
+
+Process "Report Timing" started.
+Current time: Wed Oct 21 21:52:20 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Compiling verification operator library.
+Compiling common defs.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Building architecture model.
+Loading device packaging model.
+Reading design from pnr DB.
+Start Report Post-PnR timing.
+NOTE: The technology fpga was specified.
+NOTE: delay_model specified was generic_cmos.
+NOTE: Using the fpga syntax tables...
+Totals:
+ Calls to malloc = 0
+ Calls to calloc = 5993935
+
+Constructing timing graph ...
+Timing graph has been constructed successfully
+W: Timing-4087: Port 'led_busy' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_done' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_fail' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'led_pass' is not constrained, it is treated as combinational output.
+W: Timing-4087: Port 'uart_tx' is not constrained, it is treated as combinational output.
+W: Timing-4086: Port 'rst_n' is not constrained, it is treated as combinational input.
+Report timing is finished successfully.
+Action report_timing: Real time elapsed is 0h:0m:10s
+Action report_timing: CPU time elapsed is 0h:0m:8s
+Action report_timing: Process CPU time elapsed is 0h:0m:9s
+Current time: Wed Oct 21 21:52:29 2026
+Action report_timing: Peak memory pool usage is 1,090 MB
+Action from compile to report_timing: Total Real Time elapsed is 0h:0m:54s
+Action from compile to report_timing: Total CPU time elapsed is 0h:0m:42s
+Action from compile to report_timing: Total Process CPU Time elapsed is 0h:0m:44s
+Process "Report Timing" done.
+
+
+Process "Report Power" started.
+Current time: Wed Oct 21 21:52:30 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Executing command action 'cmd_report_power'
+Compiling verification operator library.
+Compiling common defs.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Building architecture model.
+Loading device packaging model.
+I: The power model of the device is Production
+Reading design from pnr DB.
+Start: Report Power
+Report Power...
+Report Power successfully.
+Action report_power: Real time elapsed is 0h:0m:9s
+Action report_power: CPU time elapsed is 0h:0m:8s
+Action report_power: Process CPU time elapsed is 0h:0m:8s
+Current time: Wed Oct 21 21:52:38 2026
+Action report_power: Peak memory pool usage is 574 MB
+Action from compile to report_power: Total Real Time elapsed is 0h:1m:3s
+Action from compile to report_power: Total CPU time elapsed is 0h:0m:50s
+Action from compile to report_power: Total Process CPU Time elapsed is 0h:0m:52s
+Process "Report Power" done.
+
+
+Process "Generate Netlist" started.
+Current time: Wed Oct 21 21:52:38 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Compiling verification operator library.
+Compiling common defs.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Building architecture model.
+Loading device packaging model.
+Reading design from DB.
+Start Generate Netlist.
+NOTE: The technology fpga was specified.
+NOTE: delay_model specified was generic_cmos.
+NOTE: Using the fpga syntax tables...
+Totals:
+ Calls to malloc = 0
+ Calls to calloc = 5993935
+
+Generate Netlist is finished successfully.
+Action gen_netlist: Real time elapsed is 0h:0m:15s
+Action gen_netlist: CPU time elapsed is 0h:0m:13s
+Action gen_netlist: Process CPU time elapsed is 0h:0m:13s
+Current time: Wed Oct 21 21:52:53 2026
+Action gen_netlist: Peak memory pool usage is 1,088 MB
+Action from compile to gen_netlist: Total Real Time elapsed is 0h:1m:18s
+Action from compile to gen_netlist: Total CPU time elapsed is 0h:1m:3s
+Action from compile to gen_netlist: Total Process CPU Time elapsed is 0h:1m:5s
+Process "Generate Netlist" done.
+
+
+Process "Generate Bitstream" started.
+Current time: Wed Oct 21 21:52:53 2026
+Compiling architecture definition.
+Analyzing project file 'D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/a_multigroup_k256.pds'.
+Compiling verification operator library.
+Compiling common defs.
+Compiling prim grid devices.
+Compiling gate devices.
+Compiling gate operators.
+Building architecture model.
+Loading device packaging model.
+Reading design from DB.
+Start Generating Programming File...
+Reading design from DB takes 0.187500 sec.
+Generating architecture configuration.
+The bitstream file is "D:/GPT/qiansai_FPGA/fpgatest/a_multigroup_k256/prj/generate_bitstream/a_multigroup_k256_uart_board_top.sbit"
+Generate programming file takes 3.218750 sec.
+Generating Programming File done.
+Action gen_bit_stream: Real time elapsed is 0h:0m:13s
+Action gen_bit_stream: CPU time elapsed is 0h:0m:10s
+Action gen_bit_stream: Process CPU time elapsed is 0h:0m:10s
+Current time: Wed Oct 21 21:53:05 2026
+Action gen_bit_stream: Peak memory pool usage is 1,103 MB
+Action from compile to gen_bit_stream: Total Real Time elapsed is 0h:1m:31s
+Action from compile to gen_bit_stream: Total CPU time elapsed is 0h:1m:13s
+Action from compile to gen_bit_stream: Total Process CPU Time elapsed is 0h:1m:15s
+Process "Generate Bitstream" done.

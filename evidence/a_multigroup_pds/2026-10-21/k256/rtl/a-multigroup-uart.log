@@ -1,0 +1,29 @@
+/usr/bin/python3 scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k256 build/a_multigroup/lanes16_n3_k256
+PASS CAPTURE_CASE N=3 K=256 records=6 source_lanes=16 rom_pack_lanes=32 board_verified=false
+/usr/bin/python3 scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k384 build/a_multigroup/lanes16_n3_k384
+PASS CAPTURE_CASE N=3 K=384 records=9 source_lanes=16 rom_pack_lanes=32 board_verified=false
+make lint-a-multigroup-uart-case A_CAPTURE_K=256 A_CAPTURE_DEPTH=6
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --lint-only -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=256 -GCAPTURE_DEPTH=6 \
+  -GPDS_TOP=0 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.373 MB sources in 15 modules, into 0.195 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.047 s (elab=0.003, cvt=0.007, bld=0.000); cpu 0.018 s on 1 threads; alloced 9.824 MB
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+make lint-a-multigroup-uart-case A_CAPTURE_K=384 A_CAPTURE_DEPTH=9
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --lint-only -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=384 -GCAPTURE_DEPTH=9 \
+  -GPDS_TOP=0 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.373 MB sources in 15 modules, into 0.196 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.045 s (elab=0.003, cvt=0.007, bld=0.000); cpu 0.017 s on 1 threads; alloced 9.820 MB
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+/usr/bin/python3 scripts/check_multigroup_uart.py
+PASS A_UART_SIM K=256 records=6 bytes=57 resets=3 mid_tx_reset=1 expected_overflow=0
+PASS A_UART_SIM K=256 records=5 bytes=49 resets=3 mid_tx_reset=1 expected_overflow=1
+PASS A_UART_SIM K=384 records=9 bytes=81 resets=3 mid_tx_reset=1 expected_overflow=0
+PASS A_UART_SIM K=384 records=8 bytes=73 resets=3 mid_tx_reset=1 expected_overflow=1

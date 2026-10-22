@@ -1,0 +1,38 @@
+{
+  "format_version": 1,
+  "source": "board",
+  "run_id": "b-a-k256-board-2026-10-21-reset2",
+  "results": [
+    {
+      "row_id": 0,
+      "group_id": 0,
+      "partial_sum": -1284
+    },
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "partial_sum": -920
+    },
+    {
+      "row_id": 1,
+      "group_id": 0,
+      "partial_sum": -3432
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "partial_sum": 724
+    },
+    {
+      "row_id": 2,
+      "group_id": 0,
+      "partial_sum": -851
+    },
+    {
+      "row_id": 2,
+      "group_id": 1,
+      "partial_sum": 2890
+    }
+  ],
+  "completed": true
+}

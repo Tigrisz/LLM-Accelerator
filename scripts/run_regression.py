@@ -62,6 +62,10 @@ def main():
                            "test-uart-board", "test-uart-board-overflow",
                            "lint-fixed-slice-qwen-multigroup", "test-fixed-slice-qwen-multigroup"]),
         ("uart-parser", [sys.executable, "-m", "unittest", "tests.test_uart_readback"]),
+        ("a-multigroup-uart", ["make", "lint-a-multigroup-uart", "test-a-multigroup-uart",
+                               f"PYTHON={sys.executable}"]),
+        ("a-multigroup-pds", ["make", "lint-a-multigroup-pds", "test-a-multigroup-pds",
+                              f"PYTHON={sys.executable}"]),
     ]
     results = []
     for name, command in phases:

@@ -1,0 +1,19 @@
+# Supplement to fixed_slice_qwen_demo_top_core27m.fdc (clock/reset/LEDs).
+# MES2L676-100HP hardware manual section 2.1.3.2.5, printed pp.39-40:
+# FPGA_UART_TXD = C24 -> on-board CP2102 RX, 3.3 V.
+# Confirmed by supplied pg2l100h_remote_updata.fdc UART TX constraints.
+define_attribute {p:uart_tx} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:uart_tx} {PAP_IO_LOC} {C24}
+define_attribute {p:uart_tx} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:uart_tx} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:uart_tx} {PAP_IO_DRIVE} {8}
+define_attribute {p:uart_tx} {PAP_IO_SLEW} {SLOW}
+define_attribute {p:uart_tx} {PAP_IO_NONE} {TRUE}
+
+# Reset assertion is asynchronous; release is synchronized inside board top.
+set_false_path -from [get_ports {rst_n}]
+# LEDs are human-observed asynchronous status outputs.
+set_false_path -to [get_ports {led_busy led_done led_pass led_fail}]
+# UART has no externally synchronous receive clock. Bound the registered
+# TX-to-pad propagation to one 27 MHz cycle (one UART bit is 234 cycles).
+set_max_delay 37.037037 -to [get_ports {uart_tx}]

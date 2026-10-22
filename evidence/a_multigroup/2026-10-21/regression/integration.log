@@ -1,0 +1,333 @@
+CASE case_001
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE case_n1_k128
+PASS INTEGRATION lanes=32 N=1 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE case_n2_k129
+PASS INTEGRATION lanes=32 N=2 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE case_n3_k256
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_000
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_001
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_002
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_003
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_004
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_005
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_006
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_007
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_008
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_009
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_010
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_011
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_012
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_013
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_014
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_015
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_016
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_017
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_018
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_019
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_020
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_021
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_022
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_023
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_024
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_025
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_026
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_027
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_028
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_029
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_030
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_031
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_032
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_033
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_034
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_035
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_036
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_037
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_038
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_039
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_040
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_041
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_042
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_043
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_044
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_045
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_046
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_047
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_048
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_049
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_050
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_051
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_052
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_053
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_054
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_055
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_056
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_057
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_058
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_059
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_060
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_061
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_062
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_063
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_064
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_065
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_066
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_067
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_068
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_069
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_070
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_071
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_072
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_073
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_074
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_075
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_076
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_077
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_078
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_079
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_080
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_081
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_082
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_083
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_084
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_085
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_086
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_087
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_088
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_089
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_090
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_091
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE seed_092
+PASS INTEGRATION lanes=32 N=1 K=129 seed=42 random_output_stalls=0 final_hold=20 cycles=49 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=41 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=129 seed=43 random_output_stalls=1 final_hold=20 cycles=61 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=53 output_wait=20
+CASE seed_093
+PASS INTEGRATION lanes=32 N=2 K=255 seed=42 random_output_stalls=0 final_hold=20 cycles=84 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=68 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=255 seed=43 random_output_stalls=1 final_hold=20 cycles=80 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=64 output_wait=20
+CASE seed_094
+PASS INTEGRATION lanes=32 N=3 K=256 seed=42 random_output_stalls=0 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=43 random_output_stalls=1 final_hold=20 cycles=105 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=81 output_wait=23
+CASE seed_095
+PASS INTEGRATION lanes=32 N=4 K=384 seed=42 random_output_stalls=0 final_hold=20 cycles=201 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=153 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=384 seed=43 random_output_stalls=1 final_hold=20 cycles=206 weight_bytes=768 input_beats=48 input_blocked=0 groups=12 input_wait=158 output_wait=28
+CASE seed_096
+PASS INTEGRATION lanes=32 N=1 K=1 seed=42 random_output_stalls=0 final_hold=20 cycles=34 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=30 output_wait=20
+PASS INTEGRATION lanes=32 N=1 K=1 seed=43 random_output_stalls=1 final_hold=20 cycles=38 weight_bytes=64 input_beats=4 input_blocked=0 groups=1 input_wait=34 output_wait=21
+CASE seed_097
+PASS INTEGRATION lanes=32 N=2 K=32 seed=42 random_output_stalls=0 final_hold=20 cycles=48 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=40 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=32 seed=43 random_output_stalls=1 final_hold=20 cycles=56 weight_bytes=128 input_beats=8 input_blocked=0 groups=2 input_wait=48 output_wait=21
+CASE seed_098
+PASS INTEGRATION lanes=32 N=3 K=127 seed=42 random_output_stalls=0 final_hold=20 cycles=66 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=54 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=127 seed=43 random_output_stalls=1 final_hold=20 cycles=72 weight_bytes=192 input_beats=12 input_blocked=0 groups=3 input_wait=60 output_wait=23
+CASE seed_099
+PASS INTEGRATION lanes=32 N=4 K=128 seed=42 random_output_stalls=0 final_hold=20 cycles=86 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=70 output_wait=20
+PASS INTEGRATION lanes=32 N=4 K=128 seed=43 random_output_stalls=1 final_hold=20 cycles=82 weight_bytes=256 input_beats=16 input_blocked=0 groups=4 input_wait=66 output_wait=20
+CASE long_k2048
+PASS INTEGRATION lanes=32 N=2 K=2048 seed=42 random_output_stalls=0 final_hold=20 cycles=522 weight_bytes=2048 input_beats=128 input_blocked=0 groups=32 input_wait=394 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=2048 seed=43 random_output_stalls=1 final_hold=20 cycles=552 weight_bytes=2048 input_beats=128 input_blocked=0 groups=32 input_wait=424 output_wait=44
+CASE long_k6144
+PASS INTEGRATION lanes=32 N=2 K=6144 seed=42 random_output_stalls=0 final_hold=20 cycles=1570 weight_bytes=6144 input_beats=384 input_blocked=0 groups=96 input_wait=1186 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=6144 seed=43 random_output_stalls=1 final_hold=20 cycles=1543 weight_bytes=6144 input_beats=384 input_blocked=0 groups=96 input_wait=1159 output_wait=71
+CASE long_k8192
+PASS INTEGRATION lanes=32 N=2 K=8192 seed=42 random_output_stalls=0 final_hold=20 cycles=2067 weight_bytes=8192 input_beats=512 input_blocked=0 groups=128 input_wait=1555 output_wait=20
+PASS INTEGRATION lanes=32 N=2 K=8192 seed=43 random_output_stalls=1 final_hold=20 cycles=2067 weight_bytes=8192 input_beats=512 input_blocked=0 groups=128 input_wait=1555 output_wait=84
+PASS CACHE_CAPACITY MAX_K=8192
+PASS ERROR base=3 N=1 K=128
+PASS ERROR base=65520 N=1 K=128
+PASS ERROR base=256 N=0 K=128
+PASS ERROR base=256 N=1 K=0
+PASS INTEGRATION lanes=32 N=3 K=256 seed=78 random_output_stalls=1 final_hold=20 cycles=131 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=107 output_wait=24
+PASS INTEGRATION lanes=32 N=3 K=256 seed=79 random_output_stalls=1 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=21
+PASS INTEGRATION lanes=32 N=3 K=256 seed=80 random_output_stalls=1 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=25
+PASS INTEGRATION lanes=32 N=3 K=256 seed=81 random_output_stalls=1 final_hold=20 cycles=130 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=106 output_wait=20
+PASS INTEGRATION lanes=32 N=3 K=256 seed=78 random_output_stalls=1 final_hold=20 cycles=131 weight_bytes=384 input_beats=24 input_blocked=0 groups=6 input_wait=107 output_wait=24
+PASS RESET partial_group,pending_output,restart
+PASS B_ARTIFACTS cases=107 mode=integration

@@ -1,4 +1,6 @@
-> 最新：Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
+> 最新整理（2026-10-22）：保留原Qwen工程，并新增独立K256/K384工程、各三次实板UART证据及交接包。见[三套工程与提交说明](docs/repository_preparation_2026-10-22.md)、[小用例交接核验说明](docs/task_a_multigroup_board_handoff_2026-10-22.md)。K256/K384使用A提供的合成整数用例，不是Qwen模型切片。
+>
+> Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[当时的提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
 
 ## 当前板端工程与归档
 

@@ -1,0 +1,151 @@
+verilator --lint-only -Wall --top-module tb_lane_adapter rtl/compute/lane_adapter_32_to_16.sv tests/tb_lane_adapter.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.035 MB sources in 3 modules, into 0.024 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.009 s (elab=0.000, cvt=0.001, bld=0.000); cpu 0.004 s on 1 threads; alloced 7.984 MB
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_lane_adapter --Mdir build/lane_adapter \
+  rtl/compute/lane_adapter_32_to_16.sv tests/tb_lane_adapter.sv /mnt/d/GPT/qiansai_FPGA/tests/test_lane_adapter.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/lane_adapter'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/lane_adapter'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.135 s (elab=0.000, cvt=0.000, bld=0.024); cpu 0.002 s on 1 threads; alloced 7.000 MB
+./build/lane_adapter/Vtb_lane_adapter
+PASS LANE_ADAPTER stream inputs=8 outputs=16 cycles=28
+PASS LANE_ADAPTER reset_mid_beat
+verilator --lint-only -Wall --top-module tb_control \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv rtl/compute/lane_adapter_32_to_16.sv rtl/control/control_regs.sv rtl/control/task_controller.sv rtl/control/accelerator_control_top.sv tests/tb_control.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.370 MB sources in 14 modules, into 0.363 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.003, cvt=0.015, bld=0.000); cpu 0.028 s on 1 threads; alloced 11.484 MB
+verilator --lint-only -Wall -GLANES=16 --top-module tb_control \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv rtl/compute/lane_adapter_32_to_16.sv rtl/control/control_regs.sv rtl/control/task_controller.sv rtl/control/accelerator_control_top.sv tests/tb_control.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.370 MB sources in 14 modules, into 0.294 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.049 s (elab=0.003, cvt=0.013, bld=0.000); cpu 0.025 s on 1 threads; alloced 11.164 MB
+/usr/bin/python3 scripts/run_model_tests.py
+test_32_to_16_adapter_contract_is_present (test_b_model.ContractFileTests.test_32_to_16_adapter_contract_is_present) ... ok
+test_b_side_rtl_modules_exist (test_b_model.ContractFileTests.test_b_side_rtl_modules_exist) ... ok
+test_board_slice_runner_contract_is_present (test_b_model.ContractFileTests.test_board_slice_runner_contract_is_present) ... ok
+test_contract_mentions_task_a_boundary (test_b_model.ContractFileTests.test_contract_mentions_task_a_boundary) ... ok
+test_model_slice_tools_are_present (test_b_model.ContractFileTests.test_model_slice_tools_are_present) ... ok
+test_paired_stream_requires_both_sources (test_b_model.ContractFileTests.test_paired_stream_requires_both_sources) ... ok
+test_system_control_contract_is_present (test_b_model.ContractFileTests.test_system_control_contract_is_present) ... ok
+test_generated_case_is_reproducible_and_rtl_ready (test_b_model.ModelToolTests.test_generated_case_is_reproducible_and_rtl_ready) ... ok
+test_golden_partial_sums_and_tail_group (test_b_model.ModelToolTests.test_golden_partial_sums_and_tail_group) ... ok
+test_pack_matrix_pads_each_row (test_b_model.ModelToolTests.test_pack_matrix_pads_each_row) ... ok
+test_real_model_slice_quantization_fixture (test_b_model.ModelToolTests.test_real_model_slice_quantization_fixture) ... ok
+test_signed_nibble_boundaries (test_b_model.ModelToolTests.test_signed_nibble_boundaries) ... ok
+test_stream_metadata_marks_group_edges (test_b_model.ModelToolTests.test_stream_metadata_marks_group_edges) ... ok
+test_stream_reference_repeats_activation_per_row (test_b_model.ModelToolTests.test_stream_reference_repeats_activation_per_row) ... ok
+test_actual_cases_roundtrip_and_literal_partial_sums (test_capture_case.CaptureCaseTests.test_actual_cases_roundtrip_and_literal_partial_sums) ... ok
+test_refuses_to_replace_different_existing_output (test_capture_case.CaptureCaseTests.test_refuses_to_replace_different_existing_output) ... ok
+test_rejects_incomplete_reference_capture (test_capture_case.CaptureCaseTests.test_rejects_incomplete_reference_capture) ... ok
+test_rejects_non_integer_golden (test_capture_case.CaptureCaseTests.test_rejects_non_integer_golden) ... ok
+test_rejects_nonzero_tail_padding (test_capture_case.CaptureCaseTests.test_rejects_nonzero_tail_padding) ... ok
+test_rejects_truncated_packed_input (test_capture_case.CaptureCaseTests.test_rejects_truncated_packed_input) ... ok
+test_rejects_unsupported_lane_count (test_capture_case.CaptureCaseTests.test_rejects_unsupported_lane_count) ... ok
+test_rejects_wrong_golden_before_writing (test_capture_case.CaptureCaseTests.test_rejects_wrong_golden_before_writing) ... ok
+test_rejects_wrong_sixteen_lane_stream (test_capture_case.CaptureCaseTests.test_rejects_wrong_sixteen_lane_stream) ... ok
+test_b_side_rtl_modules_exist (test_day1_6.ContractFileTests.test_b_side_rtl_modules_exist) ... ok
+test_contract_mentions_task_a_boundary (test_day1_6.ContractFileTests.test_contract_mentions_task_a_boundary) ... ok
+test_paired_stream_requires_both_sources (test_day1_6.ContractFileTests.test_paired_stream_requires_both_sources) ... ok
+test_generated_case_is_reproducible_and_rtl_ready (test_day1_6.ModelToolTests.test_generated_case_is_reproducible_and_rtl_ready) ... ok
+test_golden_partial_sums_and_tail_group (test_day1_6.ModelToolTests.test_golden_partial_sums_and_tail_group) ... ok
+test_pack_matrix_pads_each_row (test_day1_6.ModelToolTests.test_pack_matrix_pads_each_row) ... ok
+test_signed_nibble_boundaries (test_day1_6.ModelToolTests.test_signed_nibble_boundaries) ... ok
+test_stream_metadata_marks_group_edges (test_day1_6.ModelToolTests.test_stream_metadata_marks_group_edges) ... ok
+test_stream_reference_repeats_activation_per_row (test_day1_6.ModelToolTests.test_stream_reference_repeats_activation_per_row) ... ok
+test_extract_can_explicitly_zero_pad_short_model_width (test_fixed_slice_multigroup.FixedSliceMultiGroupTests.test_extract_can_explicitly_zero_pad_short_model_width) ... ok
+test_prepare_emits_qwen_multigroup_image_dimensions (test_fixed_slice_multigroup.FixedSliceMultiGroupTests.test_prepare_emits_qwen_multigroup_image_dimensions) ... ok
+test_prepare_emits_row_group_mem_layout_for_k256 (test_fixed_slice_multigroup.FixedSliceMultiGroupTests.test_prepare_emits_row_group_mem_layout_for_k256) ... ok
+test_verify_accepts_multigroup_rom_images (test_fixed_slice_multigroup.FixedSliceMultiGroupTests.test_verify_accepts_multigroup_rom_images) ... ok
+test_verify_infers_rows_from_group_count_without_config (test_fixed_slice_multigroup.FixedSliceMultiGroupTests.test_verify_infers_rows_from_group_count_without_config) ... ok
+test_bad_new_frame_does_not_reuse_previous_json (test_multigroup_report.MultigroupReportTests.test_bad_new_frame_does_not_reuse_previous_json) ... ok
+test_direct_make_runs_separate_depths (test_multigroup_report.MultigroupReportTests.test_direct_make_runs_separate_depths) ... ok
+test_failed_make_replaces_previous_success_status (test_multigroup_report.MultigroupReportTests.test_failed_make_replaces_previous_success_status) ... 
+ok
+test_timeout_replaces_previous_success_status (test_multigroup_report.MultigroupReportTests.test_timeout_replaces_previous_success_status) ... ok
+test_k256_targets_explicit_project_independent_of_active_gui (test_pds_batch_entry.PdsBatchEntryTests.test_k256_targets_explicit_project_independent_of_active_gui) ... skipped 'Windows PowerShell/PDS preflight'
+test_k384_targets_separate_project (test_pds_batch_entry.PdsBatchEntryTests.test_k384_targets_separate_project) ... skipped 'Windows PowerShell/PDS preflight'
+test_rejects_case_outside_approved_two (test_pds_batch_entry.PdsBatchEntryTests.test_rejects_case_outside_approved_two) ... skipped 'Windows PowerShell/PDS preflight'
+test_legacy_k128_bootstraps_without_ignored_build_inputs (test_qwen_fixture_bootstrap.QwenFixtureBootstrapTests.test_legacy_k128_bootstraps_without_ignored_build_inputs) ... ok
+test_multigroup_bootstraps_from_committed_pds_roms (test_qwen_fixture_bootstrap.QwenFixtureBootstrapTests.test_multigroup_bootstraps_from_committed_pds_roms) ... ok
+test_original_failure_not_hidden_by_successful_replay (test_sim_runner.SimulationRunnerTests.test_original_failure_not_hidden_by_successful_replay) ... ok
+test_success_does_not_create_failure (test_sim_runner.SimulationRunnerTests.test_success_does_not_create_failure) ... ok
+test_timeout_is_failure_with_evidence (test_sim_runner.SimulationRunnerTests.test_timeout_is_failure_with_evidence) ... ok
+test_decode_does_not_claim_board_provenance_without_input (test_uart_readback.UartReadbackTests.test_decode_does_not_claim_board_provenance_without_input) ... ok
+test_receiver_accepts_fragmented_frame_and_discards_noise (test_uart_readback.UartReadbackTests.test_receiver_accepts_fragmented_frame_and_discards_noise) ... ok
+test_receiver_recovers_after_reset_interrupts_a_frame (test_uart_readback.UartReadbackTests.test_receiver_recovers_after_reset_interrupts_a_frame) ... ok
+test_receiver_recovers_from_bad_count_and_footer (test_uart_readback.UartReadbackTests.test_receiver_recovers_from_bad_count_and_footer) ... ok
+test_rejects_duplicate_or_out_of_range_tags (test_uart_readback.UartReadbackTests.test_rejects_duplicate_or_out_of_range_tags) ... ok
+test_rejects_missing_results (test_uart_readback.UartReadbackTests.test_rejects_missing_results) ... ok
+test_rejects_partial_or_corrupted_frames (test_uart_readback.UartReadbackTests.test_rejects_partial_or_corrupted_frames) ... ok
+test_rejects_wrong_sum (test_uart_readback.UartReadbackTests.test_rejects_wrong_sum) ... ok
+test_signed_values_and_explicit_simulation_source (test_uart_readback.UartReadbackTests.test_signed_values_and_explicit_simulation_source) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 3.126s
+
+OK (skipped=3)
+/usr/bin/python3 scripts/prepare_control_fixture.py
+/mnt/d/GPT/qiansai_FPGA/build/b_fixtures/case_n3_k256.txt
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_control --Mdir build/control \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv rtl/compute/lane_adapter_32_to_16.sv rtl/control/control_regs.sv rtl/control/task_controller.sv rtl/control/accelerator_control_top.sv tests/tb_control.sv /mnt/d/GPT/qiansai_FPGA/tests/test_control.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/control'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/control'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.065 s (elab=0.000, cvt=0.000, bld=0.024); cpu 0.003 s on 1 threads; alloced 7.000 MB
+PASS CONTROL N=3 K=256 outputs=6 cycles=148
+PASS CONTROL_ERRORS
+verilator --cc --exe --build --trace -Wall -GLANES=16 \
+  --top-module tb_control --Mdir build/control16 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv rtl/compute/lane_adapter_32_to_16.sv rtl/control/control_regs.sv rtl/control/task_controller.sv rtl/control/accelerator_control_top.sv tests/tb_control.sv /mnt/d/GPT/qiansai_FPGA/tests/test_control.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/control16'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/control16'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.058 s (elab=0.000, cvt=0.000, bld=0.023); cpu 0.003 s on 1 threads; alloced 7.000 MB
+PASS CONTROL N=3 K=256 outputs=6 cycles=152
+PASS CONTROL_ERRORS
+/usr/bin/python3 scripts/prepare_fixed_slice_mem.py tests/vectors/case_n1_k128 build/fixed_slice
+{"K": 128, "N": 1, "activation_layout": "signed INT8, logical order, zero-padded to padded_K", "format_version": 1, "group_size": 128, "lanes": 32, "padded_K": 128, "seed": 101, "weight_layout": "row-major, padded per row to group_size"}
+verilator --lint-only -Wall --top-module tb_fixed_slice \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.170 MB sources in 10 modules, into 0.111 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.028 s (elab=0.002, cvt=0.004, bld=0.000); cpu 0.011 s on 1 threads; alloced 9.039 MB
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_fixed_slice --Mdir build/fixed_slice_sim \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice.sv /mnt/d/GPT/qiansai_FPGA/tests/test_fixed_slice.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_sim'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.062 s (elab=0.000, cvt=0.000, bld=0.022); cpu 0.003 s on 1 threads; alloced 7.000 MB
+./build/fixed_slice_sim/Vtb_fixed_slice
+PASS FIXED_SLICE_BOARD_RUN result_count=1 cycles=17 partial_sum=-255
+/usr/bin/python3 scripts/verify_board_mem.py --source tests/fixtures/qwen_n16_k128 --target build/fixed_slice_qwen
+PASS BOARD_MEM rows=16 K=128 groups=1 independent_integer_golden=matched
+verilator --lint-only -Wall --top-module tb_fixed_slice_qwen \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice_qwen.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.170 MB sources in 10 modules, into 0.114 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.032 s (elab=0.002, cvt=0.005, bld=0.000); cpu 0.012 s on 1 threads; alloced 9.043 MB
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_fixed_slice_qwen --Mdir build/fixed_slice_qwen_sim \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice_qwen.sv /mnt/d/GPT/qiansai_FPGA/tests/test_fixed_slice_qwen.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_qwen_sim'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_qwen_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.056 s (elab=0.000, cvt=0.000, bld=0.023); cpu 0.003 s on 1 threads; alloced 7.000 MB
+./build/fixed_slice_qwen_sim/Vtb_fixed_slice_qwen
+PASS FIXED_SLICE_QWEN_RUN result_count=16 cycles=197 partial_sum=173

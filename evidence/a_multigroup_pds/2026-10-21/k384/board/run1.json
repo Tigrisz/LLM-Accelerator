@@ -1,0 +1,66 @@
+{
+  "source": "board",
+  "version": 1,
+  "count": 9,
+  "records": [
+    {
+      "index": 0,
+      "row_id": 0,
+      "group_id": 0,
+      "partial_sum": -6908
+    },
+    {
+      "index": 1,
+      "row_id": 0,
+      "group_id": 1,
+      "partial_sum": 1686
+    },
+    {
+      "index": 2,
+      "row_id": 0,
+      "group_id": 2,
+      "partial_sum": -1175
+    },
+    {
+      "index": 3,
+      "row_id": 1,
+      "group_id": 0,
+      "partial_sum": -1560
+    },
+    {
+      "index": 4,
+      "row_id": 1,
+      "group_id": 1,
+      "partial_sum": -1043
+    },
+    {
+      "index": 5,
+      "row_id": 1,
+      "group_id": 2,
+      "partial_sum": -3218
+    },
+    {
+      "index": 6,
+      "row_id": 2,
+      "group_id": 0,
+      "partial_sum": -4489
+    },
+    {
+      "index": 7,
+      "row_id": 2,
+      "group_id": 1,
+      "partial_sum": 215
+    },
+    {
+      "index": 8,
+      "row_id": 2,
+      "group_id": 2,
+      "partial_sum": 1156
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "rows": 3,
+    "groups": 3
+  }
+}
