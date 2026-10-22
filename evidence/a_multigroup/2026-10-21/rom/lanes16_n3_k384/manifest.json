@@ -1,0 +1,35 @@
+{
+  "K": 384,
+  "N": 3,
+  "board_verified": false,
+  "compute_lanes": 16,
+  "expected_records": 9,
+  "fixture": "tests/fixtures/a_multigroup/lanes16_n3_k384",
+  "format_version": 1,
+  "group_size": 128,
+  "groups": 3,
+  "independent_integer_golden": "matched",
+  "input_kind": "task_a_synthetic",
+  "input_sha256": {
+    "activation_int8.bin": "595e1bf7ee597a44ce3812f9042b268d1cf3daa641dfcec9759d1efb747457e8",
+    "capture.json": "498cdb4f98ed80c9f47994db96019f659bb4804689e427388dd4e62b2feeb956",
+    "comparison.json": "7da3c8bfd0fb0b0204c6dbc9fdad8eeea3ed57c44929b244550eb84504bb90cc",
+    "config.json": "b705f00933587eb099bf9fba3be0ffdb3581a1bd1c38d2b3efd3e0be6909e747",
+    "expected_partial.npy": "5b9ff9e414345b1f6e7f0625bb5637a4172754a888030dc4adbc271afff487d1",
+    "scales.npy": "03057beece578011fd04a6ed782b0ed2bf3d6cbbea2b3bb4512bca462dbcdf39",
+    "stream_reference.json": "b77148e67253e05d839e023f94feb8cece26c75a0e20a333ee7029ba9e19b3ff",
+    "weight_packed.bin": "a651ef2ee563b9825ba80020efaca297510e7f6085799937b87dca10867d1700"
+  },
+  "output_sha256": {
+    "activation.mem": "1aedaf68bf93355881d12c2d537e1f9a75d1f7c5d24399637cf20a85a3b68fc9",
+    "config.json": "f3e75208463a46c41f8e0665ec0c4818a2ab496898f02cc4acbc13e22ae2affd",
+    "expected.mem": "fe3f8b2c9676aba2789e0547f785f6a43e68bd334e7a527639a0b85dfd5d481e",
+    "weights.mem": "1df503207416e2a35e88583f81c3ff5709ac3626df7527afe3d3ae1a66cda0d5"
+  },
+  "padded_K": 384,
+  "rom_pack_lanes": 32,
+  "source_capture": "simulation",
+  "source_lanes": 16,
+  "source_stream_beats": 72,
+  "uart_frame_bytes": 81
+}

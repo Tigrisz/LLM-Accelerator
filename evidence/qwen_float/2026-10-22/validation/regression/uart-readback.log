@@ -1,0 +1,75 @@
+verilator --lint-only -Wall --top-module tb_result_capture_uart \
+  -GDEPTH=6 -GCLKS_PER_BIT=1 rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv tests/tb_result_capture_uart.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.074 MB sources in 5 modules, into 0.051 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.016 s (elab=0.001, cvt=0.002, bld=0.000); cpu 0.006 s on 1 threads; alloced 8.324 MB
+verilator --cc --exe --build -Wall --top-module tb_result_capture_uart \
+  -GDEPTH=6 -GCLKS_PER_BIT=1 --Mdir build/result_capture_sim \
+  rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv tests/tb_result_capture_uart.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_result_capture_uart.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/result_capture_sim'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/result_capture_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.039 s (elab=0.000, cvt=0.000, bld=0.020); cpu 0.002 s on 1 threads; alloced 7.000 MB
+./build/result_capture_sim/Vtb_result_capture_uart
+PASS RESULT_CAPTURE_UART records=6
+python3 scripts/verify_board_mem.py --source fpgatest/qwen_slice/prj/mem --target build/fixed_slice_qwen_multigroup
+PASS BOARD_MEM rows=16 K=2048 groups=16 independent_integer_golden=matched
+verilator --lint-only -Wall --top-module fixed_slice_qwen_uart_top \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.216 MB sources in 11 modules, into 0.153 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.035 s (elab=0.002, cvt=0.006, bld=0.000); cpu 0.014 s on 1 threads; alloced 9.535 MB
+verilator --lint-only -Wall --top-module tb_fixed_slice_uart_board \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv tests/tb_fixed_slice_uart_board.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.291 MB sources in 13 modules, into 0.175 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.041 s (elab=0.002, cvt=0.006, bld=0.000); cpu 0.016 s on 1 threads; alloced 9.645 MB
+verilator --cc --exe --build -Wall --top-module tb_fixed_slice_uart_board \
+  -GCAPTURE_DEPTH=256 --Mdir build/qwen_uart_board_sim \
+  -CFLAGS "-DTEST_CAPTURE_DEPTH=256" \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv tests/tb_fixed_slice_uart_board.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_fixed_slice_uart_board.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/qwen_uart_board_sim'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/qwen_uart_board_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.060 s (elab=0.000, cvt=0.000, bld=0.023); cpu 0.003 s on 1 threads; alloced 7.000 MB
+./build/qwen_uart_board_sim/Vtb_fixed_slice_uart_board
+PASS QWEN_UART_BOARD records=256 bytes=2057 divisor=234 resets=3 mid_tx_reset=1 overflow=0
+make test-uart-board UART_BOARD_DEPTH=255 UART_BOARD_DIR=build/qwen_uart_board_overflow_sim
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --cc --exe --build -Wall --top-module tb_fixed_slice_uart_board \
+  -GCAPTURE_DEPTH=255 --Mdir build/qwen_uart_board_overflow_sim \
+  -CFLAGS "-DTEST_CAPTURE_DEPTH=255" \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv tests/tb_fixed_slice_uart_board.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_fixed_slice_uart_board.cpp
+make[2]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/qwen_uart_board_overflow_sim'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/qwen_uart_board_overflow_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.051 s (elab=0.000, cvt=0.000, bld=0.020); cpu 0.002 s on 1 threads; alloced 7.000 MB
+./build/qwen_uart_board_overflow_sim/Vtb_fixed_slice_uart_board
+PASS QWEN_UART_BOARD records=255 bytes=2049 divisor=234 resets=3 mid_tx_reset=1 overflow=1
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --lint-only -Wall --top-module tb_fixed_slice_qwen_multigroup \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice_qwen_multigroup.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.170 MB sources in 10 modules, into 0.121 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.031 s (elab=0.002, cvt=0.005, bld=0.000); cpu 0.012 s on 1 threads; alloced 8.996 MB
+verilator --cc --exe --build --trace -Wall \
+  --top-module tb_fixed_slice_qwen_multigroup --Mdir build/fixed_slice_qwen_multigroup_sim \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/model/fixed_slice_demo_top.sv rtl/model/fixed_slice_qwen_demo_top.sv tests/tb_fixed_slice_qwen_multigroup.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_fixed_slice_qwen_multigroup.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_qwen_multigroup_sim'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/fixed_slice_qwen_multigroup_sim'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.000, cvt=0.000, bld=0.026); cpu 0.002 s on 1 threads; alloced 7.000 MB
+./build/fixed_slice_qwen_multigroup_sim/Vtb_fixed_slice_qwen_multigroup
+PASS FIXED_SLICE_QWEN_MULTIGROUP_RUN result_count=256 cycles=3077 partial_sum=0

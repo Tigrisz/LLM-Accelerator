@@ -1,7 +1,8 @@
-> 后续：[B 板端自检反馈](docs/board_feedback_2026-10-20.md)；[结果导出格式与比对工具](docs/result_capture_v1.md)。
-
-> 当前 A/B 合并、板端证据与下一步见 [2026-10-20 状态说明](docs/integration_status_2026-10-20.md)。完整回归同时覆盖两种适配器与 B 控制/固定切片路径。
-> 最新：Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
+> 浮点参考补充（2026-10-22）：同一Qwen切片已完成固定checkpoint浮点重放、既有量化载荷/ROM/UART一致性检查和切片量化误差评估，见[报告与复现命令](docs/qwen_float_reference_2026-10-22.md)、[任务A交接说明](docs/task_a_qwen_float_handoff_2026-10-22.md)和[本轮提交清单](docs/repository_preparation_qwen_float_2026-10-22.md)。这不是完整模型精度验收。
+>
+> 最新整理（2026-10-22）：保留原Qwen工程，并新增独立K256/K384工程、各三次实板UART证据及交接包。见[三套工程与提交说明](docs/repository_preparation_2026-10-22.md)、[小用例交接核验说明](docs/task_a_multigroup_board_handoff_2026-10-22.md)。K256/K384使用A提供的合成整数用例，不是Qwen模型切片。
+>
+> Qwen UART 实板三次复位、每轮256条结果逐项核验通过。见 [2026-10-21实板报告](docs/uart_board_capture_2026-10-21.md)、[当时的提交整理说明](docs/repository_preparation_2026-10-21.md)和[任务A交接说明](docs/task_a_uart_handoff_2026-10-21.md)。历史 A/B 合并状态见 [2026-10-20说明](docs/integration_status_2026-10-20.md)。
 
 ## 当前板端工程与归档
 

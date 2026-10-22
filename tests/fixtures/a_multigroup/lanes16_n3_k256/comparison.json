@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "source": "simulation",
+  "run_id": "integration-lanes16-n3-k256-seed43",
+  "expected_count": 6,
+  "received_count": 6,
+  "error_counts": {},
+  "first_error": null,
+  "errors": [],
+  "errors_truncated": false,
+  "golden_sha256": "5043b1dcb71f1a9ea520ecb9e558b44fbad506f56fc90a82b72ba4537616507e",
+  "capture_sha256": "f34a967f615f7f6b0ed369ff3370e774bcbf32d0ed1bfe02f4708339e97cac6f"
+}

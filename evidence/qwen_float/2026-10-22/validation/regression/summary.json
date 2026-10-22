@@ -1,0 +1,202 @@
+[
+  {
+    "phase": "lint",
+    "command": [
+      "make",
+      "lint",
+      "lint-integration"
+    ],
+    "returncode": 0,
+    "log": "build/reports/lint.log"
+  },
+  {
+    "phase": "python",
+    "command": [
+      "make",
+      "test-model",
+      "PYTHON=/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python"
+    ],
+    "returncode": 0,
+    "log": "build/reports/python.log"
+  },
+  {
+    "phase": "monitor",
+    "command": [
+      "make",
+      "test-monitor"
+    ],
+    "returncode": 0,
+    "log": "build/reports/monitor.log"
+  },
+  {
+    "phase": "compute",
+    "command": [
+      "make",
+      "build-compute"
+    ],
+    "returncode": 0,
+    "log": "build/reports/compute.log"
+  },
+  {
+    "phase": "core-directed",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/run_core_tests.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/core-directed.log"
+  },
+  {
+    "phase": "core-golden",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/verify_b_vectors.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/core-golden.log"
+  },
+  {
+    "phase": "failure-replay",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/check_failure_replay.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/failure-replay.log"
+  },
+  {
+    "phase": "adapter-build",
+    "command": [
+      "make",
+      "build-adapter"
+    ],
+    "returncode": 0,
+    "log": "build/reports/adapter-build.log"
+  },
+  {
+    "phase": "adapter",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/run_adapter_tests.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/adapter.log"
+  },
+  {
+    "phase": "integration-build",
+    "command": [
+      "make",
+      "build-integration",
+      "build-integration16"
+    ],
+    "returncode": 0,
+    "log": "build/reports/integration-build.log"
+  },
+  {
+    "phase": "integration",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/verify_b_vectors.py",
+      "--integration"
+    ],
+    "returncode": 0,
+    "log": "build/reports/integration.log"
+  },
+  {
+    "phase": "integration16",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/verify_b_vectors.py",
+      "--integration",
+      "--integration-lanes",
+      "16"
+    ],
+    "returncode": 0,
+    "log": "build/reports/integration16.log"
+  },
+  {
+    "phase": "lane-benchmark",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/benchmark_lanes.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/lane-benchmark.log"
+  },
+  {
+    "phase": "board-mem",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "scripts/verify_board_mem.py"
+    ],
+    "returncode": 0,
+    "log": "build/reports/board-mem.log"
+  },
+  {
+    "phase": "b-board-control",
+    "command": [
+      "make",
+      "lint-lane-adapter",
+      "test-lane-adapter",
+      "lint-control",
+      "lint-control-16",
+      "test-system-control",
+      "lint-fixed-slice",
+      "test-fixed-slice",
+      "lint-fixed-slice-qwen",
+      "test-fixed-slice-qwen",
+      "PYTHON=/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python"
+    ],
+    "returncode": 0,
+    "log": "build/reports/b-board-control.log"
+  },
+  {
+    "phase": "uart-readback",
+    "command": [
+      "make",
+      "lint-result-capture",
+      "test-result-capture",
+      "lint-fixed-slice-qwen-uart",
+      "lint-uart-board",
+      "test-uart-board",
+      "test-uart-board-overflow",
+      "lint-fixed-slice-qwen-multigroup",
+      "test-fixed-slice-qwen-multigroup"
+    ],
+    "returncode": 0,
+    "log": "build/reports/uart-readback.log"
+  },
+  {
+    "phase": "uart-parser",
+    "command": [
+      "/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python",
+      "-m",
+      "unittest",
+      "tests.test_uart_readback"
+    ],
+    "returncode": 0,
+    "log": "build/reports/uart-parser.log"
+  },
+  {
+    "phase": "a-multigroup-uart",
+    "command": [
+      "make",
+      "lint-a-multigroup-uart",
+      "test-a-multigroup-uart",
+      "PYTHON=/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python"
+    ],
+    "returncode": 0,
+    "log": "build/reports/a-multigroup-uart.log"
+  },
+  {
+    "phase": "a-multigroup-pds",
+    "command": [
+      "make",
+      "lint-a-multigroup-pds",
+      "test-a-multigroup-pds",
+      "PYTHON=/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python"
+    ],
+    "returncode": 0,
+    "log": "build/reports/a-multigroup-pds.log"
+  }
+]

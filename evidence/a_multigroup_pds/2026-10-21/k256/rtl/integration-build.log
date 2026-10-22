@@ -1,0 +1,23 @@
+verilator --cc --exe --build --trace -Wall  \
+  -GLANES=32 -CFLAGS "-DTEST_LANES=32" \
+  --top-module tb_b_integration --Mdir build/integration \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/paired_lane_adapter.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv tests/tb_b_integration.sv /mnt/d/GPT/qiansai_FPGA/tests/test_b_integration.cpp
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/integration'
+make[1]: Nothing to be done for 'default'.
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/integration'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.000, cvt=0.000, bld=0.023); cpu 0.003 s on 1 threads; alloced 7.000 MB
+make build-integration INTEGRATION_LANES=16 INTEGRATION_DIR=build/integration16
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --cc --exe --build --trace -Wall  \
+  -GLANES=16 -CFLAGS "-DTEST_LANES=16" \
+  --top-module tb_b_integration --Mdir build/integration16 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/paired_lane_adapter.sv rtl/memory/memory_model.sv rtl/memory/weight_reader.sv rtl/memory/activation_cache.sv rtl/memory/paired_input_stream.sv tests/tb_b_integration.sv /mnt/d/GPT/qiansai_FPGA/tests/test_b_integration.cpp
+make[2]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/integration16'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/integration16'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.000, cvt=0.000, bld=0.024); cpu 0.003 s on 1 threads; alloced 7.000 MB
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'

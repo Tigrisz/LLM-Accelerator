@@ -248,3 +248,53 @@ test-uart-board: build-uart-board
 
 test-uart-board-overflow:
 	$(MAKE) test-uart-board UART_BOARD_DEPTH=255 UART_BOARD_DIR=build/qwen_uart_board_overflow_sim
+
+# Task-A synthetic fixtures use the existing B ROM/adapter/runner/UART path.
+A_CAPTURE_K ?= 256
+A_CAPTURE_DEPTH ?= $(if $(filter 384,$(A_CAPTURE_K)),9,6)
+A_CAPTURE_PDS_TOP ?= 0
+A_CAPTURE_PDS_RTL = rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv
+A_CAPTURE_DIR ?= build/a_multigroup_uart_k$(A_CAPTURE_K)_d$(A_CAPTURE_DEPTH)_pds$(A_CAPTURE_PDS_TOP)
+A_CAPTURE_REPORT_DIR ?= build/reports/a_multigroup/lanes16_n3_k$(A_CAPTURE_K)/depth$(A_CAPTURE_DEPTH)
+.PHONY: prepare-a-multigroup lint-a-multigroup-uart lint-a-multigroup-uart-case \
+	build-a-multigroup-uart-case run-a-multigroup-uart-case test-a-multigroup-uart
+
+prepare-a-multigroup:
+	$(PYTHON) scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k256 build/a_multigroup/lanes16_n3_k256
+	$(PYTHON) scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k384 build/a_multigroup/lanes16_n3_k384
+
+lint-a-multigroup-uart: prepare-a-multigroup
+	$(MAKE) lint-a-multigroup-uart-case A_CAPTURE_K=256 A_CAPTURE_DEPTH=6
+	$(MAKE) lint-a-multigroup-uart-case A_CAPTURE_K=384 A_CAPTURE_DEPTH=9
+
+lint-a-multigroup-uart-case:
+	$(VERILATOR) --lint-only -Wall --top-module tb_multigroup_uart_board \
+	  -GCASE_K=$(A_CAPTURE_K) -GCAPTURE_DEPTH=$(A_CAPTURE_DEPTH) \
+	  -GPDS_TOP=$(A_CAPTURE_PDS_TOP) \
+	  $(UART_BOARD_RTL) $(A_CAPTURE_PDS_RTL) tests/tb_multigroup_uart_board.sv
+
+build-a-multigroup-uart-case: prepare-a-multigroup
+	@test "$(A_CAPTURE_K)" = 256 -o "$(A_CAPTURE_K)" = 384
+	$(VERILATOR) --cc --exe --build -Wall --top-module tb_multigroup_uart_board \
+	  -GCASE_K=$(A_CAPTURE_K) -GCAPTURE_DEPTH=$(A_CAPTURE_DEPTH) --Mdir $(A_CAPTURE_DIR) \
+	  -GPDS_TOP=$(A_CAPTURE_PDS_TOP) \
+	  -CFLAGS "-DTEST_K=$(A_CAPTURE_K) -DTEST_CAPTURE_DEPTH=$(A_CAPTURE_DEPTH)" \
+	  $(UART_BOARD_RTL) $(A_CAPTURE_PDS_RTL) tests/tb_multigroup_uart_board.sv \
+	  $(CURDIR)/tests/test_multigroup_uart_board.cpp
+
+run-a-multigroup-uart-case: build-a-multigroup-uart-case
+	@mkdir -p $(A_CAPTURE_REPORT_DIR)
+	./$(A_CAPTURE_DIR)/Vtb_multigroup_uart_board \
+	  build/a_multigroup/lanes16_n3_k$(A_CAPTURE_K)/expected.mem $(A_CAPTURE_REPORT_DIR)/sim
+
+test-a-multigroup-uart:
+	$(PYTHON) scripts/check_multigroup_uart.py
+
+.PHONY: lint-a-multigroup-pds test-a-multigroup-pds
+lint-a-multigroup-pds:
+	$(MAKE) lint-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=256 A_CAPTURE_DEPTH=6
+	$(MAKE) lint-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=384 A_CAPTURE_DEPTH=9
+
+test-a-multigroup-pds:
+	$(MAKE) run-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=256 A_CAPTURE_DEPTH=6 A_CAPTURE_REPORT_DIR=build/reports/a_multigroup_pds/k256
+	$(MAKE) run-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=384 A_CAPTURE_DEPTH=9 A_CAPTURE_REPORT_DIR=build/reports/a_multigroup_pds/k384

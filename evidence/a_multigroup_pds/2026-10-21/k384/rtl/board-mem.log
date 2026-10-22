@@ -1,0 +1,1 @@
+PASS BOARD_MEM rows=16 K=2048 groups=16 independent_integer_golden=matched
