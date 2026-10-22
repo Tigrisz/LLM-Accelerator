@@ -3,6 +3,7 @@
 /deliveries/** -text
 *.sbit -text
 *.mem text eol=lf
+/fpgatest/a_multigroup_*/prj/mem/*.json text eol=lf
 /tests/fixtures/a_multigroup/** -text
 
 # Keep the float replay's recorded core-source hashes stable on checkout.

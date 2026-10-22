@@ -60,6 +60,11 @@ python scripts/run_regression.py
 两份交付ZIP分别核对120和91个成员哈希。完整回归另外记录提交号、源码哈希和工具版本；
 CI现有artifact上传规则保留整个reports目录。
 
+Windows原生预检另用 `PYTHONUTF8=1` 运行 `python -m unittest tests.test_pds_batch_entry`。
+PDS输入目录的JSON固定LF，避免自动换行转换触发config哈希失败。
+`-ValidateOnly`无需安装PDS，检查工程/ROM后仅输出计划；实际构建仍要求存在PDS可执行文件。
+不会把预检通过称作本轮重新综合或上板。
+
 ## 下一步依赖
 
 1. 目前两套小用例和单Qwen切片的结果验收闭环已齐全，B无须重发这批数据。

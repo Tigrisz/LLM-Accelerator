@@ -10,7 +10,7 @@ $taskProjectDir = Join-Path $taskRepo "fpgatest\a_multigroup_k$K\prj"
 $taskProject = Join-Path $taskProjectDir "a_multigroup_k$K.pds"
 $taskTop = "a_multigroup_k${K}_uart_board_top"
 if (!(Test-Path -LiteralPath $taskProject -PathType Leaf)) { throw "Project not found: $taskProject" }
-if (!(Test-Path -LiteralPath $PdsShellPath -PathType Leaf)) { throw 'PDS shell executable not found' }
+if (!$ValidateOnly -and !(Test-Path -LiteralPath $PdsShellPath -PathType Leaf)) { throw 'PDS shell executable not found' }
 $taskConfig = Get-Content -LiteralPath $taskProject -Raw
 if ($taskConfig -notmatch [regex]::Escape($taskTop) -or
     $taskConfig -notmatch 'selected_syn_tool_opt\s+\(_integer 2\)' -or

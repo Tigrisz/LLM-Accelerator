@@ -11,11 +11,25 @@ ROOT = Path(__file__).resolve().parents[1]
 
 @unittest.skipUnless(os.name == "nt", "Windows PowerShell/PDS preflight")
 class PdsBatchEntryTests(unittest.TestCase):
-    def run_preflight(self, k):
+    def run_preflight(self, k, *extra):
         return subprocess.run(
             [shutil.which("pwsh") or "powershell.exe", "-NoProfile", "-File",
-             str(ROOT / "scripts/build_a_multigroup_pds.ps1"), "-K", str(k), "-ValidateOnly"],
-            cwd=ROOT, capture_output=True, text=True, timeout=30)
+             str(ROOT / "scripts/build_a_multigroup_pds.ps1"), "-K", str(k), "-ValidateOnly", *extra],
+            cwd=ROOT, capture_output=True, text=True, encoding="utf-8", timeout=30)
+
+    def test_validate_only_does_not_require_installed_pds(self):
+        result = self.run_preflight(256, "-PdsShellPath", str(ROOT / 'absent-pds.exe'))
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual(json.loads(result.stdout)['expected_records'], 6)
+
+    def test_actual_build_rejects_missing_pds_before_launch(self):
+        result = subprocess.run(
+            [shutil.which('pwsh') or 'powershell.exe', '-NoProfile', '-File',
+             str(ROOT / 'scripts/build_a_multigroup_pds.ps1'), '-K', '256',
+             '-PdsShellPath', str(ROOT / 'absent-pds.exe')],
+            cwd=ROOT, capture_output=True, text=True, encoding='utf-8', timeout=30)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('PDS shell executable not found', result.stderr)
 
     def test_k256_targets_explicit_project_independent_of_active_gui(self):
         result = self.run_preflight(256)
