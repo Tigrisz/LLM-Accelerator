@@ -1,0 +1,279 @@
+{
+  "format_version": 1,
+  "source": "simulation",
+  "board_verified": false,
+  "branch": "codex/b-multigroup-uart-cases",
+  "base_revision": "6c880d952ef7f54d01c94448dc0e4e1612258ced",
+  "implementation_committed": false,
+  "simulation_attempt": "1cde7950d5aa4b1b98cc2abb6e88e165",
+  "regression_phases": 18,
+  "python_tests": 55,
+  "source_manifest": "tests/fixtures/a_multigroup/source_manifest.json",
+  "path_mapping": {
+    "build/reports/a_multigroup/runs/1cde7950d5aa4b1b98cc2abb6e88e165": "simulation",
+    "build/a_multigroup": "rom",
+    "build/reports": "regression"
+  },
+  "files": {
+    "regression/a-multigroup-uart.log": {
+      "sha256": "e172329c08b57580383791c51cea5e768e5787c1c4c6d399e85cd490c7827f2d",
+      "bytes": 2750
+    },
+    "regression/adapter-build.log": {
+      "sha256": "c20a4a6d483b0eb414e448f3364e18b45748044012f5829e1d1a9760ab8807aa",
+      "bytes": 685
+    },
+    "regression/adapter.log": {
+      "sha256": "ed72979feb855e10ede5f3465da02d7c0632e1bd3370ebb908fe2c8620cb2daf",
+      "bytes": 94
+    },
+    "regression/b-board-control.log": {
+      "sha256": "c5620f65a5837c5e83d414225000b0881b65c5aaca1764d01e5b3d050beefbd7",
+      "bytes": 16130
+    },
+    "regression/board-mem.log": {
+      "sha256": "bfbbf17f83ef8fc952276fd5f4a1604c3e1ad581a8a680e5a1cf5bbf1db0b86c",
+      "bytes": 75
+    },
+    "regression/compute.log": {
+      "sha256": "b746f550aa7c6d41d71467ed9d80cd51b0df827255910b2e6fce102a27efe6c9",
+      "bytes": 2008
+    },
+    "regression/core-directed.log": {
+      "sha256": "f05c24201a1ab50d3fb6ef7519032a0b76e31d00417f7584ae5ea99384ba8b6c",
+      "bytes": 684
+    },
+    "regression/core-golden.log": {
+      "sha256": "8d551c61c7350cd991dc96a695c5300ef91a356a4da682fe7db86b5b5776b26f",
+      "bytes": 18671
+    },
+    "regression/environment.json": {
+      "sha256": "04015aec3a05bed2186852f27acb297aba0445cf48d90cfb7805684247946658",
+      "bytes": 15540
+    },
+    "regression/failure-replay.log": {
+      "sha256": "0ae3a6eaa15226050e5b02c30f7721f8f809d9f9792e09c77e5720b5d67979b2",
+      "bytes": 80
+    },
+    "regression/integration-build.log": {
+      "sha256": "21c9baea3581636513bc833b8e81df7273bf824ceba92627fc219b83a654c7ac",
+      "bytes": 2121
+    },
+    "regression/integration.log": {
+      "sha256": "0c8805f002cc2b1cb3d709f447089ee6473537ecb588e4670d534243abd17970",
+      "bytes": 40506
+    },
+    "regression/integration16.log": {
+      "sha256": "3b2d380cefeb234877d9ff308308af0c4bb4972d258384b837eeb73d6d68970b",
+      "bytes": 41291
+    },
+    "regression/lane-benchmark.log": {
+      "sha256": "b4266f3bae159a9f37d706bf9a4079b3a02cc845e89894280b6a8343ba90f15c",
+      "bytes": 1048
+    },
+    "regression/lint.log": {
+      "sha256": "a5971a7a644b0c72952c3ecb1ae0144b7d77d9d4b31e572ecbc6ea1d2d8e8a70",
+      "bytes": 1624
+    },
+    "regression/monitor.log": {
+      "sha256": "043c41bd3b1fb0f43ed7df2084e5b4140ba2f5d75ab0a94136711d75562f4128",
+      "bytes": 184
+    },
+    "regression/python.log": {
+      "sha256": "6e9e63cb2f96bbf53a2ca021a24b1a57d88c50726e9ad1fc302683db3b858725",
+      "bytes": 7312
+    },
+    "regression/summary.json": {
+      "sha256": "d4485996f54a6910b1c119f1347bbcc2a11abc70443ef23cfdc9283860f5f6c8",
+      "bytes": 3904
+    },
+    "regression/uart-parser.log": {
+      "sha256": "603db52fd0016ca5cdcf83b2588160ae92bde08c66ba4c61dfc8a2a74cdb95c9",
+      "bytes": 107
+    },
+    "regression/uart-readback.log": {
+      "sha256": "4db08c520877c4e6215c4131a8e4804981c9a522e690530151876e0c688d0296",
+      "bytes": 7636
+    },
+    "rom/lanes16_n3_k256/activation.mem": {
+      "sha256": "48689ac037c793a8520a91d8816bb8e0b7984cb4fd7a35a7fe558cdc7210eb5e",
+      "bytes": 520
+    },
+    "rom/lanes16_n3_k256/config.json": {
+      "sha256": "be41c081e52f8d9cebd5c68a4063cf688564dccf9983a918234ac2dffbd39ff2",
+      "bytes": 359
+    },
+    "rom/lanes16_n3_k256/expected.mem": {
+      "sha256": "de8b5565521a8e39966ffdda215cfc92d56b424b5136c1bfeb93212e9722d0bf",
+      "bytes": 54
+    },
+    "rom/lanes16_n3_k256/manifest.json": {
+      "sha256": "a43f7986c54418facc32f1f32599a84ea77b9a1237a43b0650141d04dc06de70",
+      "bytes": 1586
+    },
+    "rom/lanes16_n3_k256/weights.mem": {
+      "sha256": "acb0c6268e7a87d25ac6dd1e5e56c9f535d816debc2bf3f2681fd5fdbfaadeda",
+      "bytes": 792
+    },
+    "rom/lanes16_n3_k384/activation.mem": {
+      "sha256": "1aedaf68bf93355881d12c2d537e1f9a75d1f7c5d24399637cf20a85a3b68fc9",
+      "bytes": 780
+    },
+    "rom/lanes16_n3_k384/config.json": {
+      "sha256": "f3e75208463a46c41f8e0665ec0c4818a2ab496898f02cc4acbc13e22ae2affd",
+      "bytes": 359
+    },
+    "rom/lanes16_n3_k384/expected.mem": {
+      "sha256": "fe3f8b2c9676aba2789e0547f785f6a43e68bd334e7a527639a0b85dfd5d481e",
+      "bytes": 81
+    },
+    "rom/lanes16_n3_k384/manifest.json": {
+      "sha256": "b4f979aa0ae15dcf167caa0e85e1b01ba758d40fc6b932876090db2063e919fa",
+      "bytes": 1586
+    },
+    "rom/lanes16_n3_k384/weights.mem": {
+      "sha256": "1df503207416e2a35e88583f81c3ff5709ac3626df7527afe3d3ae1a66cda0d5",
+      "bytes": 1188
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run1.bin": {
+      "sha256": "028ca79b4385aa6ad78a08a066e02f72bef9cd0bccf67382dcdbc24c8106c577",
+      "bytes": 57
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run1.json": {
+      "sha256": "9c76c43ae8b1f004c4a98ef0ddcf79da2744dae95957ea753bfb52d8e776022a",
+      "bytes": 806
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run1_a_format.json": {
+      "sha256": "9f1f9b1f7a36e4dc229190b988d7a5689c5da0eeca04bb903fd86a9c138943fa",
+      "bytes": 653
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run2.bin": {
+      "sha256": "028ca79b4385aa6ad78a08a066e02f72bef9cd0bccf67382dcdbc24c8106c577",
+      "bytes": 57
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run2.json": {
+      "sha256": "9c76c43ae8b1f004c4a98ef0ddcf79da2744dae95957ea753bfb52d8e776022a",
+      "bytes": 806
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run2_a_format.json": {
+      "sha256": "798fbcf5363166e63dc43f88654ec7a1d65f8c7b1751f8d0b6ff34c2b51b54fe",
+      "bytes": 653
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run3.bin": {
+      "sha256": "028ca79b4385aa6ad78a08a066e02f72bef9cd0bccf67382dcdbc24c8106c577",
+      "bytes": 57
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run3.json": {
+      "sha256": "9c76c43ae8b1f004c4a98ef0ddcf79da2744dae95957ea753bfb52d8e776022a",
+      "bytes": 806
+    },
+    "simulation/lanes16_n3_k256/complete/sim_run3_a_format.json": {
+      "sha256": "a8ffdf9a7d85102a8ae6ecc8d85338f435214ed9c196452eaef3257fe8b0b6be",
+      "bytes": 653
+    },
+    "simulation/lanes16_n3_k256/complete/simulation.log": {
+      "sha256": "ce32b8f98f95f3b72338d14a7a840a07e827487c7712d2cdad8389899f29e902",
+      "bytes": 1741
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run1.bin": {
+      "sha256": "ca55191543c5b6e376c71a0c8e34706dec8e0467fc8632eea4d21076bad3ee44",
+      "bytes": 49
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run1.json": {
+      "sha256": "17e09010c971cb2f36d6e09549e6e8e382aa1706c9d92bc350ab7aa2a68e0bb7",
+      "bytes": 709
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run2.bin": {
+      "sha256": "ca55191543c5b6e376c71a0c8e34706dec8e0467fc8632eea4d21076bad3ee44",
+      "bytes": 49
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run2.json": {
+      "sha256": "17e09010c971cb2f36d6e09549e6e8e382aa1706c9d92bc350ab7aa2a68e0bb7",
+      "bytes": 709
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run3.bin": {
+      "sha256": "ca55191543c5b6e376c71a0c8e34706dec8e0467fc8632eea4d21076bad3ee44",
+      "bytes": 49
+    },
+    "simulation/lanes16_n3_k256/overflow/sim_run3.json": {
+      "sha256": "17e09010c971cb2f36d6e09549e6e8e382aa1706c9d92bc350ab7aa2a68e0bb7",
+      "bytes": 709
+    },
+    "simulation/lanes16_n3_k256/overflow/simulation.log": {
+      "sha256": "9417489801c75fc20d723f1f0c44e1065ffc911e64cfe3a31aeffda6c997ff8c",
+      "bytes": 1741
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run1.bin": {
+      "sha256": "9e0277e49852d894561765c6f4896fbb19ad953bb6ee5d23e27c42395151eda4",
+      "bytes": 81
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run1.json": {
+      "sha256": "bd031683070e3cd5234bfd2d131a2eb4bf4da37a654cbb5b816fb31ce73ada83",
+      "bytes": 1101
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run1_a_format.json": {
+      "sha256": "ab103deb0a5b8132afa7d5506fa2fb297e92445638d4b27c0dbfc28442f79eab",
+      "bytes": 894
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run2.bin": {
+      "sha256": "9e0277e49852d894561765c6f4896fbb19ad953bb6ee5d23e27c42395151eda4",
+      "bytes": 81
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run2.json": {
+      "sha256": "bd031683070e3cd5234bfd2d131a2eb4bf4da37a654cbb5b816fb31ce73ada83",
+      "bytes": 1101
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run2_a_format.json": {
+      "sha256": "4ee5d1d436f4c19687f32b0366d70a88f3976d3d89dbd71cd658964fb936e32e",
+      "bytes": 894
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run3.bin": {
+      "sha256": "9e0277e49852d894561765c6f4896fbb19ad953bb6ee5d23e27c42395151eda4",
+      "bytes": 81
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run3.json": {
+      "sha256": "bd031683070e3cd5234bfd2d131a2eb4bf4da37a654cbb5b816fb31ce73ada83",
+      "bytes": 1101
+    },
+    "simulation/lanes16_n3_k384/complete/sim_run3_a_format.json": {
+      "sha256": "592a770606432b2623b534a7f6c677e08cced948b5d153f31b4221807bbc6fcf",
+      "bytes": 894
+    },
+    "simulation/lanes16_n3_k384/complete/simulation.log": {
+      "sha256": "57871f359d4941ed9ce1dea7a9d41f79de9f4182cccf887f7d70c74775f550e1",
+      "bytes": 1741
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run1.bin": {
+      "sha256": "06b9bb85a1eb36539e9b01f73e55dbb3c352707704960fba11a1c9d4745f6017",
+      "bytes": 73
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run1.json": {
+      "sha256": "a72c888fd9c371f52baac18e2eca91be79208451b9a81e1d0a9c060e90a03d79",
+      "bytes": 1004
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run2.bin": {
+      "sha256": "06b9bb85a1eb36539e9b01f73e55dbb3c352707704960fba11a1c9d4745f6017",
+      "bytes": 73
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run2.json": {
+      "sha256": "a72c888fd9c371f52baac18e2eca91be79208451b9a81e1d0a9c060e90a03d79",
+      "bytes": 1004
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run3.bin": {
+      "sha256": "06b9bb85a1eb36539e9b01f73e55dbb3c352707704960fba11a1c9d4745f6017",
+      "bytes": 73
+    },
+    "simulation/lanes16_n3_k384/overflow/sim_run3.json": {
+      "sha256": "a72c888fd9c371f52baac18e2eca91be79208451b9a81e1d0a9c060e90a03d79",
+      "bytes": 1004
+    },
+    "simulation/lanes16_n3_k384/overflow/simulation.log": {
+      "sha256": "27998d142180df285376adc6a1d00efbfaf7f112b490d4ddbc485e171ab28c2c",
+      "bytes": 1741
+    },
+    "simulation/summary.json": {
+      "sha256": "33be61579412fd81c208d7e239115b9e04a5dfffac60a7bbac9cf41ada7d881a",
+      "bytes": 5537
+    }
+  }
+}

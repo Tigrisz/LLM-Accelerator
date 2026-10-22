@@ -1,0 +1,35 @@
+{
+  "K": 256,
+  "N": 3,
+  "board_verified": false,
+  "compute_lanes": 16,
+  "expected_records": 6,
+  "fixture": "tests/fixtures/a_multigroup/lanes16_n3_k256",
+  "format_version": 1,
+  "group_size": 128,
+  "groups": 2,
+  "independent_integer_golden": "matched",
+  "input_kind": "task_a_synthetic",
+  "input_sha256": {
+    "activation_int8.bin": "4de33a831e2f5ea1356cdf2ef19a21a41ef1e71a96cf0fa0c03933d91d6d979b",
+    "capture.json": "f34a967f615f7f6b0ed369ff3370e774bcbf32d0ed1bfe02f4708339e97cac6f",
+    "comparison.json": "0e182277abaa257bf5212919a9de28fcd29306cb2289d8387765f80171ae4d57",
+    "config.json": "09fa1d000bb2210a5f9e0f74449117fe236a965b3b748084494fec50be4f9d58",
+    "expected_partial.npy": "5043b1dcb71f1a9ea520ecb9e558b44fbad506f56fc90a82b72ba4537616507e",
+    "scales.npy": "9dfae3f7f687e620a1aab16b2452c1a241979cf7d64ea5cb68dfbdc272b3612b",
+    "stream_reference.json": "507a344a1153eb325d33e1e48733685daa488a5eefcbdf6179e289dec6ca9e5b",
+    "weight_packed.bin": "b563685a08d26df415f296d7dcd42aec4890d0b4e80989a76eb7574cf2acaffb"
+  },
+  "output_sha256": {
+    "activation.mem": "48689ac037c793a8520a91d8816bb8e0b7984cb4fd7a35a7fe558cdc7210eb5e",
+    "config.json": "be41c081e52f8d9cebd5c68a4063cf688564dccf9983a918234ac2dffbd39ff2",
+    "expected.mem": "de8b5565521a8e39966ffdda215cfc92d56b424b5136c1bfeb93212e9722d0bf",
+    "weights.mem": "acb0c6268e7a87d25ac6dd1e5e56c9f535d816debc2bf3f2681fd5fdbfaadeda"
+  },
+  "padded_K": 256,
+  "rom_pack_lanes": 32,
+  "source_capture": "simulation",
+  "source_lanes": 16,
+  "source_stream_beats": 48,
+  "uart_frame_bytes": 57
+}

@@ -1,0 +1,16 @@
+verilator --lint-only -Wall --top-module tb_compute_primitives rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv tests/tb_compute_primitives.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.040 MB sources in 4 modules, into 0.040 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.014 s (elab=0.001, cvt=0.002, bld=0.000); cpu 0.005 s on 1 threads; alloced 8.102 MB
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.053 MB sources in 5 modules, into 0.069 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.016 s (elab=0.001, cvt=0.003, bld=0.000); cpu 0.007 s on 1 threads; alloced 8.312 MB
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.053 MB sources in 5 modules, into 0.120 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.018 s (elab=0.001, cvt=0.005, bld=0.000); cpu 0.009 s on 1 threads; alloced 8.836 MB
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.212 MB sources in 11 modules, into 0.258 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.046 s (elab=0.002, cvt=0.010, bld=0.000); cpu 0.020 s on 1 threads; alloced 10.332 MB
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.212 MB sources in 11 modules, into 0.334 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.044 s (elab=0.003, cvt=0.012, bld=0.000); cpu 0.023 s on 1 threads; alloced 10.676 MB

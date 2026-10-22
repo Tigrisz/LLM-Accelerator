@@ -1,0 +1,1 @@
+PASS ADAPTER seeds=20 source_beats=5120 long_stall_each_half=513 reset_each_half idle_gap=257

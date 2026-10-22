@@ -1,0 +1,71 @@
+# MES2L676-100HP / PG2L100H-676
+# fixed_slice_qwen_demo_top board constraints
+#
+# Source: Tutorial 1 hardware manual, sections 2.1.2.2.3.2 and
+# 2.1.3.4.1-2.1.3.4.2.
+#   Core-board 27 MHz system clock: FPGA_GCLK_27M -> D18
+#   KEY0 (active low reset): C22
+#   LED0..LED3 (active high): A20, C18, C19, E18
+#
+# The current wrapper starts automatically when rst_n is released.  The four
+# LEDs report busy, done, pass, and fail respectively.
+
+# Primary input clock: 27 MHz, period = 1/27 MHz = 37.037037 ns.
+create_clock -name {clk} [get_ports {clk}] -period {37.037037} -waveform {0 18.518519}
+
+# Board 27 MHz clock input, core-board oscillator.
+define_attribute {p:clk} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:clk} {PAP_IO_LOC} {D18}
+define_attribute {p:clk} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:clk} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:clk} {PAP_IO_NONE} {TRUE}
+
+# KEY0 is a low-active user key and is used as rst_n.
+define_attribute {p:rst_n} {PAP_IO_DIRECTION} {INPUT}
+define_attribute {p:rst_n} {PAP_IO_LOC} {C22}
+define_attribute {p:rst_n} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:rst_n} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:rst_n} {PAP_IO_NONE} {TRUE}
+
+# LED0: busy, active high.
+define_attribute {p:led_busy} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led_busy} {PAP_IO_LOC} {A20}
+define_attribute {p:led_busy} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led_busy} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led_busy} {PAP_IO_DRIVE} {8}
+define_attribute {p:led_busy} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led_busy} {PAP_IO_SLEW} {SLOW}
+
+# LED1: done, active high.
+define_attribute {p:led_done} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led_done} {PAP_IO_LOC} {C18}
+define_attribute {p:led_done} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led_done} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led_done} {PAP_IO_DRIVE} {8}
+define_attribute {p:led_done} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led_done} {PAP_IO_SLEW} {SLOW}
+
+# LED2: pass, active high.
+define_attribute {p:led_pass} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led_pass} {PAP_IO_LOC} {C19}
+define_attribute {p:led_pass} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led_pass} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led_pass} {PAP_IO_DRIVE} {8}
+define_attribute {p:led_pass} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led_pass} {PAP_IO_SLEW} {SLOW}
+
+# LED3: fail, active high.
+define_attribute {p:led_fail} {PAP_IO_DIRECTION} {OUTPUT}
+define_attribute {p:led_fail} {PAP_IO_LOC} {E18}
+define_attribute {p:led_fail} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:led_fail} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:led_fail} {PAP_IO_DRIVE} {8}
+define_attribute {p:led_fail} {PAP_IO_NONE} {TRUE}
+define_attribute {p:led_fail} {PAP_IO_SLEW} {SLOW}
+
+# IMPORTANT:
+# fixed_slice_qwen_demo_top also exposes result_count[31:0] and
+# last_partial_sum[31:0].  They are debug outputs, not board LED signals.
+# Before final Place & Route/bitstream generation, either internalize them in
+# a board wrapper or assign them to a deliberate debug interface.  They are
+# intentionally not assigned to arbitrary pins here.

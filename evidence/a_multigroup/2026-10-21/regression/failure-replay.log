@@ -1,0 +1,1 @@
+PASS FAILURE_REPLAY real_verilator=PASS corrupted_golden_rejected=PASS vcd=PASS

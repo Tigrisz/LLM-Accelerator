@@ -1,0 +1,8 @@
+test_k256_targets_explicit_project_independent_of_active_gui (tests.test_pds_batch_entry.PdsBatchEntryTests.test_k256_targets_explicit_project_independent_of_active_gui) ... ok
+test_k384_targets_separate_project (tests.test_pds_batch_entry.PdsBatchEntryTests.test_k384_targets_separate_project) ... ok
+test_rejects_case_outside_approved_two (tests.test_pds_batch_entry.PdsBatchEntryTests.test_rejects_case_outside_approved_two) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.768s
+
+OK

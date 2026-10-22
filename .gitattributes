@@ -3,3 +3,12 @@
 /deliveries/** -text
 *.sbit -text
 *.mem text eol=lf
+/fpgatest/a_multigroup_*/prj/mem/*.json text eol=lf
+/tests/fixtures/a_multigroup/** -text
+
+# Keep the float replay's recorded core-source hashes stable on checkout.
+/scripts/extract_qwen_slice.py text eol=lf
+/model/float_reference.py text eol=lf
+/model/model_slice.py text eol=lf
+/scripts/evaluate_qwen_quantization.py text eol=lf
+/tests/test_qwen_float_reference.py text eol=lf

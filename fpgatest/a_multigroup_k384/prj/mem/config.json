@@ -1,0 +1,15 @@
+{
+  "K": 384,
+  "N": 3,
+  "activation_layout": "signed INT8, logical order, zero-padded to padded_K",
+  "compute_lanes": 16,
+  "format_version": 1,
+  "group_size": 128,
+  "lanes": 32,
+  "padded_K": 384,
+  "rom_pack_lanes": 32,
+  "seed": 384,
+  "source": "task_a_synthetic",
+  "source_lanes": 16,
+  "weight_layout": "row-major, padded per row to group_size"
+}

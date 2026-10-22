@@ -1,0 +1,3 @@
+g++ -std=c++14 -Wall -Wextra -Werror tests/test_stream_monitor.cpp -o build/test_stream_monitor
+./build/test_stream_monitor
+PASS MONITORS injected_violations=21 legal_stall_reset=PASS

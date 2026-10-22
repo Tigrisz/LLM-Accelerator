@@ -41,3 +41,30 @@ Thumbs.db
 !/fpgatest/qwen_slice/prj/generate_bitstream/fixed_slice_qwen_uart_board_top.sbit
 /log/
 /scripts/configuration_tcl.log
+
+# Independent Task-A projects: retain sources, constraints, ROMs and final .sbit.
+/fpgatest/a_multigroup_k*/prj/compile/
+/fpgatest/a_multigroup_k*/prj/constraint_check/
+/fpgatest/a_multigroup_k*/prj/device_map/
+/fpgatest/a_multigroup_k*/prj/synthesize/
+/fpgatest/a_multigroup_k*/prj/place_route/
+/fpgatest/a_multigroup_k*/prj/report_timing/
+/fpgatest/a_multigroup_k*/prj/log/
+/fpgatest/a_multigroup_k*/prj/logbackup/
+/fpgatest/a_multigroup_k*/prj/temp_projects/
+/fpgatest/a_multigroup_k*/prj/**/bak/
+/fpgatest/a_multigroup_k*/prj/impl.tcl
+/fpgatest/a_multigroup_k*/prj/multiseed_summary.csv
+/fpgatest/a_multigroup_k*/prj/pds.log
+/fpgatest/a_multigroup_k*/prj/run.log
+/fpgatest/a_multigroup_k*/prj/generate_bitstream/*
+!/fpgatest/a_multigroup_k*/prj/generate_bitstream/*.sbit
+
+# Rebuildable netlists/power caches and live flow logs are not frozen evidence.
+# Accepted validation reports remain under evidence/ and are intentionally kept.
+/fpgatest/qwen_slice/prj/generate_netlist/
+/fpgatest/qwen_slice/prj/report_power/
+/fpgatest/qwen_slice/prj/flow.log
+/fpgatest/a_multigroup_k*/prj/generate_netlist/
+/fpgatest/a_multigroup_k*/prj/report_power/
+/fpgatest/a_multigroup_k*/prj/flow.log

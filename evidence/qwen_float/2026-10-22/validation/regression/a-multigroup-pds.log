@@ -1,0 +1,64 @@
+make lint-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=256 A_CAPTURE_DEPTH=6
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --lint-only -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=256 -GCAPTURE_DEPTH=6 \
+  -GPDS_TOP=1 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.373 MB sources in 15 modules, into 0.205 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.046 s (elab=0.003, cvt=0.007, bld=0.000); cpu 0.018 s on 1 threads; alloced 9.836 MB
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+make lint-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=384 A_CAPTURE_DEPTH=9
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+verilator --lint-only -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=384 -GCAPTURE_DEPTH=9 \
+  -GPDS_TOP=1 \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.373 MB sources in 15 modules, into 0.206 MB in 5 C++ files needing 0.000 MB
+- Verilator: Walltime 0.045 s (elab=0.003, cvt=0.007, bld=0.000); cpu 0.017 s on 1 threads; alloced 9.840 MB
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+make run-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=256 A_CAPTURE_DEPTH=6 A_CAPTURE_REPORT_DIR=build/reports/a_multigroup_pds/k256
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k256 build/a_multigroup/lanes16_n3_k256
+PASS CAPTURE_CASE N=3 K=256 records=6 source_lanes=16 rom_pack_lanes=32 board_verified=false
+/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k384 build/a_multigroup/lanes16_n3_k384
+PASS CAPTURE_CASE N=3 K=384 records=9 source_lanes=16 rom_pack_lanes=32 board_verified=false
+verilator --cc --exe --build -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=256 -GCAPTURE_DEPTH=6 --Mdir build/a_multigroup_uart_k256_d6_pds1 \
+  -GPDS_TOP=1 \
+  -CFLAGS "-DTEST_K=256 -DTEST_CAPTURE_DEPTH=6" \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_multigroup_uart_board.cpp
+make[2]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/a_multigroup_uart_k256_d6_pds1'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/a_multigroup_uart_k256_d6_pds1'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.055 s (elab=0.000, cvt=0.000, bld=0.021); cpu 0.002 s on 1 threads; alloced 7.000 MB
+./build/a_multigroup_uart_k256_d6_pds1/Vtb_multigroup_uart_board \
+  build/a_multigroup/lanes16_n3_k256/expected.mem build/reports/a_multigroup_pds/k256/sim
+PASS A_MULTIGROUP_UART source=simulation N=3 K=256 records=6 bytes=57 resets=3 mid_tx_reset=1 overflow=0
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'
+make run-a-multigroup-uart-case A_CAPTURE_PDS_TOP=1 A_CAPTURE_K=384 A_CAPTURE_DEPTH=9 A_CAPTURE_REPORT_DIR=build/reports/a_multigroup_pds/k384
+make[1]: Entering directory '/mnt/d/GPT/qiansai_FPGA'
+/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k256 build/a_multigroup/lanes16_n3_k256
+PASS CAPTURE_CASE N=3 K=256 records=6 source_lanes=16 rom_pack_lanes=32 board_verified=false
+/mnt/d/GPT/qiansai_FPGA/.venv-qwen/bin/python scripts/prepare_capture_case.py tests/fixtures/a_multigroup/lanes16_n3_k384 build/a_multigroup/lanes16_n3_k384
+PASS CAPTURE_CASE N=3 K=384 records=9 source_lanes=16 rom_pack_lanes=32 board_verified=false
+verilator --cc --exe --build -Wall --top-module tb_multigroup_uart_board \
+  -GCASE_K=384 -GCAPTURE_DEPTH=9 --Mdir build/a_multigroup_uart_k384_d9_pds1 \
+  -GPDS_TOP=1 \
+  -CFLAGS "-DTEST_K=384 -DTEST_CAPTURE_DEPTH=9" \
+  rtl/compute/int4_unpack.sv rtl/compute/mac_lane.sv rtl/compute/group_acc.sv rtl/compute/gemv_core.sv rtl/compute/lane_adapter_32_to_16.sv rtl/model/fixed_slice_runner.sv rtl/debug/result_capture_buffer.sv rtl/debug/result_uart_tx.sv rtl/debug/result_capture_uart.sv rtl/model/fixed_slice_qwen_uart_top.sv rtl/model/fixed_slice_qwen_uart_board_top.sv rtl/model/a_multigroup_k256_uart_board_top.sv rtl/model/a_multigroup_k384_uart_board_top.sv tests/tb_multigroup_uart_board.sv \
+  /mnt/d/GPT/qiansai_FPGA/tests/test_multigroup_uart_board.cpp
+make[2]: Entering directory '/mnt/d/GPT/qiansai_FPGA/build/a_multigroup_uart_k384_d9_pds1'
+make[2]: Nothing to be done for 'default'.
+make[2]: Leaving directory '/mnt/d/GPT/qiansai_FPGA/build/a_multigroup_uart_k384_d9_pds1'
+- V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
+- Verilator: Built from 0.000 MB sources in 0 modules, into 0.000 MB in 0 C++ files needing 0.000 MB
+- Verilator: Walltime 0.057 s (elab=0.000, cvt=0.000, bld=0.023); cpu 0.003 s on 1 threads; alloced 7.000 MB
+./build/a_multigroup_uart_k384_d9_pds1/Vtb_multigroup_uart_board \
+  build/a_multigroup/lanes16_n3_k384/expected.mem build/reports/a_multigroup_pds/k384/sim
+PASS A_MULTIGROUP_UART source=simulation N=3 K=384 records=9 bytes=81 resets=3 mid_tx_reset=1 overflow=0
+make[1]: Leaving directory '/mnt/d/GPT/qiansai_FPGA'

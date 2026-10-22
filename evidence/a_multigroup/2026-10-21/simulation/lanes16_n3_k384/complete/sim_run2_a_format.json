@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "source": "simulation",
+  "run_id": "b-fixed-runner-lanes16_n3_k384-1cde7950d5aa4b1b98cc2abb6e88e165-reset2",
+  "results": [
+    {
+      "row_id": 0,
+      "group_id": 0,
+      "partial_sum": -6908
+    },
+    {
+      "row_id": 0,
+      "group_id": 1,
+      "partial_sum": 1686
+    },
+    {
+      "row_id": 0,
+      "group_id": 2,
+      "partial_sum": -1175
+    },
+    {
+      "row_id": 1,
+      "group_id": 0,
+      "partial_sum": -1560
+    },
+    {
+      "row_id": 1,
+      "group_id": 1,
+      "partial_sum": -1043
+    },
+    {
+      "row_id": 1,
+      "group_id": 2,
+      "partial_sum": -3218
+    },
+    {
+      "row_id": 2,
+      "group_id": 0,
+      "partial_sum": -4489
+    },
+    {
+      "row_id": 2,
+      "group_id": 1,
+      "partial_sum": 215
+    },
+    {
+      "row_id": 2,
+      "group_id": 2,
+      "partial_sum": 1156
+    }
+  ],
+  "completed": true
+}
