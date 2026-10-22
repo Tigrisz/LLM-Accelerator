@@ -1,0 +1,120 @@
+{
+  "format_version": 1,
+  "source": "checkpoint_replay_pre_w4a8",
+  "N": 16,
+  "K": 2048,
+  "group_size": 128,
+  "metadata": {
+    "model": "/home/jack/.cache/huggingface/hub/models--Qwen--Qwen2.5-1.5B-Instruct/snapshots/989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "layer": 0,
+    "module": "model.layers[].self_attn.o_proj",
+    "rows_start": 0,
+    "cols_start": 0,
+    "prompt": "FPGA W4A8 slice validation.",
+    "token_index": -1,
+    "source_weight_shape": [
+      1536,
+      1536
+    ],
+    "source_activation_width": 1536,
+    "source_cols": 1536,
+    "zero_padded_cols": 512,
+    "checkpoint_revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+    "checkpoint_sha256": {
+      "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+      "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+      "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "model.safetensors": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee",
+      "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+    },
+    "source_weight_dtype": "torch.bfloat16",
+    "source_activation_dtype": "torch.bfloat16",
+    "target_has_bias": false,
+    "device": "cpu",
+    "input_ids": [
+      [
+        37,
+        58599,
+        467,
+        19,
+        32,
+        23,
+        15983,
+        10519,
+        13
+      ]
+    ],
+    "attention_mask": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+    "packages": {
+      "torch": "2.14.1",
+      "transformers": "5.20.1",
+      "numpy": "2.5.4",
+      "huggingface_hub": "2.2.0",
+      "tokenizers": "0.23.3",
+      "safetensors": "0.8.0"
+    },
+    "source_sha256": {
+      "scripts/extract_qwen_slice.py": "9d6fcc47d17a5f01b320c5b6fc8943b05b916547dff6b216ca6777805cd7934e",
+      "model/float_reference.py": "7878df5571db4785fa4a04aa264ebdb9aec3d2de8fac149713289c69715a0c3e",
+      "model/model_slice.py": "7e8b149b2506736bd862f240df40400a1cb41627ca23986703c2ad82e19110f2"
+    }
+  },
+  "reference_semantics": "W @ x only; bias excluded to match integer GEMV",
+  "storage_note": "FP32 conversion of loaded checkpoint/captured activation; not native FP32 checkpoint inference",
+  "reference_arithmetic": "FP64 products, group reduction then row reduction",
+  "files": {
+    "weights_fp32.npy": {
+      "sha256": "323943230419a27f1bbe6371f1d92b7a415a166661b056d0c2f317b003880401",
+      "shape": [
+        16,
+        2048
+      ],
+      "dtype": "float32"
+    },
+    "activation_fp32.npy": {
+      "sha256": "caa0179eb2b44f189b3a5bc317b8e85beafb45edd0e982ea0138364e56ac25c8",
+      "shape": [
+        2048
+      ],
+      "dtype": "float32"
+    },
+    "reference_groups_fp64.npy": {
+      "sha256": "40971c6d1d73ffd31b02592af884558c211bafe553d4000a77c631cde31ec0fa",
+      "shape": [
+        16,
+        16
+      ],
+      "dtype": "float64"
+    },
+    "reference_fp64.npy": {
+      "sha256": "9e599af33fbfb9ca8ba9215ff7539a55988583abb705fd86589807abd894ae95",
+      "shape": [
+        16
+      ],
+      "dtype": "float64"
+    },
+    "reference_fp32.npy": {
+      "sha256": "2a686fa402a3db346154790b9f4ed1fa9fd2994809f5ed048a4dc64b0e0308fb",
+      "shape": [
+        16
+      ],
+      "dtype": "float32"
+    }
+  }
+}

@@ -9,6 +9,10 @@ uses only the generated files; it does not require this host script.
 from __future__ import annotations
 
 import argparse
+import hashlib
+import importlib.metadata
+import platform
+import re
 import sys
 from pathlib import Path
 
@@ -77,7 +81,16 @@ def main() -> None:
     )
     parser.add_argument("--prompt", default="FPGA W4A8 slice validation.")
     parser.add_argument("--token-index", type=int, default=-1)
+    parser.add_argument("--float-reference-output", type=Path,
+                        help="new separate directory for pre-W4A8 FP32 values and FP64 references")
     args = parser.parse_args()
+    if args.float_reference_output:
+        if args.output.exists() or args.float_reference_output.exists():
+            parser.error("float replay requires two new output directories; refusing overwrite")
+        if args.output.resolve() == args.float_reference_output.resolve() or args.output.resolve().is_relative_to(args.float_reference_output.resolve()) or args.float_reference_output.resolve().is_relative_to(args.output.resolve()):
+            parser.error("float and quantized outputs must be separate non-nested directories")
+        if not re.fullmatch(r'[0-9a-f]{40}', Path(args.model).name) or not Path(args.model).is_dir():
+            parser.error("float replay requires a local snapshot directory named by its full checkpoint revision")
     try:
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -134,6 +147,31 @@ def main() -> None:
         selected_activation,
         metadata,
     )
+    if args.float_reference_output:
+        from model.float_reference import write_float_reference
+        snapshot = Path(args.model)
+        source_files = {}
+        for path in sorted(snapshot.iterdir()):
+            if path.is_file():
+                with path.open('rb') as stream:
+                    source_files[path.name] = hashlib.file_digest(stream, 'sha256').hexdigest()
+        replay_metadata = {
+            **metadata,
+            'checkpoint_revision': snapshot.name,
+            'checkpoint_sha256': source_files,
+            'source_weight_dtype': str(target.weight.dtype),
+            'source_activation_dtype': str(captured['activation'].dtype),
+            'target_has_bias': target.bias is not None,
+            'device': str(target.weight.device),
+            'input_ids': inputs['input_ids'].tolist(),
+            'attention_mask': inputs['attention_mask'].tolist(),
+            'python': sys.version, 'platform': platform.platform(),
+            'packages': {name: importlib.metadata.version(name) for name in
+                         ('torch', 'transformers', 'numpy', 'huggingface_hub', 'tokenizers', 'safetensors')},
+            'source_sha256': {name: hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in
+                              ('scripts/extract_qwen_slice.py', 'model/float_reference.py', 'model/model_slice.py')},
+        }
+        write_float_reference(args.float_reference_output, selected_weight, selected_activation, replay_metadata)
     print(config)
 
 

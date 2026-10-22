@@ -1,0 +1,19 @@
+{
+  "status": "pass",
+  "date": "2026-10-22",
+  "protected_file_count": 256,
+  "all_old_sha256_unchanged": true,
+  "protected_file_list": "protected_files.json",
+  "head_unchanged": "44544a58ad65a4bb383608a9f403b12b82d70376",
+  "fetched_main": "29211823da7cb6b07e13a7affbe2d1989abdfc8f",
+  "main_automatically_merged": false,
+  "commit_or_push_performed": false,
+  "final_audit_identical_to_frozen_summary": true,
+  "extraction_source_hashes_matched": true,
+  "final_regression_code_hashes_matched": true,
+  "regression_phases": 19,
+  "wsl_python_tests": 69,
+  "wsl_windows_only_skips": 3,
+  "windows_targeted_tests": 14,
+  "review": "independent read-only review: no critical/important findings; missing-manifest-array minor fixed RED to GREEN"
+}
