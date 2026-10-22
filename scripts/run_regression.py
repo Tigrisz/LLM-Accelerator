@@ -72,6 +72,7 @@ def main():
                                f"PYTHON={sys.executable}"]),
         ("a-multigroup-pds", ["make", "lint-a-multigroup-pds", "test-a-multigroup-pds",
                               f"PYTHON={sys.executable}"]),
+        ("a-board-float-acceptance", [sys.executable, "scripts/accept_multigroup_float.py"]),
     ]
     results = []
     for name, command in phases:
