@@ -32,12 +32,12 @@ module fixed_slice_qwen_uart_top #(
     reg uart_started;
     wire capture_clear = !rst_n;
     wire uart_start = led_done && !uart_started;
-    /* verilator lint_off UNUSEDSIGNAL */
+
     wire [$clog2(CAPTURE_DEPTH < 2 ? 2 : CAPTURE_DEPTH)-1:0] peek_index =
         {$clog2(CAPTURE_DEPTH < 2 ? 2 : CAPTURE_DEPTH){1'b0}};
-    wire [63:0] peek_data;
-    wire peek_valid;
-    /* verilator lint_on UNUSEDSIGNAL */
+    wire [63:0] unused_peek_data;
+    wire unused_peek_valid;
+
 
     fixed_slice_runner #(
         .N(N), .K(K),
@@ -72,7 +72,7 @@ module fixed_slice_qwen_uart_top #(
         .capture_partial_sum(result_partial_sum),
         .tx_start(uart_start),
         .peek_index(peek_index),
-        .peek_data(peek_data), .peek_valid(peek_valid),
+        .peek_data(unused_peek_data), .peek_valid(unused_peek_valid),
         .capture_count(capture_count), .overflow(capture_overflow),
         .uart_tx(uart_tx), .uart_busy(uart_busy), .uart_done(uart_done)
     );

@@ -24,6 +24,8 @@
 # A：W4A8 GEMV 计算核心
 
 最新验证入口：`python scripts/run_regression.py`（Python 3.10+，依赖见 requirements-test.txt）。
+
+CI的Ubuntu 22.04/24.04两组环境均提前运行全部Makefile lint入口，覆盖发行版自带的不同Verilator版本；可单独执行 `python -m unittest tests.check_verilator_compatibility -v`。检查保持`-Wall`，未消费的调试信号采用兼容的`unused_`命名。`make test-model`仍仅运行Python模型/契约测试，不要求安装RTL仿真器。
 协议测试、失败波形及 CI 说明见 [2026-10-18 验证进度](docs/verification_progress_2026-10-18.md)。
 GitHub Actions 将对 PR 和主线执行真实 RTL 回归，报告保存在每次运行的 artifacts 中。
 

@@ -40,6 +40,7 @@ def main():
     (reports / "environment.json").write_text(json.dumps(environment, indent=2), encoding="utf-8")
     phases = [
         ("lint", ["make", "lint", "lint-integration"]),
+        ("lint-compatibility", [sys.executable, "-m", "unittest", "tests.check_verilator_compatibility", "-v"]),
         ("python", ["make", "test-model", f"PYTHON={sys.executable}"]),
         ("monitor", ["make", "test-monitor"]),
         ("compute", ["make", "build-compute"]),
