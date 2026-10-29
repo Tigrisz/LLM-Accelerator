@@ -1,0 +1,81 @@
+{
+  "format": "inference-fixture",
+  "version": 1,
+  "case_id": "int_random_04",
+  "provenance": {
+    "kind": "synthetic",
+    "source": "inference_ref.examples/v1; numpy=2.3.5; PCG64",
+    "seed": 4
+  },
+  "operation": {
+    "name": "linear",
+    "inputs": [
+      "input",
+      "weight"
+    ],
+    "output": "expected",
+    "attributes": {}
+  },
+  "comparison": {
+    "mode": "exact",
+    "atol": 0,
+    "rtol": 0
+  },
+  "payload": {
+    "file": "data.bin",
+    "byte_length": 284,
+    "sha256": "3506b75eb6bd6770003f713d128f9e8931222064ce68d8a974d86b2a92b2e91b"
+  },
+  "tensors": [
+    {
+      "name": "expected",
+      "dtype": "int32",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ],
+      "layout": "row_major",
+      "role": "reference",
+      "offset": 0,
+      "byte_length": 12,
+      "alignment": 4,
+      "sha256": "7ce38d06abb67d8da34aa2bdcf56092942edd3c1bbc4c22e0c5c81cf12195f2a"
+    },
+    {
+      "name": "input",
+      "dtype": "int32",
+      "shape": [
+        17
+      ],
+      "storage_shape": [
+        17
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 12,
+      "byte_length": 68,
+      "alignment": 4,
+      "sha256": "c915bb6a49bc9b2915f1023beb83f3b08fbfe069ba11abe86345586f44be6f88"
+    },
+    {
+      "name": "weight",
+      "dtype": "int32",
+      "shape": [
+        3,
+        17
+      ],
+      "storage_shape": [
+        3,
+        17
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 80,
+      "byte_length": 204,
+      "alignment": 4,
+      "sha256": "08c01d38af2ebd28c47ca396692b56aefcbca566ded01af57f9f210a50aefbc4"
+    }
+  ]
+}

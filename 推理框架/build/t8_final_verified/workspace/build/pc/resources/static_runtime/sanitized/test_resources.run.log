@@ -1,0 +1,2 @@
+static native checks passed
+{"iterations":1000,"live_bytes":0,"peak_bytes":1222,"allocation_failures":6,"recovery_released":true}

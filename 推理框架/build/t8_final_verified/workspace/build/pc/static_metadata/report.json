@@ -1,0 +1,361 @@
+{
+  "format": "pc-static-metadata-audit",
+  "version": 1,
+  "passed": true,
+  "compiler": "gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+  "flags": [
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-pedantic",
+    "-fno-fast-math",
+    "-ffp-contract=off",
+    "-fexcess-precision=standard",
+    "-O2",
+    "-fno-inline",
+    "-fno-omit-frame-pointer",
+    "-fstack-usage"
+  ],
+  "measurements": {
+    "t2": {
+      "frames": {
+        "rd32": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "rd64": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "crc_byte": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "range": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "tensor": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "overlap": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "default_recover": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "storage_valid": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "event": {
+          "bytes": 64,
+          "kind": "static"
+        },
+        "default_execute": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "default_query": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "node.isra": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_crc32": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_image_crc": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_check_span": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "span": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_inspect": {
+          "bytes": 32928,
+          "kind": "static"
+        },
+        "irs_context_size": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_inspect_scratch_bytes": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_completed": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_bind": {
+          "bytes": 448,
+          "kind": "static"
+        },
+        "irs_input": {
+          "bytes": 80,
+          "kind": "static"
+        },
+        "irs_output": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_run": {
+          "bytes": 64,
+          "kind": "static"
+        },
+        "irs_recover": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "irs_close": {
+          "bytes": 8,
+          "kind": "static"
+        }
+      },
+      "sizes": {
+        "context_bytes": 20672,
+        "tensor_bytes": 96,
+        "call_bytes": 56,
+        "profile_bytes": 32
+      },
+      "compile_command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-fno-inline",
+        "-fno-omit-frame-pointer",
+        "-fstack-usage",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/docs/target_platform_sources/framework_t2/c/include",
+        "-c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/docs/target_platform_sources/framework_t2/c/src/ir_static.c",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t2/static.o"
+      ],
+      "sizeof_command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/docs/target_platform_sources/framework_t2/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t2/sizes.c",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t2/sizes"
+      ],
+      "source_sha256": {
+        "c/src/ir_static.c": "765aa0507b3a72d4c584bdb1daf23224f749bbe0d464969c606f6879a5456084",
+        "c/include/ir_static.h": "e3d3f5d341c5aa3f2f93f7df257d56a9c6afce818f95c7ba7fa9a0d8d32396fc",
+        "c/include/ir_core.h": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f"
+      }
+    },
+    "t3": {
+      "frames": {
+        "rd32": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "rd64": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "crc_byte": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "range": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "tensor": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "overlap": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "default_recover": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "storage_valid": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "event": {
+          "bytes": 64,
+          "kind": "static"
+        },
+        "default_execute": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "default_query": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "node.isra": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_crc32": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_image_crc": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_check_span": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "span": {
+          "bytes": 16,
+          "kind": "static"
+        },
+        "irs_runtime_abi_version": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_inspect_workspace_bytes": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_tensor_state_bytes": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_read_info": {
+          "bytes": 80,
+          "kind": "static"
+        },
+        "irs_inspect_v2": {
+          "bytes": 192,
+          "kind": "static"
+        },
+        "irs_context_size": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_completed": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_tensor_role": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_bind_v2": {
+          "bytes": 480,
+          "kind": "static"
+        },
+        "irs_input": {
+          "bytes": 80,
+          "kind": "static"
+        },
+        "irs_output": {
+          "bytes": 8,
+          "kind": "static"
+        },
+        "irs_run": {
+          "bytes": 64,
+          "kind": "static"
+        },
+        "irs_recover": {
+          "bytes": 32,
+          "kind": "static"
+        },
+        "irs_close": {
+          "bytes": 8,
+          "kind": "static"
+        }
+      },
+      "sizes": {
+        "context_bytes": 200,
+        "tensor_bytes": 96,
+        "call_bytes": 56,
+        "profile_bytes": 32
+      },
+      "compile_command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-fno-inline",
+        "-fno-omit-frame-pointer",
+        "-fstack-usage",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t3/static.o"
+      ],
+      "sizeof_command": [
+        "gcc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t3/sizes.c",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/static_metadata/t3/sizes"
+      ],
+      "source_sha256": {
+        "c/src/ir_static.c": "47512feddd893239b9085e36fa3dd178d7d7580b1f815006918bdf344d204b51",
+        "c/include/ir_static.h": "5bf6d45938f8ff577f208ef5ae58a5b24aa75732f22ee0c2a9a39a02a23acd90",
+        "c/include/ir_core.h": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f"
+      }
+    }
+  },
+  "workspace_per_tensor": 4,
+  "state_per_tensor": 1,
+  "max_tensors": 4096,
+  "max_nodes": 1024,
+  "target_toolchain": null,
+  "target_layout": null,
+  "target_stack_peak": null,
+  "pc_runtime_stack_peak": null,
+  "scope": "PC sizeof and compiler per-function frames, not call-chain/ISR runtime high-water measurement"
+}

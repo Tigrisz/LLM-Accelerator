@@ -1,0 +1,1169 @@
+{
+  "format": "target-platform-constraints",
+  "version": 1,
+  "date": "2026-10-25",
+  "runtime_version": "0.5.0",
+  "target_repository": "Bytestring0/FPGA_RV32IM_VibeOS",
+  "target_commit": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+  "model": null,
+  "quantization": null,
+  "target_ready": false,
+  "target_execution_verified": false,
+  "target_budgets": {
+    "arena_bytes": null,
+    "heap_bytes": null,
+    "trace_bytes": null,
+    "task_bytes": null,
+    "c_metadata_bytes": null,
+    "stack_peak_bytes": null
+  },
+  "status_definitions": {
+    "source_confirmed": "固定源码/原始资料明确给出，非本轮硬件执行",
+    "normative": "官方规范期望，非目标工具测量",
+    "derived": "从所引参数/类型按说明算得，非测量",
+    "historical_report": "上游已归档结果，本轮未复验",
+    "proposed": "后续建议或上游设计稿，当前未实现",
+    "unknown": "当前证据不足；value必须null，并附解除条件"
+  },
+  "constraints": [
+    {
+      "id": "toolchain.contest",
+      "domain": "toolchain",
+      "status": "source_confirmed",
+      "value": "riscv32-unknown-elf-gcc",
+      "scope": "指南PDF11/印刷9页",
+      "implication": "赛题列出的编译工具名称；实际仓库使用不同前缀，提交时应保留RV32产物与参数依据。",
+      "evidence": [
+        {
+          "source": "contest",
+          "line": 55,
+          "needle": "riscv32-unknown-elf-gcc"
+        }
+      ]
+    },
+    {
+      "id": "toolchain.repository",
+      "domain": "toolchain",
+      "status": "source_confirmed",
+      "value": "riscv64-unknown-elf-",
+      "scope": "固定主仓库Makefile",
+      "implication": "前缀不代表产物为RV64；需要显式march/mabi和RV32 multilib。",
+      "evidence": [
+        {
+          "source": "main:Makefile",
+          "line": 1,
+          "needle": "RISCV_PREFIX ?="
+        }
+      ]
+    },
+    {
+      "id": "isa.baseline",
+      "domain": "toolchain",
+      "status": "source_confirmed",
+      "value": "rv32im_zicsr_zifencei",
+      "scope": "主仓库默认构建",
+      "implication": "T3最小探测可从该指令集开始；不能自动使用A/F/D/C/V。",
+      "evidence": [
+        {
+          "source": "main:Makefile",
+          "line": 5,
+          "needle": "MARCH ?="
+        }
+      ]
+    },
+    {
+      "id": "isa.optional",
+      "domain": "toolchain",
+      "status": "source_confirmed",
+      "value": [
+        "zba",
+        "zbb"
+      ],
+      "scope": "主仓库coremark-opt配置与译码",
+      "implication": "不据misa的I+M误删扩展，也不标成完整B扩展；先与被选固件配置绑定。",
+      "evidence": [
+        {
+          "source": "main:Makefile",
+          "line": 66,
+          "needle": "MARCH=rv32im_zicsr_zifencei_zba_zbb"
+        },
+        {
+          "source": "main:docs/CPU设计说明.md",
+          "line": 22,
+          "needle": "没有 Zbs"
+        }
+      ]
+    },
+    {
+      "id": "toolchain.history",
+      "domain": "toolchain",
+      "status": "historical_report",
+      "value": "GCC 13.2.0",
+      "scope": "归档81MHz UART日志",
+      "implication": "历史编译器版本，不是本机当前安装证明。",
+      "evidence": [
+        {
+          "source": "main:docs/results/board-81mhz/board81-run1.uart.log",
+          "line": 7,
+          "needle": "Compiler version"
+        }
+      ]
+    },
+    {
+      "id": "toolchain.current",
+      "domain": "toolchain",
+      "status": "unknown",
+      "value": null,
+      "scope": "2026-10-25当前Windows/默认WSL的PATH与具名包探测",
+      "implication": "未找到交叉GCC；本轮不声明RV32编译、ELF或运行通过。",
+      "evidence": [
+        {
+          "source": "env_wsl",
+          "line": 8,
+          "needle": "\"riscv64-unknown-elf-gcc\": null"
+        },
+        {
+          "source": "env_win",
+          "line": 7,
+          "needle": "\"riscv32-unknown-elf-gcc\": null"
+        }
+      ],
+      "unblock": "提供/选择已有交叉GCC位置或安装经团队确认的工具；记录版本、哈希、dumpmachine和RV32 multilib。"
+    },
+    {
+      "id": "toolchain.link_mode",
+      "domain": "toolchain",
+      "status": "source_confirmed",
+      "value": [
+        "-ffreestanding",
+        "-fno-builtin",
+        "-nostdlib",
+        "-nostartfiles",
+        "-lgcc"
+      ],
+      "scope": "主仓库最小固件",
+      "implication": "不默认有libc/libm/POSIX；CoreMark ee_printf不等于标准库。",
+      "evidence": [
+        {
+          "source": "main:Makefile",
+          "line": 7,
+          "needle": "-fno-builtin"
+        },
+        {
+          "source": "main:Makefile",
+          "line": 11,
+          "needle": "LDFLAGS :="
+        },
+        {
+          "source": "main:Makefile",
+          "line": 29,
+          "needle": "sw/start.S sw/smoke.c -lgcc"
+        }
+      ]
+    },
+    {
+      "id": "toolchain.runtime_libraries",
+      "domain": "toolchain",
+      "status": "unknown",
+      "value": null,
+      "scope": "当前未取得目标库或新链接产物",
+      "implication": "memcpy/memmove/memset/memcmp、fegetround/FE_TONEAREST、clock/CLOCKS_PER_SEC及soft-float辅助均待满足。",
+      "evidence": [
+        {
+          "source": "core_c",
+          "line": 2,
+          "needle": "#include <fenv.h>"
+        },
+        {
+          "source": "core_c",
+          "line": 7,
+          "needle": "#include <time.h>"
+        },
+        {
+          "source": "static_c",
+          "line": 4,
+          "needle": "#include <string.h>"
+        }
+      ],
+      "unblock": "逐符号链接检查libgcc/newlib/libm或受控替代实现，禁止伪造可用fenv与有效时间。"
+    },
+    {
+      "id": "toolchain.pds",
+      "domain": "toolchain",
+      "status": "historical_report",
+      "value": "PDS 2022.2-SP6.1 build 138931",
+      "scope": "仓库RiscV.pds生成元数据",
+      "implication": "仅为历史工程环境，不是本轮综合/布局布线结果。",
+      "evidence": [
+        {
+          "source": "main:RiscV.pds",
+          "line": 2,
+          "needle": "138931"
+        }
+      ]
+    },
+    {
+      "id": "abi.selection",
+      "domain": "abi",
+      "status": "source_confirmed",
+      "value": "ilp32",
+      "scope": "仓库CFLAGS",
+      "implication": "所有本机结构和函数回调必须由相同目标ABI重新编译，不能复制PC ctypes布局。",
+      "evidence": [
+        {
+          "source": "main:Makefile",
+          "line": 6,
+          "needle": "-mabi=ilp32"
+        }
+      ]
+    },
+    {
+      "id": "abi.types",
+      "domain": "abi",
+      "status": "normative",
+      "value": {
+        "int": 4,
+        "long": 4,
+        "pointer": 4,
+        "size_t": 4,
+        "long_long": 8,
+        "float": 4,
+        "double": 8,
+        "long_double": 16
+      },
+      "scope": "RISC-V psABI ILP32类型表，单位字节",
+      "implication": "这是规范期望，非本轮编译测量；uint64文件偏移不意味着能转为32位指针。",
+      "evidence": [
+        {
+          "source": "official",
+          "line": 7,
+          "needle": "\"id\": \"psabi\""
+        }
+      ]
+    },
+    {
+      "id": "abi.native_layout",
+      "domain": "abi",
+      "status": "unknown",
+      "value": null,
+      "scope": "目标工具链尚不可用",
+      "implication": "ir_tensor/ir_call/irs_context和服务结构大小/偏移需目标sizeof或对象数据验证；不采用PC结果。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 12,
+          "needle": "typedef struct {"
+        },
+        {
+          "source": "core_h",
+          "line": 27,
+          "needle": "Native in-process ABI"
+        }
+      ],
+      "unblock": "交叉编译布局探针与静态断言，检查ELF32/RISC-V/小端/soft-float ABI/无RVC及RISCV.attributes。"
+    },
+    {
+      "id": "abi.privilege",
+      "domain": "abi",
+      "status": "source_confirmed",
+      "value": "single_hart_M_mode_no_MMU_PMP",
+      "scope": "当前CPU RTL/设计说明",
+      "implication": "不能假定Linux系统调用、线程、虚拟地址或进程隔离。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_csr.sv",
+          "line": 1,
+          "needle": "M-mode only"
+        },
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 73,
+          "needle": "没有 MMU/PMP"
+        }
+      ]
+    },
+    {
+      "id": "endian.scalar",
+      "domain": "endian",
+      "status": "source_confirmed",
+      "value": "little",
+      "scope": "当前CSR+LSU字节通道",
+      "implication": "数据与指令小端；不是仅从RV32名称推定。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_csr.sv",
+          "line": 43,
+          "needle": "Little-endian"
+        },
+        {
+          "source": "main:rtl/rv32_core.sv",
+          "line": 382,
+          "needle": "load_shifted = d_rsp_data >>"
+        },
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 94,
+          "needle": "ram[da[AW+1:2]][8*j +: 8]"
+        }
+      ]
+    },
+    {
+      "id": "endian.wire",
+      "domain": "endian",
+      "status": "source_confirmed",
+      "value": "IRS4BIN1_little_endian_pointer_free",
+      "scope": "现有框架磁盘格式",
+      "implication": "保留现有离线导出格式；仍须用目标小端typed载荷与实际CRC验证。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 10,
+          "needle": "all little endian"
+        }
+      ]
+    },
+    {
+      "id": "abi.unaligned",
+      "domain": "abi",
+      "status": "source_confirmed",
+      "value": "halfword_word_misalignment_traps",
+      "scope": "当前LSU异常路径",
+      "implication": "描述符按C类型对齐，arena遵守执行描述alignment；不直接把任意压紧字节地址强转结构体。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_core.sv",
+          "line": 123,
+          "needle": "wire memory_misaligned"
+        },
+        {
+          "source": "main:docs/CPU设计说明.md",
+          "line": 106,
+          "needle": "不自动拆成多次访问"
+        }
+      ]
+    },
+    {
+      "id": "floating_point.hardware",
+      "domain": "floating_point",
+      "status": "source_confirmed",
+      "value": false,
+      "scope": "固定RTL：misa I+M、译码无浮点操作、无FPU",
+      "implication": "不可发出F/D/Zfinx指令；soft-float ABI本身不能证明算术软件库已就绪。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_csr.sv",
+          "line": 39,
+          "needle": "32'h40001100"
+        },
+        {
+          "source": "main:docs/CPU设计说明.md",
+          "line": 9,
+          "needle": "指令集 | RV32I"
+        }
+      ]
+    },
+    {
+      "id": "floating_point.reference_needs",
+      "domain": "floating_point",
+      "status": "source_confirmed",
+      "value": [
+        "binary32_storage",
+        "binary64_accumulation",
+        "round_to_nearest",
+        "no_fast_math",
+        "no_fma_contraction"
+      ],
+      "scope": "当前C参考路径",
+      "implication": "FP32算子内部需要double扩展和fenv；int32入口同一翻译单元也不能被假定零浮点链接依赖。",
+      "evidence": [
+        {
+          "source": "core_c",
+          "line": 15,
+          "needle": "IEEE binary64 is required"
+        },
+        {
+          "source": "core_c",
+          "line": 110,
+          "needle": "fegetround() != FE_TONEAREST"
+        },
+        {
+          "source": "cbuild_py",
+          "line": 26,
+          "needle": "-ffp-contract=off"
+        }
+      ]
+    },
+    {
+      "id": "floating_point.softfloat",
+      "domain": "floating_point",
+      "status": "unknown",
+      "value": null,
+      "scope": "未交叉链接或执行",
+      "implication": "当前无目标soft-float精度、异常/舍入语义、时延与代码体积结果。",
+      "evidence": [
+        {
+          "source": "core_c",
+          "line": 220,
+          "needle": "Nonoverlapping double expansion"
+        },
+        {
+          "source": "env_wsl",
+          "line": 8,
+          "needle": "\"riscv64-unknown-elf-gcc\": null"
+        }
+      ],
+      "unblock": "目标链接辅助函数和fenv，跑有限/溢出/抵消/边界样本；目标正确性与速度分别报告。"
+    },
+    {
+      "id": "floating_point.profile_clock",
+      "domain": "floating_point",
+      "status": "unknown",
+      "value": null,
+      "scope": "ir_core可选节点profile路径",
+      "implication": "clock依赖及long double比较可能引入额外库；关闭profiles未必自动移除所有链接引用。",
+      "evidence": [
+        {
+          "source": "core_c",
+          "line": 373,
+          "needle": "(long double)begin >= 0"
+        }
+      ],
+      "unblock": "nm/链接map检查实际引用，提供合法不可用观测路径或目标计时实现；不能用固定0伪装成功。"
+    },
+    {
+      "id": "memory.tcm",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": {
+        "base": 0,
+        "end_exclusive": 65536,
+        "bytes": 65536
+      },
+      "scope": "默认RAM_WORDS=16384，板级顶层未覆盖",
+      "implication": "这是程序、常量、data/BSS和栈共享的总TCM，不是额外推理容量。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 3,
+          "needle": "RAM_WORDS = 16384"
+        },
+        {
+          "source": "main:rtl/qinglong_fpga_top.sv",
+          "line": 20,
+          "needle": "qinglong_soc #(.CLOCK_HZ"
+        },
+        {
+          "source": "main:sw/link.ld",
+          "line": 3,
+          "needle": "LENGTH = 64K"
+        }
+      ]
+    },
+    {
+      "id": "memory.linked_data_ceiling",
+      "domain": "memory",
+      "status": "derived",
+      "value": {
+        "bss_end_strictly_less_than": 57344
+      },
+      "scope": "链接ASSERT：__bss_end < 65536-8192",
+      "implication": "这是程序/静态数据末端约束，不能写成剩余56KiB arena；当前固件map尚未核对。",
+      "evidence": [
+        {
+          "source": "main:sw/link.ld",
+          "line": 15,
+          "needle": "ASSERT(__bss_end <"
+        }
+      ]
+    },
+    {
+      "id": "memory.ddr_physical",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": {
+        "chip_count": 2,
+        "bits_per_chip": 4294967296,
+        "total_bytes": 1073741824,
+        "bus_bits": 32
+      },
+      "scope": "板卡手册PDF24/印刷20页，物理规格",
+      "implication": "物理8Gbit=1GiB；规格不等于当前CPU访问、DDR校准或可分配容量。",
+      "evidence": [
+        {
+          "source": "manual",
+          "line": 101,
+          "needle": "两个 4Gbit（512MB）"
+        },
+        {
+          "source": "manual",
+          "line": 102,
+          "needle": "总数据位宽为 32bit"
+        }
+      ]
+    },
+    {
+      "id": "memory.ddr_mapped",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": false,
+      "scope": "当前SoC RTL完整译码与默认路径",
+      "implication": "未接DDR控制器/桥接/地址窗口；不可向0x80000000写模型。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 1,
+          "needle": "no DDR/cache yet"
+        },
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 151,
+          "needle": "default: dre <= 1"
+        }
+      ]
+    },
+    {
+      "id": "memory.ddr_draft",
+      "domain": "memory",
+      "status": "proposed",
+      "value": {
+        "base": 2147483648,
+        "end_exclusive": 3221225472
+      },
+      "scope": "OS设计稿建议窗口",
+      "implication": "草案不能作为可用映射或allocator配置；设计稿64MiB系统预留同样未获验证。",
+      "evidence": [
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 244,
+          "needle": "除现有地址外均为草案"
+        },
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 252,
+          "needle": "0x80000000–0xBFFFFFFF"
+        }
+      ]
+    },
+    {
+      "id": "memory.cache",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": false,
+      "scope": "当前TCM SoC",
+      "implication": "没有cache不代表未来DDR/DMA天然一致；新cache必须新增维护契约。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 1,
+          "needle": "no DDR/cache yet"
+        }
+      ]
+    },
+    {
+      "id": "memory.free_bytes",
+      "domain": "memory",
+      "status": "unknown",
+      "value": null,
+      "scope": "无本次推理目标固件链接map/运行高水位",
+      "implication": "不能从64KiB减去8KiB后全给模型或metadata。",
+      "evidence": [
+        {
+          "source": "main:sw/link.ld",
+          "line": 15,
+          "needle": "ASSERT(__bss_end <"
+        }
+      ],
+      "unblock": "构建选定目标固件，列text/rodata/data/BSS、对齐、所有静态池/代码副本/栈，校验区间不重叠。"
+    },
+    {
+      "id": "memory.heap_budget",
+      "domain": "memory",
+      "status": "unknown",
+      "value": null,
+      "scope": "链接脚本未定义heap/heap_end或_sbrk，OS仍为设计稿",
+      "implication": "不假定malloc/newlib heap可用。",
+      "evidence": [
+        {
+          "source": "main:sw/link.ld",
+          "line": 14,
+          "needle": "__stack_top ="
+        },
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 3,
+          "needle": "尚未实现 OS、DDR"
+        }
+      ],
+      "unblock": "明确静态池或heap起止与失败语义，并纳入map和压力验证。"
+    },
+    {
+      "id": "memory.arena_budget",
+      "domain": "memory",
+      "status": "unknown",
+      "value": null,
+      "scope": "未选择推理固件和目标保留区",
+      "implication": "不以PC DEFAULT_BUDGET=64MiB替代目标arena。",
+      "evidence": [
+        {
+          "source": "memory_py",
+          "line": 10,
+          "needle": "DEFAULT_BUDGET = 64 * 1024 * 1024"
+        },
+        {
+          "source": "main:sw/link.ld",
+          "line": 3,
+          "needle": "LENGTH = 64K"
+        }
+      ],
+      "unblock": "签定可用区域和所有并发使用者后计算weights/activations/workspace与对齐预算。"
+    },
+    {
+      "id": "memory.trace_task_metadata_budgets",
+      "domain": "memory",
+      "status": "unknown",
+      "value": null,
+      "scope": "无目标任务系统/追踪缓冲分区",
+      "implication": "trace/task/C元数据各自预算未知，不把Python账本计数或RSS当硬件容量。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 30,
+          "needle": "roles[IRS_MAX_TENSORS]"
+        },
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 3,
+          "needle": "尚未实现 OS、DDR"
+        }
+      ],
+      "unblock": "确定静态buffer和输出背压策略，目标sizeof、峰值及失败恢复后零占用联合验收。"
+    },
+    {
+      "id": "memory.context_arrays",
+      "domain": "memory",
+      "status": "derived",
+      "value": 20480,
+      "scope": "roles[4096] uint32 + supplied[4096] byte，ILP32 CHAR_BIT=8期望",
+      "implication": "仅两数组已20KiB；不含context其他字段，不能当完整context sizeof。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 30,
+          "needle": "roles[IRS_MAX_TENSORS]"
+        },
+        {
+          "source": "static_h",
+          "line": 31,
+          "needle": "supplied[IRS_MAX_TENSORS]"
+        },
+        {
+          "source": "static_h",
+          "line": 8,
+          "needle": "#define IRS_MAX_TENSORS 4096u"
+        }
+      ]
+    },
+    {
+      "id": "memory.no_runtime_malloc",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": true,
+      "scope": "irs_context/irs_run调用方所有权约定",
+      "implication": "可使用目标静态arena，但descriptor/weights/metadata/上下文仍占内存；PC宿主加载器仍分配。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 30,
+          "needle": "no runtime malloc"
+        },
+        {
+          "source": "static_h",
+          "line": 40,
+          "needle": "Arenas"
+        }
+      ]
+    },
+    {
+      "id": "memory.null_address",
+      "domain": "memory",
+      "status": "source_confirmed",
+      "value": "nonempty_buffers_must_not_be_NULL",
+      "scope": "当前C span校验",
+      "implication": "TCM地址0虽为复位代码地址，不可当非空arena首地址传入现有C接口。",
+      "evidence": [
+        {
+          "source": "core_c",
+          "line": 44,
+          "needle": "return p != NULL && bytes <= SIZE_MAX"
+        }
+      ]
+    },
+    {
+      "id": "stack.reserve",
+      "domain": "stack",
+      "status": "source_confirmed",
+      "value": {
+        "top": 65536,
+        "reserved_min_bytes": 8192,
+        "guard_candidate_base": 57344
+      },
+      "scope": "链接ASSERT而非运行guard或独立栈SECTION",
+      "implication": "栈向低地址增长；最后8KiB是最小保留，不证明最大可用栈只有8KiB或已测高水位。",
+      "evidence": [
+        {
+          "source": "main:sw/link.ld",
+          "line": 15,
+          "needle": "reserve 8 KiB for stack"
+        },
+        {
+          "source": "main:sw/start.S",
+          "line": 8,
+          "needle": "la sp, __stack_top"
+        }
+      ]
+    },
+    {
+      "id": "stack.alignment",
+      "domain": "stack",
+      "status": "normative",
+      "value": 16,
+      "scope": "标准ILP32入口栈对齐，字节",
+      "implication": "__stack_top=0x10000满足16字节；ISR/回调以后仍需遵守。",
+      "evidence": [
+        {
+          "source": "official",
+          "line": 7,
+          "needle": "\"id\": \"psabi\""
+        },
+        {
+          "source": "main:sw/start.S",
+          "line": 8,
+          "needle": "la sp, __stack_top"
+        }
+      ]
+    },
+    {
+      "id": "stack.inspect_scratch",
+      "domain": "stack",
+      "status": "derived",
+      "value": 32768,
+      "scope": "irs_inspect两个4096项int数组，ILP32 int=4",
+      "implication": "固定局部数组32KiB已超过8KiB最小栈预留；不等于目标.su或运行高水位，T3必须先处理。",
+      "evidence": [
+        {
+          "source": "static_c",
+          "line": 21,
+          "needle": "int first[IRS_MAX_TENSORS],last[IRS_MAX_TENSORS]"
+        },
+        {
+          "source": "static_c",
+          "line": 82,
+          "needle": "return 2*IRS_MAX_TENSORS*sizeof(int)"
+        }
+      ]
+    },
+    {
+      "id": "stack.runtime_peak",
+      "domain": "stack",
+      "status": "unknown",
+      "value": null,
+      "scope": "无目标编译.su/map/栈canary；异常栈未接推理",
+      "implication": "不能仅靠PC transient预算通过就称目标栈安全。",
+      "evidence": [
+        {
+          "source": "static_c",
+          "line": 21,
+          "needle": "int first[IRS_MAX_TENSORS],last[IRS_MAX_TENSORS]"
+        },
+        {
+          "source": "main:sw/start.S",
+          "line": 22,
+          "needle": "default_trap:"
+        }
+      ],
+      "unblock": "T3压缩/移出固定工作集；fstack-usage+调用图+ISR边界，仿真/实板canary高水位及溢出拒绝。"
+    },
+    {
+      "id": "reading.current",
+      "domain": "reading",
+      "status": "source_confirmed",
+      "value": "firmware_hex_initialization_and_UART_TX_only",
+      "scope": "SoC INIT_FILE/$readmemh；无UART RX/存储控制器",
+      "implication": "PC文件系统路径不能传给板端；模型运行时读取接口尚未接。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 51,
+          "needle": "$readmemh(INIT_FILE, ram)"
+        },
+        {
+          "source": "main:README.md",
+          "line": 87,
+          "needle": "UART RX 与持久化存储尚未实现"
+        }
+      ]
+    },
+    {
+      "id": "reading.reader_contract",
+      "domain": "reading",
+      "status": "source_confirmed",
+      "value": {
+        "offset": "uint64",
+        "request": "size_t",
+        "returns_actual_count": true,
+        "exact_required": true
+      },
+      "scope": "irs_reader/irs_read_exact现有PC源接口",
+      "implication": "先范围再读；短读报IO_ERROR、不补零；reader定义目前在含stdio的ir_pc.h，提炼目标头还未做。",
+      "evidence": [
+        {
+          "source": "pc_h",
+          "line": 7,
+          "needle": "typedef struct {void *user;uint64_t size;"
+        },
+        {
+          "source": "pc_c",
+          "line": 24,
+          "needle": "got==n?IR_OK:IRS_IO_ERROR"
+        }
+      ]
+    },
+    {
+      "id": "reading.target_adapter",
+      "domain": "reading",
+      "status": "unknown",
+      "value": null,
+      "scope": "无目标包存储/读取驱动",
+      "implication": "嵌入只读常量、串口RX或SD reader均未实现；不暗定任何一种。",
+      "evidence": [
+        {
+          "source": "main:README.md",
+          "line": 87,
+          "needle": "UART RX 与持久化存储尚未实现"
+        },
+        {
+          "source": "pc_h",
+          "line": 4,
+          "needle": "#include <stdio.h>"
+        }
+      ],
+      "unblock": "先确定模型无关的固件内嵌blob或目标来源，明确大小快照/生命周期/短读/越界/错误释放，再实现只读adapter。"
+    },
+    {
+      "id": "reading.proposal",
+      "domain": "reading",
+      "status": "proposed",
+      "value": "offline_export_and_embed_small_synthetic_blobs",
+      "scope": "下一步最小TCM接入建议",
+      "implication": "只提议小型合成链静态常量，需重算镜像/arena/metadata总内存；并未构建/下载。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 10,
+          "needle": "Wire v1"
+        },
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 51,
+          "needle": "$readmemh(INIT_FILE, ram)"
+        }
+      ]
+    },
+    {
+      "id": "timing.counters",
+      "domain": "timing",
+      "status": "source_confirmed",
+      "value": {
+        "cycle_bits": 64,
+        "cycle_aliases": [
+          "0xC00",
+          "0xC80"
+        ],
+        "mtime_mmio": [
+          "0x10000100",
+          "0x10000104"
+        ]
+      },
+      "scope": "CSR和SoC RTL",
+      "implication": "cycle可被mcountinhibit停止/重写，mtime每CPU clk递增且复位清零；跨复位不连续。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_csr.sv",
+          "line": 50,
+          "needle": "12'hb00, 12'hc00"
+        },
+        {
+          "source": "main:rtl/rv32_csr.sv",
+          "line": 65,
+          "needle": "if (!inhibit[0])"
+        },
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 104,
+          "needle": "mtime <= mtime + 64'd1"
+        }
+      ]
+    },
+    {
+      "id": "timing.consistent_read",
+      "domain": "timing",
+      "status": "source_confirmed",
+      "value": "high_low_high_retry",
+      "scope": "sw/platform.h read_cycles",
+      "implication": "读取64位cycle有实现；MMIO mtime须同样高低高防撕裂，不能单次两半视作原子。",
+      "evidence": [
+        {
+          "source": "main:sw/platform.h",
+          "line": 17,
+          "needle": "while (hi != again)"
+        }
+      ]
+    },
+    {
+      "id": "timing.default_clock",
+      "domain": "timing",
+      "status": "source_confirmed",
+      "value": {
+        "fpga_top_hz": 27000000,
+        "board_system_mhz": 27,
+        "clock_module_standalone_default_mhz": 108,
+        "soc_standalone_default_hz": 50000000
+      },
+      "scope": "不同层默认值",
+      "implication": "不可把任意一个默认值当作所下载位流真实主频。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_fpga_top.sv",
+          "line": 5,
+          "needle": "CLOCK_HZ = 27000000"
+        },
+        {
+          "source": "main:fpga/board/qinglong_board_system.sv",
+          "line": 3,
+          "needle": "CLOCK_MHZ = 27"
+        },
+        {
+          "source": "main:fpga/board/qinglong_board_clock.sv",
+          "line": 8,
+          "needle": "CLOCK_MHZ = 108"
+        },
+        {
+          "source": "main:rtl/qinglong_soc.sv",
+          "line": 5,
+          "needle": "CLOCK_HZ = 50000000"
+        }
+      ]
+    },
+    {
+      "id": "timing.archived_profiles",
+      "domain": "timing",
+      "status": "historical_report",
+      "value": {
+        "timing_closed_hz": 81000000,
+        "experimental_hz": 108000000,
+        "reference_nominal_hz": 27000000
+      },
+      "scope": "归档81/108MHz CoreMark与报告；未本轮重跑",
+      "implication": "81MHz已归档闭合、108MHz为负WNS实验；未校准晶振；不是推理性能。",
+      "evidence": [
+        {
+          "source": "main:docs/性能与验证报告.md",
+          "line": 3,
+          "needle": "最高同时通过静态时序与实板 CoreMark"
+        },
+        {
+          "source": "main:docs/性能与验证报告.md",
+          "line": 25,
+          "needle": "未使用外部频率计校准"
+        },
+        {
+          "source": "main:docs/results/board-81mhz/manifest.json",
+          "line": 16,
+          "needle": "\"routed_timing_passed\": true"
+        }
+      ]
+    },
+    {
+      "id": "timing.active_hz",
+      "domain": "timing",
+      "status": "unknown",
+      "value": null,
+      "scope": "本轮未读取设备/下载位流/硬件计数器",
+      "implication": "当前所选推理镜像时钟、稳定性、频率误差未知，不填PC ns源。",
+      "evidence": [
+        {
+          "source": "env_wsl",
+          "line": 59,
+          "needle": "\"board_accessed\": false"
+        },
+        {
+          "source": "main:docs/性能与验证报告.md",
+          "line": 25,
+          "needle": "108 MHz 不能填作"
+        }
+      ],
+      "unblock": "为选定镜像关联源码/固件/约束/位流与频率来源，检查暂停/复位/回绕语义后接时间源。"
+    },
+    {
+      "id": "timing.callback",
+      "domain": "timing",
+      "status": "source_confirmed",
+      "value": "now_ns_returns_1_only_for_valid_monotonic_ns",
+      "scope": "irs_platform现有API1",
+      "implication": "原始cycle不能直接放进host_ns；频率未知应返回不可用。trace当前命名仍host_ns，不声称设备计时域已支持。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 17,
+          "needle": "int (*now_ns)"
+        },
+        {
+          "source": "static_c",
+          "line": 77,
+          "needle": "ns<c->last_ns"
+        },
+        {
+          "source": "pc_c",
+          "line": 110,
+          "needle": "host_ns"
+        }
+      ]
+    },
+    {
+      "id": "timing.target_conversion",
+      "domain": "timing",
+      "status": "proposed",
+      "value": "q=ticks/hz; r=ticks%hz; ns=q*1e9+r*1e9/hz",
+      "scope": "后续受检转换方案",
+      "implication": "检查hz非零、乘法溢出、暂停/复位、单调性和域标记；转换不提高物理分辨率。",
+      "evidence": [
+        {
+          "source": "official",
+          "line": 38,
+          "needle": "\"id\": \"isa-counters\""
+        },
+        {
+          "source": "main:sw/platform.h",
+          "line": 11,
+          "needle": "read_cycles(void)"
+        }
+      ]
+    },
+    {
+      "id": "synchronization.bus",
+      "domain": "synchronization",
+      "status": "source_confirmed",
+      "value": "single_outstanding_custom_valid_ready",
+      "scope": "当前CPU指令/数据接口",
+      "implication": "非AXI/DMA接口；未来DDR桥接必须处理背压、错误、复位与总线在途状态。",
+      "evidence": [
+        {
+          "source": "main:docs/CPU设计说明.md",
+          "line": 118,
+          "needle": "每个接口最多一个未完成事务"
+        }
+      ]
+    },
+    {
+      "id": "synchronization.fence",
+      "domain": "synchronization",
+      "status": "source_confirmed",
+      "value": "FENCE_pipeline_serialization_FENCEI_fetch_predictor_flush",
+      "scope": "RTL译码与核心序列化",
+      "implication": "有硬件屏障能力不等于C平台回调已实现；compiler memory clobber亦不能替代硬件屏障。",
+      "evidence": [
+        {
+          "source": "main:rtl/rv32_decode.sv",
+          "line": 130,
+          "needle": "FENCE is a full pipeline barrier"
+        },
+        {
+          "source": "main:rtl/rv32_core.sv",
+          "line": 434,
+          "needle": "!(first_meta[4] && (x_valid || m_valid || w_valid))"
+        },
+        {
+          "source": "main:rtl/rv32_core.sv",
+          "line": 215,
+          "needle": "clear(x_go && x_dec.fence_i)"
+        }
+      ]
+    },
+    {
+      "id": "synchronization.target_hooks",
+      "domain": "synchronization",
+      "status": "unknown",
+      "value": null,
+      "scope": "irs_platform函数表现有，只有PC实现",
+      "implication": "PC same-process同步不能复制成板端DMA完成确认；未知状态保留arena直到真实quiescence。",
+      "evidence": [
+        {
+          "source": "static_h",
+          "line": 15,
+          "needle": "nonzero => unknown"
+        },
+        {
+          "source": "static_h",
+          "line": 16,
+          "needle": "0 confirms quiescence"
+        },
+        {
+          "source": "pc_c",
+          "line": 94,
+          "needle": "static uint32_t pc_sync"
+        }
+      ],
+      "unblock": "为纯CPU/TCM路径实现并验证编译器+硬件顺序；若接DMA必须另给完成/终止/失效cache/总线静止的证据。"
+    },
+    {
+      "id": "synchronization.dma",
+      "domain": "synchronization",
+      "status": "source_confirmed",
+      "value": false,
+      "scope": "主仓库当前SoC未集成AI/DMA；独立加速器工程不能算CPU集成",
+      "implication": "新设备需寄存器图、地址/对齐/长度、完成IRQ/轮询、超时abort及重置确认契约。",
+      "evidence": [
+        {
+          "source": "main:README.md",
+          "line": 87,
+          "needle": "AI 加速器、Cache/DDR"
+        }
+      ]
+    },
+    {
+      "id": "synchronization.interrupt",
+      "domain": "synchronization",
+      "status": "source_confirmed",
+      "value": "machine_timer_software_supported_external_tied_low_in_board_top",
+      "scope": "CPU CSR/board wrapper",
+      "implication": "现有板顶irq_external=0，无加速器完成IRQ；默认trap只上报并停机，无通用ISR上下文保存。",
+      "evidence": [
+        {
+          "source": "main:rtl/qinglong_fpga_top.sv",
+          "line": 21,
+          "needle": "irq_external(1'b0)"
+        },
+        {
+          "source": "main:sw/start.S",
+          "line": 22,
+          "needle": "default_trap:"
+        }
+      ]
+    },
+    {
+      "id": "synchronization.atomics",
+      "domain": "synchronization",
+      "status": "source_confirmed",
+      "value": false,
+      "scope": "无A扩展，单核M态",
+      "implication": "不使用依赖AMO/LRSC的通用锁；MIE临界区为OS设计提议，当前无推理任务锁。",
+      "evidence": [
+        {
+          "source": "main:docs/青龙OS与即时应用设计.md",
+          "line": 67,
+          "needle": "无 A 扩展"
+        }
+      ]
+    }
+  ]
+}

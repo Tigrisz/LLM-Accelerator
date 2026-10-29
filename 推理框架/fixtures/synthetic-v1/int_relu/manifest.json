@@ -1,0 +1,62 @@
+{
+  "format": "inference-fixture",
+  "version": 1,
+  "case_id": "int_relu",
+  "provenance": {
+    "kind": "manual",
+    "source": "inference_ref.examples/v1; numpy=2.3.5; PCG64",
+    "seed": null
+  },
+  "operation": {
+    "name": "relu",
+    "inputs": [
+      "input"
+    ],
+    "output": "expected",
+    "attributes": {}
+  },
+  "comparison": {
+    "mode": "exact",
+    "atol": 0,
+    "rtol": 0
+  },
+  "payload": {
+    "file": "data.bin",
+    "byte_length": 24,
+    "sha256": "9fd87bc544dd49c020b20444eb64503969561ef944277fb48b4d84514410ca82"
+  },
+  "tensors": [
+    {
+      "name": "expected",
+      "dtype": "int32",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ],
+      "layout": "row_major",
+      "role": "reference",
+      "offset": 0,
+      "byte_length": 12,
+      "alignment": 4,
+      "sha256": "1f91fc716ad664bd280d736df6eb8884e4bfb7c0648656b1ec59f4d049f18d23"
+    },
+    {
+      "name": "input",
+      "dtype": "int32",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 12,
+      "byte_length": 12,
+      "alignment": 4,
+      "sha256": "e838c220f915121e130f0a9e3031cfd243781948cf8ff18317a87e8020b6c252"
+    }
+  ]
+}

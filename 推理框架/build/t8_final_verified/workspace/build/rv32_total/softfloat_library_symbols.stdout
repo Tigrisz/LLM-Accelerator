@@ -1,0 +1,547 @@
+
+_negdi2.o:
+00000000 T __negdi2
+
+_lshrdi3.o:
+00000000 T __lshrdi3
+
+_ashldi3.o:
+00000000 T __ashldi3
+
+_ashrdi3.o:
+00000000 T __ashrdi3
+
+_cmpdi2.o:
+00000000 T __cmpdi2
+
+_ucmpdi2.o:
+00000000 T __ucmpdi2
+
+_clear_cache.o:
+00000000 T __clear_cache
+
+_trampoline.o:
+
+__main.o:
+
+_absvsi2.o:
+00000000 T __absvsi2
+
+_absvdi2.o:
+00000000 T __absvdi2
+
+_addvsi3.o:
+00000000 T __addvsi3
+
+_addvdi3.o:
+00000000 T __addvdi3
+
+_subvsi3.o:
+00000000 T __subvsi3
+
+_subvdi3.o:
+00000000 T __subvdi3
+
+_mulvsi3.o:
+00000000 T __mulvsi3
+
+_mulvdi3.o:
+00000000 T __mulvdi3
+
+_negvsi2.o:
+00000000 T __negvsi2
+
+_negvdi2.o:
+00000000 T __negvdi2
+
+_ctors.o:
+00000000 B __CTOR_LIST__
+00000000 B __DTOR_LIST__
+
+_ffssi2.o:
+00000000 T __ffssi2
+
+_ffsdi2.o:
+00000000 T __ffsdi2
+
+_clz.o:
+00000000 R __clz_tab
+
+_clzsi2.o:
+00000000 T __clzsi2
+
+_clzdi2.o:
+00000000 T __clzdi2
+
+_ctzsi2.o:
+00000000 T __ctzsi2
+
+_ctzdi2.o:
+00000000 T __ctzdi2
+
+_popcount_tab.o:
+00000000 R __popcount_tab
+
+_popcountsi2.o:
+00000000 T __popcountsi2
+
+_popcountdi2.o:
+00000000 T __popcountdi2
+
+_paritysi2.o:
+00000000 T __paritysi2
+
+_paritydi2.o:
+00000000 T __paritydi2
+
+_powisf2.o:
+00000000 T __powisf2
+
+_powidf2.o:
+00000000 T __powidf2
+
+_powixf2.o:
+
+_powitf2.o:
+00000000 T __powitf2
+
+_mulhc3.o:
+00000000 T __mulhc3
+
+_mulsc3.o:
+00000000 T __mulsc3
+
+_muldc3.o:
+00000000 T __muldc3
+
+_mulxc3.o:
+
+_multc3.o:
+00000000 T __multc3
+
+_divhc3.o:
+00000000 T __divhc3
+
+_divsc3.o:
+00000000 T __divsc3
+
+_divdc3.o:
+00000000 T __divdc3
+
+_divxc3.o:
+
+_divtc3.o:
+00000000 T __divtc3
+
+_bswapsi2.o:
+00000000 T __bswapsi2
+
+_bswapdi2.o:
+00000000 T __bswapdi2
+
+_clrsbsi2.o:
+00000000 T __clrsbsi2
+
+_clrsbdi2.o:
+00000000 T __clrsbdi2
+
+_mulbitint3.o:
+
+_fixunsxfsi.o:
+
+_fixxfdi.o:
+
+_fixunsxfdi.o:
+
+_floatdixf.o:
+
+_floatundixf.o:
+
+_eprintf.o:
+00000000 T __eprintf
+
+__gcc_bcmp.o:
+00000000 T __gcc_bcmp
+
+_divdi3.o:
+00000000 T __divdi3
+
+_moddi3.o:
+00000000 T __moddi3
+
+_divmoddi4.o:
+00000000 T __divmoddi4
+
+_udivdi3.o:
+00000000 T __udivdi3
+
+_umoddi3.o:
+00000000 T __umoddi3
+
+_udivmoddi4.o:
+00000000 T __udivmoddi4
+
+_udiv_w_sdiv.o:
+00000000 T __udiv_w_sdiv
+
+_divmodbitint4.o:
+
+adddf3.o:
+00000000 T __adddf3
+
+divdf3.o:
+00000000 T __divdf3
+
+eqdf2.o:
+00000000 T __eqdf2
+00000000 T __nedf2
+
+gedf2.o:
+00000000 T __gedf2
+00000000 T __gtdf2
+
+ledf2.o:
+00000000 T __ledf2
+00000000 T __ltdf2
+
+muldf3.o:
+00000000 T __muldf3
+
+negdf2.o:
+00000000 T __negdf2
+
+subdf3.o:
+00000000 T __subdf3
+
+unorddf2.o:
+00000000 T __unorddf2
+
+fixdfsi.o:
+00000000 T __fixdfsi
+
+fixunsdfsi.o:
+00000000 T __fixunsdfsi
+
+floatsidf.o:
+00000000 T __floatsidf
+
+floatunsidf.o:
+00000000 T __floatunsidf
+
+fixdfdi.o:
+00000000 T __fixdfdi
+
+fixunsdfdi.o:
+00000000 T __fixunsdfdi
+
+floatdidf.o:
+00000000 T __floatdidf
+
+floatundidf.o:
+00000000 T __floatundidf
+
+addtf3.o:
+00000000 T __addtf3
+
+divtf3.o:
+00000000 T __divtf3
+
+eqtf2.o:
+00000000 T __eqtf2
+00000000 T __netf2
+
+getf2.o:
+00000000 T __getf2
+00000000 T __gttf2
+
+letf2.o:
+00000000 T __letf2
+00000000 T __lttf2
+
+multf3.o:
+00000000 T __multf3
+
+negtf2.o:
+00000000 T __negtf2
+
+subtf3.o:
+00000000 T __subtf3
+
+unordtf2.o:
+00000000 T __unordtf2
+
+fixtfsi.o:
+00000000 T __fixtfsi
+
+fixunstfsi.o:
+00000000 T __fixunstfsi
+
+floatsitf.o:
+00000000 T __floatsitf
+
+floatunsitf.o:
+00000000 T __floatunsitf
+
+fixtfdi.o:
+00000000 T __fixtfdi
+
+fixunstfdi.o:
+00000000 T __fixunstfdi
+
+floatditf.o:
+00000000 T __floatditf
+
+floatunditf.o:
+00000000 T __floatunditf
+
+addsf3.o:
+00000000 T __addsf3
+
+divsf3.o:
+00000000 T __divsf3
+
+eqsf2.o:
+00000000 T __eqsf2
+00000000 T __nesf2
+
+gesf2.o:
+00000000 T __gesf2
+00000000 T __gtsf2
+
+lesf2.o:
+00000000 T __lesf2
+00000000 T __ltsf2
+
+mulsf3.o:
+00000000 T __mulsf3
+
+negsf2.o:
+00000000 T __negsf2
+
+subsf3.o:
+00000000 T __subsf3
+
+unordsf2.o:
+00000000 T __unordsf2
+
+fixsfsi.o:
+00000000 T __fixsfsi
+
+fixunssfsi.o:
+00000000 T __fixunssfsi
+
+floatsisf.o:
+00000000 T __floatsisf
+
+floatunsisf.o:
+00000000 T __floatunsisf
+
+fixsfdi.o:
+00000000 T __fixsfdi
+
+fixunssfdi.o:
+00000000 T __fixunssfdi
+
+floatdisf.o:
+00000000 T __floatdisf
+
+floatundisf.o:
+00000000 T __floatundisf
+
+fixsfbitint.o:
+
+floatbitintsf.o:
+
+fixdfbitint.o:
+
+floatbitintdf.o:
+
+extendsfdf2.o:
+00000000 T __extendsfdf2
+
+extendsftf2.o:
+00000000 T __extendsftf2
+
+extenddftf2.o:
+00000000 T __extenddftf2
+
+extendhfsf2.o:
+00000000 T __extendhfsf2
+
+extendhfdf2.o:
+00000000 T __extendhfdf2
+
+extendhftf2.o:
+00000000 T __extendhftf2
+
+extendbfsf2.o:
+00000000 T __extendbfsf2
+
+truncdfsf2.o:
+00000000 T __truncdfsf2
+
+trunctfsf2.o:
+00000000 T __trunctfsf2
+
+trunctfdf2.o:
+00000000 T __trunctfdf2
+
+trunctfhf2.o:
+00000000 T __trunctfhf2
+
+truncdfhf2.o:
+00000000 T __truncdfhf2
+
+truncsfhf2.o:
+00000000 T __truncsfhf2
+
+trunctfbf2.o:
+00000000 T __trunctfbf2
+
+truncdfbf2.o:
+00000000 T __truncdfbf2
+
+truncsfbf2.o:
+00000000 T __truncsfbf2
+
+trunchfbf2.o:
+00000000 T __trunchfbf2
+
+truncbfhf2.o:
+00000000 T __truncbfhf2
+
+fixhfsi.o:
+00000000 T __fixhfsi
+
+fixhfdi.o:
+00000000 T __fixhfdi
+
+fixunshfsi.o:
+00000000 T __fixunshfsi
+
+fixunshfdi.o:
+00000000 T __fixunshfdi
+
+floatsihf.o:
+00000000 T __floatsihf
+
+floatdihf.o:
+00000000 T __floatdihf
+
+floatunsihf.o:
+00000000 T __floatunsihf
+
+floatundihf.o:
+00000000 T __floatundihf
+
+floatsibf.o:
+00000000 T __floatsibf
+
+floatdibf.o:
+00000000 T __floatdibf
+
+floatunsibf.o:
+00000000 T __floatunsibf
+
+floatundibf.o:
+00000000 T __floatundibf
+
+save-restore.o:
+000000a4 T __riscv_restore_0
+000000a4 T __riscv_restore_1
+0000007c T __riscv_restore_10
+0000007c T __riscv_restore_11
+00000074 T __riscv_restore_12
+000000a4 T __riscv_restore_2
+000000a4 T __riscv_restore_3
+00000090 T __riscv_restore_4
+00000090 T __riscv_restore_5
+00000090 T __riscv_restore_6
+00000090 T __riscv_restore_7
+0000007c T __riscv_restore_8
+0000007c T __riscv_restore_9
+0000005c T __riscv_save_0
+0000005c T __riscv_save_1
+00000010 T __riscv_save_10
+00000010 T __riscv_save_11
+00000000 T __riscv_save_12
+0000005c T __riscv_save_2
+0000005c T __riscv_save_3
+0000002c T __riscv_save_4
+0000002c T __riscv_save_5
+0000002c T __riscv_save_6
+0000002c T __riscv_save_7
+00000010 T __riscv_save_8
+00000010 T __riscv_save_9
+
+muldi3.o:
+00000000 T __mulsi3
+
+multi3.o:
+00000000 T __muldi3
+
+div.o:
+00000000 T __divsi3
+00000008 T __hidden___udivsi3
+00000084 T __modsi3
+00000008 T __udivsi3
+00000050 T __umodsi3
+
+atomic.o:
+
+feature_bits.o:
+00000000 T __init_riscv_feature_bits
+00000000 B __riscv_cpu_model
+00000000 B __riscv_feature_bits
+
+enable-execute-stack.o:
+00000000 T __enable_execute_stack
+
+hardcfr.o:
+00000000 T __hardcfr_check
+
+strub.o:
+00000000 T __strub_enter
+00000000 T __strub_leave
+00000000 T __strub_update
+
+unwind-dw2.o:
+00000000 T _Unwind_Backtrace
+00000000 T _Unwind_DeleteException
+00000000 T _Unwind_FindEnclosingFunction
+00000000 T _Unwind_ForcedUnwind
+00000000 T _Unwind_GetCFA
+00000000 T _Unwind_GetDataRelBase
+00000000 T _Unwind_GetGR
+00000000 T _Unwind_GetIP
+00000000 T _Unwind_GetIPInfo
+00000000 T _Unwind_GetLanguageSpecificData
+00000000 T _Unwind_GetRegionStart
+00000000 T _Unwind_GetTextRelBase
+00000000 T _Unwind_RaiseException
+00000000 T _Unwind_Resume
+00000000 T _Unwind_Resume_or_Rethrow
+00000000 T _Unwind_SetGR
+00000000 T _Unwind_SetIP
+00000000 T __frame_state_for
+
+unwind-dw2-fde.o:
+00000000 T _Unwind_Find_FDE
+00000000 T __deregister_frame
+00000000 T __deregister_frame_info
+00000000 T __deregister_frame_info_bases
+00000000 T __register_frame
+00000000 T __register_frame_info
+00000000 T __register_frame_info_bases
+00000000 T __register_frame_info_table
+00000000 T __register_frame_info_table_bases
+00000000 T __register_frame_table
+
+unwind-sjlj.o:
+
+unwind-c.o:
+00000000 T __gcc_personality_v0
+
+emutls.o:
+00000000 T __emutls_get_address
+00000000 T __emutls_register_common

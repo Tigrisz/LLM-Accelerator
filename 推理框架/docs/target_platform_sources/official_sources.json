@@ -1,0 +1,48 @@
+{
+  "format": "target-platform-external-sources",
+  "version": 1,
+  "checked_date": "2026-10-25",
+  "normative": [
+    {
+      "id": "psabi",
+      "url": "https://riscv-non-isa.github.io/riscv-elf-psabi-doc/",
+      "version": "Document Version October 14, 2026-draft (live page read 2026-10-25)",
+      "sections": [
+        "2.1 integer calling convention",
+        "4.1 type sizes",
+        "4.4 type representations",
+        "10.1 ELF file header"
+      ],
+      "facts": "ILP32 int/long/pointer=4 bytes, long long/double=8 bytes, standard procedure stack alignment=16 bytes; RV32 size_t is unsigned int; scalar ABI and permitted ISA instructions are separate."
+    },
+    {
+      "id": "gcc-riscv",
+      "url": "https://gcc.gnu.org/onlinedocs/gcc/RISC-V-Options.html",
+      "version": "live manual read 2026-10-25",
+      "sections": [
+        "-mabi",
+        "-march"
+      ],
+      "facts": "-march controls permitted target instructions, -mabi selects integer/floating argument convention; names/prefixes alone do not establish selected ISA."
+    },
+    {
+      "id": "isa-fencei",
+      "url": "https://docs.riscv.org/reference/isa/v20260120/unpriv/zifencei.html",
+      "version": "Zifencei 2.0 / ISA v20260120",
+      "sections": [
+        "4.1"
+      ],
+      "facts": "FENCE.I synchronizes local instruction fetch with preceding visible stores; it is not a general DMA completion or data-cache maintenance service."
+    },
+    {
+      "id": "isa-counters",
+      "url": "https://docs.riscv.org/reference/isa/v20260120/unpriv/counters.html",
+      "version": "Zicntr/Zihpm 2.0 / ISA v20260120",
+      "sections": [
+        "6.1.1"
+      ],
+      "facts": "RV32 counter halves require a consistent read; execution environment must supply counter rate. A cycle count has no intrinsic ns unit."
+    }
+  ],
+  "note": "Normative entries are paraphrased source notes, not toolchain measurements or target conformance certification. Web pages may change; fixed ISA version used where available."
+}

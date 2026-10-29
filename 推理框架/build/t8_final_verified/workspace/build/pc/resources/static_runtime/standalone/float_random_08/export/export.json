@@ -1,0 +1,76 @@
+{
+  "format": "inference-static-export",
+  "version": 1,
+  "runtime_api": 1,
+  "backend_api": 1,
+  "platform_api": 1,
+  "model_id": "fixture_float_random_08",
+  "node_count": 1,
+  "tensor_count": 3,
+  "arenas": {
+    "weights": 512,
+    "activations": 192,
+    "workspace": 64
+  },
+  "alignment": 64,
+  "address_bits": 64,
+  "plan": {
+    "alignment": 64,
+    "placements": [
+      {
+        "tensor_id": "weight",
+        "arena": "weights",
+        "offset": 0,
+        "byte_length": 460,
+        "reserved_bytes": 512,
+        "first_use": -1,
+        "last_use": 1,
+        "reusable": false
+      },
+      {
+        "tensor_id": "input",
+        "arena": "activations",
+        "offset": 0,
+        "byte_length": 92,
+        "reserved_bytes": 128,
+        "first_use": -1,
+        "last_use": 0,
+        "reusable": true
+      },
+      {
+        "tensor_id": "y",
+        "arena": "activations",
+        "offset": 128,
+        "byte_length": 20,
+        "reserved_bytes": 64,
+        "first_use": 0,
+        "last_use": 1,
+        "reusable": true
+      }
+    ],
+    "weight_bytes": 512,
+    "activation_bytes": 192,
+    "workspace_bytes": 64,
+    "alignment_overhead_bytes": 189,
+    "total_bytes": 957,
+    "unpooled_bytes": 957
+  },
+  "tensor_ids": [
+    "y",
+    "input",
+    "weight"
+  ],
+  "node_ids": [
+    "operator"
+  ],
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "source_manifest_sha256": "a11b605e9a268ac2d5d62f0222508a4dba3e99edab1f0ef1b7854b06166b496b",
+  "source_weights_sha256": "38b817240bc7047c8ccd9673310246a7438765a3c9dcd9768005d7cf06c5ae79",
+  "execution_sha256": "0a293f473a25544452e7ff219f652b557bdff3844995b1bdebbb5467f2752257",
+  "weights_sha256": "b1d2f68bcf81d9dc5c4cd6911d58f1a84ad8175f14cbe1c8008e4655470a7540"
+}

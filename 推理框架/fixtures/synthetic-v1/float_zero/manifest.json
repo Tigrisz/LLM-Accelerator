@@ -1,0 +1,85 @@
+{
+  "format": "inference-fixture",
+  "version": 1,
+  "case_id": "float_zero",
+  "provenance": {
+    "kind": "manual",
+    "source": "inference_ref.examples/v1; numpy=2.3.5; PCG64",
+    "seed": null
+  },
+  "operation": {
+    "name": "add",
+    "inputs": [
+      "a",
+      "b"
+    ],
+    "output": "expected",
+    "attributes": {}
+  },
+  "comparison": {
+    "mode": "abs_plus_rel",
+    "atol": 1e-06,
+    "rtol": 1e-05
+  },
+  "payload": {
+    "file": "data.bin",
+    "byte_length": 72,
+    "sha256": "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400"
+  },
+  "tensors": [
+    {
+      "name": "a",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 0,
+      "byte_length": 24,
+      "alignment": 4,
+      "sha256": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0"
+    },
+    {
+      "name": "b",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 24,
+      "byte_length": 24,
+      "alignment": 4,
+      "sha256": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0"
+    },
+    {
+      "name": "expected",
+      "dtype": "float32",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "layout": "row_major",
+      "role": "reference",
+      "offset": 48,
+      "byte_length": 24,
+      "alignment": 4,
+      "sha256": "9d908ecfb6b256def8b49a7c504e6c889c4b0e41fe6ce3e01863dd7b61a20aa0"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "fixture_float_hand_bias",
+  "tensors": [
+    {
+      "id": "bias",
+      "role": "constant",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ],
+      "blob": {
+        "offset": 0,
+        "length": 8,
+        "sha256": "ee4ac73c2bd27756ab82780f27c73a7bc4d3f0bb6acb37e008bc27eccd7e588b"
+      }
+    },
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "input",
+      "role": "input",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ]
+    },
+    {
+      "id": "weight",
+      "role": "constant",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "blob": {
+        "offset": 64,
+        "length": 24,
+        "sha256": "85d60b2fcfc516891988942303c53dd27e473e84b43c5bdc0e186eb758d3146e"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "op": "linear",
+      "inputs": {
+        "bias": "bias",
+        "input": "input",
+        "weight": "weight"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 88,
+    "sha256": "b98e93e2783ff3369b8c0e490a8ce410dc273abc100463911d4eeb2f84fa496c"
+  }
+}

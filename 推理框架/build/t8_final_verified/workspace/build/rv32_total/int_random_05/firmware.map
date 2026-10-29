@@ -1,0 +1,579 @@
+Archive member included to satisfy reference by file (symbol)
+
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o (memcmp)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o (memmove)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memset.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (memset)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (memcpy)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (fegetround)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (fabs)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__udivdi3)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__umoddi3)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__adddf3)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__eqdf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__gedf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__ltdf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__muldf3)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__subdf3)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__unorddf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__nesf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__gtsf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__unordsf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__extendsfdf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o (__truncdfsf2)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o) (__clz_tab)
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                              /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o) (__clzsi2)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_abi_version
+                0x00000000        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .rodata.ir_status_name.str1.4
+                0x00000000        0xf /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_status_name
+                0x00000000       0x2c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_profile_struct_size
+                0x00000000        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_clock_ticks_per_second
+                0x00000000       0x10 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .rodata.str1.4
+                0x00000000       0x61 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .rodata.CSWTCH.34
+                0x00000000       0x1c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.irs_tensor_state_bytes
+                0x00000000       0x18 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.irs_tensor_role
+                0x00000000       0x34 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memset.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memset.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .eh_frame      0x00000000       0x28 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .eh_frame      0x00000000       0x28 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .text          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .data          0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+ .bss           0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+START GROUP
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a
+LOAD /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a
+END GROUP
+
+.text           0x00000000     0x7464
+ *(.text.start)
+ .text.start    0x00000000       0x60 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+                0x00000000                _start
+ *(.text .text.*)
+ .text.valid_span
+                0x00000060       0x20 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.tensor_check
+                0x00000080      0x1e0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.storage_offset
+                0x00000260      0x12c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.wide_add
+                0x0000038c       0xf8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.values_check
+                0x00000484      0x218 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.read_i   0x0000069c       0x3c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.read_f   0x000006d8       0x40 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.expansion_add
+                0x00000718      0x190 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.float_result
+                0x000008a8      0x438 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_tensor_struct_size
+                0x00000ce0        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x00000ce0                ir_tensor_struct_size
+ .text.ir_call_struct_size
+                0x00000ce8        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x00000ce8                ir_call_struct_size
+ .text.ir_query
+                0x00000cf0      0x41c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x00000cf0                ir_query
+ .text.ir_execute
+                0x0000110c      0x394 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x0000110c                ir_execute
+ .text.chain_run
+                0x000014a0      0x404 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .text.ir_execute_chain
+                0x000018a4        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x000018a4                ir_execute_chain
+ .text.ir_execute_chain_profiled
+                0x000018ac      0x2a8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                0x000018ac                ir_execute_chain_profiled
+ .text.rd32     0x00001b54       0x2c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.rd64     0x00001b80       0x40 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.default_recover
+                0x00001bc0        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.event    0x00001bc8       0xc0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.default_execute
+                0x00001c88       0x28 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.default_query
+                0x00001cb0       0x50 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.storage_valid
+                0x00001d00      0x1f0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.irs_crc32
+                0x00001ef0       0x50 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00001ef0                irs_crc32
+ .text.irs_image_crc
+                0x00001f40       0x5c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00001f40                irs_image_crc
+ .text.irs_check_span
+                0x00001f9c       0x68 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00001f9c                irs_check_span
+ .text.span     0x00002004       0x44 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .text.irs_runtime_abi_version
+                0x00002048        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00002048                irs_runtime_abi_version
+ .text.irs_inspect_workspace_bytes
+                0x00002050       0x1c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00002050                irs_inspect_workspace_bytes
+ .text.irs_read_info
+                0x0000206c      0x2b0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x0000206c                irs_read_info
+ .text.irs_inspect_v2
+                0x0000231c      0x674 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x0000231c                irs_inspect_v2
+ .text.irs_context_size
+                0x00002990        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00002990                irs_context_size
+ .text.irs_completed
+                0x00002998        0xc /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00002998                irs_completed
+ .text.irs_bind_v2
+                0x000029a4      0x7b4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x000029a4                irs_bind_v2
+ .text.irs_input
+                0x00003158      0x108 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00003158                irs_input
+ .text.irs_output
+                0x00003260       0x8c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00003260                irs_output
+ .text.irs_run  0x000032ec      0x1f0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x000032ec                irs_run
+ .text.irs_recover
+                0x000034dc       0x8c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x000034dc                irs_recover
+ .text.irs_close
+                0x00003568       0x34 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                0x00003568                irs_close
+ .text.text     0x0000359c       0x1c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.hexkey   0x000035b8       0x64 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.sync_cpu
+                0x0000361c       0x54 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.recover_cpu
+                0x00003670       0x14 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.bind     0x00003684       0xac /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.feed     0x00003730       0x2c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.output.constprop.0
+                0x0000375c       0x7c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .text.clock    0x000037d8        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                0x000037d8                clock
+ .text.startup.main
+                0x000037e0      0x960 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                0x000037e0                main
+ .text.memcmp   0x00004140       0x6c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+                0x00004140                memcmp
+ .text.memmove  0x000041ac      0x128 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+                0x000041ac                memmove
+ .text          0x000042d4       0xdc /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memset.o)
+                0x000042d4                memset
+ .text.memcpy   0x000043b0      0x128 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+                0x000043b0                memcpy
+ .text.fegetround
+                0x000044d8        0x8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+                0x000044d8                fegetround
+ .text.fabs     0x000044e0       0x10 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+                0x000044e0                fabs
+ .text.__udivdi3
+                0x000044f0      0x468 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                0x000044f0                __udivdi3
+ .text.__umoddi3
+                0x00004958      0x4a4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+                0x00004958                __umoddi3
+ .text.__adddf3
+                0x00004dfc      0xb54 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+                0x00004dfc                __adddf3
+ .text.__eqdf2  0x00005950       0x90 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+                0x00005950                __eqdf2
+                0x00005950                __nedf2
+ .text.__gedf2  0x000059e0      0x110 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+                0x000059e0                __gtdf2
+                0x000059e0                __gedf2
+ .text.__ledf2  0x00005af0      0x118 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+                0x00005af0                __ltdf2
+                0x00005af0                __ledf2
+ .text.__muldf3
+                0x00005c08      0x7a4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                0x00005c08                __muldf3
+ .text.__subdf3
+                0x000063ac      0xb4c /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+                0x000063ac                __subdf3
+ .text.__unorddf2
+                0x00006ef8       0x54 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+                0x00006ef8                __unorddf2
+ .text.__eqsf2  0x00006f4c       0x70 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+                0x00006f4c                __nesf2
+                0x00006f4c                __eqsf2
+ .text.__gesf2  0x00006fbc       0xa8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+                0x00006fbc                __gtsf2
+                0x00006fbc                __gesf2
+ .text.__unordsf2
+                0x00007064       0x48 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+                0x00007064                __unordsf2
+ .text.__extendsfdf2
+                0x000070ac      0x158 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                0x000070ac                __extendsfdf2
+ .text.__truncdfsf2
+                0x00007204      0x1d8 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                0x00007204                __truncdfsf2
+ .text.__clzsi2
+                0x000073dc       0x88 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                0x000073dc                __clzsi2
+
+.rodata         0x00007480      0x578
+ *(.rodata .rodata.*)
+ .rodata.cst4   0x00007480        0x4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ *fill*         0x00007484        0x4 
+ .rodata.cst8   0x00007488       0x10 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .rodata.irs_read_info.str1.4
+                0x00007498      0x136 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                                  0x9 (size before relaxing)
+ .rodata.irs_bind_v2.str1.4
+                0x000075ce        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                                  0x5 (size before relaxing)
+ .rodata.irs_run.str1.4
+                0x000075ce        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                                 0x40 (size before relaxing)
+ .rodata.cst4   0x000075ce        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                                  0x4 (size before relaxing)
+ .rodata.hexkey.str1.4
+                0x000075ce        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                                  0x6 (size before relaxing)
+ .rodata.main.str1.4
+                0x000075ce        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                                 0xda (size before relaxing)
+ *fill*         0x000075ce        0x2 
+ .rodata.platform
+                0x000075d0       0x18 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .rodata.zero_1
+                0x000075e8       0x44 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .rodata.input_1
+                0x0000762c       0x44 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ *fill*         0x00007670       0x10 
+ .rodata.t5_weights
+                0x00007680      0x100 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .rodata.t5_image
+                0x00007780      0x178 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .rodata.__clz_tab
+                0x000078f8      0x100 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                0x000078f8                __clz_tab
+
+.rela.dyn       0x000079f8        0x0
+ .rela.text.start
+                0x000079f8        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+
+.data           0x000079f8        0x0
+ *(.data .data.*)
+                0x000079f8                        . = ALIGN (0x8)
+
+.sdata          0x000079f8        0x0
+                0x000081f8                        __global_pointer$ = (. + 0x800)
+ *(.sdata .sdata.*)
+
+.bss            0x00007a00      0x4a0
+                0x00007a00                        . = ALIGN (0x8)
+                0x00007a00                        __bss_start = .
+ *(.sbss .sbss.* .bss .bss.* COMMON)
+ .bss.acquires  0x00007a00        0x4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.publishes
+                0x00007a04        0x4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.fail_sync
+                0x00007a08        0x4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.checks    0x00007a0c        0x4 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.damaged   0x00007a10      0x178 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ *fill*         0x00007b88       0x38 
+ .bss.workspace
+                0x00007bc0       0x40 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.activations
+                0x00007c00       0xc0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.inspect   0x00007cc0        0xc /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.states    0x00007ccc        0x3 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ *fill*         0x00007ccf        0x1 
+ .bss.calls     0x00007cd0       0x20 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.tensors   0x00007cf0      0x120 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .bss.ctx       0x00007e10       0x90 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                0x00007ea0                        . = ALIGN (0x8)
+                0x00007ea0                        __bss_end = .
+                0x00007ea0                        __image_data_end = .
+
+.stack          0x0000e000     0x2000
+                0x0000e000                        __stack_bottom = .
+                0x00010000                        . = (. + 0x2000)
+ *fill*         0x0000e000     0x2000 
+                0x00010000                        __stack_top = .
+                0x00000001                        ASSERT ((__image_data_end <= __stack_bottom), TCM image/static buffers overlap reserved stack)
+                0x00000001                        ASSERT ((__stack_top == 0x10000), Unexpected stack top)
+
+/DISCARD/
+ *(.eh_frame*)
+OUTPUT(/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.elf elf32-littleriscv)
+
+.riscv.attributes
+                0x00000000       0x43
+ .riscv.attributes
+                0x00000000       0x41 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/start.o
+ .riscv.attributes
+                0x00000041       0x3f /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .riscv.attributes
+                0x00000080       0x3f /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .riscv.attributes
+                0x000000bf       0x3f /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .riscv.attributes
+                0x000000fe       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+ .riscv.attributes
+                0x00000128       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+ .riscv.attributes
+                0x00000152       0x28 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memset.o)
+ .riscv.attributes
+                0x0000017a       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+ .riscv.attributes
+                0x000001a4       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+ .riscv.attributes
+                0x000001ce       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+ .riscv.attributes
+                0x000001f8       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .riscv.attributes
+                0x00000222       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .riscv.attributes
+                0x0000024c       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+ .riscv.attributes
+                0x00000276       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+ .riscv.attributes
+                0x000002a0       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+ .riscv.attributes
+                0x000002ca       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+ .riscv.attributes
+                0x000002f4       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .riscv.attributes
+                0x0000031e       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+ .riscv.attributes
+                0x00000348       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+ .riscv.attributes
+                0x00000372       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .riscv.attributes
+                0x0000039c       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .riscv.attributes
+                0x000003c6       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .riscv.attributes
+                0x000003f0       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .riscv.attributes
+                0x0000041a       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .riscv.attributes
+                0x00000444       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .riscv.attributes
+                0x0000046e       0x2a /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+
+.comment        0x00000000       0x33
+ .comment       0x00000000       0x33 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+                                 0x34 (size before relaxing)
+ .comment       0x00000033        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)
+                                 0x34 (size before relaxing)
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_core.o
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/objects/ir_static.o
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/int_random_05/firmware.o
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcmp.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memmove-stub.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libc.a(libc_a-memcpy.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-fegetround.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/lib/rv32im/ilp32/libm.a(libm_a-s_fabs.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_udivdi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_umoddi3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(adddf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqdf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gedf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(ledf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(muldf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(subdf3.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unorddf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(eqsf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(gesf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(unordsf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(extendsfdf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(truncdfsf2.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clz.o)
+ .note.GNU-stack
+                0x00000000        0x0 /mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/rv32im/ilp32/libgcc.a(_clzsi2.o)

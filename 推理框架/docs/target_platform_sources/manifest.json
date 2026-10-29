@@ -1,0 +1,347 @@
+{
+  "format": "target-platform-source-manifest",
+  "version": 1,
+  "sources": [
+    {
+      "id": "main:Makefile",
+      "path": "docs/target_platform_sources/main/Makefile",
+      "sha256": "478c3c201fee8a047a31dccfb3166159598b7ff46cf23e8bf71aebc16b99d06d",
+      "git_blob_sha1": "b39ed9ec65534c5e1ccf09567fd118032966fe5b",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/Makefile",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:README.md",
+      "path": "docs/target_platform_sources/main/README.md",
+      "sha256": "6cb1d938758a89802c33b91a1c1a8d461dbe44adf5ca06537f221abeb9cd73e2",
+      "git_blob_sha1": "841e5cd97b331a1202ff6b0d9a066c39bb921935",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/README.md",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:sw/link.ld",
+      "path": "docs/target_platform_sources/main/sw/link.ld",
+      "sha256": "5ef9911a5f2ca0eab2c30d6ef699af09f81e41d0402a7fb15029adf460068597",
+      "git_blob_sha1": "ca841d1b138e71f4fef1d4984a8aee319d3629db",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/sw/link.ld",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:sw/start.S",
+      "path": "docs/target_platform_sources/main/sw/start.S",
+      "sha256": "cd5ada8ec90ebd4b54608d91e25ee1ea4d61c4b8c74afb33baaa7f81a6ff79aa",
+      "git_blob_sha1": "0edccb85cc50fb004df62351403e87d52009dce1",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/sw/start.S",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:sw/platform.h",
+      "path": "docs/target_platform_sources/main/sw/platform.h",
+      "sha256": "c1c9b9e589e19572adfb61596dd09c8407a4e14d212b6d9adfd27fbe85f7de2d",
+      "git_blob_sha1": "02b95f5534e8deb8b77b81ee4f75d3cb66290c18",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/sw/platform.h",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:sw/coremark/core_portme.c",
+      "path": "docs/target_platform_sources/main/sw/coremark/core_portme.c",
+      "sha256": "c6a9032c11c0de2a98aa086343555d43770ceeedfd06cd778420a144bf8640cc",
+      "git_blob_sha1": "d2478ef2af9ffc939d30683400e9a97fa1c27abf",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/sw/coremark/core_portme.c",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:sw/coremark/core_portme.h",
+      "path": "docs/target_platform_sources/main/sw/coremark/core_portme.h",
+      "sha256": "cc50bf89d3b5619e5f1c5b71f0021483f52a453d8b2fdf0a9c3762ad3574d7ec",
+      "git_blob_sha1": "1aa1cd2aa25dcfb06d906da6f00864cd7822d7ad",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/sw/coremark/core_portme.h",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/qinglong_soc.sv",
+      "path": "docs/target_platform_sources/main/rtl/qinglong_soc.sv",
+      "sha256": "e5260300cfb42821323e48d3dba7e0ea1eefdf75f93d5f85fbf44962ec3745be",
+      "git_blob_sha1": "1cfe0378376978e5415ee7fe5c22e80a4c1ce103",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/qinglong_soc.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/rv32_core.sv",
+      "path": "docs/target_platform_sources/main/rtl/rv32_core.sv",
+      "sha256": "67279a8a511f7f3f666cb58d04c17935b99f0e29481e408823dc6c5a49c06f06",
+      "git_blob_sha1": "77336756e52ff30bf56e9fcf98c556ab28f3c22e",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/rv32_core.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/rv32_csr.sv",
+      "path": "docs/target_platform_sources/main/rtl/rv32_csr.sv",
+      "sha256": "74d636a50ada683bc1ea42b9305f99eb18e7486851de5139948b9cf1e2da414f",
+      "git_blob_sha1": "ca053a3a9b3b2a7adf231f869e56300054181afc",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/rv32_csr.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/rv32_decode.sv",
+      "path": "docs/target_platform_sources/main/rtl/rv32_decode.sv",
+      "sha256": "b2eb94efa42310e7b325a215b1e5630807c73810d5b75220c534caf71ffac929",
+      "git_blob_sha1": "52451a003ef11a0e2f37bd10e8f6d7f07b1ff3b1",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/rv32_decode.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/rv32_pkg.sv",
+      "path": "docs/target_platform_sources/main/rtl/rv32_pkg.sv",
+      "sha256": "d6b9593de8083e706d1a564b3dff239c22167ea567000885efe94bf5b3c727e5",
+      "git_blob_sha1": "8fac78017cd715cd4480cdeb2cc7a5a0b6061968",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/rv32_pkg.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:rtl/qinglong_fpga_top.sv",
+      "path": "docs/target_platform_sources/main/rtl/qinglong_fpga_top.sv",
+      "sha256": "b4f1290218204118083c58434ee0318afbdcd7ebc78451ae0d83cc1baefe0365",
+      "git_blob_sha1": "336542f18bba1d2d92d6d9673e14bc69a53d83f1",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/rtl/qinglong_fpga_top.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:fpga/board/qinglong_board_clock.sv",
+      "path": "docs/target_platform_sources/main/fpga/board/qinglong_board_clock.sv",
+      "sha256": "cc5a6f823842802c9da0a365ead3d7a5890bc7612764ef9dc046a5403eb5b7ef",
+      "git_blob_sha1": "c651cd6fbdbf6e063f7ebaa146aea90e2936f9a1",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/fpga/board/qinglong_board_clock.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:fpga/board/qinglong_board_system.sv",
+      "path": "docs/target_platform_sources/main/fpga/board/qinglong_board_system.sv",
+      "sha256": "d652c3fce8adeb2af35891974f9a316fada3c5ac7a5e6f9f7a52529266305a39",
+      "git_blob_sha1": "c6c181c55cea3d6dd4410ca7f725bf79ea447c43",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/fpga/board/qinglong_board_system.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:fpga/generated/qinglong_all.sv",
+      "path": "docs/target_platform_sources/main/fpga/generated/qinglong_all.sv",
+      "sha256": "036fd9c95bf43929f3adcba6e33fae183830ffa1764466b60be8705c29a52dc4",
+      "git_blob_sha1": "1739159586ebc571c4a8dfa74eb4396bc202de3b",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/fpga/generated/qinglong_all.sv",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:fpga/build.tcl",
+      "path": "docs/target_platform_sources/main/fpga/build.tcl",
+      "sha256": "ce7514403af40d568273df0b818dff4872b2a304c5efb0fc1815240f1b609615",
+      "git_blob_sha1": "e6ec676f69d58f60cad9a14dcc45f9826b2791fc",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/fpga/build.tcl",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:RiscV.pds",
+      "path": "docs/target_platform_sources/main/RiscV.pds",
+      "sha256": "c5051fd02926ff3b6d129a9359fc5c6a58879a49b53e19a5ce959281ffbe4f4e",
+      "git_blob_sha1": "9f7734b10efc8845019e9571e88a02c544fff951",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/RiscV.pds",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/CPU设计说明.md",
+      "path": "docs/target_platform_sources/main/docs/CPU设计说明.md",
+      "sha256": "1ea7e874eaad25d77ae07ca8469b7556777650361928055fac64b3adf20245c4",
+      "git_blob_sha1": "f58aa7932dfd48585af30d1be9ab789d50bb5237",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/CPU%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E.md",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/性能与验证报告.md",
+      "path": "docs/target_platform_sources/main/docs/性能与验证报告.md",
+      "sha256": "52793ced7bb0da9cc37eeba8db38be640f1d44f5d1d795a43e38ae68bf2fc998",
+      "git_blob_sha1": "52fa6c38acc2899cd717a8bc3c0e1809f4d65f6f",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/%E6%80%A7%E8%83%BD%E4%B8%8E%E9%AA%8C%E8%AF%81%E6%8A%A5%E5%91%8A.md",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/青龙OS与即时应用设计.md",
+      "path": "docs/target_platform_sources/main/docs/青龙OS与即时应用设计.md",
+      "sha256": "43470bca70cab0071182c21d751437539f1a51c089fd4aea6202e24277d8281c",
+      "git_blob_sha1": "912b6db605748b2065bb64605da4aea3898a8d58",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/%E9%9D%92%E9%BE%99OS%E4%B8%8E%E5%8D%B3%E6%97%B6%E5%BA%94%E7%94%A8%E8%AE%BE%E8%AE%A1.md",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/上板调试记录.md",
+      "path": "docs/target_platform_sources/main/docs/上板调试记录.md",
+      "sha256": "a7dde91be100f9dbbad224515ed467b3f233a9c45ac432518354a2848a3b575d",
+      "git_blob_sha1": "ee15686bda5518abe55a63160fdc34f51530119e",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/%E4%B8%8A%E6%9D%BF%E8%B0%83%E8%AF%95%E8%AE%B0%E5%BD%95.md",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/results/board-81mhz/manifest.json",
+      "path": "docs/target_platform_sources/main/docs/results/board-81mhz/manifest.json",
+      "sha256": "7c912ec3660151f68964fa8daa55e2a5cda656a931edb2dad9a7eb1576d46167",
+      "git_blob_sha1": "db69948e8e376cd810b4ad115705e0d9f33e87c4",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/results/board-81mhz/manifest.json",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/results/board-81mhz/board81-run1.uart.log",
+      "path": "docs/target_platform_sources/main/docs/results/board-81mhz/board81-run1.uart.log",
+      "sha256": "4f0de0a943dc6d977c415bc9a139765d031c8148b379bb04a01fdc930bb8d455",
+      "git_blob_sha1": "b81f6c50fd1851b3bc313c3e0c259b957920ff3a",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/results/board-81mhz/board81-run1.uart.log",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:docs/results/board-27mhz/coremark-manifest.json",
+      "path": "docs/target_platform_sources/main/docs/results/board-27mhz/coremark-manifest.json",
+      "sha256": "da0d1a5caf3ada7004bfdcb75826610f1159b988ce1818c39579374d91c1d2d4",
+      "git_blob_sha1": "4a25eaae52ffc5e5de97e184aff2d4427cbfd9b9",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/docs/results/board-27mhz/coremark-manifest.json",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:scripts/run_coremark.py",
+      "path": "docs/target_platform_sources/main/scripts/run_coremark.py",
+      "sha256": "8d52e75d9945dc81468a9250f727ddba87c4764c1f99cf1ba9d722d16296d709",
+      "git_blob_sha1": "d9242f81fe619e9a5072012d51c77a7eab4cab0f",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/scripts/run_coremark.py",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "main:scripts/prepare_board.ps1",
+      "path": "docs/target_platform_sources/main/scripts/prepare_board.ps1",
+      "sha256": "dc8442ce9246003e1b6f21a778dc33ba515027c2ee9679abdfbd980c8980dc73",
+      "git_blob_sha1": "11aa941dea86e225e3b4ef54906e8a48bb3fafaf",
+      "url": "https://github.com/Bytestring0/FPGA_RV32IM_VibeOS/blob/c1bc715b276db48cf6e6b640701d51b72e984d77/scripts/prepare_board.ps1",
+      "ref": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+      "kind": "repository_snapshot"
+    },
+    {
+      "id": "core_h",
+      "path": "docs/target_platform_sources/framework_t2/c/include/ir_core.h",
+      "sha256": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "core_c",
+      "path": "docs/target_platform_sources/framework_t2/c/src/ir_core.c",
+      "sha256": "90ef5a8023ca88577ca7de3ea6d995cf6812519628b2195d0d8f600d8d685182",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "static_h",
+      "path": "docs/target_platform_sources/framework_t2/c/include/ir_static.h",
+      "sha256": "e3d3f5d341c5aa3f2f93f7df257d56a9c6afce818f95c7ba7fa9a0d8d32396fc",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "static_c",
+      "path": "docs/target_platform_sources/framework_t2/c/src/ir_static.c",
+      "sha256": "765aa0507b3a72d4c584bdb1daf23224f749bbe0d464969c606f6879a5456084",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "pc_h",
+      "path": "docs/target_platform_sources/framework_t2/c/include/ir_pc.h",
+      "sha256": "34799807dfc6beff3650f66167d1e9e72a76950deef91754a755f07ab3e5094e",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "pc_c",
+      "path": "docs/target_platform_sources/framework_t2/c/src/ir_pc.c",
+      "sha256": "15a32bec5b6b2f65cd7edaa96010841e43042c33c3690964c97aa1908624916b",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "memory_py",
+      "path": "docs/target_platform_sources/framework_t2/inference_ref/memory.py",
+      "sha256": "d7a4d85c9ffc5ae85091d59c8030a67cf0ab5f70de450eaeadbf8dde4be61950",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "platform_py",
+      "path": "docs/target_platform_sources/framework_t2/inference_ref/platform.py",
+      "sha256": "df787e80773d82ee7521fbebe9679b0009eb241282163d52ce2f4ff9d3e00887",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "cbuild_py",
+      "path": "docs/target_platform_sources/framework_t2/inference_ref/c_backend.py",
+      "sha256": "43c705b7c84404b038056018f22618957363afddce4081a1ac8b41355a1dfef7",
+      "kind": "framework_t2_snapshot"
+    },
+    {
+      "id": "official",
+      "path": "docs/target_platform_sources/official_sources.json",
+      "sha256": "9dda31b99e88ab99cff0193b895a7a1d479e6069d2624792c0d8f55270e5b487",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "repository_index",
+      "path": "docs/target_platform_sources/repository.json",
+      "sha256": "2bde23aae2b5fcf2d9cfb3a20d95661864ef3b53c0bda763c2035a31da7e9348",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "pdf_index",
+      "path": "docs/target_platform_sources/local_pdfs.json",
+      "sha256": "cb8d12b59e63fa701b14d774681546962fbf4c0b0ff074a150ddd00bfef5a4fd",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "contest",
+      "path": "docs/target_platform_sources/contest_pages.txt",
+      "sha256": "dc743645c9c0a512c317664cf73e6f82473fdabb2c43106b0e1427885c71d37f",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "manual",
+      "path": "docs/target_platform_sources/board_manual_pages.txt",
+      "sha256": "c7cd6d045492b2653e452438ade3f33607ac34d4c9bb82607a29554b2265c1a6",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "env_win",
+      "path": "docs/target_platform_sources/environment_20261025_windows.json",
+      "sha256": "e2944c160ec6c933c36901cf35d4c69fb2dc5df32ab52d7df4743049906309cf",
+      "kind": "source_note_or_excerpt"
+    },
+    {
+      "id": "env_wsl",
+      "path": "docs/target_platform_sources/environment_20261025_wsl.json",
+      "sha256": "d42efc92fcd86f1efa3c37ced28d73cdae866eee6aebf5e03df42ad22916bda6",
+      "kind": "source_note_or_excerpt"
+    }
+  ],
+  "framework_snapshot_runtime": "0.5.0",
+  "framework_snapshot_note": "T3 preserved the T2 framework sources; historical constraints do not describe current runtime"
+}

@@ -1,0 +1,83 @@
+{
+  "format": "inference-candidate-requirements",
+  "version": 1,
+  "status": "unassessed",
+  "candidate": {
+    "id": null,
+    "task": null,
+    "source_uri": null,
+    "revision": null,
+    "license": null,
+    "artifact_sha256": null,
+    "source_framework": null,
+    "export_format_and_version": null,
+    "preprocessing": null,
+    "postprocessing": null,
+    "tokenizer_required": null,
+    "tokenizer_artifacts_and_versions": null
+  },
+  "execution": {
+    "mode": null,
+    "shape_profiles": null,
+    "batch_profiles": null,
+    "stateful": null,
+    "persistent_state": null,
+    "max_inflight_tasks": null,
+    "concurrent_sessions": null,
+    "model_instances": null,
+    "reset_cancel_recovery_rules": null,
+    "backend_policy": null
+  },
+  "graph": {
+    "tensor_inventory": null,
+    "operator_inventory": null,
+    "node_count": null,
+    "tensor_count": null,
+    "graph_branches_and_outputs": null,
+    "dynamic_shape_and_control_flow": null,
+    "shared_constants_and_aliases": null,
+    "required_import_or_lowering_steps": null
+  },
+  "numeric_contract": {
+    "storage_compute_accumulator_output_dtypes": null,
+    "quantization_inventory": null,
+    "rounding_saturation_overflow_and_nonfinite": null,
+    "padding_zero_semantics": null,
+    "reference_artifacts_and_hashes": null,
+    "operator_and_end_to_end_tolerances": null,
+    "application_quality_metrics": null
+  },
+  "memory": {
+    "source_artifact_bytes": null,
+    "runtime_weight_bytes": null,
+    "activation_profiles": null,
+    "workspace_profiles": null,
+    "persistent_state_profiles": null,
+    "native_metadata_and_prepare_stack": null,
+    "trace_profile_budgets": null,
+    "task_staging_and_record_caps": null,
+    "conversion_staging_and_loader_peak": null,
+    "memory_domains_and_transfers": null
+  },
+  "target": {
+    "platform_and_build": null,
+    "endianness_and_native_abi": null,
+    "address_width_and_memory_map": null,
+    "usable_memory_by_domain": null,
+    "alignment_dma_cache_and_sync": null,
+    "runtime_and_stack_budgets": null,
+    "latency_throughput_power_targets": null
+  },
+  "assessment": {
+    "framework_baseline": "phase1a-s5",
+    "runtime_tool_version": "0.5.0",
+    "supported_requirements": null,
+    "unsupported_requirements": null,
+    "conditional_conversions": null,
+    "missing_information": null,
+    "unverified_requirements": null,
+    "evidence": [],
+    "overall_decision": "pending",
+    "next_actions": null
+  }
+}

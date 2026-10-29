@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "scope": "Host-only virtual log/artifact mutations of preserved actual run; no target execution and no artifact modification",
+  "source": "build/t8_final/workspace/build/rv32_total",
+  "probes": [
+    {
+      "name": "coordinated_five_output_oracle_forgery",
+      "rejected": true,
+      "error": "ValueError",
+      "reason": "Receipt expected outputs differ from independent reference"
+    },
+    {
+      "name": "missing_actual_PC_trace",
+      "rejected": true,
+      "error": "FileNotFoundError",
+      "reason": "Host probe hides actual PC trace"
+    },
+    {
+      "name": "missing_auxiliary_ELF",
+      "rejected": true,
+      "error": "FileNotFoundError",
+      "reason": "Host probe hides actual auxiliary ELF"
+    },
+    {
+      "name": "chain_label_dtype_substitution",
+      "rejected": true,
+      "error": "ValueError",
+      "reason": "Chain label/dtype substitution"
+    },
+    {
+      "name": "tolerance_passing_cross_profile_byte_divergence",
+      "rejected": true,
+      "status": "failed",
+      "passed": false
+    }
+  ]
+}

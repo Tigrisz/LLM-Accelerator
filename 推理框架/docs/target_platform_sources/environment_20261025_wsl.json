@@ -1,0 +1,62 @@
+{
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43",
+  "python": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "cwd": "/mnt/d/GPT/qiansai_FPGA/推理框架",
+  "scope": "Current process PATH and named dpkg packages only; not a whole disk or all WSL distributions inventory.",
+  "paths": {
+    "riscv32-unknown-elf-gcc": null,
+    "riscv64-unknown-elf-gcc": null,
+    "riscv64-linux-gnu-gcc": null,
+    "clang": null,
+    "readelf": "/usr/bin/readelf",
+    "verilator": "/usr/bin/verilator"
+  },
+  "probes": [
+    {
+      "tool": "readelf",
+      "path": "/usr/bin/readelf",
+      "sha256": "c857339616bbbfa5eba32733e22365048903fbaf6ed2126b897dd138bcb741fc",
+      "result": {
+        "command": [
+          "/usr/bin/readelf",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "GNU readelf (GNU Binutils for Ubuntu) 2.46\nCopyright (C) 2026 Free Software Foundation, Inc.\nThis program is free software; you may redistribute it under the terms of\nthe GNU General Public License version 3 or (at your option) any later version.\nThis program has absolutely no warranty.\n",
+        "stderr": ""
+      }
+    },
+    {
+      "tool": "verilator",
+      "path": "/usr/bin/verilator",
+      "sha256": "672a1ccf3468902f66387049f001b04f254bbcece7d5e816e3861715889bf252",
+      "result": {
+        "command": [
+          "/usr/bin/verilator",
+          "--version"
+        ],
+        "exit_code": 0,
+        "stdout": "Verilator 5.032 2025-01-01 rev (Debian 5.032-1)\n",
+        "stderr": ""
+      }
+    },
+    {
+      "result": {
+        "command": [
+          "dpkg-query",
+          "-W",
+          "gcc-riscv64-unknown-elf",
+          "binutils-riscv64-unknown-elf",
+          "gcc-riscv64-linux-gnu"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "dpkg-query: no packages found matching gcc-riscv64-unknown-elf\ndpkg-query: no packages found matching binutils-riscv64-unknown-elf\ndpkg-query: no packages found matching gcc-riscv64-linux-gnu\n"
+      }
+    }
+  ],
+  "cross_compile_performed": false,
+  "board_accessed": false,
+  "target_toolchain_verified": false,
+  "note": "Presence/version alone cannot certify RV32 multilib, newlib/libgcc/fenv or runtime execution."
+}

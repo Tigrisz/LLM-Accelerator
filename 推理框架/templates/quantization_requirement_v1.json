@@ -1,0 +1,22 @@
+{
+  "format": "inference-quantization-requirement",
+  "version": 1,
+  "status": "unassessed",
+  "requirement_id": null,
+  "applies_to_tensor_ids_and_operator_roles": null,
+  "quantization_required": null,
+  "format_name_version_and_source_specification": null,
+  "integer_or_float_encoding_bitwidth_and_signedness": null,
+  "packing_bit_order_byte_order_nibble_order_and_tail": null,
+  "granularity_axes_group_size_and_partial_group_rules": null,
+  "scale_dtype_shape_layout_and_indexing": null,
+  "zero_point_dtype_shape_layout_and_indexing": null,
+  "dequantization_and_requantization_equations": null,
+  "rounding_ties_clipping_saturation_and_overflow": null,
+  "compute_accumulator_bias_and_output_types": null,
+  "padding_numerical_zero_encoding": null,
+  "calibration_artifacts_provenance_and_hashes": null,
+  "floating_reference_and_quality_acceptance": null,
+  "evidence": [],
+  "assessment": "pending"
+}

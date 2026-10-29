@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "independent": true,
+  "reviewer": "gpt-6-astra",
+  "critical": 0,
+  "important": 5,
+  "minor": 0,
+  "unresolved_critical": 0,
+  "unresolved_important": 0,
+  "targeted_tests": 17,
+  "new_review_regressions": 7,
+  "red_then_green": true,
+  "independent_rereview": false,
+  "findings": [
+    "Independent fixed five-output INT32 and boundary oracle",
+    "Require actual PC logs/trace and auxiliary ELF/profile identity",
+    "Bind chain ID to dtype/definition/input/package/policy",
+    "Preserve complete numerical/determinism failure as failed",
+    "Strict all-workload capacity null and nonzero exit"
+  ],
+  "declined_to_judge": [
+    "Pre-review/final full execution results resolved only by actual final run",
+    "Board/original RTL equivalence/other simulators/timing/worst stack ISR/model W4A8 remain unknown"
+  ],
+  "final_full_regression": "build/t8_final_verified/report.json",
+  "integration_regression": "Boundary replay storage_shape omission: actual TypeError RED then explicit original shape GREEN; full rerun required"
+}

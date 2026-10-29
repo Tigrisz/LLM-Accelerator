@@ -1,0 +1,2456 @@
+{
+  "format": "inference-resource-report",
+  "version": 1,
+  "scope": "phase1a_s5",
+  "resource_api": 1,
+  "passed": true,
+  "case_count": 54,
+  "passed_count": 54,
+  "iterations": 200,
+  "measurement": "managed_payload_and_records_not_process_rss",
+  "stress_probes": [
+    {
+      "name": "repeat_pc_c_int32",
+      "passed": true,
+      "backend": "pc_c",
+      "dtype": "int32",
+      "iterations": 200,
+      "successful_tasks": 600,
+      "session_count": 3,
+      "stable_arena_addresses": true,
+      "steady_state_plateau": true,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 37658,
+        "peak_resident_bytes": 37642,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1273,
+            "peak_resident_bytes": 1273,
+            "peak_count": 7
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 3276,
+            "peak_resident_bytes": 3276,
+            "peak_count": 33
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 384,
+            "peak_resident_bytes": 384,
+            "peak_count": 3
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 32665,
+            "peak_resident_bytes": 32665,
+            "peak_count": 109
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 60,
+            "peak_resident_bytes": 44,
+            "peak_count": 3
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 7
+          }
+        },
+        "entries": []
+      },
+      "trace_retained_until_close": {
+        "live_bytes": 32665,
+        "resident_bytes": 32665,
+        "live_count": 109,
+        "live_entries": 1,
+        "peak_bytes": 32665,
+        "peak_resident_bytes": 32665,
+        "peak_count": 109
+      },
+      "final_device_stats": {
+        "logical_tick": 2409,
+        "live_tasks": 0,
+        "live_sessions": 0,
+        "staging_reserved_bytes": 0,
+        "active_task_id": null
+      }
+    },
+    {
+      "name": "repeat_pc_c_float32",
+      "passed": true,
+      "backend": "pc_c",
+      "dtype": "float32",
+      "iterations": 200,
+      "successful_tasks": 600,
+      "session_count": 3,
+      "stable_arena_addresses": true,
+      "steady_state_plateau": true,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 37686,
+        "peak_resident_bytes": 37670,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1273,
+            "peak_resident_bytes": 1273,
+            "peak_count": 7
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 3276,
+            "peak_resident_bytes": 3276,
+            "peak_count": 33
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 384,
+            "peak_resident_bytes": 384,
+            "peak_count": 3
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 32693,
+            "peak_resident_bytes": 32693,
+            "peak_count": 109
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 60,
+            "peak_resident_bytes": 44,
+            "peak_count": 3
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 7
+          }
+        },
+        "entries": []
+      },
+      "trace_retained_until_close": {
+        "live_bytes": 32693,
+        "resident_bytes": 32693,
+        "live_count": 109,
+        "live_entries": 1,
+        "peak_bytes": 32693,
+        "peak_resident_bytes": 32693,
+        "peak_count": 109
+      },
+      "final_device_stats": {
+        "logical_tick": 2409,
+        "live_tasks": 0,
+        "live_sessions": 0,
+        "staging_reserved_bytes": 0,
+        "active_task_id": null
+      }
+    },
+    {
+      "name": "allocation_sweep_pc_c",
+      "passed": true,
+      "backend": "pc_c",
+      "allocation_points": [
+        {
+          "fail_after": 0,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 1,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 2,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 3,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 4,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 5,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 6,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 7,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 8,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 9,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 10,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 11,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 12,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 13,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 14,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 15,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 16,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 17,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 18,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 19,
+          "status": "OK",
+          "released": true
+        }
+      ]
+    },
+    {
+      "name": "recover_close_pc_c",
+      "passed": true,
+      "recovery_refusals": 50,
+      "dropped_history_events": 96,
+      "unknown_graph_retained": true,
+      "close_attempts": 2,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 1749,
+        "peak_resident_bytes": 1741,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 20,
+            "peak_resident_bytes": 12,
+            "peak_count": 1
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 8
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_arena",
+      "passed": true,
+      "category": "arena",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "arena": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 0,
+        "peak_resident_bytes": 0,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_c_metadata",
+      "passed": true,
+      "category": "c_metadata",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "c_metadata": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 637,
+        "peak_resident_bytes": 637,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_c_profiles",
+      "passed": true,
+      "category": "c_profiles",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "c_profiles": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 13100,
+        "peak_resident_bytes": 13100,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 12384,
+            "peak_resident_bytes": 12384,
+            "peak_count": 54
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_trace",
+      "passed": true,
+      "category": "trace",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "trace": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 1857,
+        "peak_resident_bytes": 1857,
+        "rejected_reservations": 58,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 128,
+            "peak_resident_bytes": 128,
+            "peak_count": 1
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_task_staging",
+      "passed": true,
+      "category": "task_staging",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "task_staging": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 1729,
+        "peak_resident_bytes": 1729,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_task_records",
+      "passed": true,
+      "category": "task_records",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "task_records": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 1729,
+        "peak_resident_bytes": 1729,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_session_records",
+      "passed": true,
+      "category": "session_records",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "session_records": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 319,
+        "peak_resident_bytes": 319,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 319,
+            "peak_resident_bytes": 319,
+            "peak_count": 1
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_task_events",
+      "passed": true,
+      "category": "task_events",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "task_events": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 1749,
+        "peak_resident_bytes": 1749,
+        "rejected_reservations": 5,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1092,
+            "peak_resident_bytes": 1092,
+            "peak_count": 11
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 20,
+            "peak_resident_bytes": 20,
+            "peak_count": 1
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "repeat_pc_c_static_int32",
+      "passed": true,
+      "backend": "pc_c_static",
+      "dtype": "int32",
+      "iterations": 200,
+      "successful_tasks": 600,
+      "session_count": 3,
+      "stable_arena_addresses": true,
+      "steady_state_plateau": true,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 41382,
+        "peak_resident_bytes": 41366,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1273,
+            "peak_resident_bytes": 1273,
+            "peak_count": 7
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 7002,
+            "peak_resident_bytes": 7002,
+            "peak_count": 16
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 384,
+            "peak_resident_bytes": 384,
+            "peak_count": 3
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 32699,
+            "peak_resident_bytes": 32699,
+            "peak_count": 108
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 60,
+            "peak_resident_bytes": 44,
+            "peak_count": 3
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 7
+          }
+        },
+        "entries": []
+      },
+      "trace_retained_until_close": {
+        "live_bytes": 32699,
+        "resident_bytes": 32699,
+        "live_count": 108,
+        "live_entries": 1,
+        "peak_bytes": 32699,
+        "peak_resident_bytes": 32699,
+        "peak_count": 108
+      },
+      "final_device_stats": {
+        "logical_tick": 2409,
+        "live_tasks": 0,
+        "live_sessions": 0,
+        "staging_reserved_bytes": 0,
+        "active_task_id": null
+      }
+    },
+    {
+      "name": "repeat_pc_c_static_float32",
+      "passed": true,
+      "backend": "pc_c_static",
+      "dtype": "float32",
+      "iterations": 200,
+      "successful_tasks": 600,
+      "session_count": 3,
+      "stable_arena_addresses": true,
+      "steady_state_plateau": true,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 41426,
+        "peak_resident_bytes": 41410,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 1273,
+            "peak_resident_bytes": 1273,
+            "peak_count": 7
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 7002,
+            "peak_resident_bytes": 7002,
+            "peak_count": 16
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 384,
+            "peak_resident_bytes": 384,
+            "peak_count": 3
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 32743,
+            "peak_resident_bytes": 32743,
+            "peak_count": 108
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 60,
+            "peak_resident_bytes": 44,
+            "peak_count": 3
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 3
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 7
+          }
+        },
+        "entries": []
+      },
+      "trace_retained_until_close": {
+        "live_bytes": 32743,
+        "resident_bytes": 32743,
+        "live_count": 108,
+        "live_entries": 1,
+        "peak_bytes": 32743,
+        "peak_resident_bytes": 32743,
+        "peak_count": 108
+      },
+      "final_device_stats": {
+        "logical_tick": 2409,
+        "live_tasks": 0,
+        "live_sessions": 0,
+        "staging_reserved_bytes": 0,
+        "active_task_id": null
+      }
+    },
+    {
+      "name": "allocation_sweep_pc_c_static",
+      "passed": true,
+      "backend": "pc_c_static",
+      "allocation_points": [
+        {
+          "fail_after": 0,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 1,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 2,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 3,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 4,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 5,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 6,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 7,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 8,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 9,
+          "status": "RESOURCE_LIMIT",
+          "released": true
+        },
+        {
+          "fail_after": 10,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 11,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 12,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 13,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 14,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 15,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 16,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 17,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 18,
+          "status": "OK",
+          "released": true
+        },
+        {
+          "fail_after": 19,
+          "status": "OK",
+          "released": true
+        }
+      ]
+    },
+    {
+      "name": "recover_close_pc_c_static",
+      "passed": true,
+      "recovery_refusals": 50,
+      "dropped_history_events": 96,
+      "unknown_graph_retained": true,
+      "close_attempts": 2,
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 2995,
+        "peak_resident_bytes": 2995,
+        "rejected_reservations": 0,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 20,
+            "peak_resident_bytes": 12,
+            "peak_count": 1
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 8
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_arena",
+      "passed": true,
+      "category": "arena",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "arena": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 0,
+        "peak_resident_bytes": 0,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_c_metadata",
+      "passed": true,
+      "category": "c_metadata",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "c_metadata": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 637,
+        "peak_resident_bytes": 637,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_c_profiles",
+      "passed": true,
+      "category": "c_profiles",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "c_profiles": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 14435,
+        "peak_resident_bytes": 14435,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 12489,
+            "peak_resident_bytes": 12489,
+            "peak_count": 54
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_trace",
+      "passed": true,
+      "category": "trace",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "trace": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 3123,
+        "peak_resident_bytes": 3123,
+        "rejected_reservations": 58,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 128,
+            "peak_resident_bytes": 128,
+            "peak_count": 1
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_task_staging",
+      "passed": true,
+      "category": "task_staging",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {
+          "task_staging": 0
+        },
+        "count_limits": {},
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 2995,
+        "peak_resident_bytes": 2995,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_task_records",
+      "passed": true,
+      "category": "task_records",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "task_records": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 2995,
+        "peak_resident_bytes": 2995,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_session_records",
+      "passed": true,
+      "category": "session_records",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "session_records": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 319,
+        "peak_resident_bytes": 319,
+        "rejected_reservations": 1,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 319,
+            "peak_resident_bytes": 319,
+            "peak_count": 1
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    },
+    {
+      "name": "budget_pc_c_static_task_events",
+      "passed": true,
+      "category": "task_events",
+      "final_ledger": {
+        "format": "inference-resource-ledger",
+        "version": 1,
+        "measurement": "managed_payload_and_record_counts_not_rss",
+        "budget_bytes": 67108864,
+        "byte_limits": {},
+        "count_limits": {
+          "task_events": 0
+        },
+        "live_bytes": 0,
+        "resident_bytes": 0,
+        "live_entries": 0,
+        "peak_bytes": 2995,
+        "peak_resident_bytes": 2995,
+        "rejected_reservations": 5,
+        "categories": {
+          "arena": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 637,
+            "peak_resident_bytes": 637,
+            "peak_count": 3
+          },
+          "c_metadata": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 2358,
+            "peak_resident_bytes": 2358,
+            "peak_count": 6
+          },
+          "c_profiles": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "trace": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          },
+          "task_staging": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 20,
+            "peak_resident_bytes": 20,
+            "peak_count": 1
+          },
+          "task_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "session_records": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 1
+          },
+          "task_events": {
+            "live_bytes": 0,
+            "resident_bytes": 0,
+            "live_count": 0,
+            "live_entries": 0,
+            "peak_bytes": 0,
+            "peak_resident_bytes": 0,
+            "peak_count": 0
+          }
+        },
+        "entries": []
+      }
+    }
+  ],
+  "static_report": "static_runtime/report.json",
+  "static_validation_passed": true,
+  "source_sha256": {
+    "__init__.py": "51f4147855162aa1d40cf338d26fff49fbed9513eb51ad98f35b698d1e28be1f",
+    "__main__.py": "84f4574f73c6f3f873ded62d333265ce6a7aa587d4f2b9a952fd740b21b4e60f",
+    "backend.py": "ef96c2fa86ae77ea6baf0f6c1ed179ee81a9d88c42de085bd02692894c5b0ef8",
+    "backend_validation.py": "8cdd4211cf3d0d8175c2c8f3dd1dd1c3b5e855e84a90a75f21441df6861cfb76",
+    "c_backend.py": "43c705b7c84404b038056018f22618957363afddce4081a1ac8b41355a1dfef7",
+    "c_execution.py": "2ec7dcae4a0621942677ec0de25ba402d6ed3bc47a73396447457851b0343fb2",
+    "compare.py": "727fdc15d3d66bb7fec4f6ec7553efb4234ad2f08a2741a5eca9aa1545ab51ad",
+    "contracts.py": "24434ecd49baadabf4c22188752e77d9686013ccbb4b5a36af167904bb1c265d",
+    "device_validation.py": "535b934976d9c4dfa31772c0e1ae7e9456147d6ef65e5830a84f9c483fc454bd",
+    "fixtures.py": "dcc6dec5a88c3b8d686f30d5cfb8c33cf5ff9cc57cbbb77a138fd8e793896d24",
+    "memory.py": "d7a4d85c9ffc5ae85091d59c8030a67cf0ab5f70de450eaeadbf8dde4be61950",
+    "model_package.py": "71e60605aeb545cca5a28eafe0ac6ba24f4beb3ced1bd80ef6dedab5dc00fefe",
+    "oracle.py": "51fea0d5a1acb12a57e3f82812a30834cc328454ad49a2ff091095ee502018e4",
+    "package_validation.py": "4454e2d24301e53e540f1847f495d2d11c28d0de9bc567147b7f63021615df6d",
+    "platform.py": "df787e80773d82ee7521fbebe9679b0009eb241282163d52ce2f4ff9d3e00887",
+    "platform_validation.py": "95200dc04f78b16cf149b78b7cb6ec676b438a2efe45938ec70807e1711a6bd0",
+    "reference.py": "01e3feeec61d6c90bf2ac0d9c97f4e71994e64752c2ee407d66d711f3644328f",
+    "reporting.py": "5fefd64b0080c44604da940586f38231f37fa6a1005bfe742dfbb560a960bf85",
+    "resource_validation.py": "93f45d1f85b63b10788d8e86ff21e258cfdc30687862ed7fb450ff59560633da",
+    "resources.py": "8bdd28323e7c4ba4fa6a6aada61518fcae82ec0c4974c01e6348eb33e3cd3357",
+    "runtime.py": "4c335de65a6f592e7250209fb677a5c8e41300be66793aa8f4923b1f759ab035",
+    "sim_device.py": "68ac78b93e1259a5cd0867efaf5f0bac47ee1604a8303b37ccdd753ed09c43d6",
+    "static_backend.py": "d20980c0020114459b10855b491128331922cb8e3f060bb669e54623767f3ae9",
+    "static_export.py": "93c80ae7dc7a89d4db2ec4ce1a782f00a5f578d6aff0f6433b5cdae7175d7640",
+    "static_validation.py": "44298765f7b0f7d4c759c64ec10871796f1144634885aaa793b06aaa5faba95a",
+    "suite.py": "e9e8053361215b9e392c6178a7fbce220dd5aa61161b7577988b695db2fbd584",
+    "trace_validation.py": "536cfc89b9b0ed1d7b939ea5820e6abee753107c1a5641caa1b6817119995672",
+    "tracing.py": "1137544eaeb40aa31ebf41c828284fc53089290c6fd786835ed43328ceed96d0"
+  },
+  "rv32_execution": false,
+  "model_binding": null,
+  "quantization_binding": null
+}

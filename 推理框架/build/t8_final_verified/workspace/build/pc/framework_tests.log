@@ -1,0 +1,3 @@
+{"passed": false, "case_count": 54, "passed_count": 54, "report": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/test-temp/481324cea9cf4e3a8eacbd5c51f3e394/cli_failure/report.json"}
+{"passed": false, "case_count": 54, "passed_count": 53, "report": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/test-temp/ea01525c75d648d3b765d2991cd2afd8/cli/report.json"}
+{"suite": "framework", "passed": true, "tests_run": 174, "skipped": 0, "failures": 0, "errors": 0}

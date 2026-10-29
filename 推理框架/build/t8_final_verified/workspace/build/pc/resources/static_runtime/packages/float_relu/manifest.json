@@ -1,0 +1,52 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "fixture_float_relu",
+  "tensors": [
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ]
+    },
+    {
+      "id": "input",
+      "role": "input",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "op": "relu",
+      "inputs": {
+        "input": "input"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

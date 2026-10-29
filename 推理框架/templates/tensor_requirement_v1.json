@@ -1,0 +1,21 @@
+{
+  "format": "inference-tensor-requirement",
+  "version": 1,
+  "status": "unassessed",
+  "tensor_id": null,
+  "role_and_lifetime": null,
+  "logical_axes_and_shape_profiles": null,
+  "physical_axes_and_storage_shapes": null,
+  "storage_dtype_bitwidth_signedness_and_endianness": null,
+  "strides_contiguity_order_and_tiling": null,
+  "packing_and_tail_rules": null,
+  "quantization_requirement_id": null,
+  "numerical_padding_zero_and_encoded_value": null,
+  "alignment_memory_domain_and_permissions": null,
+  "source_offset_length_and_hash": null,
+  "physical_capacity_and_reserved_bytes": null,
+  "producers_consumers_aliases_and_sharing": null,
+  "layout_conversion_workspace_and_evidence": null,
+  "evidence": [],
+  "assessment": "pending"
+}

@@ -1,0 +1,141 @@
+=== PDF PAGE 17 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 13 -
+MES2L676-100HP 开发平台所能实现的功能描述如下：
+ Logos2 FPGA 核心板
+由 PG2L100H-6IFBG676+2 片 512MB DDR3 + 2 片 128Mb QSPI FLASH 组成。
+ 10/100M/1000M 以太网 RJ-45 接口 *1
+网口 PHY 芯片采用 RTL8211F，RTL8211F 支持 10/100M/1000Mbps 网络传输数据率；支持全双工
+工作模式及数据率自适应。
+ PCIe X4 接口 * 1
+支持 PCI Express 2.0 标准，提供 PCIe X4 高速数据传输接口，单通道通信速率可高达 5 GT/s。
+ SFP 高速光纤接口 * 2
+Logos2 FPGA 的 HSST 收发器的 2 路高速收发器连接到 2 个光模块的发送和接收，实现 2 路高
+速的光纤通信接口。每路的光纤数据通信接收和发送的速度高达 6.6Gb/s。
+ SMA_HSST 接口 * 1
+Logos2 FPGA 的 HSST 收发器的 1 路高速收发器连接到 SMA 接口，MES2L676-100HP-V1.2 开发
+板的 SMA 接口数据通信接收和发送的速度高达 3.125Gb/s。
+ HDMI 输出 * 1
+选用了国产宏晶微公司的 MS7210 HDMI 发送芯片，兼容 HDMI1.4b 及 HDMI 1.4b 下标准视频的 3D
+传输格式。支持的最高分辨率高达 4K@30Hz，最高采样率达到 300MHz；支持 HBR 音频。
+ HDMI 输入 * 1
+选用了国产宏晶微公司的 MS7200 HDMI 接收芯片，兼容 HDMI1.4b 及 HDMI 1.4b 下标准视频的 3D
+传输格式。支持的最高分辨率高达 4K@30Hz，最高采样率达到 300MHz；支持 HBR 音频。
+ USB 转串口 * 1
+用于与电脑进行串口通信，方便用户进行调试。串口芯片采用 Silicon Labs 的 USB-UART 芯片:
+=== PDF PAGE 19 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 15 -
+2.1.2.核心板
+2.1.2.1. 核心板概述
+MES2L676-100HP 核心板是“小眼睛科技”基于多年 FPGA 开发经验，采用紫光同创 logos2 系
+列 PG2L100H-6IFBG676 作为主控芯片而开发的全新国产高性能 FPGA 核心板，具有高数据带宽、高
+存储容量的特点，适用于视频图像处理、高速数据采集、工业控制等多元应用场景。
+MES2L676-100HP 核心板使用了 2 片 DDR3 芯片， DDR3 总容量 8Gbit，组合数据总线宽度为
+32bit，最高速率支持 1066Mbps，满足用户高带宽的数据缓存需求。
+MES2L676-100HP 核心板扩展出 8 对 HSST TX/RX 信号，用于光纤通信、PCIe 通信、FMC 接口
+通信，且硬件上 FPGA 芯片到接口之间走线做了等长和差分处理，非常适合二次开发。
+MES2L676-100HP 核心板尺寸结构图如下图所示：
+MES2L676-100HP 核心板尺寸结构图
+2.1.2.2. 系统描述
+2.1.2.2.1. FPGA
+FPGA 型号为 PG2L100H-6IFBG676，属于紫光同创 logos2 系列产品，速度等级为 6，温度范围：
+=== PDF PAGE 21 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 17 -
+板上的电源设计示意图
+各电源的功能如下表所示：
+电源 功能用途
+5.0V 板对板连接座输入电源
+1.0V PG2L100H 内核电压
+HSST_1.2V PG2L100H HSST 锁相环电源
+HSST_1.0V PG2L100H HSST 收发器内核电源
+1.5V DDR3 供电电压及 Bank R4、Bank R5 电源；
+1.8V 辅助电源
+3.3V I/O 电压（L3-L4-L5），部分接口（晶振，FLASH）供电电压
+ADJ_3V3/2V5/1V8 I/O 电压（L6-L7）
+2.1.2.2.3. 时钟
+MES2L676-100HP 核心板上配有 1 个有源差分晶振，1 个单端 27MHz 晶振。差分晶振用于 DDR3
+的参考时钟输入，单端 27MHz 用于 FPGA 的系统时钟源。
+=== PDF PAGE 22 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 18 -
+2.1.2.2.3.1. 125MHz 差分晶振
+下图中 U7 为 125MHz 有源差分晶振，此时钟为 DDR3 提供输入参考时钟，晶振输出到 FPGA
+DDR3 信号所在 BANK 上。
+核心板 125MHz 有源差分晶振
+具体的管脚约束如下表所示：
+信号 描述 PG2L100H-676 管脚
+GCLK_125M_P
+DDR3 参考时钟
+N3
+GCLK_125M_N N2
+2.1.2.2.3.2. 27MHz 单端时钟
+下图 U11 为 27MHz 有源晶振电路，此时中连接至 FPGA 的全局时钟管脚上，可为 FPGA 提供输
+入参考时钟。
+=== PDF PAGE 23 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 19 -
+核心板 27MHz 有源晶振电路
+具体的管脚约束如下表所示：
+信号 描述 PG2L100H-676 管脚
+FPGA_GCLK_27M FPGA 输入全局时钟 D18
+2.1.2.2.4. 上电 IO Status
+在 Logos2 器件上有一个功能复用 IO，控制从上电完成后到进入用户模式之前中所有用户 IO 的
+弱上拉电阻是否使能。此管脚在配置之前或是配置过程中，该引脚不允许悬空，此 IO 在上电后的对应
+功能如下：
+（1）“0”，使能所有用户 IO 内部上拉电阻。
+（2）“1”，不使能所有用户 IO 内部上拉电阻。
+MES2L676-100HP 核心板将此管脚的功能默认接 GND，用户可根据需求，自行焊接电阻选择上
+电后初始的 IO 状态；
+功能电路如下：
+=== PDF PAGE 24 ===
+微信公众号：小眼睛 FPGA www.meyesemi.com
+- 20 -
+IO 配置电路
+2.1.2.2.5. JTAG 接口
+MES2L676-100HP 核心板正面左上角预留 JTAG 触点，可在没有底板的情况下调试核心板。FPGA
+的 JTAG 信号通过高速板对板连接器与底板 JTAG 接口相连，用于下载 FPGA 位流文件或在线调试。
+JTAG 接口电路
+2.1.2.2.6. DDR3
+MES2L676-100HP 核心板配了两个 4Gbit（512MB）的 DDR3 芯片（共计 8Gbit），两个 DDR 的
+总数据位宽为 32bit，DDR3 型号采用芯存 XCCC256M16EP-EINAY，（兼容 Micron
+MT41K256M16TW-107:P、Micron MT41K256M16HA-125、Winbond W634GU6NB-11）。DDR3
+SDRAM 的最高运行时钟速度可达 533MHz（数据速率）。该 DDR3 存储系统直接连接到了 FPGA 的 R4、
+R5 BANK，DDR3 SDRAM 的硬件连接示意图如下图所示：
+=== PDF PAGE 43 ===
+39
+PCIE_RX2P PCIe 通道 2 数据接收 P 端 D14
+PCIE_RX2N PCIe 通道 2 数据接收 N 端 C14
+PCIE_TX3P PCIe 通道 3 数据发送 P 端 B7
+PCIE_TX3N PCIe 通道 3 数据发送 N 端 A7
+PCIE_RX3P PCIe 通道 3 数据接收 P 端 B11
+PCIE_RX3N PCIe 通道 3 数据接收 N 端 A11
+PCIE_PERST PCIe 的复位引脚 G24
+PCIE_WAKE PCIe 的唤醒引脚 F24
+PCIE_REFCLK_P PCIe 的参考时钟 P 端 F13
+PCIE_REFCLK_N PCIe 的参考时钟 N 端 E13
+2.1.3.2.5. 串口
+MES2L676-100HP 扩展底板上集成了一路 USB 转串口模块，采用的 USB-UART 芯片是
+CP2102 , USB 接口采用 USB Type C 接口，可用 USB Type C 线连接到 PC 端进行串口数
+据通信。
+USB Uart 电路设计的示意图如下图所示：
+具体的管脚分配如下：
+信号 描述 PG2L100H-676 管脚
+FPGA_UART_RXD UART 数据输入 B24
+=== PDF PAGE 44 ===
+40
+FPGA_UART_TXD UART 数据输出 C24
+2.1.3.2.6. JTAG
+MES2L676-100HP 扩展底板上的 JTAG 接口用于下载 FPGA 程序或者固化程序到
+FLASH。在硬件设计上在 JTAG 信号位置添加了保护二极管来保证信号的电压在 FPGA 接受
+的范围，但仍需注意在通电的情况下，应避免插拔 jtag 接口的操作。
+JTAG 连接座原理图
+2.1.3.3. HDMI
+2.1.3.3.1. HDMI 输入接口
+HDMI 输入接口的实现，选用了国产宏晶微公司的 MS7200 HMDI 接收芯片， 兼容
+HDMI1.4b 及 HDMI 1.4b 下标准视频的 3D 传输格式。支持的最高分辨率高达 4K@30Hz，
+最高采样率达到 300MHz；MS7200 支持 YUV 和 RGB 之间的色彩空间转换，数字接口支
+持 YUV 及 RGB 格式输出；MS7200 不仅支持通过 IIS 总线或 SPDIF 传输高清音频，还支
+持高比特音频（HBR）音频，在 HBR 模式下，音频采样率最高为 768KHz。其中 MS7200 的 IIC
+配置接口与 FPGA 的 IO 相连，通过 FPGA 的编程来对 MS7200 进行初始化和控制操作，

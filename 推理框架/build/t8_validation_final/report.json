@@ -1,0 +1,509 @@
+{
+  "format": "static-runtime-t8-validation",
+  "version": 1,
+  "date": "2026-10-28",
+  "status": "passed",
+  "passed": true,
+  "unified_report": "build/t8_final_verified/report.json",
+  "worker_report": "build/t8_final_verified/workspace/build/total/report.json",
+  "scope": "current original54 samples and two original four-node chains: PC and selected RTL simulation, not board or model",
+  "runtime_version": "0.6.0",
+  "native_runtime_abi": 2,
+  "core_abi": 1,
+  "wire_version": 1,
+  "pc": {
+    "status": "passed",
+    "passed": true,
+    "framework_tests": 174,
+    "tool_tests": 78,
+    "resource_acceptance": {
+      "cases": 54,
+      "chains": 4,
+      "resource_probes": 24,
+      "native_runs": 6,
+      "sanitizer_runs": 3,
+      "iterations": 200
+    }
+  },
+  "simulation": {
+    "status": "passed",
+    "passed": true,
+    "counts": {
+      "passed": 56,
+      "blocked_tcm": 0,
+      "failed": 0,
+      "unproven": 0,
+      "tool_error": 0
+    },
+    "all_selected_rv32_validated": true,
+    "case_count": 56,
+    "auxiliary_probes": {
+      "fp32_faults": {
+        "status": "passed",
+        "passed": true,
+        "profiles": {
+          "dual_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "T6_NAN": 5,
+                "T6_POS_INF": 5,
+                "T6_NEG_INF": 5,
+                "T6_INPUT_ATOMIC": 1,
+                "T6_NONFINITE_EXEC": 5,
+                "T6_OVERFLOW": 6,
+                "T6_COMPLETED": 0,
+                "T6_OUTPUT_ATOMIC": 1,
+                "T6_RECOVERED": 1,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 77501,
+                "RTL_MIN_SP": 64480,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RECOVER_OUTPUT": "0000000000000000"
+              },
+              "observed_stack_bytes": 1056,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          },
+          "single_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "T6_NAN": 5,
+                "T6_POS_INF": 5,
+                "T6_NEG_INF": 5,
+                "T6_INPUT_ATOMIC": 1,
+                "T6_NONFINITE_EXEC": 5,
+                "T6_OVERFLOW": 6,
+                "T6_COMPLETED": 0,
+                "T6_OUTPUT_ATOMIC": 1,
+                "T6_RECOVERED": 1,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 104760,
+                "RTL_MIN_SP": 64480,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RECOVER_OUTPUT": "0000000000000000"
+              },
+              "observed_stack_bytes": 1056,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          }
+        }
+      },
+      "numeric_overflow": {
+        "status": "passed",
+        "passed": true,
+        "profiles": {
+          "dual_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "T5_OVERFLOW_STATUS": 6,
+                "T5_OVERFLOW_NODES": 0,
+                "T5_ATOMIC": 1,
+                "T5_REPAIRED": 1,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 75019,
+                "RTL_MIN_SP": 64848,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RECOVER_OUTPUT": "00000000"
+              },
+              "observed_stack_bytes": 688,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          },
+          "single_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "T5_OVERFLOW_STATUS": 6,
+                "T5_OVERFLOW_NODES": 0,
+                "T5_ATOMIC": 1,
+                "T5_REPAIRED": 1,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 108734,
+                "RTL_MIN_SP": 64848,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RECOVER_OUTPUT": "00000000"
+              },
+              "observed_stack_bytes": 688,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          }
+        }
+      },
+      "fp32_boundary": {
+        "status": "passed",
+        "passed": true,
+        "profiles": {
+          "dual_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "RUN_0_NODES": 1,
+                "RUN_1_NODES": 1,
+                "RUN_2_NODES": 1,
+                "T5_SYNC_PUBLISH": 6,
+                "T5_SYNC_ACQUIRE": 6,
+                "T5_CHECKS_MASK": 8191,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 353065,
+                "RTL_MIN_SP": 64416,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RUN_0_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "RUN_1_OUTPUT": "000000000000000000000000000000000000000000000000",
+                "RUN_2_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "RECOVER_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "REBIND_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000"
+              },
+              "observed_stack_bytes": 1120,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          },
+          "single_issue": {
+            "status": "passed",
+            "passed": true,
+            "validation": {
+              "passed": true,
+              "fields": {
+                "T5_RUNTIME_ABI": 2,
+                "T5_POINTER_BYTES": 4,
+                "RUN_0_NODES": 1,
+                "RUN_1_NODES": 1,
+                "RUN_2_NODES": 1,
+                "T5_SYNC_PUBLISH": 6,
+                "T5_SYNC_ACQUIRE": 6,
+                "T5_CHECKS_MASK": 8191,
+                "T5_STATUS": 0,
+                "RTL_DONE": 1,
+                "RTL_EXIT": 0,
+                "RTL_CYCLES": 482544,
+                "RTL_MIN_SP": 64416,
+                "RTL_STACK_VIOLATIONS": 0,
+                "RTL_TRAPS": 0,
+                "RTL_STACK_STARTED": 1
+              },
+              "outputs": {
+                "RUN_0_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "RUN_1_OUTPUT": "000000000000000000000000000000000000000000000000",
+                "RUN_2_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "RECOVER_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000",
+                "REBIND_OUTPUT": "0000803f0200803f0200000000000000ffff7f7f00000000"
+              },
+              "observed_stack_bytes": 1120,
+              "full_stack_worst_case": null,
+              "board_verified": false
+            }
+          }
+        }
+      }
+    },
+    "validation_completed": true,
+    "positive_profile_executions": 112,
+    "valid_positive_output_records": 560,
+    "partial_failure_profile_executions": 4,
+    "valid_recovery_output_records": 8,
+    "validated_sync_unknown_runs": 112,
+    "capacity_negative": {
+      "status": "passed",
+      "passed": true
+    },
+    "evidence_controls": {
+      "status": "passed",
+      "passed": true,
+      "scope": "host gate mutations of one actual successful UART log; not additional target executions",
+      "controls": {
+        "wrong_expected": {
+          "status": "failed",
+          "passed": false,
+          "reason": "FP32 tolerance/nonfinite/padding comparison failed",
+          "fields": {
+            "T5_RUNTIME_ABI": 2,
+            "T5_POINTER_BYTES": 4,
+            "RUN_0_NODES": 1,
+            "RUN_1_NODES": 1,
+            "RUN_2_NODES": 1,
+            "T5_SYNC_PUBLISH": 6,
+            "T5_SYNC_ACQUIRE": 6,
+            "T5_CHECKS_MASK": 8191,
+            "T5_STATUS": 0,
+            "RTL_DONE": 1,
+            "RTL_EXIT": 0,
+            "RTL_CYCLES": 460065,
+            "RTL_MIN_SP": 64416,
+            "RTL_STACK_VIOLATIONS": 0,
+            "RTL_TRAPS": 0,
+            "RTL_STACK_STARTED": 1
+          },
+          "outputs": {
+            "RUN_0_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RUN_1_OUTPUT": "000000000000000000000000000000000000000000000000",
+            "RUN_2_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RECOVER_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "REBIND_OUTPUT": "000080bf00000040000040400000000000000000000000c0"
+          }
+        },
+        "missing_summary": {
+          "status": "unproven",
+          "passed": null,
+          "reason": "Target completion, ABI, trap or stack evidence failed/incomplete",
+          "fields": {
+            "T5_RUNTIME_ABI": 2,
+            "T5_POINTER_BYTES": 4,
+            "RUN_0_NODES": 1,
+            "RUN_1_NODES": 1,
+            "RUN_2_NODES": 1,
+            "T5_SYNC_PUBLISH": 6,
+            "T5_SYNC_ACQUIRE": 6,
+            "T5_CHECKS_MASK": 8191,
+            "T5_STATUS": 0,
+            "RTL_DONE": 1,
+            "RTL_EXIT": 0,
+            "RTL_CYCLES": 460065,
+            "RTL_MIN_SP": 64416,
+            "RTL_STACK_VIOLATIONS": 0,
+            "RTL_STACK_STARTED": 1
+          },
+          "outputs": {
+            "RUN_0_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RUN_1_OUTPUT": "000000000000000000000000000000000000000000000000",
+            "RUN_2_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RECOVER_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "REBIND_OUTPUT": "000080bf00000040000040400000000000000000000000c0"
+          }
+        },
+        "host_exit_error": {
+          "status": "unproven",
+          "passed": null,
+          "reason": "Target completion, ABI, trap or stack evidence failed/incomplete",
+          "fields": {
+            "T5_RUNTIME_ABI": 2,
+            "T5_POINTER_BYTES": 4,
+            "RUN_0_NODES": 1,
+            "RUN_1_NODES": 1,
+            "RUN_2_NODES": 1,
+            "T5_SYNC_PUBLISH": 6,
+            "T5_SYNC_ACQUIRE": 6,
+            "T5_CHECKS_MASK": 8191,
+            "T5_STATUS": 0,
+            "RTL_DONE": 1,
+            "RTL_EXIT": 0,
+            "RTL_CYCLES": 460065,
+            "RTL_MIN_SP": 64416,
+            "RTL_STACK_VIOLATIONS": 0,
+            "RTL_TRAPS": 0,
+            "RTL_STACK_STARTED": 1
+          },
+          "outputs": {
+            "RUN_0_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RUN_1_OUTPUT": "000000000000000000000000000000000000000000000000",
+            "RUN_2_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "RECOVER_OUTPUT": "000080bf00000040000040400000000000000000000000c0",
+            "REBIND_OUTPUT": "000080bf00000040000040400000000000000000000000c0"
+          }
+        },
+        "duplicate_output": {
+          "status": "unproven",
+          "passed": null,
+          "reason": "Duplicate target/RTL evidence field",
+          "fields": {},
+          "outputs": {}
+        }
+      }
+    },
+    "scope": "current-source selected RTL simulation only",
+    "board_verified": false,
+    "full_stack_worst_case": null
+  },
+  "target_report": "build/t8_final_verified/workspace/build/rv32_total/report.json",
+  "profiles": {
+    "single_issue": {
+      "parameters": {
+        "DUAL_ISSUE": 0,
+        "RAM_WORDS": 16384,
+        "SIM_FAST_UART": 1,
+        "CLOCK_HZ": 27000000,
+        "PREDICT_ENABLE": 1,
+        "BTB_BITS": 8,
+        "LOAD_BYPASS": 1,
+        "EARLY_LSU": 1,
+        "INIT_FILE": "firmware.hex"
+      },
+      "build_command": [
+        "verilator",
+        "--cc",
+        "--exe",
+        "--build",
+        "-j",
+        "4",
+        "-O2",
+        "-Wno-fatal",
+        "--top-module",
+        "qinglong_soc",
+        "-GDUAL_ISSUE=1'b0",
+        "-GRAM_WORDS=16384",
+        "-GSIM_FAST_UART=1'b1",
+        "-GCLOCK_HZ=27000000",
+        "-GPREDICT_ENABLE=1'b1",
+        "-GBTB_BITS=8",
+        "-GLOAD_BYPASS=1'b1",
+        "-GEARLY_LSU=1'b1",
+        "-GINIT_FILE=\"firmware.hex\"",
+        "--Mdir",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/single_issue",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/selected_rtl.sv",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/sim_main.cpp"
+      ],
+      "simulator": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/single_issue/Vqinglong_soc"
+    },
+    "dual_issue": {
+      "parameters": {
+        "DUAL_ISSUE": 1,
+        "RAM_WORDS": 16384,
+        "SIM_FAST_UART": 1,
+        "CLOCK_HZ": 27000000,
+        "PREDICT_ENABLE": 1,
+        "BTB_BITS": 8,
+        "LOAD_BYPASS": 1,
+        "EARLY_LSU": 1,
+        "INIT_FILE": "firmware.hex"
+      },
+      "build_command": [
+        "verilator",
+        "--cc",
+        "--exe",
+        "--build",
+        "-j",
+        "4",
+        "-O2",
+        "-Wno-fatal",
+        "--top-module",
+        "qinglong_soc",
+        "-GDUAL_ISSUE=1'b1",
+        "-GRAM_WORDS=16384",
+        "-GSIM_FAST_UART=1'b1",
+        "-GCLOCK_HZ=27000000",
+        "-GPREDICT_ENABLE=1'b1",
+        "-GBTB_BITS=8",
+        "-GLOAD_BYPASS=1'b1",
+        "-GEARLY_LSU=1'b1",
+        "-GINIT_FILE=\"firmware.hex\"",
+        "--Mdir",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/dual_issue",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/selected_rtl.sv",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/sim_main.cpp"
+      ],
+      "simulator": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/dual_issue/Vqinglong_soc"
+    }
+  },
+  "rtl_selection": {
+    "mode": "portable-metadata",
+    "upstream_sha256": "036fd9c95bf43929f3adcba6e33fae183830ffa1764466b60be8705c29a52dc4",
+    "selected_sha256": "429a9a0ef3fa1151ea5bc3d4db907bedba082477bae3ca1af78f9670ae862769",
+    "upstream_commit": "c1bc715b276db48cf6e6b640701d51b72e984d77",
+    "upstream_modified": false,
+    "local_overlay": true,
+    "purpose": "Verilator 5.032 FIFO NBA scheduling compatibility; same combinational metadata semantics",
+    "hardware_verified": false,
+    "formal_equivalence": null
+  },
+  "review": {
+    "completed": true,
+    "independent": true,
+    "reviewer": "gpt-6-astra",
+    "critical": 0,
+    "important": 5,
+    "minor": 0,
+    "unresolved_critical": 0,
+    "unresolved_important": 0,
+    "targeted_tests": 17,
+    "new_review_regressions": 7,
+    "red_then_green": true,
+    "independent_rereview": false,
+    "findings": [
+      "Independent fixed five-output INT32 and boundary oracle",
+      "Require actual PC logs/trace and auxiliary ELF/profile identity",
+      "Bind chain ID to dtype/definition/input/package/policy",
+      "Preserve complete numerical/determinism failure as failed",
+      "Strict all-workload capacity null and nonzero exit"
+    ],
+    "declined_to_judge": [
+      "Pre-review/final full execution results resolved only by actual final run",
+      "Board/original RTL equivalence/other simulators/timing/worst stack ISR/model W4A8 remain unknown"
+    ],
+    "final_full_regression": "build/t8_final_verified/report.json",
+    "integration_regression": "Boundary replay storage_shape omission: actual TypeError RED then explicit original shape GREEN; full rerun required"
+  },
+  "supplemental_host_gate_probes": "build/t8_artifact_probes.json",
+  "integrity": "build/t8_final_integrity.json",
+  "board": {
+    "status": "unproven",
+    "passed": null,
+    "reason": "No board execution in this acceptance"
+  },
+  "board_verified": false,
+  "deployment_ready": false,
+  "full_stack_worst_case": null,
+  "whole_graph_rollback_verified": false,
+  "formal_equivalence": null,
+  "full_ieee754_conformance": null,
+  "synthesis_timing_verified": false,
+  "dma_cache_ddr_verified": false,
+  "model_binding": null,
+  "quantization_binding": null
+}

@@ -1,0 +1,98 @@
+{
+  "format": "inference-fixture",
+  "version": 1,
+  "case_id": "int_hand_bias",
+  "provenance": {
+    "kind": "manual",
+    "source": "inference_ref.examples/v1; numpy=2.3.5; PCG64",
+    "seed": null
+  },
+  "operation": {
+    "name": "linear",
+    "inputs": [
+      "bias",
+      "input",
+      "weight"
+    ],
+    "output": "expected",
+    "attributes": {}
+  },
+  "comparison": {
+    "mode": "exact",
+    "atol": 0,
+    "rtol": 0
+  },
+  "payload": {
+    "file": "data.bin",
+    "byte_length": 52,
+    "sha256": "c8e044e4708a36e3982035f16f0e4386dbfd28c0126f40fadbd981c634affa3d"
+  },
+  "tensors": [
+    {
+      "name": "bias",
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 0,
+      "byte_length": 8,
+      "alignment": 4,
+      "sha256": "b5f56b64f014154a5433fcb074019bb39a5bc74b2004cb4670565d57b5af23b6"
+    },
+    {
+      "name": "expected",
+      "dtype": "int32",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ],
+      "layout": "row_major",
+      "role": "reference",
+      "offset": 8,
+      "byte_length": 8,
+      "alignment": 4,
+      "sha256": "4692ab7cfe3f6511425cd189d047cc2ca39ec6b339b24a894577d1fe0bd8e6b2"
+    },
+    {
+      "name": "input",
+      "dtype": "int32",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 16,
+      "byte_length": 12,
+      "alignment": 4,
+      "sha256": "9bd39984b8c069ceb19a6bb01d80d33b01f2a4be39b2e5a6e2fd5f0020ebe70a"
+    },
+    {
+      "name": "weight",
+      "dtype": "int32",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "layout": "row_major",
+      "role": "input",
+      "offset": 28,
+      "byte_length": 24,
+      "alignment": 4,
+      "sha256": "be2f2f4d87a01c92b4b5537027f4aa482e8fede0e056358922ef7335a06ddb96"
+    }
+  ]
+}

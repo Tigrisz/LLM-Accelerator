@@ -1,0 +1,9 @@
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:20:13:text	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:21:13:hexkey	32	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:23:17:sync_cpu	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:24:17:recover_cpu	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:27:17:bind	80	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:28:17:feed	16	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:22:13:output.constprop	32	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/time.h:56:12:clock	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t5_samples.c:79:5:main	208	static

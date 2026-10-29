@@ -1,0 +1,72 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "fixture_float_random_07",
+  "tensors": [
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        5
+      ],
+      "storage_shape": [
+        5
+      ]
+    },
+    {
+      "id": "input",
+      "role": "input",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        23
+      ],
+      "storage_shape": [
+        23
+      ]
+    },
+    {
+      "id": "weight",
+      "role": "constant",
+      "dtype": "float32",
+      "layout": "row_major",
+      "shape": [
+        5,
+        23
+      ],
+      "storage_shape": [
+        5,
+        23
+      ],
+      "blob": {
+        "offset": 0,
+        "length": 460,
+        "sha256": "7ed88d7e1a3355fd817ba7922b9559075b2fedfd78198f8f66a6506bff2bedd6"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "op": "linear",
+      "inputs": {
+        "input": "input",
+        "weight": "weight"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 460,
+    "sha256": "7ed88d7e1a3355fd817ba7922b9559075b2fedfd78198f8f66a6506bff2bedd6"
+  }
+}

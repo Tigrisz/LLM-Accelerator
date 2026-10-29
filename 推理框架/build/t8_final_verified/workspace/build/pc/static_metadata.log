@@ -1,0 +1,1 @@
+{"passed": true, "measurements": {"t2": {"context_bytes": 20672, "tensor_bytes": 96, "call_bytes": 56, "profile_bytes": 32}, "t3": {"context_bytes": 200, "tensor_bytes": 96, "call_bytes": 56, "profile_bytes": 32}}}

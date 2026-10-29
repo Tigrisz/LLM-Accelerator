@@ -1,0 +1,168 @@
+{
+  "model_id": "fixture_float_random_02",
+  "node_count": 1,
+  "tensor_count": 3,
+  "plan": {
+    "alignment": 64,
+    "placements": [
+      {
+        "tensor_id": "weight",
+        "arena": "weights",
+        "offset": 0,
+        "byte_length": 460,
+        "reserved_bytes": 512,
+        "first_use": -1,
+        "last_use": 1,
+        "reusable": false
+      },
+      {
+        "tensor_id": "input",
+        "arena": "activations",
+        "offset": 0,
+        "byte_length": 92,
+        "reserved_bytes": 128,
+        "first_use": -1,
+        "last_use": 0,
+        "reusable": true
+      },
+      {
+        "tensor_id": "y",
+        "arena": "activations",
+        "offset": 128,
+        "byte_length": 20,
+        "reserved_bytes": 64,
+        "first_use": 0,
+        "last_use": 1,
+        "reusable": true
+      }
+    ],
+    "weight_bytes": 512,
+    "activation_bytes": 192,
+    "workspace_bytes": 64,
+    "alignment_overhead_bytes": 189,
+    "total_bytes": 957,
+    "unpooled_bytes": 957
+  },
+  "backends": [
+    {
+      "backend": "pc_c",
+      "support_report": {
+        "backend_id": "pc_c",
+        "supported": true,
+        "nodes": [
+          {
+            "index": 0,
+            "node_id": "operator",
+            "supported": true,
+            "reason": "",
+            "workspace_bytes": 20
+          }
+        ]
+      },
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "native_metadata_bytes": 348,
+      "predicted_native_metadata_bytes": 348
+    },
+    {
+      "backend": "pc_c_static",
+      "support_report": {
+        "backend_id": "pc_c_static",
+        "supported": true,
+        "nodes": [
+          {
+            "index": 0,
+            "node_id": "operator",
+            "supported": true,
+            "reason": "",
+            "workspace_bytes": 20
+          }
+        ]
+      },
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "native_metadata_bytes": 924,
+      "predicted_native_metadata_bytes": 924
+    }
+  ],
+  "backend_bitwise_equal": true,
+  "passed": true
+}

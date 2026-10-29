@@ -1,0 +1,19 @@
+{
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "cwd": "D:\\GPT\\qiansai_FPGA",
+  "scope": "Current process PATH and named dpkg packages only; not a whole disk or all WSL distributions inventory.",
+  "paths": {
+    "riscv32-unknown-elf-gcc": null,
+    "riscv64-unknown-elf-gcc": null,
+    "riscv64-linux-gnu-gcc": null,
+    "clang": null,
+    "readelf": null,
+    "verilator": null
+  },
+  "probes": [],
+  "cross_compile_performed": false,
+  "board_accessed": false,
+  "target_toolchain_verified": false,
+  "note": "Presence/version alone cannot certify RV32 multilib, newlib/libgcc/fenv or runtime execution."
+}

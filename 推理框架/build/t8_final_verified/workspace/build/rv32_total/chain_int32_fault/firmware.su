@@ -1,0 +1,7 @@
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:13:13:text	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:14:13:key	32	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:16:17:sync_cpu	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:17:17:recover_cpu	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:15:13:bytes.constprop	32	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/riscv-none-elf/include/time.h:56:12:clock	0	static
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/rv32/t7_chain_faults.c:37:5:main	128	static

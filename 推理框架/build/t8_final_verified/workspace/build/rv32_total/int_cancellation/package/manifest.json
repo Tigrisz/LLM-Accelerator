@@ -1,0 +1,72 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "fixture_int_cancellation",
+  "tensors": [
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        1
+      ],
+      "storage_shape": [
+        1
+      ]
+    },
+    {
+      "id": "input",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "weight",
+      "role": "constant",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        1,
+        2
+      ],
+      "storage_shape": [
+        1,
+        2
+      ],
+      "blob": {
+        "offset": 0,
+        "length": 8,
+        "sha256": "ad02908e7dc8436bd2b7894ec3c745e38daae971187ca817c60e44c5af471827"
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "op": "linear",
+      "inputs": {
+        "input": "input",
+        "weight": "weight"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "input"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 8,
+    "sha256": "ad02908e7dc8436bd2b7894ec3c745e38daae971187ca817c60e44c5af471827"
+  }
+}

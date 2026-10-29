@@ -1,0 +1,164 @@
+{
+  "passed": true,
+  "snapshot": "build/t8_final_verified",
+  "source_files": 328,
+  "artifacts": 4070,
+  "documentation_finalized_after_run": [
+    "docs/progress.md",
+    "docs/t8_plan.md",
+    "docs/t8_validation_report.md"
+  ],
+  "prior_receipts": [
+    {
+      "stage": "s1",
+      "sha256": "bf971609db71b7b3e51a35e87d243ad800c4c773984994652d2cbf1082440349",
+      "evidence_files": 135
+    },
+    {
+      "stage": "s2",
+      "sha256": "8f46cbaacfafb703d73981140f19844c05f8a7570b9bb27cc87b354f0e366e99",
+      "evidence_files": 251
+    },
+    {
+      "stage": "s3",
+      "sha256": "0647b92dc858ed9cc2b193258d9c9d746cdd4a77c7a552a935a694f888cb2fd3",
+      "evidence_files": 369
+    },
+    {
+      "stage": "s4",
+      "sha256": "223f7bc4bdf90316352d16373cece894fc33d476648258faa3faf395d8a7b23b",
+      "evidence_files": 637
+    },
+    {
+      "stage": "s5",
+      "sha256": "dfec4f5a6e0688f866cd551503b0159aed10fd43712440d21c6318c1722f4183",
+      "evidence_files": 647
+    },
+    {
+      "stage": "s6",
+      "sha256": "ba0e30e25c24f54549be043fd212bbb0f668115e74bc837fcc51206b570af760",
+      "evidence_files": 174
+    },
+    {
+      "stage": "t1",
+      "sha256": "8ac7277bfbeaeaaca2c44b07766f9c1d86b39cbee07837748c990cbe4adc7303",
+      "evidence_files": 1049
+    },
+    {
+      "stage": "t2",
+      "sha256": "54ca1e37fcdf566daece842041a54808cc7f96f6675253e40c6205e9cc3713f1",
+      "evidence_files": 800
+    },
+    {
+      "stage": "t3",
+      "sha256": "eecc15f7411975024164de88fb9c22e408de40858be6ccf15b9b19c67de9d742",
+      "evidence_files": 1143
+    },
+    {
+      "stage": "t4",
+      "sha256": "8f9a15f32e355f6e792ed14ebbc26072403b35205abf0b3a4f2f750f74d4db03",
+      "evidence_files": 1628
+    },
+    {
+      "stage": "t4d",
+      "sha256": "c05d728c91a1c9126733bdb686aef8389ce6463252617046b0dd6ac4c9040590",
+      "evidence_files": 2191
+    },
+    {
+      "stage": "t4c",
+      "sha256": "718d3fa3c2d686725131d410b240da2ca9146a871dead5d6a3c5bf83bf08e09b",
+      "evidence_files": 1668
+    },
+    {
+      "stage": "t5",
+      "sha256": "f528d45ef41c762ca85b048baca15e31df6f922f0fafb1d517ba9856d07814ce",
+      "evidence_files": 2898
+    },
+    {
+      "stage": "t6",
+      "sha256": "9ff137114b7ad7ca0cb3a6b9296a475634637c9e31b41080f5b8a0b4e64281f1",
+      "evidence_files": 4730
+    },
+    {
+      "stage": "t7",
+      "sha256": "e5ffb19127a4f605bb0eeeb775f4be5b593acc2cacd2fecaef1c388928fa31e8",
+      "evidence_files": 1909
+    }
+  ],
+  "frozen_inputs_unchanged": 109,
+  "original_framework_tests_unchanged": 174,
+  "protected_source_files_unchanged": [
+    "inference_ref/__init__.py",
+    "inference_ref/__main__.py",
+    "inference_ref/backend.py",
+    "inference_ref/backend_validation.py",
+    "inference_ref/c_backend.py",
+    "inference_ref/c_execution.py",
+    "inference_ref/compare.py",
+    "inference_ref/contracts.py",
+    "inference_ref/device_validation.py",
+    "inference_ref/fixtures.py",
+    "inference_ref/memory.py",
+    "inference_ref/model_package.py",
+    "inference_ref/oracle.py",
+    "inference_ref/package_validation.py",
+    "inference_ref/platform.py",
+    "inference_ref/platform_validation.py",
+    "inference_ref/reference.py",
+    "inference_ref/reporting.py",
+    "inference_ref/resource_validation.py",
+    "inference_ref/resources.py",
+    "inference_ref/runtime.py",
+    "inference_ref/sim_device.py",
+    "inference_ref/static_backend.py",
+    "inference_ref/static_export.py",
+    "inference_ref/static_validation.py",
+    "inference_ref/suite.py",
+    "inference_ref/trace_validation.py",
+    "inference_ref/tracing.py",
+    "c/include/ir_core.h",
+    "c/include/ir_pc.h",
+    "c/include/ir_static.h",
+    "c/rv32/diagnostic_driver.cpp",
+    "c/rv32/dual_dependency_repro.S",
+    "c/rv32/fifo_nba_repro.sv",
+    "c/rv32/fifo_repro_driver.cpp",
+    "c/rv32/fifo_repro_tb.sv",
+    "c/rv32/firmware.c",
+    "c/rv32/icarus_driver.sv",
+    "c/rv32/link.ld",
+    "c/rv32/sim_main.cpp",
+    "c/rv32/start.S",
+    "c/rv32/t5_samples.c",
+    "c/rv32/t6_float_faults.c",
+    "c/rv32/t7_chain_faults.c",
+    "c/src/ir_core.c",
+    "c/src/ir_pc.c",
+    "c/src/ir_static.c",
+    "c/src/ir_static_host.c",
+    "c/tests/test_core.c",
+    "c/tests/test_metadata.c",
+    "c/tests/test_pc.c",
+    "c/tests/test_resources.c",
+    "c/tests/test_static.c",
+    "tests/__init__.py",
+    "tests/package_support.py",
+    "tests/support.py",
+    "tests/test_backends.py",
+    "tests/test_c_backend.py",
+    "tests/test_fixtures.py",
+    "tests/test_memory.py",
+    "tests/test_model_package.py",
+    "tests/test_platform.py",
+    "tests/test_reference.py",
+    "tests/test_resources.py",
+    "tests/test_runtime.py",
+    "tests/test_sim_device.py",
+    "tests/test_static_runtime.py",
+    "tests/test_suite.py",
+    "tests/test_tracing.py",
+    "tools/rv32_rtl.py",
+    "tools/rv32_fp32.py",
+    "tools/rv32_profiles.py"
+  ]
+}

@@ -1,0 +1,6 @@
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld: /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/capacity_probe/firmware.elf section `.bss' will not fit in region `RAM'
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld: TCM image/static buffers overlap reserved stack
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld: section .stack VMA [0000e000,0000ffff] overlaps section .bss VMA [00000078,00010077]
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld: region `RAM' overflowed by 0 bytes
+/mnt/d/GPT/qiansai_FPGA/推理框架/build/t4_toolchain/install/xpack-riscv-none-elf-gcc-15.2.0-1/bin/../lib/gcc/riscv-none-elf/15.2.0/../../../../riscv-none-elf/bin/ld: /mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/rv32_total/capacity_probe/firmware.elf: section .stack lma 0xe000 adjusted to 0x10078
+collect2: error: ld returned 1 exit status

@@ -1,0 +1,4487 @@
+{
+  "format": "inference-static-report",
+  "version": 1,
+  "scope": "phase1a_s4",
+  "execution": "standalone_c_static_runtime",
+  "passed": true,
+  "case_count": 54,
+  "passed_count": 54,
+  "cases": [
+    {
+      "case_id": "int_hand_bias",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_hand_bias/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_hand_bias/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_hand_bias/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_hand_bias/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_hand_bias/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_add",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_add/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_add/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_add/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_add/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_add/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_relu",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_relu/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_relu/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_relu/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_relu/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_relu/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_hand_bias",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_hand_bias/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_hand_bias/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_hand_bias/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_hand_bias/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_hand_bias/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_add",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_add/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_add/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_add/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_add/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_add/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_relu",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 2,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_relu/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_relu/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_relu/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_relu/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_relu/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_cancellation",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_cancellation/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_cancellation/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_cancellation/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_cancellation/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_cancellation/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_cancellation",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_cancellation/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_cancellation/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_cancellation/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_cancellation/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_cancellation/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_zero",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_single",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 1,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_single/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_single/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_single/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_single/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_single/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_padded",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_padded/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_padded/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_padded/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_padded/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_padded/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_padded",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_padded/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_padded/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_padded/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_padded/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_padded/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_extreme",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_extreme/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_extreme/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_extreme/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_extreme/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_extreme/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_zero",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 6,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 6,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 6,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": null,
+          "relative_error_excluded_count": 6,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_00",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_00/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_00/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_00/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_00/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_00/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_00",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_00/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_00/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_00/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_00/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_00/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_01",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_01/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_01/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_01/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_01/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_01/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_01",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_01/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_01/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_01/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_01/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_01/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_02",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_02/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_02/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_02/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_02/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_02/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_02",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_02/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_02/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_02/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_02/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_02/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_03",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_03/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_03/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_03/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_03/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_03/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_03",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_03/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_03/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_03/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_03/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_03/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_04",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_04/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_04/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_04/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_04/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_04/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_04",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_04/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_04/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_04/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_04/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_04/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_05",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_05/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_05/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_05/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_05/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_05/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_05",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_05/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_05/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_05/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_05/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_05/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_06",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_06/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_06/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_06/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_06/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_06/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_06",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_06/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_06/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_06/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_06/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_06/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_07",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_07/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_07/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_07/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_07/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_07/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_07",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_07/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_07/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_07/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_07/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_07/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_08",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_08/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_08/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_08/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_08/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_08/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_08",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_08/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_08/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_08/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_08/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_08/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_09",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_09/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_09/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_09/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_09/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_09/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_09",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_09/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_09/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_09/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_09/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_09/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_10",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_10/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_10/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_10/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_10/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_10/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_10",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_10/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_10/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_10/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_10/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_10/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_11",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_11/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_11/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_11/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_11/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_11/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_11",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_11/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_11/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_11/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_11/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_11/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_12",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_12/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_12/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_12/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_12/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_12/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_12",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_12/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_12/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_12/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_12/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_12/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_13",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_13/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_13/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_13/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_13/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_13/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_13",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_13/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_13/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_13/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_13/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_13/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_14",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_14/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_14/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_14/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_14/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_14/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_14",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_14/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_14/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_14/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_14/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_14/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_15",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_15/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_15/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_15/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_15/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_15/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_15",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_15/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_15/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_15/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_15/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_15/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_16",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_16/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_16/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_16/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_16/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_16/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_16",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_16/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_16/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_16/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_16/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_16/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_17",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_17/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_17/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_17/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_17/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_17/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_17",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_17/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_17/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_17/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_17/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_17/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_18",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_18/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_18/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_18/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_18/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_18/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_18",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_18/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_18/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_18/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_18/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_18/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "int_random_19",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 0.0,
+          "rtol": 0.0,
+          "elements": 3,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_19/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_19/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_19/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_19/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/int_random_19/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    },
+    {
+      "case_id": "float_random_19",
+      "passed": true,
+      "comparisons": {
+        "stored": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 5,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "adapter_bitwise_equal": true,
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_19/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_19/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_19/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_19/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/standalone/float_random_19/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 1,
+        "live_allocations": 0
+      }
+    }
+  ],
+  "chains": [
+    {
+      "dtype": "int32",
+      "input": "normal",
+      "passed": true,
+      "comparisons": {
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "manual": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/normal/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/normal/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/normal/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/normal/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/normal/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      },
+      "sanitized_execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/normal/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/normal/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/normal/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/normal/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/normal/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      }
+    },
+    {
+      "dtype": "int32",
+      "input": "zero",
+      "passed": true,
+      "comparisons": {
+        "scalar": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "manual": {
+          "passed": true,
+          "comparison": "exact",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        }
+      },
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/int32/zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      },
+      "sanitized_execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/int32/zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      }
+    },
+    {
+      "dtype": "float32",
+      "input": "normal",
+      "passed": true,
+      "comparisons": {
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        },
+        "manual": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 0,
+          "first_mismatch": null
+        }
+      },
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/normal/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/normal/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/normal/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/normal/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/normal/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      },
+      "sanitized_execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/normal/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/normal/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/normal/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/normal/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/normal/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      }
+    },
+    {
+      "dtype": "float32",
+      "input": "zero",
+      "passed": true,
+      "comparisons": {
+        "scalar": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "numpy": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        },
+        "manual": {
+          "passed": true,
+          "comparison": "abs_plus_rel",
+          "atol": 1e-06,
+          "rtol": 1e-05,
+          "elements": 2,
+          "mismatch_count": 0,
+          "nonfinite_count": 0,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "relative_error_excluded_count": 1,
+          "first_mismatch": null
+        }
+      },
+      "execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/chain_runs/float32/zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      },
+      "sanitized_execution": {
+        "command": [
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/zero/export/execution.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/zero/export/weights.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/zero/inputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/zero/outputs.bin",
+          "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized_runs/float32/zero/trace.json"
+        ],
+        "exit_code": 0,
+        "execution_environment": {
+          "PATH": "/no-python"
+        },
+        "trace_validation": {
+          "passed": true,
+          "errors": []
+        },
+        "node_count": 4,
+        "live_allocations": 0
+      }
+    }
+  ],
+  "native_tests": [
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_static",
+      "sanitize": false,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_pc",
+      "sanitize": false,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_resources",
+      "sanitize": false,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_static",
+      "sanitize": true,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_pc",
+      "sanitize": true,
+      "exit_code": 0,
+      "passed": true
+    },
+    {
+      "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_resources",
+      "sanitize": true,
+      "exit_code": 0,
+      "passed": true
+    }
+  ],
+  "c_trace_negatives": [
+    {
+      "name": "missing_sync",
+      "rejected": true
+    },
+    {
+      "name": "missing_node",
+      "rejected": true
+    },
+    {
+      "name": "wrong_count",
+      "rejected": true
+    },
+    {
+      "name": "wrong_status",
+      "rejected": true
+    },
+    {
+      "name": "reverse_clock",
+      "rejected": true
+    }
+  ],
+  "platform_stats": {
+    "live_allocations": 0,
+    "backing_bytes": 0,
+    "budget_bytes": 67108864,
+    "pointer_bits": 64,
+    "open_sources": 0,
+    "retained_resources": 0
+  },
+  "final_device_stats": {
+    "logical_tick": 232,
+    "live_tasks": 0,
+    "live_sessions": 0,
+    "staging_reserved_bytes": 0,
+    "active_task_id": null
+  },
+  "adapter_trace": {
+    "path": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/adapter_trace",
+    "complete": true,
+    "files": {
+      "trace.json": {
+        "byte_length": 1068358,
+        "sha256": "4038d28c33d991dbe3d7368d5d46324f45e583ed20984fb92e2289180deb0b99"
+      },
+      "timeline.json": {
+        "byte_length": 1046305,
+        "sha256": "c3a71f146a396e0d0544da4df02a69cdbe28c95280231ad879eacf8cb53b7ea2"
+      },
+      "summary.json": {
+        "byte_length": 14091,
+        "sha256": "cb4317dd5e5411373139dcfb11bde407096f4064b044adda30749354bf2ae273"
+      }
+    }
+  },
+  "adapter_trace_validation": {
+    "passed": true,
+    "errors": [],
+    "event_count": 3786
+  },
+  "build": {
+    "tests": [
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_static",
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_pc",
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_resources"
+    ],
+    "source_sha256": {
+      "c/include/ir_core.h": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f",
+      "c/include/ir_pc.h": "34799807dfc6beff3650f66167d1e9e72a76950deef91754a755f07ab3e5094e",
+      "c/include/ir_static.h": "5bf6d45938f8ff577f208ef5ae58a5b24aa75732f22ee0c2a9a39a02a23acd90",
+      "c/rv32/diagnostic_driver.cpp": "50329dd899611c37810ae93d3fe0662e212b0b6c1b3c06ffa132d0dc258e9238",
+      "c/rv32/dual_dependency_repro.S": "6de5181d2c5327ecd45c83e0323ea66adfdcc5c553544d3388330d244b29ce12",
+      "c/rv32/fifo_nba_repro.sv": "2479edb05b8ed47772550626fbd897efa51768a0f7f4953608edecf8bb9ff1eb",
+      "c/rv32/fifo_repro_driver.cpp": "e7ef4176f5c2507831e269c4a4dddcb399972be1e3d5fb7289701134b01d9c79",
+      "c/rv32/fifo_repro_tb.sv": "b151786e7d5f373197818a9c80f8766f2019031b585211f7cb2310eb486fca5f",
+      "c/rv32/firmware.c": "4127e6f3b7f59fe6b7f060ea00833923fd24f34091ec76c9b391b960b46475c6",
+      "c/rv32/icarus_driver.sv": "d5506ff9c72d7ff66ff3813d9ce5041f3cff26faf4ef3eec39b91a53000fd285",
+      "c/rv32/link.ld": "dfa91e0eb72536b50e795dec18f2d3b7be1e19990bcdaf37d024cb0513dba661",
+      "c/rv32/sim_main.cpp": "bb685c2233f8e0eceaccb2d7637961b942437c7628d041827009039f05604f95",
+      "c/rv32/start.S": "9ea8164fe56e586c953d656d0f6df701f60f08411f311e659e0f71e71f09bd61",
+      "c/rv32/t5_samples.c": "7d5dad6727d86a9b2eccc408774c517eccb92ed1599be1980d9a2d80cde08d08",
+      "c/rv32/t6_float_faults.c": "45c708880a1e1af784e135bd5fb67b22e04c6fc58a614565e171fce2f9abb2b9",
+      "c/rv32/t7_chain_faults.c": "dbcdc5b2467e2c332b0aa562e6f08ab6ccff157f745ac1ec83d6ba9b0119b857",
+      "c/src/ir_core.c": "90ef5a8023ca88577ca7de3ea6d995cf6812519628b2195d0d8f600d8d685182",
+      "c/src/ir_pc.c": "15a32bec5b6b2f65cd7edaa96010841e43042c33c3690964c97aa1908624916b",
+      "c/src/ir_static.c": "47512feddd893239b9085e36fa3dd178d7d7580b1f815006918bdf344d204b51",
+      "c/src/ir_static_host.c": "87a8eb3395f9152aadf16781a904a0c20b7773dfc69928a675b23dc2ac66d6af",
+      "c/tests/test_core.c": "3d9c5e364ce6948589a9e3b4cee2590d08e018147ad589a38940d77e635670b1",
+      "c/tests/test_metadata.c": "29e541b4727da4814af614f517ecaafb14f75b948ddc3d02046d674624ec5c68",
+      "c/tests/test_pc.c": "bbe9611d9b19d5a451e92464a8a1bc1fa85f523ac488497c3160ee3e3b3ddcc2",
+      "c/tests/test_resources.c": "67b536a92809c4c86c6e59a8b5d8c267a2a14ba5ae1d674467b27e7be1e98d91",
+      "c/tests/test_static.c": "4bf6f36aa61c390046b10dc73e7c20dce0d82efded7d5952d02a0060453496d5"
+    },
+    "compiler": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "sanitize": false,
+    "host": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host",
+    "library": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/library/libir_static.so",
+    "commands": [
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static_host.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/ir_static_host"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_static"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_pc.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_pc"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_resources.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/test_resources"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O2",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-shared",
+        "-fPIC",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/build/library/libir_static.so"
+      ]
+    ],
+    "binary_sha256": {
+      "test_static": "6e9e5f79664f29a2562acd0da68dd10f6a011394cdd12b5df0a24ee1a87d3fe6",
+      "test_pc": "50bb99de2fbd2b5e6f5b880d9b3ffa780375d5f83eb0c75a203a7bf3890974a4",
+      "test_resources": "9eddd69345e5a4c7268c5f2e53b8ccbd9907e497fa10c421b03c387ebabcb84a",
+      "ir_static_host": "1e225d3ceaa48b9f5615a134924e054053b31376426127ff50d622834d5a33ec",
+      "libir_static.so": "20521de947d181d48d149876f75ab7fc49ddaffa99a2fa6258b7b2e2fcc4d557"
+    }
+  },
+  "sanitized_build": {
+    "tests": [
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_static",
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_pc",
+      "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_resources"
+    ],
+    "source_sha256": {
+      "c/include/ir_core.h": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f",
+      "c/include/ir_pc.h": "34799807dfc6beff3650f66167d1e9e72a76950deef91754a755f07ab3e5094e",
+      "c/include/ir_static.h": "5bf6d45938f8ff577f208ef5ae58a5b24aa75732f22ee0c2a9a39a02a23acd90",
+      "c/rv32/diagnostic_driver.cpp": "50329dd899611c37810ae93d3fe0662e212b0b6c1b3c06ffa132d0dc258e9238",
+      "c/rv32/dual_dependency_repro.S": "6de5181d2c5327ecd45c83e0323ea66adfdcc5c553544d3388330d244b29ce12",
+      "c/rv32/fifo_nba_repro.sv": "2479edb05b8ed47772550626fbd897efa51768a0f7f4953608edecf8bb9ff1eb",
+      "c/rv32/fifo_repro_driver.cpp": "e7ef4176f5c2507831e269c4a4dddcb399972be1e3d5fb7289701134b01d9c79",
+      "c/rv32/fifo_repro_tb.sv": "b151786e7d5f373197818a9c80f8766f2019031b585211f7cb2310eb486fca5f",
+      "c/rv32/firmware.c": "4127e6f3b7f59fe6b7f060ea00833923fd24f34091ec76c9b391b960b46475c6",
+      "c/rv32/icarus_driver.sv": "d5506ff9c72d7ff66ff3813d9ce5041f3cff26faf4ef3eec39b91a53000fd285",
+      "c/rv32/link.ld": "dfa91e0eb72536b50e795dec18f2d3b7be1e19990bcdaf37d024cb0513dba661",
+      "c/rv32/sim_main.cpp": "bb685c2233f8e0eceaccb2d7637961b942437c7628d041827009039f05604f95",
+      "c/rv32/start.S": "9ea8164fe56e586c953d656d0f6df701f60f08411f311e659e0f71e71f09bd61",
+      "c/rv32/t5_samples.c": "7d5dad6727d86a9b2eccc408774c517eccb92ed1599be1980d9a2d80cde08d08",
+      "c/rv32/t6_float_faults.c": "45c708880a1e1af784e135bd5fb67b22e04c6fc58a614565e171fce2f9abb2b9",
+      "c/rv32/t7_chain_faults.c": "dbcdc5b2467e2c332b0aa562e6f08ab6ccff157f745ac1ec83d6ba9b0119b857",
+      "c/src/ir_core.c": "90ef5a8023ca88577ca7de3ea6d995cf6812519628b2195d0d8f600d8d685182",
+      "c/src/ir_pc.c": "15a32bec5b6b2f65cd7edaa96010841e43042c33c3690964c97aa1908624916b",
+      "c/src/ir_static.c": "47512feddd893239b9085e36fa3dd178d7d7580b1f815006918bdf344d204b51",
+      "c/src/ir_static_host.c": "87a8eb3395f9152aadf16781a904a0c20b7773dfc69928a675b23dc2ac66d6af",
+      "c/tests/test_core.c": "3d9c5e364ce6948589a9e3b4cee2590d08e018147ad589a38940d77e635670b1",
+      "c/tests/test_metadata.c": "29e541b4727da4814af614f517ecaafb14f75b948ddc3d02046d674624ec5c68",
+      "c/tests/test_pc.c": "bbe9611d9b19d5a451e92464a8a1bc1fa85f523ac488497c3160ee3e3b3ddcc2",
+      "c/tests/test_resources.c": "67b536a92809c4c86c6e59a8b5d8c267a2a14ba5ae1d674467b27e7be1e98d91",
+      "c/tests/test_static.c": "4bf6f36aa61c390046b10dc73e7c20dce0d82efded7d5952d02a0060453496d5"
+    },
+    "compiler": "cc (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+    "sanitize": true,
+    "host": "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host",
+    "commands": [
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O1",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-fno-pie",
+        "-no-pie",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static_host.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/ir_static_host"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O1",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-fno-pie",
+        "-no-pie",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_static"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O1",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-fno-pie",
+        "-no-pie",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_pc.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_pc"
+      ],
+      [
+        "/usr/bin/cc",
+        "-std=c11",
+        "-Wall",
+        "-Wextra",
+        "-Werror",
+        "-pedantic",
+        "-fno-fast-math",
+        "-ffp-contract=off",
+        "-fexcess-precision=standard",
+        "-O1",
+        "-I",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/include",
+        "-fsanitize=address,undefined",
+        "-fno-omit-frame-pointer",
+        "-fno-pie",
+        "-no-pie",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/tests/test_resources.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_core.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_static.c",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/c/src/ir_pc.c",
+        "-lm",
+        "-o",
+        "/mnt/d/GPT/qiansai_FPGA/推理框架/build/t8_final_verified/workspace/build/pc/resources/static_runtime/sanitized/test_resources"
+      ]
+    ],
+    "binary_sha256": {
+      "test_static": "87d13b09cc3764c0ee4a729ebca4fe645ab9434b086587dea0608ae4f3e83580",
+      "test_pc": "55028bcba86a5a3de0527ebe2ca45a5ce0ce0245400e7227adb099d0c222e5e3",
+      "test_resources": "c7ac685f84dfc441aa97a7c764f84e15ab0652a16c85b4c8d071140d5c000147",
+      "ir_static_host": "b4e372ac8a94dad48022247a32862b6e3d6fc7e9220d911277cf225ca9bbeeaf"
+    }
+  },
+  "c_source_sha256": {
+    "c/include/ir_core.h": "ccc3f866f88f2e75b4b5b31a97ba67c4f5866358015f89056d7166971767634f",
+    "c/include/ir_pc.h": "34799807dfc6beff3650f66167d1e9e72a76950deef91754a755f07ab3e5094e",
+    "c/include/ir_static.h": "5bf6d45938f8ff577f208ef5ae58a5b24aa75732f22ee0c2a9a39a02a23acd90",
+    "c/rv32/diagnostic_driver.cpp": "50329dd899611c37810ae93d3fe0662e212b0b6c1b3c06ffa132d0dc258e9238",
+    "c/rv32/dual_dependency_repro.S": "6de5181d2c5327ecd45c83e0323ea66adfdcc5c553544d3388330d244b29ce12",
+    "c/rv32/fifo_nba_repro.sv": "2479edb05b8ed47772550626fbd897efa51768a0f7f4953608edecf8bb9ff1eb",
+    "c/rv32/fifo_repro_driver.cpp": "e7ef4176f5c2507831e269c4a4dddcb399972be1e3d5fb7289701134b01d9c79",
+    "c/rv32/fifo_repro_tb.sv": "b151786e7d5f373197818a9c80f8766f2019031b585211f7cb2310eb486fca5f",
+    "c/rv32/firmware.c": "4127e6f3b7f59fe6b7f060ea00833923fd24f34091ec76c9b391b960b46475c6",
+    "c/rv32/icarus_driver.sv": "d5506ff9c72d7ff66ff3813d9ce5041f3cff26faf4ef3eec39b91a53000fd285",
+    "c/rv32/link.ld": "dfa91e0eb72536b50e795dec18f2d3b7be1e19990bcdaf37d024cb0513dba661",
+    "c/rv32/sim_main.cpp": "bb685c2233f8e0eceaccb2d7637961b942437c7628d041827009039f05604f95",
+    "c/rv32/start.S": "9ea8164fe56e586c953d656d0f6df701f60f08411f311e659e0f71e71f09bd61",
+    "c/rv32/t5_samples.c": "7d5dad6727d86a9b2eccc408774c517eccb92ed1599be1980d9a2d80cde08d08",
+    "c/rv32/t6_float_faults.c": "45c708880a1e1af784e135bd5fb67b22e04c6fc58a614565e171fce2f9abb2b9",
+    "c/rv32/t7_chain_faults.c": "dbcdc5b2467e2c332b0aa562e6f08ab6ccff157f745ac1ec83d6ba9b0119b857",
+    "c/src/ir_core.c": "90ef5a8023ca88577ca7de3ea6d995cf6812519628b2195d0d8f600d8d685182",
+    "c/src/ir_pc.c": "15a32bec5b6b2f65cd7edaa96010841e43042c33c3690964c97aa1908624916b",
+    "c/src/ir_static.c": "47512feddd893239b9085e36fa3dd178d7d7580b1f815006918bdf344d204b51",
+    "c/src/ir_static_host.c": "87a8eb3395f9152aadf16781a904a0c20b7773dfc69928a675b23dc2ac66d6af",
+    "c/tests/test_core.c": "3d9c5e364ce6948589a9e3b4cee2590d08e018147ad589a38940d77e635670b1",
+    "c/tests/test_metadata.c": "29e541b4727da4814af614f517ecaafb14f75b948ddc3d02046d674624ec5c68",
+    "c/tests/test_pc.c": "bbe9611d9b19d5a451e92464a8a1bc1fa85f523ac488497c3160ee3e3b3ddcc2",
+    "c/tests/test_resources.c": "67b536a92809c4c86c6e59a8b5d8c267a2a14ba5ae1d674467b27e7be1e98d91",
+    "c/tests/test_static.c": "4bf6f36aa61c390046b10dc73e7c20dce0d82efded7d5952d02a0060453496d5"
+  },
+  "source_sha256": {
+    "__init__.py": "51f4147855162aa1d40cf338d26fff49fbed9513eb51ad98f35b698d1e28be1f",
+    "__main__.py": "84f4574f73c6f3f873ded62d333265ce6a7aa587d4f2b9a952fd740b21b4e60f",
+    "backend.py": "ef96c2fa86ae77ea6baf0f6c1ed179ee81a9d88c42de085bd02692894c5b0ef8",
+    "backend_validation.py": "8cdd4211cf3d0d8175c2c8f3dd1dd1c3b5e855e84a90a75f21441df6861cfb76",
+    "c_backend.py": "43c705b7c84404b038056018f22618957363afddce4081a1ac8b41355a1dfef7",
+    "c_execution.py": "2ec7dcae4a0621942677ec0de25ba402d6ed3bc47a73396447457851b0343fb2",
+    "compare.py": "727fdc15d3d66bb7fec4f6ec7553efb4234ad2f08a2741a5eca9aa1545ab51ad",
+    "contracts.py": "24434ecd49baadabf4c22188752e77d9686013ccbb4b5a36af167904bb1c265d",
+    "device_validation.py": "535b934976d9c4dfa31772c0e1ae7e9456147d6ef65e5830a84f9c483fc454bd",
+    "fixtures.py": "dcc6dec5a88c3b8d686f30d5cfb8c33cf5ff9cc57cbbb77a138fd8e793896d24",
+    "memory.py": "d7a4d85c9ffc5ae85091d59c8030a67cf0ab5f70de450eaeadbf8dde4be61950",
+    "model_package.py": "71e60605aeb545cca5a28eafe0ac6ba24f4beb3ced1bd80ef6dedab5dc00fefe",
+    "oracle.py": "51fea0d5a1acb12a57e3f82812a30834cc328454ad49a2ff091095ee502018e4",
+    "package_validation.py": "4454e2d24301e53e540f1847f495d2d11c28d0de9bc567147b7f63021615df6d",
+    "platform.py": "df787e80773d82ee7521fbebe9679b0009eb241282163d52ce2f4ff9d3e00887",
+    "platform_validation.py": "95200dc04f78b16cf149b78b7cb6ec676b438a2efe45938ec70807e1711a6bd0",
+    "reference.py": "01e3feeec61d6c90bf2ac0d9c97f4e71994e64752c2ee407d66d711f3644328f",
+    "reporting.py": "5fefd64b0080c44604da940586f38231f37fa6a1005bfe742dfbb560a960bf85",
+    "resource_validation.py": "93f45d1f85b63b10788d8e86ff21e258cfdc30687862ed7fb450ff59560633da",
+    "resources.py": "8bdd28323e7c4ba4fa6a6aada61518fcae82ec0c4974c01e6348eb33e3cd3357",
+    "runtime.py": "4c335de65a6f592e7250209fb677a5c8e41300be66793aa8f4923b1f759ab035",
+    "sim_device.py": "68ac78b93e1259a5cd0867efaf5f0bac47ee1604a8303b37ccdd753ed09c43d6",
+    "static_backend.py": "d20980c0020114459b10855b491128331922cb8e3f060bb669e54623767f3ae9",
+    "static_export.py": "93c80ae7dc7a89d4db2ec4ce1a782f00a5f578d6aff0f6433b5cdae7175d7640",
+    "static_validation.py": "44298765f7b0f7d4c759c64ec10871796f1144634885aaa793b06aaa5faba95a",
+    "suite.py": "e9e8053361215b9e392c6178a7fbce220dd5aa61161b7577988b695db2fbd584",
+    "trace_validation.py": "536cfc89b9b0ed1d7b939ea5820e6abee753107c1a5641caa1b6817119995672",
+    "tracing.py": "1137544eaeb40aa31ebf41c828284fc53089290c6fd786835ed43328ceed96d0"
+  },
+  "fixture_files_unchanged": true,
+  "fixture_files_before_sha256": {
+    "suite.json": "f8420082c5b9680f942fbf7e3aba8292c114cc44fef10a4af3e0eb64b52fcb98",
+    "float_add/data.bin": "ae214bdea04ed1babaca53b2304e9c0dd619147e59f005fb263d1f32ad969913",
+    "float_add/manifest.json": "19988e5fd814afef2565fb479aeb5e7f20d433541cae91b49dcf9dbe4a8c31f2",
+    "float_cancellation/data.bin": "ad43ac26731d787fe72878e2dbd861e7074cb76d49457bc520f4253792691f82",
+    "float_cancellation/manifest.json": "4811e9ef6a8873d5bd4c44f4fc652f5a71ec16fd9dda528db064ccc034656402",
+    "float_hand_bias/data.bin": "a55d71d94fe39ec7c1ec57f3c9b30de9096d3b1ccad058b55b32ebe052f9bed0",
+    "float_hand_bias/manifest.json": "5a5618132e3670139cf1de5b20b7db2547fb9475b9bbeb4729f8baafcf3b8a1f",
+    "float_padded/data.bin": "2e84ad9733bf5269fcec95445500415cf9126b86aaf8c9f77b83015d169e25eb",
+    "float_padded/manifest.json": "461d4a1eca80e29c5c54bf1688277bd915b38b5902fe81595e8c278e258fcac9",
+    "float_random_00/data.bin": "9ae6e2bdd82da00308133677ef2a53b55400bd46e7e6f60fef1b78e70d67b4ac",
+    "float_random_00/manifest.json": "2f16faa9847eef4c35b4c2e0f13535a7931db07d24094291f8c61e92f2f16fa2",
+    "float_random_01/data.bin": "24f403ce40e948caaf01a58d3c985a8ddfc5951b90825081a55d1b19cd9f39d9",
+    "float_random_01/manifest.json": "3f5d3fe9fe0bf1e7fd550cc40ba1df0abcbc5e08f3f1951f07315c161ba07a22",
+    "float_random_02/data.bin": "eb639e5969cfe5faaff151fb998f8f7fc5c063f0098a831e240e72e19eeea492",
+    "float_random_02/manifest.json": "f81d1cc00a2c95381e389ec8264e0859a5e5519f1bfee31cf6db905813d1029b",
+    "float_random_03/data.bin": "5a9295c471a2f5455a26e56e51bdb33c1d3eb8d3377055bc56f6bf1c377ba0bf",
+    "float_random_03/manifest.json": "d6f006d2b4d6e66de7e8edeb249919c4cba1f24b23ea2fc187824dc2a340bc68",
+    "float_random_04/data.bin": "ffca718d8284c05f0be463d4dbb4a2f9d0291e703f44ea2cdd3caf6872a372c9",
+    "float_random_04/manifest.json": "30d05fb10e0df926d3084b21d4bd3badf354a853b540700c8304f54d6a4a6d72",
+    "float_random_05/data.bin": "e347d4d9d46aeddd547ab2c66a50dc7f470fc3235c9a65c84110735a840f4766",
+    "float_random_05/manifest.json": "4b7153b95845d93cd2b54cef495e2f06314154a71291df71307190825bb92d3f",
+    "float_random_06/data.bin": "7838579d2e9b344d54d31c485e37bf12b8e7905d99d19fc3c18f4b6cefd6d5e1",
+    "float_random_06/manifest.json": "00d128d9198ae91033c53e342097ec24ab3b9e339af9a28664fc453509fb3be2",
+    "float_random_07/data.bin": "cf0b9cfcd942c80ece077d2daf142f73ad3facba28a134fb48b651a0be9fb528",
+    "float_random_07/manifest.json": "dc20bb3f5103f8acd0d2da7ec78a5c30e011882cebe51054de0e266ef0c40683",
+    "float_random_08/data.bin": "aeb313210821a6979e38b7c636e1c8483478a0d16e1bb25677c8b9e947496b7a",
+    "float_random_08/manifest.json": "a89e996a87f62031a1fbc6aaa8c35cbe587fdf8b263d0fd6c09962971febee1a",
+    "float_random_09/data.bin": "a494c69dd3a3b59e4d2aac6866cf7807de881d0195a177eb743e4c2bea43d8e3",
+    "float_random_09/manifest.json": "8fcdc3dc778cbe966e42fe3d5a40c165c83c90a7908c33e255e7eddbe4c5d0c7",
+    "float_random_10/data.bin": "41b981ba671c585086e9aa1f22853500bcddb55dae1e7bdd59dfd38ac5ff03a2",
+    "float_random_10/manifest.json": "15ef9795e2a36341fd313827ab30f27e643190320c694ab3e8dd3c7beada3cf6",
+    "float_random_11/data.bin": "ea6ffe589f1e1eb4325ea93efc1318660041bd9bc7f278c13ebc3ed3989d9c87",
+    "float_random_11/manifest.json": "b3b70b54418282c8d5f1553c97713e4fb7f127114a4973d582db3326d1e9f242",
+    "float_random_12/data.bin": "e668e09c592bfd69be182319872486fd24341103b4bfaf2af37021eaff6e1954",
+    "float_random_12/manifest.json": "69013e0fd19cb26e5f630260aba60763c5bc198d7dab9f3948bcd388ca06d318",
+    "float_random_13/data.bin": "b4a36602b1145947860d5ddf4536046f9ce71a8b71023972322f112509456fc6",
+    "float_random_13/manifest.json": "408c37c4d439717843190f0f74057031bd6f1a10d1207cfb177b1be4ba4c4174",
+    "float_random_14/data.bin": "a427e492d01330dd220166b5a58343fdeab884b25952ba761f90cac2af776d6d",
+    "float_random_14/manifest.json": "e3ff1602fffc9353d5c0b534d9d9cb35a5f6dae623c2f03aaaddf802e8ced556",
+    "float_random_15/data.bin": "b1d10f790d99a300038aa0b1f744f68ebb9987223d98d5a5642ec7fb67667b4d",
+    "float_random_15/manifest.json": "32b9fde564339186d0db8ce422a11d63f1f43bd4aa4769cb71399106302b246f",
+    "float_random_16/data.bin": "25a8ee3768e1aaf4633cc901e85b2da915d5261269ace6454e51516e073c86fb",
+    "float_random_16/manifest.json": "3c317726d9e61d0747f424e945d1817c2c577f98ae9b514b47ae8c09a740ebf9",
+    "float_random_17/data.bin": "504a11a0c449d6d58de53537bb3c7fa1778c3551f51c3a0b47aa85dd4bf1e55b",
+    "float_random_17/manifest.json": "7d1b78ee21633130367cf69c7f388e0e1d2f553686c6c0822a2dcf0038341e32",
+    "float_random_18/data.bin": "54810f7a27c6558cd6d185aa2f9c2357a1e62a8592f2b9df50831d17737cc389",
+    "float_random_18/manifest.json": "2c211cb737affabf177df9e9da836e13e630fd93cdb4e4c91f7169f74bd36b2b",
+    "float_random_19/data.bin": "6ad9281a984c83d83b39e6ee9f2864b61606251ff4a8b78da2fd551b8df9b61c",
+    "float_random_19/manifest.json": "8e6f249b96ffeb934b4bdc26f89530cfebcd76255f2e9164067bc11a5ba87520",
+    "float_relu/data.bin": "f27ca3d3eb043d5a8998482920357d8c671c178c9c9fbf72ce1e471fa2151796",
+    "float_relu/manifest.json": "6f3a19ebab418bec1de3989de62de9595fe7e82e950cc97ee740393c3c7a15a7",
+    "float_single/data.bin": "dfb8311dc50a50e9f69eab5724e91f34da23290bbdc71638498af7e853d9a23d",
+    "float_single/manifest.json": "dfa5f9153f78bbac8602a029608aef62ee25985f128931628d4c37e5ae1b2af2",
+    "float_zero/data.bin": "834a709ba2534ebe3ee1397fd4f7bd288b2acc1d20a08d6c862dcd99b6f04400",
+    "float_zero/manifest.json": "102e9510cf283090359f23c52a7ccd7687820548754917306bffe749dd2430af",
+    "int_add/data.bin": "c91708f4c9bde123e24ac2e30beed1a7393cec06d67b0e947411594ca40d1290",
+    "int_add/manifest.json": "35379343bb8909dabb70279983bd9f9cb5c4c5511f7c521be487cdf21b6e2178",
+    "int_cancellation/data.bin": "146e33bb821caa1f421f5be4f61cf37f854aee71e4a2963797c292ae42cd8ed0",
+    "int_cancellation/manifest.json": "dfb6fcb89dfe820a9bf8fffc69a401f0c4c3f6e58d696ffd5b718310b6f4d20a",
+    "int_extreme/data.bin": "d46b71ad7e2bd6b1a2d0b785c4756d92657b01f8fa537ad7bda06803f5b73690",
+    "int_extreme/manifest.json": "3cfabd1a14e0b76a62e9b5143211fc0e8468617c014b9bc9c10cc84c011a8691",
+    "int_hand_bias/data.bin": "c8e044e4708a36e3982035f16f0e4386dbfd28c0126f40fadbd981c634affa3d",
+    "int_hand_bias/manifest.json": "f84812dc81577f4c6cc5709793f1178bb7e4e298dd1fb757a280f298c1b2f51a",
+    "int_padded/data.bin": "fafc152021c7d802a1050f7fd4b57e7e34b92a4aca4d43438420013bc104a0dc",
+    "int_padded/manifest.json": "3d2ce4df1441788e2684d90715f359612072048365cf2d9587afc71af1635915",
+    "int_random_00/data.bin": "a573e8c0a5b59dffe74b992f161028fb01e14cfbe3a873de6ca8066aa2c8df86",
+    "int_random_00/manifest.json": "1356bba1db64f71ac447ea316cd30749b06ab1bab5166e61940a0fe79fc830cd",
+    "int_random_01/data.bin": "32d3df975cab958802b85fc1c4f8ca6035271dbf55a2a3979873ee1a9f62e46a",
+    "int_random_01/manifest.json": "2e9cf20c1c54dd00b7454106f957f577a7694d8ab6c7aebd96b58df9adeae942",
+    "int_random_02/data.bin": "b2953600bfbb87c75f88283c426e7dc2b66cfba8dea2df463840426e882f917c",
+    "int_random_02/manifest.json": "0c6de2133d31ba4be8669bc727f566c5c3949178d965b50e8d336ee548f7ee72",
+    "int_random_03/data.bin": "a0ec1e24c89ff9d8822dd8aa7ff50f3d84c37af13bf48672f59c3ac1818306d3",
+    "int_random_03/manifest.json": "5e4d3ce720dac8cf54efd49928efe1e31d1e5e6d1593347c6cc11a797ae70a98",
+    "int_random_04/data.bin": "3506b75eb6bd6770003f713d128f9e8931222064ce68d8a974d86b2a92b2e91b",
+    "int_random_04/manifest.json": "a733de0d4b3cdf0d9a567a7e6408845805fcecb401d7930dc8295e1e3da37ecc",
+    "int_random_05/data.bin": "287ed541169417a5a3bf753778b2e2cc7dd7a55d7e3ab29752f0bd13be8d04bf",
+    "int_random_05/manifest.json": "0666586ae98092d699d877eda022f1d484f0e95e7ce124749c196f72a0cd8ef0",
+    "int_random_06/data.bin": "1637bb9b8d544b4b7ae8f956ae9687d85bb9896f6616d4fb192157dd6bec5a5e",
+    "int_random_06/manifest.json": "f2093c83460cf431ada11d96e5353aa942d8fb47e9c59035a088775ecfea58e6",
+    "int_random_07/data.bin": "656d58410aed9a5a3fd9b165f95ee3eece99f1fe3a39aac8b66f203295725222",
+    "int_random_07/manifest.json": "eaf140f80fef4a790b023fc0bf4697fd40e0d878e9d5545fcbb04cebf7a4fd28",
+    "int_random_08/data.bin": "3ad8b0987540001886f5450178fc2ae4567bae40a788ef89de4788b64a9a96e8",
+    "int_random_08/manifest.json": "83455c8dc9892a0110c6fdc56b7d33bf1daa447a31c857b37d871a802df6c09a",
+    "int_random_09/data.bin": "cd90c2187ff36ea905c1f9878831f440b04b74f1d6306ba7b201ee78095826a0",
+    "int_random_09/manifest.json": "8c3d028dc66952be02bb99dd4dc7d1665fc7b6f2de085d16d02970b855855ad1",
+    "int_random_10/data.bin": "5601388769eb4865ab190e00d53255f6ba9abae5d85065d20c7b45cd0d4241d5",
+    "int_random_10/manifest.json": "529e7f47ae0c541951754a06488daa0b74556fc8234fa9c8bc38d3bb07a6bbf2",
+    "int_random_11/data.bin": "66b79ccb47ee44f5fb8ada666a3a926bb4bf1942bd4671fc389a4ace4da7e9ab",
+    "int_random_11/manifest.json": "bcbc572b7f9a54282050c90c11eee1fb6ecfc464e1e356b2879f6b619e1a0b95",
+    "int_random_12/data.bin": "b2d7c9c4444c17d00bd475515dd70150c47eb8f3d0e769533c8f0a4afbc83389",
+    "int_random_12/manifest.json": "8cf16b53270225dae3509961a13b31480ec1d70c19d552ba0748164af9296c4d",
+    "int_random_13/data.bin": "6fec1386dbc07d83f26370b9c33d5b310dd8c665add0ecbc98166a7219c8c999",
+    "int_random_13/manifest.json": "a26dd51322594675e84c7dc9eb1b22e9c6d0cc8a200fa109847d948998b2cfb3",
+    "int_random_14/data.bin": "8d1a6ae21a4de918a47fac062ddd977350cda30b79f88bd109e1f0e28f63f19f",
+    "int_random_14/manifest.json": "cfe9abb66454fff8c538e66b2f61c6a42b4380bad16ab9be7af2ccb4305bb8ff",
+    "int_random_15/data.bin": "5fc8befc76fbad1be26eb83c2045dbe518136a4b9842f86d3dffab488e9efa88",
+    "int_random_15/manifest.json": "f5a55e1aa252e372fbe461374b98add8cc6828820f6a012baf783f0841ff3720",
+    "int_random_16/data.bin": "915193f0448c8376efe71152975fafa94b84bb6c7d622477a9f786c3e3b4efe9",
+    "int_random_16/manifest.json": "a0ba21e924b6e2f68f182d536771e909080b5399a7d4c39759b4e101ba81b179",
+    "int_random_17/data.bin": "0c16c8445a1daed6526d377acd24402c53a771b46ebac9b1da94a0ea06b3e14a",
+    "int_random_17/manifest.json": "7e5f73663e745f5866c79c5c76cb8af8d0bbf910edff428ed4fffbf8cc84c5bd",
+    "int_random_18/data.bin": "a825e689c1ae46767a7cacc40516f33e5b2319e387f0f84cc6c6a22d08051337",
+    "int_random_18/manifest.json": "8c1f5ea4b3c1e6510e9d62559b6f328e6128637fa914430c0e5998d3174c5599",
+    "int_random_19/data.bin": "e743d2dac03ed0520d7f22b8d5bd5f2804bea17103ff2ba89760f6c49663aa88",
+    "int_random_19/manifest.json": "dfd40bf9fd6ef87922ac17ad255315cd69ac815343aee21c4287499a1056d44f",
+    "int_relu/data.bin": "9fd87bc544dd49c020b20444eb64503969561ef944277fb48b4d84514410ca82",
+    "int_relu/manifest.json": "1505c9d8a110bb967bedac2fb96a62fa34811c8f5fe43034489225362c0490ab",
+    "int_zero/data.bin": "6e4361bfcffed61bbca2c0b7bc5c33cd62a8950f1fe2b53a038f95d6acb44969",
+    "int_zero/manifest.json": "c437790ea3b928527ad5a00939fbd36865c810e8dfa6730fc0b92cb1a3a6378c"
+  },
+  "rv32_execution": false
+}

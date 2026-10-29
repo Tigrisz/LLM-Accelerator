@@ -1,0 +1,23 @@
+{
+  "format": "inference-operator-requirement",
+  "version": 1,
+  "status": "unassessed",
+  "requirement_id": null,
+  "source_operator_name_namespace_and_version": null,
+  "node_ids_and_occurrence_count": null,
+  "stage_or_shape_profile": null,
+  "input_tensor_ids_and_binding_roles": null,
+  "output_tensor_ids": null,
+  "logical_and_storage_shapes": null,
+  "attributes_axes_transposes_broadcast_and_fusion": null,
+  "storage_compute_accumulator_output_dtypes": null,
+  "quantization_requirement_ids": null,
+  "memory_domain_workspace_and_alias_rules": null,
+  "state_mutation_and_dynamic_behavior": null,
+  "proposed_framework_mapping": null,
+  "mapping_equivalence_evidence": null,
+  "backend_query_evidence": null,
+  "numerical_reference_and_tolerance": null,
+  "evidence": [],
+  "assessment": "pending"
+}

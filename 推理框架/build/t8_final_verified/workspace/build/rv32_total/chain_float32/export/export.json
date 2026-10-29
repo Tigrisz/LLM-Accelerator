@@ -1,0 +1,145 @@
+{
+  "format": "inference-static-export",
+  "version": 1,
+  "runtime_api": 1,
+  "backend_api": 1,
+  "platform_api": 1,
+  "model_id": "synthetic_chain",
+  "node_count": 4,
+  "tensor_count": 9,
+  "arenas": {
+    "weights": 256,
+    "activations": 128,
+    "workspace": 64
+  },
+  "alignment": 64,
+  "address_bits": 32,
+  "plan": {
+    "alignment": 64,
+    "placements": [
+      {
+        "tensor_id": "w",
+        "arena": "weights",
+        "offset": 0,
+        "byte_length": 24,
+        "reserved_bytes": 64,
+        "first_use": -1,
+        "last_use": 4,
+        "reusable": false
+      },
+      {
+        "tensor_id": "bias",
+        "arena": "weights",
+        "offset": 64,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": -1,
+        "last_use": 4,
+        "reusable": false
+      },
+      {
+        "tensor_id": "delta",
+        "arena": "weights",
+        "offset": 128,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": -1,
+        "last_use": 4,
+        "reusable": false
+      },
+      {
+        "tensor_id": "w2",
+        "arena": "weights",
+        "offset": 192,
+        "byte_length": 16,
+        "reserved_bytes": 64,
+        "first_use": -1,
+        "last_use": 4,
+        "reusable": false
+      },
+      {
+        "tensor_id": "x",
+        "arena": "activations",
+        "offset": 0,
+        "byte_length": 12,
+        "reserved_bytes": 64,
+        "first_use": -1,
+        "last_use": 0,
+        "reusable": true
+      },
+      {
+        "tensor_id": "h1",
+        "arena": "activations",
+        "offset": 64,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": 0,
+        "last_use": 1,
+        "reusable": true
+      },
+      {
+        "tensor_id": "h2",
+        "arena": "activations",
+        "offset": 0,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": 1,
+        "last_use": 2,
+        "reusable": true
+      },
+      {
+        "tensor_id": "h3",
+        "arena": "activations",
+        "offset": 64,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": 2,
+        "last_use": 3,
+        "reusable": true
+      },
+      {
+        "tensor_id": "y",
+        "arena": "activations",
+        "offset": 0,
+        "byte_length": 8,
+        "reserved_bytes": 64,
+        "first_use": 3,
+        "last_use": 4,
+        "reusable": true
+      }
+    ],
+    "weight_bytes": 256,
+    "activation_bytes": 128,
+    "workspace_bytes": 64,
+    "alignment_overhead_bytes": 189,
+    "total_bytes": 637,
+    "unpooled_bytes": 829
+  },
+  "tensor_ids": [
+    "x",
+    "w",
+    "bias",
+    "delta",
+    "w2",
+    "h1",
+    "h2",
+    "h3",
+    "y"
+  ],
+  "node_ids": [
+    "linear0",
+    "relu",
+    "add",
+    "linear1"
+  ],
+  "inputs": [
+    "x"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "source_manifest_sha256": "53a6af73ba719faa3eee2d36b9b53065b72c3f6404a1e210ccfc3bdc01cbd5db",
+  "source_weights_sha256": "734f9cd11805204bfa4f8dc9ca525ffbd9ef62efc7b625e8071d1bc58c9e1bee",
+  "execution_sha256": "29ff5f5517970f9c7a442b78b3c745e0da680e36a9baadf65a79f279163f8728",
+  "weights_sha256": "ccde3f3c06f1b740c29e3675d8fcde22462e3c974bdef7f797cee80747bb10a5"
+}

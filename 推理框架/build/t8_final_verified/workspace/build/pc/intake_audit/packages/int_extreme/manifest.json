@@ -1,0 +1,66 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "fixture_int_extreme",
+  "tensors": [
+    {
+      "id": "a",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "b",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "operator",
+      "op": "add",
+      "inputs": {
+        "a": "a",
+        "b": "b"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

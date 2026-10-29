@@ -1,0 +1,188 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "synthetic_chain",
+  "tensors": [
+    {
+      "id": "x",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        3
+      ],
+      "storage_shape": [
+        3
+      ]
+    },
+    {
+      "id": "w",
+      "role": "constant",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2,
+        3
+      ],
+      "storage_shape": [
+        2,
+        3
+      ],
+      "blob": {
+        "offset": 0,
+        "length": 24,
+        "sha256": "be2f2f4d87a01c92b4b5537027f4aa482e8fede0e056358922ef7335a06ddb96"
+      }
+    },
+    {
+      "id": "bias",
+      "role": "constant",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ],
+      "blob": {
+        "offset": 64,
+        "length": 8,
+        "sha256": "b5f56b64f014154a5433fcb074019bb39a5bc74b2004cb4670565d57b5af23b6"
+      }
+    },
+    {
+      "id": "delta",
+      "role": "constant",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ],
+      "blob": {
+        "offset": 128,
+        "length": 8,
+        "sha256": "b15348c8f462384c01e83b6d499c6faf3f96808f5aa07c6bab4b65b36b4445d4"
+      }
+    },
+    {
+      "id": "w2",
+      "role": "constant",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2,
+        2
+      ],
+      "storage_shape": [
+        2,
+        2
+      ],
+      "blob": {
+        "offset": 192,
+        "length": 16,
+        "sha256": "7d0e384d71a139b626301517c0d033300c9943a78b491e90fc42554f2570489e"
+      }
+    },
+    {
+      "id": "h1",
+      "role": "intermediate",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "h2",
+      "role": "intermediate",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "h3",
+      "role": "intermediate",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    },
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        2
+      ],
+      "storage_shape": [
+        2
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "linear0",
+      "op": "linear",
+      "inputs": {
+        "weight": "w",
+        "input": "x",
+        "bias": "bias"
+      },
+      "output": "h1"
+    },
+    {
+      "id": "relu",
+      "op": "relu",
+      "inputs": {
+        "input": "h1"
+      },
+      "output": "h2"
+    },
+    {
+      "id": "add",
+      "op": "add",
+      "inputs": {
+        "a": "h2",
+        "b": "delta"
+      },
+      "output": "h3"
+    },
+    {
+      "id": "linear1",
+      "op": "linear",
+      "inputs": {
+        "weight": "w2",
+        "input": "h3"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "x"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 208,
+    "sha256": "c359ec0ab29253230bc910187646d70987bda72e42d0f0900bc31bc26ab13fea"
+  }
+}

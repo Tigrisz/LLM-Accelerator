@@ -1,0 +1,66 @@
+{
+  "format": "inference-model-package",
+  "version": 1,
+  "model_id": "t5_overflow_probe",
+  "tensors": [
+    {
+      "id": "a",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        1
+      ],
+      "storage_shape": [
+        1
+      ]
+    },
+    {
+      "id": "b",
+      "role": "input",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        1
+      ],
+      "storage_shape": [
+        1
+      ]
+    },
+    {
+      "id": "y",
+      "role": "output",
+      "dtype": "int32",
+      "layout": "row_major",
+      "shape": [
+        1
+      ],
+      "storage_shape": [
+        1
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "add",
+      "op": "add",
+      "inputs": {
+        "a": "a",
+        "b": "b"
+      },
+      "output": "y"
+    }
+  ],
+  "inputs": [
+    "a",
+    "b"
+  ],
+  "outputs": [
+    "y"
+  ],
+  "weights": {
+    "file": "weights.bin",
+    "byte_length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

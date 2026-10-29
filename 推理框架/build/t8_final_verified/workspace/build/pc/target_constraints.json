@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "evidence_scope": "historical_T2_runtime_0.5.0",
+  "constraint_count": 54,
+  "sources_checked": 43,
+  "domains": [
+    "abi",
+    "endian",
+    "floating_point",
+    "memory",
+    "reading",
+    "stack",
+    "synchronization",
+    "timing",
+    "toolchain"
+  ],
+  "statuses": {
+    "source_confirmed": 30,
+    "historical_report": 3,
+    "unknown": 13,
+    "normative": 2,
+    "derived": 3,
+    "proposed": 3
+  },
+  "target_ready": false,
+  "target_execution_verified": false,
+  "target_budgets": {
+    "arena_bytes": null,
+    "heap_bytes": null,
+    "trace_bytes": null,
+    "task_bytes": null,
+    "c_metadata_bytes": null,
+    "stack_peak_bytes": null
+  },
+  "constraints_sha256": "2d63a8ef3226b7d437dd69e87d16106903cfd1eb7136fa7f0bc7c3e2dc0a25e0",
+  "manifest_sha256": "059b29dc27e80afba01ac7699c28b5dba63394e5d91003b19942a83e7c4cad0a"
+}

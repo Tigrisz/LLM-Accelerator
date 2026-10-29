@@ -1,0 +1,7 @@
+T1 stage: framework_tests
+T1 stage: tool_tests
+T1 stage: resources
+T1 stage: intake_audit
+T1 stage: static_metadata
+T1 stage: target_constraints
+T1 clean acceptance passed
